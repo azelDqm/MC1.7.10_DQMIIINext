@@ -1,0 +1,13 @@
+#
+itemGroup.dqmTabWeapon=DQMIII.Weapons
+itemGroup.dqmTabShield=DQMIII.Shields
+itemGroup.dqmTabArmor=DQMIII.Armor
+itemGroup.dqmTabAcc=DQMIII.Accesorys
+itemGroup.dqmTabMagic=DQMIII.Magics
+itemGroup.dqmTabMisc=DQMIII.Misc
+itemGroup.dqmTabFood=DQMIII.Foods
+itemGroup.dqmTabPlant=DQMIII.Plants
+itemGroup.dqmTabBlock=DQMIII.Blocks
+itemGroup.dqmTabOre=DQMIII.Ore
+itemGroup.dqmTabDecorate=DQMIII.DecorateBlock
+itemGroup.dqmTabBuilder=DQMIII.BuilderPlan

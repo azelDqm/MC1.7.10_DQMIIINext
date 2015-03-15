@@ -1,0 +1,162 @@
+package dqmIII.blocks;
+
+import cpw.mods.fml.client.registry.ClientRegistry;
+import dqmIII.blocks.decorate.render.*;
+import dqmIII.blocks.decorate.tileEntity.*;
+import dqmIII.blocks.mobSpawner.tileEntity.DqmTileEntityMobSpawner;
+import dqmIII.blocks.mobSpawner.tileEntity.DqmTileEntityMobSpawnerRenderer;
+
+public class BlockRenderingRegister {
+	public BlockRenderingRegister()
+	{
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityMinidama.class, new DqmTileEntityRenderMinidama());
+
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityMobSpawner.class, new DqmTileEntityMobSpawnerRenderer());
+
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDqmbed.class, new DqmTileEntityRenderBed1());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDqmbed2.class, new DqmTileEntityRenderBed2());
+
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityAkumanotubo.class, new DqmTileEntityRenderAkumanotubo());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityBouguya.class, new DqmTileEntityRenderBouguya());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityBukiya.class, new DqmTileEntityRenderBukiya());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaB.class, new DqmTileEntityRenderDaizaB());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaBG.class, new DqmTileEntityRenderDaizaBG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaD.class, new DqmTileEntityRenderDaizaD());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaDG.class, new DqmTileEntityRenderDaizaDG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaE.class, new DqmTileEntityRenderDaizaE());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaEG.class, new DqmTileEntityRenderDaizaEG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaG.class, new DqmTileEntityRenderDaizaG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaGG.class, new DqmTileEntityRenderDaizaGG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaI.class, new DqmTileEntityRenderDaizaI());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaIG.class, new DqmTileEntityRenderDaizaIG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaL.class, new DqmTileEntityRenderDaizaL());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaLG.class, new DqmTileEntityRenderDaizaLG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaN.class, new DqmTileEntityRenderDaizaN());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaNG.class, new DqmTileEntityRenderDaizaNG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaO.class, new DqmTileEntityRenderDaizaO());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaOG.class, new DqmTileEntityRenderDaizaOG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaQ.class, new DqmTileEntityRenderDaizaQ());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaQG.class, new DqmTileEntityRenderDaizaQG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaR.class, new DqmTileEntityRenderDaizaR());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaRG.class, new DqmTileEntityRenderDaizaRG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaS.class, new DqmTileEntityRenderDaizaS());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaSG.class, new DqmTileEntityRenderDaizaSG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaW.class, new DqmTileEntityRenderDaizaW());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDaizaWG.class, new DqmTileEntityRenderDaizaWG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDouguya.class, new DqmTileEntityRenderDouguya());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDqmbed.class, new DqmTileEntityRenderDqmbed());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDqmbed2.class, new DqmTileEntityRenderDqmbed2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityEntotu.class, new DqmTileEntityRenderEntotu());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityEntotuG.class, new DqmTileEntityRenderEntotuG());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityEntotuN.class, new DqmTileEntityRenderEntotuN());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityEntotuO.class, new DqmTileEntityRenderEntotuO());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityEntotuS.class, new DqmTileEntityRenderEntotuS());
+
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasiraNB.class, new DqmTileEntityRenderHasiraNB());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasiranakaNB.class, new DqmTileEntityRenderHasiranakaNB());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasiraueNB.class, new DqmTileEntityRenderHasiraueNB());
+
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasira.class, new DqmTileEntityRenderHasira());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasiranaka.class, new DqmTileEntityRenderHasiranaka());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasiranakaQ.class, new DqmTileEntityRenderHasiranakaQ());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasiraQ.class, new DqmTileEntityRenderHasiraQ());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasiraue.class, new DqmTileEntityRenderHasiraue());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHasiraueQ.class, new DqmTileEntityRenderHasiraueQ());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHepaitosu.class, new DqmTileEntityRenderHepaitosu());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityHondana.class, new DqmTileEntityRenderHondana());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityIdo.class, new DqmTileEntityRenderIdo());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityIdooke.class, new DqmTileEntityRenderIdooke());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityIsu.class, new DqmTileEntityRenderIsu());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityJuujika.class, new DqmTileEntityRenderJuujika());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityJuujika2.class, new DqmTileEntityRenderJuujika2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityKagaribidai.class, new DqmTileEntityRenderKagaribidai());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityKen.class, new DqmTileEntityRenderKen());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityKen2.class, new DqmTileEntityRenderKen2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityKinoisi.class, new DqmTileEntityRenderKinoisi());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityMaki.class, new DqmTileEntityRenderMaki());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOke.class, new DqmTileEntityRenderOke());
+
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasiranakaNB.class, new DqmTileEntityRenderOokiihasiranakaNB());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasirasitaNB.class, new DqmTileEntityRenderOokiihasirasitaNB());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasiraueNB.class, new DqmTileEntityRenderOokiihasiraueNB());
+
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasiranakaS.class, new DqmTileEntityRenderOokiihasiranakaS());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasirasitaS.class, new DqmTileEntityRenderOokiihasirasitaS());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasiraueS.class, new DqmTileEntityRenderOokiihasiraueS());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasiranaka.class, new DqmTileEntityRenderOokiihasiranaka());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasiranakaQ.class, new DqmTileEntityRenderOokiihasiranakaQ());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasirasita.class, new DqmTileEntityRenderOokiihasirasita());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasirasitaQ.class, new DqmTileEntityRenderOokiihasirasitaQ());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasiraue.class, new DqmTileEntityRenderOokiihasiraue());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiihasiraueQ.class, new DqmTileEntityRenderOokiihasiraueQ());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiiisizukue.class, new DqmTileEntityRenderOokiiisizukue());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityOokiitukue.class, new DqmTileEntityRenderOokiitukue());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityRotomon.class, new DqmTileEntityRenderRotomon());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityRotonoturugiF.class, new DqmTileEntityRenderRotonoturugiF());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityRotonoturugiF2.class, new DqmTileEntityRenderRotonoturugiF2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityRotonoturugiMob.class, new DqmTileEntityRenderRotonoturugiMob());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityRotonoturugiOb.class, new DqmTileEntityRenderRotonoturugiOb());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityRotonoturugiOb2.class, new DqmTileEntityRenderRotonoturugiOb2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySBatorurex.class, new DqmTileEntityRenderSBatorurex());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySBoureikensi.class, new DqmTileEntityRenderSBoureikensi());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySGoremu.class, new DqmTileEntityRenderSGoremu());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySikabane.class, new DqmTileEntityRenderSikabane());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySikabaneK.class, new DqmTileEntityRenderSikabaneK());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySikabaneMob.class, new DqmTileEntityRenderSikabaneMob());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySKirapan.class, new DqmTileEntityRenderSKirapan());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySSura.class, new DqmTileEntityRenderSSura());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySSuraimunaito.class, new DqmTileEntityRenderSSuraimunaito());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySword.class, new DqmTileEntityRenderSword());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySword2.class, new DqmTileEntityRenderSword2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySword2Mob.class, new DqmTileEntityRenderSword2Mob());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySwordMob.class, new DqmTileEntityRenderSwordMob());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntitySZukkinya.class, new DqmTileEntityRenderSZukkinya());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTaimatu.class, new DqmTileEntityRenderTaimatu());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTaimatu2.class, new DqmTileEntityRenderTaimatu2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTaru.class, new DqmTileEntityRenderTaru());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTaruK.class, new DqmTileEntityRenderTaruK());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTaruMob.class, new DqmTileEntityRenderTaruMob());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTiisaitukue.class, new DqmTileEntityRenderTiisaitukue());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTokusyutaimatu.class, new DqmTileEntityRenderTokusyutaimatu());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTubo.class, new DqmTileEntityRenderTubo());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTuboK.class, new DqmTileEntityRenderTuboK());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTubokku.class, new DqmTileEntityRenderTubokku());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTue.class, new DqmTileEntityRenderTue());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityTueK.class, new DqmTileEntityRenderTueK());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityWakanai.class, new DqmTileEntityRenderWakanai());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYadoya.class, new DqmTileEntityRenderYadoya());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiaka.class, new DqmTileEntityRenderYajirusiaka());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiaka2.class, new DqmTileEntityRenderYajirusiaka2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiao.class, new DqmTileEntityRenderYajirusiao());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiao2.class, new DqmTileEntityRenderYajirusiao2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiaoBatu.class, new DqmTileEntityRenderYajirusiaoBatu());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiaoMaru.class, new DqmTileEntityRenderYajirusiaoMaru());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiaoSita.class, new DqmTileEntityRenderYajirusiaoSita());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiaoUe.class, new DqmTileEntityRenderYajirusiaoUe());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusidaidai.class, new DqmTileEntityRenderYajirusidaidai());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusidaidai2.class, new DqmTileEntityRenderYajirusidaidai2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusihai.class, new DqmTileEntityRenderYajirusihai());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusihai2.class, new DqmTileEntityRenderYajirusihai2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusikiiro.class, new DqmTileEntityRenderYajirusikiiro());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusikiiro2.class, new DqmTileEntityRenderYajirusikiiro2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusikoimidori.class, new DqmTileEntityRenderYajirusikoimidori());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusikoimidori2.class, new DqmTileEntityRenderYajirusikoimidori2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusikon.class, new DqmTileEntityRenderYajirusikon());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusikon2.class, new DqmTileEntityRenderYajirusikon2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusikuro.class, new DqmTileEntityRenderYajirusikuro());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusikuro2.class, new DqmTileEntityRenderYajirusikuro2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusimidori.class, new DqmTileEntityRenderYajirusimidori());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusimidori2.class, new DqmTileEntityRenderYajirusimidori2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusimurasaki.class, new DqmTileEntityRenderYajirusimurasaki());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusimurasaki2.class, new DqmTileEntityRenderYajirusimurasaki2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusipink.class, new DqmTileEntityRenderYajirusipink());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusipink2.class, new DqmTileEntityRenderYajirusipink2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusisiro.class, new DqmTileEntityRenderYajirusisiro());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusisiro2.class, new DqmTileEntityRenderYajirusisiro2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusitya.class, new DqmTileEntityRenderYajirusitya());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusitya2.class, new DqmTileEntityRenderYajirusitya2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiusuao.class, new DqmTileEntityRenderYajirusiusuao());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityYajirusiusuao2.class, new DqmTileEntityRenderYajirusiusuao2());
+
+	}
+}

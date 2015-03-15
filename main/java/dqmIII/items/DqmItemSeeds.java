@@ -1,0 +1,150 @@
+package dqmIII.items;
+
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import dqmIII.DQM;
+import dqmIII.items.base.DqmItemFoodSeedBase;
+import dqmIII.items.base.DqmItemSeedBase;
+
+public class DqmItemSeeds {
+
+	public static Item itemYakusouSeed;
+	public static Item itemYakusouSeed2;
+	public static Item itemYakusouSeed3;
+	public static Item itemDokukesisouSeed;
+	public static Item itemDokukesisouSeed2;
+	public static Item itemDokukesisouSeed3;
+	public static Item itemTikaraSeed;
+	public static Item itemTikaraSeed2;
+	public static Item itemTikaraSeed3;
+	public static Item itemMamoriSeed;
+	public static Item itemMamoriSeed2;
+	public static Item itemMamoriSeed3;
+	public static Item itemSubayasaSeed;
+	public static Item itemSubayasaSeed2;
+	public static Item itemSubayasaSeed3;
+	public static Item itemHonooSeed;
+	public static Item itemHonooSeed2;
+	public static Item itemHonooSeed3;
+	public static Item itemIyasiSeed;
+	public static Item itemIyasiSeed2;
+	public static Item itemIyasiSeed3;
+	public static Item itemMahounomiseed;
+	public static Item itemMahounomiseed2;
+	public static Item itemMahounomiseed3;
+	public static Item itemMaryokunotaneseed;
+	public static Item itemMaryokunotaneseed2;
+	public static Item itemMaryokunotaneseed3;
+	public static Item itemOugonSeed;
+	public static Item itemOugonSeed2;
+	public static Item itemOugonSeed3;
+	public static Item itemOugonSeed4;
+
+	public static Item itemBannouyaku;
+	public static Item itemJouyakusou;
+	public static Item itemTokuyakusou;
+	public static Item itemYakusou;
+	public static Item itemYakusou2;
+	public static Item itemYakusou3;
+	public static Item itemDokukesisou;
+	public static Item itemDokukesisou2;
+	public static Item itemDokukesisou3;
+	public static Item itemTikaranotane;
+	public static Item itemTikaranotane2;
+	public static Item itemTikaranotane3;
+	public static Item itemMamorinotane;
+	public static Item itemMamorinotane2;
+	public static Item itemMamorinotane3;
+	public static Item itemSubayasanotane;
+	public static Item itemSubayasanotane2;
+	public static Item itemSubayasanotane3;
+	public static Item itemHonoonomi;
+	public static Item itemHonoonomi2;
+	public static Item itemHonoonomi3;
+	public static Item itemIyasinomi;
+	public static Item itemIyasinomi2;
+	public static Item itemIyasinomi3;
+	public static Item itemMahounomiI;
+	public static Item itemMahounomiI2;
+	public static Item itemMahounomiI3;
+	public static Item itemMaryokunotaneI;
+	public static Item itemMaryokunotaneI2;
+	public static Item itemMaryokunotaneI3;
+	public static Item itemOugon;
+	public static Item itemOugon2;
+	public static Item itemOugon3;
+	public static Item itemOugon4;
+
+
+	public DqmItemSeeds()
+	{
+		itemYakusouSeed = new DqmItemSeedBase(DQM.seedBlocks.BlockYakusouSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemYakusouSeed").setTextureName("dqm:YakusouSeed");
+		itemYakusouSeed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockYakusouSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemYakusouSeed2").setTextureName("dqm:YakusouSeed2");
+		itemYakusouSeed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockYakusouSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemYakusouSeed3").setTextureName("dqm:YakusouSeed3");
+		itemDokukesisouSeed = new DqmItemSeedBase(DQM.seedBlocks.BlockDokukesisouSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemDokukesisouSeed").setTextureName("dqm:DokukesisouSeed");
+		itemDokukesisouSeed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockDokukesisouSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemDokukesisouSeed2").setTextureName("dqm:DokukesisouSeed2");
+		itemDokukesisouSeed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockDokukesisouSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemDokukesisouSeed3").setTextureName("dqm:DokukesisouSeed3");
+		itemTikaraSeed = new DqmItemSeedBase(DQM.seedBlocks.BlockTikaraSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemTikaraSeed").setTextureName("dqm:TikaraSeed");
+		itemTikaraSeed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockTikaraSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemTikaraSeed2").setTextureName("dqm:TikaraSeed2");
+		itemTikaraSeed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockTikaraSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemTikaraSeed3").setTextureName("dqm:TikaraSeed3");
+		itemMamoriSeed = new DqmItemSeedBase(DQM.seedBlocks.BlockMamoriSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMamoriSeed").setTextureName("dqm:MamoriSeed");
+		itemMamoriSeed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockMamoriSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMamoriSeed2").setTextureName("dqm:MamoriSeed2");
+		itemMamoriSeed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockMamoriSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMamoriSeed3").setTextureName("dqm:MamoriSeed3");
+		itemSubayasaSeed = new DqmItemSeedBase(DQM.seedBlocks.BlockSubayasaSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemSubayasaSeed").setTextureName("dqm:SubayasaSeed");
+		itemSubayasaSeed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockSubayasaSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemSubayasaSeed2").setTextureName("dqm:SubayasaSeed2");
+		itemSubayasaSeed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockSubayasaSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemSubayasaSeed3").setTextureName("dqm:SubayasaSeed3");
+		itemHonooSeed = new DqmItemSeedBase(DQM.seedBlocks.BlockHonooSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemHonooSeed").setTextureName("dqm:HonooSeed");
+		itemHonooSeed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockHonooSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemHonooSeed2").setTextureName("dqm:HonooSeed2");
+		itemHonooSeed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockHonooSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemHonooSeed3").setTextureName("dqm:HonooSeed3");
+		itemIyasiSeed = new DqmItemSeedBase(DQM.seedBlocks.BlockIyasiSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemIyasiSeed").setTextureName("dqm:IyasiSeed");
+		itemIyasiSeed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockIyasiSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemIyasiSeed2").setTextureName("dqm:IyasiSeed2");
+		itemIyasiSeed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockIyasiSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemIyasiSeed3").setTextureName("dqm:IyasiSeed3");
+		itemMahounomiseed = new DqmItemSeedBase(DQM.seedBlocks.BlockMahounomiSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMahounomiseed").setTextureName("dqm:Mahounomiseed");
+		itemMahounomiseed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockMahounomiSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMahounomiseed2").setTextureName("dqm:Mahounomiseed2");
+		itemMahounomiseed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockMahounomiSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMahounomiseed3").setTextureName("dqm:Mahounomiseed3");
+		itemMaryokunotaneseed = new DqmItemSeedBase(DQM.seedBlocks.BlockMaryokunotaneSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMaryokunotaneseed").setTextureName("dqm:Maryokunotaneseed");
+		itemMaryokunotaneseed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockMaryokunotaneSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMaryokunotaneseed2").setTextureName("dqm:Maryokunotaneseed2");
+		itemMaryokunotaneseed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockMaryokunotaneSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMaryokunotaneseed3").setTextureName("dqm:Maryokunotaneseed3");
+		itemOugonSeed = new DqmItemSeedBase(DQM.seedBlocks.BlockOugonSeed1, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemOugonSeed").setTextureName("dqm:OugonSeed");
+		itemOugonSeed2 = new DqmItemSeedBase(DQM.seedBlocks.BlockOugonSeed2, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemOugonSeed2").setTextureName("dqm:OugonSeed2");
+		itemOugonSeed3 = new DqmItemSeedBase(DQM.seedBlocks.BlockOugonSeed3, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemOugonSeed3").setTextureName("dqm:OugonSeed3");
+		itemOugonSeed4 = new DqmItemSeedBase(DQM.seedBlocks.BlockOugonSeed4, Blocks.farmland).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemOugonSeed4").setTextureName("dqm:OugonSeed4");
+
+		itemBannouyaku = new DqmItemFoodSeedBase(2, 0.3F, false).setHealPoint(30.0F, 10, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemBannouyaku").setTextureName("dqm:Bannouyaku");
+		itemJouyakusou = new DqmItemFoodSeedBase(4, 0.3F, false).setHealPoint(40.0F, 10, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemJouyakusou").setTextureName("dqm:Jouyakusou");
+		itemTokuyakusou = new DqmItemFoodSeedBase(8, 0.3F,false).setHealPoint(70.0F, 20, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemTokuyakusou").setTextureName("dqm:Tokuyakusou");
+		itemYakusou = new DqmItemFoodSeedBase(4, 0.4F, false).setHealPoint(8.0F, 5, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemYakusou").setTextureName("dqm:Yakusou");
+		itemYakusou2 = new DqmItemFoodSeedBase(6, 0.3F, false).setHealPoint(35.0F, 20, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemYakusou2").setTextureName("dqm:Yakusou2");
+		itemYakusou3 = new DqmItemFoodSeedBase(8, 0.2F, false).setHealPoint(60.0F, 40, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemYakusou3").setTextureName("dqm:Yakusou3");
+		itemDokukesisou = new DqmItemFoodSeedBase(4, 0.4F, false).setHealPoint(0.0F, 5, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemDokukesisou").setTextureName("dqm:Dokukesisou");
+		itemDokukesisou2 = new DqmItemFoodSeedBase(6, 0.3F, false).setHealPoint(10.0F, 10, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemDokukesisou2").setTextureName("dqm:Dokukesisou2");
+		itemDokukesisou3 = new DqmItemFoodSeedBase(8, 0.2F, false).setHealPoint(20.0F, 10, -1, -1).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemDokukesisou3").setTextureName("dqm:Dokukesisou3");
+		itemTikaranotane = new DqmItemFoodSeedBase(2, 0.3F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemTikaranotane").setTextureName("dqm:Tikaranotane");
+		itemTikaranotane2 = new DqmItemFoodSeedBase(3, 0.2F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemTikaranotane2").setTextureName("dqm:Tikaranotane2");
+		itemTikaranotane3 = new DqmItemFoodSeedBase(4, 0.1F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemTikaranotane3").setTextureName("dqm:Tikaranotane3");
+		itemMamorinotane = new DqmItemFoodSeedBase(2, 0.3F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMamorinotane").setTextureName("dqm:Mamorinotane");
+		itemMamorinotane2 = new DqmItemFoodSeedBase(3, 0.2F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMamorinotane2").setTextureName("dqm:Mamorinotane2");
+		itemMamorinotane3 = new DqmItemFoodSeedBase(4, 0.1F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMamorinotane3").setTextureName("dqm:Mamorinotane3");
+		itemSubayasanotane = new DqmItemFoodSeedBase(2, 0.3F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemSubayasanotane").setTextureName("dqm:Subayasanotane");
+		itemSubayasanotane2 = new DqmItemFoodSeedBase(3, 0.2F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemSubayasanotane2").setTextureName("dqm:Subayasanotane2");
+		itemSubayasanotane3 = new DqmItemFoodSeedBase(4, 0.1F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemSubayasanotane3").setTextureName("dqm:Subayasanotane3");
+		itemHonoonomi = new DqmItemFoodSeedBase(4, 0.6F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemHonoonomi").setTextureName("dqm:Honoonomi");
+		itemHonoonomi2 = new DqmItemFoodSeedBase(6, 0.5F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemHonoonomi2").setTextureName("dqm:Honoonomi2");
+		itemHonoonomi3 = new DqmItemFoodSeedBase(10, 0.4F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemHonoonomi3").setTextureName("dqm:Honoonomi3");
+		itemIyasinomi = new DqmItemFoodSeedBase(6, 0.7F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemIyasinomi").setTextureName("dqm:Iyasinomi");
+		itemIyasinomi2 = new DqmItemFoodSeedBase(8, 0.6F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemIyasinomi2").setTextureName("dqm:Iyasinomi2");
+		itemIyasinomi3 = new DqmItemFoodSeedBase(10, 0.5F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemIyasinomi3").setTextureName("dqm:Iyasinomi3");
+		itemMahounomiI = new DqmItemFoodSeedBase(4, 0.6F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMahounomiI").setTextureName("dqm:MahounomiI");
+		itemMahounomiI2 = new DqmItemFoodSeedBase(6, 0.5F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMahounomiI2").setTextureName("dqm:MahounomiI2");
+		itemMahounomiI3 = new DqmItemFoodSeedBase(8, 0.5F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMahounomiI3").setTextureName("dqm:MahounomiI3");
+		itemMaryokunotaneI = new DqmItemFoodSeedBase(2, 0.3F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMaryokunotaneI").setTextureName("dqm:MaryokunotaneI");
+		itemMaryokunotaneI2 = new DqmItemFoodSeedBase(3, 0.2F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMaryokunotaneI2").setTextureName("dqm:MaryokunotaneI2");
+		itemMaryokunotaneI3 = new DqmItemFoodSeedBase(4, 0.1F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemMaryokunotaneI3").setTextureName("dqm:MaryokunotaneI3");
+		itemOugon = new DqmItemFoodSeedBase(4, 0.8F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemOugon").setTextureName("dqm:Ougon");
+		itemOugon2 = new DqmItemFoodSeedBase(6, 0.6F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemOugon2").setTextureName("dqm:Ougon2");
+		itemOugon3 = new DqmItemFoodSeedBase(8, 0.5F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemOugon3").setTextureName("dqm:Ougon3");
+		itemOugon4 = new DqmItemFoodSeedBase(14, 0.1F, false).setCreativeTab(DQM.tabs.DqmTabPlant).setUnlocalizedName("dqm.itemOugon4").setTextureName("dqm:Ougon4");
+
+
+	}
+}
