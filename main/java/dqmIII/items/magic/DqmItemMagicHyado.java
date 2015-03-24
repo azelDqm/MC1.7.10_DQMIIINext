@@ -10,6 +10,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntityHyado;
 import dqmIII.enums.EnumColor;
 import dqmIII.enums.EnumDqmMagic;
@@ -57,7 +58,7 @@ public class DqmItemMagicHyado extends DqmItemMagicBase{
         	int hitCnt = 0;
         	*/
 
-    		if(par1ItemStack.getItem() == DQM.magics.itemHyado)
+    		if(par1ItemStack.getItem() == DQMagics.itemHyado)
     		{
     			magic = new MagicEntityHyado[1];
     			for(int cnt = 0;cnt < 1; cnt++)
@@ -73,7 +74,7 @@ public class DqmItemMagicHyado extends DqmItemMagicBase{
     	   		needLvK = 8;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemHyadaruko)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemHyadaruko)
     		{
     			magic = new MagicEntityHyado[3];
     			for(int cnt = 0;cnt < 3; cnt++)
@@ -89,7 +90,7 @@ public class DqmItemMagicHyado extends DqmItemMagicBase{
     	   		needLvK = 18;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemMahyado)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemMahyado)
     		{
     			magic = new MagicEntityHyado[5];
     			for(int cnt = 0;cnt < 5; cnt++)
@@ -104,7 +105,7 @@ public class DqmItemMagicHyado extends DqmItemMagicBase{
     	   		needLvK = 31;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemMahyadodesu)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemMahyadodesu)
     		{
     			magic = new MagicEntityHyado[7];
     			for(int cnt = 0;cnt < 7; cnt++)

@@ -8,6 +8,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQDecorates;
 
 public class DqmWorldGenSword implements IWorldGenerator
 {
@@ -55,21 +56,21 @@ public class DqmWorldGenSword implements IWorldGenerator
         					par3World.getBlock(x, y - 1, z) == Blocks.end_stone||
          				    (topBlock != Blocks.air && par3World.getBlock(x, y - 1, z) == topBlock)))
         {
-            par3World.setBlock(x, y + 1, z, DQM.decorateBlocks.DqmBlockSwordMob, rand.nextInt(4), 2);
+            par3World.setBlock(x, y + 1, z, DQDecorates.DqmBlockSwordMob, rand.nextInt(4), 2);
 
             int dim = par3World.provider.dimensionId;
             if(dim == 0)
             {
-            	par3World.setBlock(x, y, z, DQM.decorateBlocks.DqmBlockDaizaI, 0, 2);
+            	par3World.setBlock(x, y, z, DQDecorates.DqmBlockDaizaI, 0, 2);
             }else if(dim == -1)
             {
-            	par3World.setBlock(x, y, z, DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
+            	par3World.setBlock(x, y, z, DQDecorates.DqmBlockDaizaQ, 0, 2);
             }else if(dim == 1)
             {
-            	par3World.setBlock(x, y, z, DQM.decorateBlocks.DqmBlockDaizaO, 0, 2);
+            	par3World.setBlock(x, y, z, DQDecorates.DqmBlockDaizaO, 0, 2);
             }else
             {
-            	par3World.setBlock(x, y, z, DQM.decorateBlocks.DqmBlockDaizaG, 0, 2);
+            	par3World.setBlock(x, y, z, DQDecorates.DqmBlockDaizaG, 0, 2);
             }
         }
     }

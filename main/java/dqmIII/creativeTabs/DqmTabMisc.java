@@ -2,7 +2,7 @@ package dqmIII.creativeTabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQMiscs;
 
 public class DqmTabMisc extends CreativeTabs
 {
@@ -14,6 +14,6 @@ public class DqmTabMisc extends CreativeTabs
 	@Override
 	public Item getTabIconItem()
 	{
-		return DQM.miscs.itemSuraimuzeri;
+		return DQMiscs.itemSuraimuzeri;
 	}
 }

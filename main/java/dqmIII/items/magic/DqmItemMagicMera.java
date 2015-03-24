@@ -10,6 +10,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntity;
 import dqmIII.entity.magicEntity.magic.MagicEntityMera;
 import dqmIII.entity.magicEntity.magic.MagicEntityMeragaia;
@@ -64,7 +65,7 @@ public class DqmItemMagicMera extends DqmItemMagicBase{
         	int needLvK = 0;
         	*/
 
-    		if(par1ItemStack.getItem() == DQM.magics.itemMera)
+    		if(par1ItemStack.getItem() == DQMagics.itemMera)
     		{
     	   		magic = new MagicEntityMera(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F);
     	   		((MagicEntityMera) magic).setWorldFlg(par3EntityPlayer.isSneaking());
@@ -75,7 +76,7 @@ public class DqmItemMagicMera extends DqmItemMagicBase{
     	   		needLvK = 5;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemMerami)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemMerami)
     		{
     			magic = new MagicEntityMerami(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F);
     			((MagicEntityMerami) magic).setWorldFlg(par3EntityPlayer.isSneaking());
@@ -87,7 +88,7 @@ public class DqmItemMagicMera extends DqmItemMagicBase{
     	   		*/
 
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemMerazoma)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemMerazoma)
     		{
     			magic = new MagicEntityMerazoma(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F);
     			((MagicEntityMerazoma) magic).setWorldFlg(par3EntityPlayer.isSneaking());
@@ -98,7 +99,7 @@ public class DqmItemMagicMera extends DqmItemMagicBase{
     	   		needLvK = 25;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemMeragaia)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemMeragaia)
     		{
     			magic = new MagicEntityMeragaia(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F);
     			((MagicEntityMeragaia) magic).setWorldFlg(par3EntityPlayer.isSneaking());

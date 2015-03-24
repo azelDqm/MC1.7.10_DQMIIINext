@@ -6,6 +6,7 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import dqmIII.DQM;
 import dqmIII.enums.EnumDqmJob;
 
@@ -59,5 +60,18 @@ public class DqmItemEmblemBase extends Item{
     		}
     	}
 
+    	NBTTagCompound nbt = p_77624_1_.getTagCompound();
+    	if(nbt != null)
+    	{
+    		int medalVal = nbt.getInteger("medalking");
+    		//System.out.println("TEST:" + medalVal);
+    		if(medalVal > 0)
+    		{
+
+        		String medalValue = I18n.format("msg.medalking.item.txt", new Object[]{medalVal});
+
+    			p_77624_3_.add(medalValue);
+    		}
+    	}
     }
 }

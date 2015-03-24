@@ -15,6 +15,7 @@ public class BlockRenderingRegister {
 
 		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDqmbed.class, new DqmTileEntityRenderBed1());
 		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDqmbed2.class, new DqmTileEntityRenderBed2());
+		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityDqmbed3.class, new DqmTileEntityRenderBed3());
 
 		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityAkumanotubo.class, new DqmTileEntityRenderAkumanotubo());
 		ClientRegistry.bindTileEntitySpecialRenderer(DqmTileEntityBouguya.class, new DqmTileEntityRenderBouguya());

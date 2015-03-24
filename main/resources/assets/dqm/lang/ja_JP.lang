@@ -1318,6 +1318,14 @@ msg.Builder.messages.0.txt=!player.この設計図は、現在建築が進行中
 msg.Builder.messages.1.txt=!player.この範囲に建築して良い場合はスニーク&右クリックをして下さい。
 msg.Builder.messages.2.txt=!player.もう一度右クリックで指定範囲を解除します。
 
+msg.medalking.item.txt=§e[%d枚]
+msg.medalking.talk.1.txt=!player.わしは世界中のちいさなメダルをあつめておる。
+msg.medalking.talk.2.txt=!player.メダルを見つけてきた者には褒美をとらせようぞ！
+msg.medalking.talk.3.txt=!player.ほほうメダルを持ってきたな。望みの褒美はあるかね？
+msg.medalking.talk.4.txt=うーむ……。もっとメダルを集めなくてはそれはやれんのう。
+msg.medalking.talk.5.txt=!player.またいつでも来るがよい！
+msg.medalking.talk.6.txt=!player.もちものが　いっぱいではないか！
+
 msg.FarmBookshelf.messages.0.txt=!player.これは、農業研究書本棚です。
 msg.FarmBookshelf.messages.1.txt=!player.様々な植物の種を持ってこの本棚に使用することで
 msg.FarmBookshelf.messages.2.txt=!player.新しい植物の栽培方法を見つけることができます。
@@ -1340,6 +1348,7 @@ tile.dqm.blockSword.name=剣(ブロック)
 tile.dqm.blockSword2.name=強剣(ブロック)
 tile.dqm.blockDqmbed.name=DQMベッド
 tile.dqm.blockDqmbed2.name=DQMベッドⅡ
+tile.dqm.blockDqmbed3.name=DQMベッドⅢ
 tile.dqm.blockTue.name=杖(ブロック)
 tile.dqm.blockSikabane.name=屍(ブロック)
 
@@ -1480,3 +1489,12 @@ tile.dqm.blockSSura.name=スライムの黄金像(装飾品)
 tile.dqm.blockSSuraimunaito.name=スライムナイトの黄金像(装飾品)
 tile.dqm.blockSZukkinya.name=ズッキーニャの黄金像(装飾品)
 tile.dqm.blockGenkotu.name=げんこつダケ
+
+dqm.guin.tab.medalking.weapons=武器
+dqm.guin.tab.medalking.armors=防具
+dqm.guin.tab.medalking.magics=魔法(攻撃系)
+dqm.guin.tab.medalking.magics2=魔法(補助系)
+dqm.guin.tab.medalking.job=転職証
+dqm.guin.tab.medalking.Misc=アイテム
+
+tile.bed.cantArea=この付近では眠れません

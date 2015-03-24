@@ -9,6 +9,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
+import dqmIII.api.Blocks.DQDecorates;
 
 public class DqmWorldGenSword2 implements IWorldGenerator
 {
@@ -74,20 +76,20 @@ public class DqmWorldGenSword2 implements IWorldGenerator
             if(dim == 0)
             {
             	baseBlock = Blocks.flowing_water;
-            	daizaBlock = DQM.decorateBlocks.DqmBlockDaizaI;
+            	daizaBlock = DQDecorates.DqmBlockDaizaI;
             }else if(dim == -1)
             {
             	baseBlock = Blocks.flowing_lava;
-            	daizaBlock = DQM.decorateBlocks.DqmBlockDaizaQ;
+            	daizaBlock = DQDecorates.DqmBlockDaizaQ;
             }else
             {
-            	baseBlock = DQM.blocks.DqmBlockToramanaYuka;
+            	baseBlock = DQBlocks.DqmBlockToramanaYuka;
             	if(dim == 1)
             	{
-            		daizaBlock = DQM.decorateBlocks.DqmBlockDaizaO;
+            		daizaBlock = DQDecorates.DqmBlockDaizaO;
             	}else
             	{
-            		daizaBlock = DQM.decorateBlocks.DqmBlockDaizaG;
+            		daizaBlock = DQDecorates.DqmBlockDaizaG;
             	}
             }
 
@@ -129,7 +131,7 @@ public class DqmWorldGenSword2 implements IWorldGenerator
             }
 
             par3World.setBlock(xxx, yyy, zzz, daizaBlock, 0, 2);
-            par3World.setBlock(xxx, yyy + 1, zzz, DQM.decorateBlocks.DqmBlockSword2Mob, 0, 2);
+            par3World.setBlock(xxx, yyy + 1, zzz, DQDecorates.DqmBlockSword2Mob, 0, 2);
 
         }
     }

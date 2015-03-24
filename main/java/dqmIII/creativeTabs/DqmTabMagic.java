@@ -2,7 +2,7 @@ package dqmIII.creativeTabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 
 public class DqmTabMagic extends CreativeTabs
 {
@@ -14,6 +14,6 @@ public class DqmTabMagic extends CreativeTabs
 	@Override
 	public Item getTabIconItem()
 	{
-		return DQM.magics.itemMerami;
+		return DQMagics.itemMerami;
 	}
 }

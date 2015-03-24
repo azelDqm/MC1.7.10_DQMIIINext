@@ -13,6 +13,7 @@ public class BlockTileEntityRegister {
 
 		GameRegistry.registerTileEntity(DqmTileEntityDqmbed.class, "dqmTileEntityBed1");
 		GameRegistry.registerTileEntity(DqmTileEntityDqmbed2.class, "dqmTileEntityBed2");
+		GameRegistry.registerTileEntity(DqmTileEntityDqmbed3.class, "dqmTileEntityBed3");
 
 		GameRegistry.registerTileEntity(DqmTileEntityAkumanotubo.class, "dqmTileEntityAkumanotubo");
 		GameRegistry.registerTileEntity(DqmTileEntityBouguya.class, "dqmTileEntityBouguya");

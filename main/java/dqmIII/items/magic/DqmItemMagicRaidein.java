@@ -7,6 +7,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntity;
 import dqmIII.entity.magicEntity.magic.MagicEntityRaidein;
 import dqmIII.enums.EnumDqmMagic;
@@ -54,7 +55,7 @@ public class DqmItemMagicRaidein extends DqmItemMagicBase{
         	int hitCnt = 0;
         	*/
 
-    		if(par1ItemStack.getItem() == DQM.magics.itemRaidein)
+    		if(par1ItemStack.getItem() == DQMagics.itemRaidein)
     		{
     			magic = new MagicEntity[1];
     			for(int cnt = 0;cnt < 1; cnt++)
@@ -69,7 +70,7 @@ public class DqmItemMagicRaidein extends DqmItemMagicBase{
     	   		needLvK = 8;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemGigadein)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemGigadein)
     		{
     			magic = new MagicEntity[3];
     			for(int cnt = 0;cnt < 3; cnt++)
@@ -84,7 +85,7 @@ public class DqmItemMagicRaidein extends DqmItemMagicBase{
     	   		needLvK = 18;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemMinadein)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemMinadein)
     		{
     			magic = new MagicEntity[5];
     			for(int cnt = 0;cnt < 5; cnt++)

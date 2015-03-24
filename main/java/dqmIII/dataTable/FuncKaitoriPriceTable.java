@@ -1,7 +1,8 @@
 package dqmIII.dataTable;
 
 import net.minecraft.item.ItemStack;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQArmors;
+import dqmIII.api.Items.DQWeapons;
 public class FuncKaitoriPriceTable
 {
 	public FuncKaitoriPriceTable(){}
@@ -12,1718 +13,1718 @@ public class FuncKaitoriPriceTable
     	int kaitoriPrice = -1;
 
         //武器
-        if (par1ItemStack.getItem() == DQM.weapons.itemHayabusanoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemHayabusanoturugi)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDounoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemDounoturugi)
         {
             kaitoriPrice = 100 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHeisinoken)
+        if (par1ItemStack.getItem() == DQWeapons.itemHeisinoken)
         {
             kaitoriPrice = 150 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemReipia)
+        if (par1ItemStack.getItem() == DQWeapons.itemReipia)
         {
             kaitoriPrice = 200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHaganenoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemHaganenoturugi)
         {
             kaitoriPrice = 300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKoorinoyaiba)
+        if (par1ItemStack.getItem() == DQWeapons.itemKoorinoyaiba)
         {
             kaitoriPrice = 450 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHajanoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemHajanoturugi)
         {
             kaitoriPrice = 650 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDoragonkira)
+        if (par1ItemStack.getItem() == DQWeapons.itemDoragonkira)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSanzokusaberu)
+        if (par1ItemStack.getItem() == DQWeapons.itemSanzokusaberu)
         {
             kaitoriPrice = 1250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemInferunosword)
+        if (par1ItemStack.getItem() == DQWeapons.itemInferunosword)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMakenreipia)
+        if (par1ItemStack.getItem() == DQWeapons.itemMakenreipia)
         {
             kaitoriPrice = 1750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKisekinoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemKisekinoturugi)
         {
             kaitoriPrice = 2200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMinagorosinoken)
+        if (par1ItemStack.getItem() == DQWeapons.itemMinagorosinoken)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMorohanoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemMorohanoturugi)
         {
             kaitoriPrice = 1100 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMakainoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemMakainoturugi)
         {
             kaitoriPrice = 3000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMetarukingnoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemMetarukingnoturugi)
         {
             kaitoriPrice = 5000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSuiseinoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemSuiseinoturugi)
         {
             kaitoriPrice = 7500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemGinganoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemGinganoturugi)
         {
             kaitoriPrice = 10000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDebugsword)
+        if (par1ItemStack.getItem() == DQWeapons.itemDebugsword)
         {
             kaitoriPrice = 100000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemTenbinbou)
+        if (par1ItemStack.getItem() == DQWeapons.itemTenbinbou)
         {
             kaitoriPrice = 20 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHaganenokon)
+        if (par1ItemStack.getItem() == DQWeapons.itemHaganenokon)
         {
             kaitoriPrice = 250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemReiniroddo)
+        if (par1ItemStack.getItem() == DQWeapons.itemReiniroddo)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemBusinnokon)
+        if (par1ItemStack.getItem() == DQWeapons.itemBusinnokon)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDaikokubasira)
+        if (par1ItemStack.getItem() == DQWeapons.itemDaikokubasira)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemOriharukonbou)
+        if (par1ItemStack.getItem() == DQWeapons.itemOriharukonbou)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDoragonroddo)
+        if (par1ItemStack.getItem() == DQWeapons.itemDoragonroddo)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemRougabou)
+        if (par1ItemStack.getItem() == DQWeapons.itemRougabou)
         {
             kaitoriPrice = 4200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemNyoraikon)
+        if (par1ItemStack.getItem() == DQWeapons.itemNyoraikon)
         {
             kaitoriPrice = 7500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemIsinotume)
+        if (par1ItemStack.getItem() == DQWeapons.itemIsinotume)
         {
             kaitoriPrice = 50 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMajuunotume)
+        if (par1ItemStack.getItem() == DQWeapons.itemMajuunotume)
         {
             kaitoriPrice = 250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemTekkoukagi)
+        if (par1ItemStack.getItem() == DQWeapons.itemTekkoukagi)
         {
             kaitoriPrice = 450 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemAkumanotume)
+        if (par1ItemStack.getItem() == DQWeapons.itemAkumanotume)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDorirunakkuru)
+        if (par1ItemStack.getItem() == DQWeapons.itemDorirunakkuru)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMayokenotume)
+        if (par1ItemStack.getItem() == DQWeapons.itemMayokenotume)
         {
             kaitoriPrice = 1350 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHonoonotume)
+        if (par1ItemStack.getItem() == DQWeapons.itemHonoonotume)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKoorinotume)
+        if (par1ItemStack.getItem() == DQWeapons.itemKoorinotume)
         {
             kaitoriPrice = 1600 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemOowasinotume)
+        if (par1ItemStack.getItem() == DQWeapons.itemOowasinotume)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDoragonkuro)
+        if (par1ItemStack.getItem() == DQWeapons.itemDoragonkuro)
         {
             kaitoriPrice = 3800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSinryuunotume)
+        if (par1ItemStack.getItem() == DQWeapons.itemSinryuunotume)
         {
             kaitoriPrice = 7800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKonbou)
+        if (par1ItemStack.getItem() == DQWeapons.itemKonbou)
         {
             kaitoriPrice = 10 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemJaiantokurabu)
+        if (par1ItemStack.getItem() == DQWeapons.itemJaiantokurabu)
         {
             kaitoriPrice = 20 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemWohanma)
+        if (par1ItemStack.getItem() == DQWeapons.itemWohanma)
         {
             kaitoriPrice = 350 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemOokanaduti)
+        if (par1ItemStack.getItem() == DQWeapons.itemOokanaduti)
         {
             kaitoriPrice = 600 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDaitinokanaduti)
+        if (par1ItemStack.getItem() == DQWeapons.itemDaitinokanaduti)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemWohanmakai)
+        if (par1ItemStack.getItem() == DQWeapons.itemWohanmakai)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemOninokanabou)
+        if (par1ItemStack.getItem() == DQWeapons.itemOninokanabou)
         {
             kaitoriPrice = 1600 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemGigakurassya)
+        if (par1ItemStack.getItem() == DQWeapons.itemGigakurassya)
         {
             kaitoriPrice = 2100 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemAtorasunokanaduti)
+        if (par1ItemStack.getItem() == DQWeapons.itemAtorasunokanaduti)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMajinnokanaduti)
+        if (par1ItemStack.getItem() == DQWeapons.itemMajinnokanaduti)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDaitikudaki)
+        if (par1ItemStack.getItem() == DQWeapons.itemDaitikudaki)
         {
             kaitoriPrice = 3800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHosikudaki)
+        if (par1ItemStack.getItem() == DQWeapons.itemHosikudaki)
         {
             kaitoriPrice = 5500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHakainotekkyuu)
+        if (par1ItemStack.getItem() == DQWeapons.itemHakainotekkyuu)
         {
             kaitoriPrice = 10000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHaganenoono)
+        if (par1ItemStack.getItem() == DQWeapons.itemHaganenoono)
         {
             kaitoriPrice = 250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKinoono)
+        if (par1ItemStack.getItem() == DQWeapons.itemKinoono)
         {
             kaitoriPrice = 400 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemTatujinnoono)
+        if (par1ItemStack.getItem() == DQWeapons.itemTatujinnoono)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMoonakkusu)
+        if (par1ItemStack.getItem() == DQWeapons.itemMoonakkusu)
         {
             kaitoriPrice = 950 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKingakkusu)
+        if (par1ItemStack.getItem() == DQWeapons.itemKingakkusu)
         {
             kaitoriPrice = 1250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHaounoono)
+        if (par1ItemStack.getItem() == DQWeapons.itemHaounoono)
         {
             kaitoriPrice = 1600 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMoonakkusu)
+        if (par1ItemStack.getItem() == DQWeapons.itemMoonakkusu)
         {
             kaitoriPrice = 1800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemFubukinoono)
+        if (par1ItemStack.getItem() == DQWeapons.itemFubukinoono)
         {
             kaitoriPrice = 2300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemGureitoakusu)
+        if (par1ItemStack.getItem() == DQWeapons.itemGureitoakusu)
         {
             kaitoriPrice = 2800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemFunsainooonata)
+        if (par1ItemStack.getItem() == DQWeapons.itemFunsainooonata)
         {
             kaitoriPrice = 3600 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemGodakkusu)
+        if (par1ItemStack.getItem() == DQWeapons.itemGodakkusu)
         {
             kaitoriPrice = 7500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKawanomuti)
+        if (par1ItemStack.getItem() == DQWeapons.itemKawanomuti)
         {
             kaitoriPrice = 50 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemIbaranomuti)
+        if (par1ItemStack.getItem() == DQWeapons.itemIbaranomuti)
         {
             kaitoriPrice = 250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemBatoruribon)
+        if (par1ItemStack.getItem() == DQWeapons.itemBatoruribon)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDoragonteiru)
+        if (par1ItemStack.getItem() == DQWeapons.itemDoragonteiru)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemBasutawipu)
+        if (par1ItemStack.getItem() == DQWeapons.itemBasutawipu)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMegaminomuti)
+        if (par1ItemStack.getItem() == DQWeapons.itemMegaminomuti)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemAkumanomuti)
+        if (par1ItemStack.getItem() == DQWeapons.itemAkumanomuti)
         {
             kaitoriPrice = 1800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKarubebuto)
+        if (par1ItemStack.getItem() == DQWeapons.itemKarubebuto)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemGuringamunomuti)
+        if (par1ItemStack.getItem() == DQWeapons.itemGuringamunomuti)
         {
             kaitoriPrice = 4000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemTyouguringamunomuti)
+        if (par1ItemStack.getItem() == DQWeapons.itemTyouguringamunomuti)
         {
             kaitoriPrice = 8000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSabitarotonoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemSabitarotonoturugi)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemPapasunoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemPapasunoturugi)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemPapasunoturuginew)
+        if (par1ItemStack.getItem() == DQWeapons.itemPapasunoturuginew)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemOujanoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemOujanoturugi)
         {
             kaitoriPrice = 2000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemRotonoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemRotonoturugi)
         {
             kaitoriPrice = 8000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemTenkuunoturugi)
+        if (par1ItemStack.getItem() == DQWeapons.itemTenkuunoturugi)
         {
             kaitoriPrice = 15000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSinken)
+        if (par1ItemStack.getItem() == DQWeapons.itemSinken)
         {
             kaitoriPrice = 20000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMonosasizao)
+        if (par1ItemStack.getItem() == DQWeapons.itemMonosasizao)
         {
             kaitoriPrice = 20 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemTakenoyari)
+        if (par1ItemStack.getItem() == DQWeapons.itemTakenoyari)
         {
             kaitoriPrice = 50 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemTetunoyari)
+        if (par1ItemStack.getItem() == DQWeapons.itemTetunoyari)
         {
             kaitoriPrice = 400 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemToraidento)
+        if (par1ItemStack.getItem() == DQWeapons.itemToraidento)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHaganenoyari)
+        if (par1ItemStack.getItem() == DQWeapons.itemHaganenoyari)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHaruberuto)
+        if (par1ItemStack.getItem() == DQWeapons.itemHaruberuto)
         {
             kaitoriPrice = 1300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemInazumanoyari)
+        if (par1ItemStack.getItem() == DQWeapons.itemInazumanoyari)
         {
             kaitoriPrice = 1700 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHoriransu)
+        if (par1ItemStack.getItem() == DQWeapons.itemHoriransu)
         {
             kaitoriPrice = 2000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDemonsupia)
+        if (par1ItemStack.getItem() == DQWeapons.itemDemonsupia)
         {
             kaitoriPrice = 2200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemGurakosunoyari)
+        if (par1ItemStack.getItem() == DQWeapons.itemGurakosunoyari)
         {
             kaitoriPrice = 2600 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemJigokumasou)
+        if (par1ItemStack.getItem() == DQWeapons.itemJigokumasou)
         {
             kaitoriPrice = 3000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemEiyuunoyari)
+        if (par1ItemStack.getItem() == DQWeapons.itemEiyuunoyari)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMetarukingnoyari)
+        if (par1ItemStack.getItem() == DQWeapons.itemMetarukingnoyari)
         {
             kaitoriPrice = 8500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDokubari)
+        if (par1ItemStack.getItem() == DQWeapons.itemDokubari)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKirapiasu)
+        if (par1ItemStack.getItem() == DQWeapons.itemKirapiasu)
         {
             kaitoriPrice = 3000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKudamononaifu)
+        if (par1ItemStack.getItem() == DQWeapons.itemKudamononaifu)
         {
             kaitoriPrice = 100 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSeinarunaifu)
+        if (par1ItemStack.getItem() == DQWeapons.itemSeinarunaifu)
         {
             kaitoriPrice = 250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDokuganonaifu)
+        if (par1ItemStack.getItem() == DQWeapons.itemDokuganonaifu)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemAsasindaga)
+        if (par1ItemStack.getItem() == DQWeapons.itemAsasindaga)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSodobureika)
+        if (par1ItemStack.getItem() == DQWeapons.itemSodobureika)
         {
             kaitoriPrice = 1800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemGuradiusu)
+        if (par1ItemStack.getItem() == DQWeapons.itemGuradiusu)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSaramanda)
+        if (par1ItemStack.getItem() == DQWeapons.itemSaramanda)
         {
             kaitoriPrice = 3800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemToririondaga)
+        if (par1ItemStack.getItem() == DQWeapons.itemToririondaga)
         {
             kaitoriPrice = 7000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSyotobou)
+        if (par1ItemStack.getItem() == DQWeapons.itemSyotobou)
         {
             kaitoriPrice = 100 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKaryuudonoyumi)
+        if (par1ItemStack.getItem() == DQWeapons.itemKaryuudonoyumi)
         {
             kaitoriPrice = 350 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKazekirinoyumi)
+        if (par1ItemStack.getItem() == DQWeapons.itemKazekirinoyumi)
         {
             kaitoriPrice = 700 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemYuuwakunoyumi)
+        if (par1ItemStack.getItem() == DQWeapons.itemYuuwakunoyumi)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKeironnoyumi)
+        if (par1ItemStack.getItem() == DQWeapons.itemKeironnoyumi)
         {
             kaitoriPrice = 1800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMugennoyumi)
+        if (par1ItemStack.getItem() == DQWeapons.itemMugennoyumi)
         {
             kaitoriPrice = 2300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemJigokunoyumi)
+        if (par1ItemStack.getItem() == DQWeapons.itemJigokunoyumi)
         {
             kaitoriPrice = 3000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemBigbougan)
+        if (par1ItemStack.getItem() == DQWeapons.itemBigbougan)
         {
             kaitoriPrice = 3500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemOdinbou)
+        if (par1ItemStack.getItem() == DQWeapons.itemOdinbou)
         {
             kaitoriPrice = 4300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemDaitensinoyumi)
+        if (par1ItemStack.getItem() == DQWeapons.itemDaitensinoyumi)
         {
             kaitoriPrice = 5500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemSefiramunoyumi)
+        if (par1ItemStack.getItem() == DQWeapons.itemSefiramunoyumi)
         {
             kaitoriPrice = 8000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemBumeran)
+        if (par1ItemStack.getItem() == DQWeapons.itemBumeran)
         {
             kaitoriPrice = 200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemYaibanobumeran)
+        if (par1ItemStack.getItem() == DQWeapons.itemYaibanobumeran)
         {
             kaitoriPrice = 450 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKurosubumeran)
+        if (par1ItemStack.getItem() == DQWeapons.itemKurosubumeran)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemIgurufeza)
+        if (par1ItemStack.getItem() == DQWeapons.itemIgurufeza)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKazenobumeran)
+        if (par1ItemStack.getItem() == DQWeapons.itemKazenobumeran)
         {
             kaitoriPrice = 1600 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHonoonobumeran)
+        if (par1ItemStack.getItem() == DQWeapons.itemHonoonobumeran)
         {
             kaitoriPrice = 2000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKoorinobumeran)
+        if (par1ItemStack.getItem() == DQWeapons.itemKoorinobumeran)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemKuresentoejji)
+        if (par1ItemStack.getItem() == DQWeapons.itemKuresentoejji)
         {
             kaitoriPrice = 3500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemMeteoejji)
+        if (par1ItemStack.getItem() == DQWeapons.itemMeteoejji)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.weapons.itemHaipanova)
+        if (par1ItemStack.getItem() == DQWeapons.itemHaipanova)
         {
             kaitoriPrice = 8000 / 5;
             return kaitoriPrice;
         }
 
         //防具
-        if (par1ItemStack.getItem() == DQM.armors.itemKeikoginobandana)
+        if (par1ItemStack.getItem() == DQArmors.itemKeikoginobandana)
         {
             kaitoriPrice = 250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKeikoginokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemKeikoginokutu)
         {
             kaitoriPrice = 250 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBudougi)
+        if (par1ItemStack.getItem() == DQArmors.itemBudougi)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBudougirisuto)
+        if (par1ItemStack.getItem() == DQArmors.itemBudougirisuto)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBudounokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemBudounokutu)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBusinnobudougi)
+        if (par1ItemStack.getItem() == DQArmors.itemBusinnobudougi)
         {
             kaitoriPrice = 3200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBusinrisuto)
+        if (par1ItemStack.getItem() == DQArmors.itemBusinrisuto)
         {
             kaitoriPrice = 3200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBusinnobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemBusinnobutu)
         {
             kaitoriPrice = 3200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDaimadounobousi)
+        if (par1ItemStack.getItem() == DQArmors.itemDaimadounobousi)
         {
             kaitoriPrice = 3300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDaimadounorobu)
+        if (par1ItemStack.getItem() == DQArmors.itemDaimadounorobu)
         {
             kaitoriPrice = 3300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDaimadounosyuzu)
+        if (par1ItemStack.getItem() == DQArmors.itemDaimadounosyuzu)
         {
             kaitoriPrice = 3300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDaimadougurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemDaimadougurobu)
         {
             kaitoriPrice = 3300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDoragonrobu)
+        if (par1ItemStack.getItem() == DQArmors.itemDoragonrobu)
         {
             kaitoriPrice = 3800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemFusiginaborero)
+        if (par1ItemStack.getItem() == DQArmors.itemFusiginaborero)
         {
             kaitoriPrice = 4000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKeikogisita)
+        if (par1ItemStack.getItem() == DQArmors.itemKeikogisita)
         {
             kaitoriPrice = 400 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKinobousi)
+        if (par1ItemStack.getItem() == DQArmors.itemKinobousi)
         {
             kaitoriPrice = 10 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMadousinosandaru)
+        if (par1ItemStack.getItem() == DQArmors.itemMadousinosandaru)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMikawasinofuku)
+        if (par1ItemStack.getItem() == DQArmors.itemMikawasinofuku)
         {
             kaitoriPrice = 1300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMizunohagoromo)
+        if (par1ItemStack.getItem() == DQArmors.itemMizunohagoromo)
         {
             kaitoriPrice = 4800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemOberonnokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemOberonnokutu)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBudoubandana)
+        if (par1ItemStack.getItem() == DQArmors.itemBudoubandana)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRezamanto)
+        if (par1ItemStack.getItem() == DQArmors.itemRezamanto)
         {
             kaitoriPrice = 450 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSatorinotebukuro)
+        if (par1ItemStack.getItem() == DQArmors.itemSatorinotebukuro)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSatorinowanpisu)
+        if (par1ItemStack.getItem() == DQArmors.itemSatorinowanpisu)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSatorinokanmuri)
+        if (par1ItemStack.getItem() == DQArmors.itemSatorinokanmuri)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSatorinokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemSatorinokutu)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSefiramurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemSefiramurobu)
         {
             kaitoriPrice = 6000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSeijanohoui)
+        if (par1ItemStack.getItem() == DQArmors.itemSeijanohoui)
         {
             kaitoriPrice = 1850 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSinkannobousi)
+        if (par1ItemStack.getItem() == DQArmors.itemSinkannobousi)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSinkannobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemSinkannobutu)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSinkannoepuron)
+        if (par1ItemStack.getItem() == DQArmors.itemSinkannoepuron)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSinkannogurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemSinkannogurobu)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSutekinasabo)
+        if (par1ItemStack.getItem() == DQArmors.itemSutekinasabo)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemTabibitonofuku)
+        if (par1ItemStack.getItem() == DQArmors.itemTabibitonofuku)
         {
             kaitoriPrice = 350 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemTabibitonotebukuro)
+        if (par1ItemStack.getItem() == DQArmors.itemTabibitonotebukuro)
         {
             kaitoriPrice = 350 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBuounoudeate)
+        if (par1ItemStack.getItem() == DQArmors.itemBuounoudeate)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBuounokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemBuounokutu)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBuounohatigane)
+        if (par1ItemStack.getItem() == DQArmors.itemBuounohatigane)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBuounosutu)
+        if (par1ItemStack.getItem() == DQArmors.itemBuounosutu)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKeikogi)
+        if (par1ItemStack.getItem() == DQArmors.itemKeikogi)
         {
             kaitoriPrice = 400 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKenpougiue)
+        if (par1ItemStack.getItem() == DQArmors.itemKenpougiue)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKenpouginobando)
+        if (par1ItemStack.getItem() == DQArmors.itemKenpouginobando)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKenpouginokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemKenpouginokutu)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKenpougirisuto)
+        if (par1ItemStack.getItem() == DQArmors.itemKenpougirisuto)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBusinnobandana)
+        if (par1ItemStack.getItem() == DQArmors.itemBusinnobandana)
         {
             kaitoriPrice = 3200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRotonokabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemRotonokabuto)
         {
             kaitoriPrice = 6000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRotonoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemRotonoyoroi)
         {
             kaitoriPrice = 6000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRotonokote)
+        if (par1ItemStack.getItem() == DQArmors.itemRotonokote)
         {
             kaitoriPrice = 6000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRotonokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemRotonokutu)
         {
             kaitoriPrice = 6000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMetarukingnokabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemMetarukingnokabuto)
         {
             kaitoriPrice = 8500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMetarukingnoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemMetarukingnoyoroi)
         {
             kaitoriPrice = 8500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMetarukingnokote)
+        if (par1ItemStack.getItem() == DQArmors.itemMetarukingnokote)
         {
             kaitoriPrice = 8500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMetarukingnokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemMetarukingnokutu)
         {
             kaitoriPrice = 8500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSabitakabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemSabitakabuto)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSabitayoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemSabitayoroi)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSabitakote)
+        if (par1ItemStack.getItem() == DQArmors.itemSabitakote)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSabitakutu)
+        if (par1ItemStack.getItem() == DQArmors.itemSabitakutu)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemHaganenokabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemHaganenokabuto)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemHaganenoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemHaganenoyoroi)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemHaganenokote)
+        if (par1ItemStack.getItem() == DQArmors.itemHaganenokote)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemHaganenokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemHaganenokutu)
         {
             kaitoriPrice = 500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKawanobousi)
+        if (par1ItemStack.getItem() == DQArmors.itemKawanobousi)
         {
             kaitoriPrice = 200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKawanoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemKawanoyoroi)
         {
             kaitoriPrice = 200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKawanokote)
+        if (par1ItemStack.getItem() == DQArmors.itemKawanokote)
         {
             kaitoriPrice = 200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKawanokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemKawanokutu)
         {
             kaitoriPrice = 200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemUrokonoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemUrokonoyoroi)
         {
             kaitoriPrice = 350 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemHonoonoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemHonoonoyoroi)
         {
             kaitoriPrice = 1700 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMirayoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemMirayoroi)
         {
             kaitoriPrice = 2600 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemYaibanoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemYaibanoyoroi)
         {
             kaitoriPrice = 1800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSinpinoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemSinpinoyoroi)
         {
             kaitoriPrice = 3500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSuraimuhead)
+        if (par1ItemStack.getItem() == DQArmors.itemSuraimuhead)
         {
             kaitoriPrice = 100 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSuraimunofuku)
+        if (par1ItemStack.getItem() == DQArmors.itemSuraimunofuku)
         {
             kaitoriPrice = 100 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDoragonmeiru)
+        if (par1ItemStack.getItem() == DQArmors.itemDoragonmeiru)
         {
             kaitoriPrice = 1200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKenjanobousi)
+        if (par1ItemStack.getItem() == DQArmors.itemKenjanobousi)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKenjanoroubu)
+        if (par1ItemStack.getItem() == DQArmors.itemKenjanoroubu)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKenjanotebukuro)
+        if (par1ItemStack.getItem() == DQArmors.itemKenjanotebukuro)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKenjanokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemKenjanokutu)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSakuretto)
+        if (par1ItemStack.getItem() == DQArmors.itemSakuretto)
         {
             kaitoriPrice = 300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKinunoroubu)
+        if (par1ItemStack.getItem() == DQArmors.itemKinunoroubu)
         {
             kaitoriPrice = 300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemKinunotebukuro)
+        if (par1ItemStack.getItem() == DQArmors.itemKinunotebukuro)
         {
             kaitoriPrice = 300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSandaru)
+        if (par1ItemStack.getItem() == DQArmors.itemSandaru)
         {
             kaitoriPrice = 300 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMahounobousi)
+        if (par1ItemStack.getItem() == DQArmors.itemMahounobousi)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMahounohoui)
+        if (par1ItemStack.getItem() == DQArmors.itemMahounohoui)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMahounotebukuro)
+        if (par1ItemStack.getItem() == DQArmors.itemMahounotebukuro)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMahounokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemMahounokutu)
         {
             kaitoriPrice = 750 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRadatomukabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemRadatomukabuto)
         {
             kaitoriPrice = 5000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRadatomunoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemRadatomunoyoroi)
         {
             kaitoriPrice = 5000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRadatomugurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemRadatomugurobu)
         {
             kaitoriPrice = 5000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRadatomubutu)
+        if (par1ItemStack.getItem() == DQArmors.itemRadatomubutu)
         {
             kaitoriPrice = 5000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRoresiametto)
+        if (par1ItemStack.getItem() == DQArmors.itemRoresiametto)
         {
             kaitoriPrice = 3500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRoresianofuku)
+        if (par1ItemStack.getItem() == DQArmors.itemRoresianofuku)
         {
             kaitoriPrice = 3500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRoresiagurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemRoresiagurobu)
         {
             kaitoriPrice = 3500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRoresiabutu)
+        if (par1ItemStack.getItem() == DQArmors.itemRoresiabutu)
         {
             kaitoriPrice = 3500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemYuusyanokanmuri)
+        if (par1ItemStack.getItem() == DQArmors.itemYuusyanokanmuri)
         {
             kaitoriPrice = 4000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemYuusyanofuku)
+        if (par1ItemStack.getItem() == DQArmors.itemYuusyanofuku)
         {
             kaitoriPrice = 4000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemYusyanogurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemYusyanogurobu)
         {
             kaitoriPrice = 4000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemYuusyanobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemYuusyanobutu)
         {
             kaitoriPrice = 4000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemTenkuunokabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemTenkuunokabuto)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemTenkuunofuku)
+        if (par1ItemStack.getItem() == DQArmors.itemTenkuunofuku)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemTenkuunogurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemTenkuunogurobu)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemTenkuunobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemTenkuunobutu)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemGurantaban)
+        if (par1ItemStack.getItem() == DQArmors.itemGurantaban)
         {
             kaitoriPrice = 3200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemGuranbaniarobu)
+        if (par1ItemStack.getItem() == DQArmors.itemGuranbaniarobu)
         {
             kaitoriPrice = 3200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemGuranbaniarisuto)
+        if (par1ItemStack.getItem() == DQArmors.itemGuranbaniarisuto)
         {
             kaitoriPrice = 3200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemGuranbanianokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemGuranbanianokutu)
         {
             kaitoriPrice = 3200 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRaiannokabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemRaiannokabuto)
         {
             kaitoriPrice = 650 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRaiannoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemRaiannoyoroi)
         {
             kaitoriPrice = 650 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRaiannogurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemRaiannogurobu)
         {
             kaitoriPrice = 650 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRaiannobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemRaiannobutu)
         {
             kaitoriPrice = 650 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemTenkuunoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemTenkuunoyoroi)
         {
             kaitoriPrice = 7000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemNekomimibando)
+        if (par1ItemStack.getItem() == DQArmors.itemNekomimibando)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSuraimunokanmuriK)
+        if (par1ItemStack.getItem() == DQArmors.itemSuraimunokanmuriK)
         {
             kaitoriPrice = 3500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemFantomumasuku)
+        if (par1ItemStack.getItem() == DQArmors.itemFantomumasuku)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemArakuremasuku)
+        if (par1ItemStack.getItem() == DQArmors.itemArakuremasuku)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSiawasenobousi)
+        if (par1ItemStack.getItem() == DQArmors.itemSiawasenobousi)
         {
             kaitoriPrice = 10000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSiawasenokutu)
+        if (par1ItemStack.getItem() == DQArmors.itemSiawasenokutu)
         {
             kaitoriPrice = 10000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemAbunaimizugiue)
+        if (par1ItemStack.getItem() == DQArmors.itemAbunaimizugiue)
         {
             kaitoriPrice = 4000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemAbunaimizugisita)
+        if (par1ItemStack.getItem() == DQArmors.itemAbunaimizugisita)
         {
             kaitoriPrice = 4000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemUsamimibando)
+        if (par1ItemStack.getItem() == DQArmors.itemUsamimibando)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemBanisutu)
+        if (par1ItemStack.getItem() == DQArmors.itemBanisutu)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemAmitaitu)
+        if (par1ItemStack.getItem() == DQArmors.itemAmitaitu)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemHaihiru)
+        if (par1ItemStack.getItem() == DQArmors.itemHaihiru)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSensinokabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemSensinokabuto)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSensinoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemSensinoyoroi)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSensinogurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemSensinogurobu)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSensinobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemSensinobutu)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemPuratinaheddo)
+        if (par1ItemStack.getItem() == DQArmors.itemPuratinaheddo)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemPuratinameiru)
+        if (par1ItemStack.getItem() == DQArmors.itemPuratinameiru)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemPuratinagantoretto)
+        if (par1ItemStack.getItem() == DQArmors.itemPuratinagantoretto)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemPuratinaguribu)
+        if (par1ItemStack.getItem() == DQArmors.itemPuratinaguribu)
         {
             kaitoriPrice = 1500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMisuriruherumu)
+        if (par1ItemStack.getItem() == DQArmors.itemMisuriruherumu)
         {
             kaitoriPrice = 2000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMisurirumeiru)
+        if (par1ItemStack.getItem() == DQArmors.itemMisurirumeiru)
         {
             kaitoriPrice = 2000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMisuritugantoretto)
+        if (par1ItemStack.getItem() == DQArmors.itemMisuritugantoretto)
         {
             kaitoriPrice = 2000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemMisuriruguribu)
+        if (par1ItemStack.getItem() == DQArmors.itemMisuriruguribu)
         {
             kaitoriPrice = 2000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRyuukisinokabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemRyuukisinokabuto)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRyuukisinoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemRyuukisinoyoroi)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRyuukisinokote)
+        if (par1ItemStack.getItem() == DQArmors.itemRyuukisinokote)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemRyuukisinobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemRyuukisinobutu)
         {
             kaitoriPrice = 2500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDansanohanekazaribando)
+        if (par1ItemStack.getItem() == DQArmors.itemDansanohanekazaribando)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDansanosyatu)
+        if (par1ItemStack.getItem() == DQArmors.itemDansanosyatu)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDansanozubon)
+        if (par1ItemStack.getItem() == DQArmors.itemDansanozubon)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemDansanobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemDansanobutu)
         {
             kaitoriPrice = 800 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemOdorikonokamikazari)
+        if (par1ItemStack.getItem() == DQArmors.itemOdorikonokamikazari)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemOdorikonofuku)
+        if (par1ItemStack.getItem() == DQArmors.itemOdorikonofuku)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemOdorikononisokkusu)
+        if (par1ItemStack.getItem() == DQArmors.itemOdorikononisokkusu)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemOdorikonomyuru)
+        if (par1ItemStack.getItem() == DQArmors.itemOdorikonomyuru)
         {
             kaitoriPrice = 1000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemPurinsesutexiara)
+        if (par1ItemStack.getItem() == DQArmors.itemPurinsesutexiara)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemPurinsesurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemPurinsesurobu)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemPurinsesugurobu)
+        if (par1ItemStack.getItem() == DQArmors.itemPurinsesugurobu)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemPurinsesuhiru)
+        if (par1ItemStack.getItem() == DQArmors.itemPurinsesuhiru)
         {
             kaitoriPrice = 4500 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSeijanokakarotto)
+        if (par1ItemStack.getItem() == DQArmors.itemSeijanokakarotto)
         {
             kaitoriPrice = 850 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSeijanohoui)
+        if (par1ItemStack.getItem() == DQArmors.itemSeijanohoui)
         {
             kaitoriPrice = 850 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSeijanotaitu)
+        if (par1ItemStack.getItem() == DQArmors.itemSeijanotaitu)
         {
             kaitoriPrice = 850 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSeijanobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemSeijanobutu)
         {
             kaitoriPrice = 850 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemStarhatto)
+        if (par1ItemStack.getItem() == DQArmors.itemStarhatto)
         {
             kaitoriPrice = 3000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemStarnasutu)
+        if (par1ItemStack.getItem() == DQArmors.itemStarnasutu)
         {
             kaitoriPrice = 3000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemStarzubon)
+        if (par1ItemStack.getItem() == DQArmors.itemStarzubon)
         {
             kaitoriPrice = 3000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemStarbutu)
+        if (par1ItemStack.getItem() == DQArmors.itemStarbutu)
         {
             kaitoriPrice = 3000 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSinpannokabuto)
+        if (par1ItemStack.getItem() == DQArmors.itemSinpannokabuto)
         {
             kaitoriPrice = 1 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemSinwanoyoroi)
+        if (par1ItemStack.getItem() == DQArmors.itemSinwanoyoroi)
         {
             kaitoriPrice = 1 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemAmaterasunokote)
+        if (par1ItemStack.getItem() == DQArmors.itemAmaterasunokote)
         {
             kaitoriPrice = 1 / 5;
             return kaitoriPrice;
         }
 
-        if (par1ItemStack.getItem() == DQM.armors.itemTenteinobutu)
+        if (par1ItemStack.getItem() == DQArmors.itemTenteinobutu)
         {
             kaitoriPrice = 1 / 5;
             return kaitoriPrice;

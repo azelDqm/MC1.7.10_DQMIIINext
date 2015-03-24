@@ -1,6 +1,8 @@
 package dqmIII;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 import net.minecraftforge.common.config.Configuration;
 import dqmIII.enums.EnumDqmMagic;
@@ -41,6 +43,14 @@ public class DQMconfigs {
 
 	public static int GuiID_FarmBook = 0;
 	public static int GuiID_JobChange = 1;
+	public static int GuiID_MKWeapon = 2;
+	public static int GuiID_MKArmor = 3;
+	public static int GuiID_MKMagic = 4;
+	public static int GuiID_MKMagic2 = 5;
+	public static int GuiID_MKJob = 6;
+	public static int GuiID_MKMisc = 7;
+
+	public static int CLGuiLogWindowOff = 0;
 
 	public static int PotionIDidx = 40;
 	public static int MonsterIDidx = 1000;
@@ -75,6 +85,12 @@ public class DQMconfigs {
     public static int magicSpMegante = 1;
     public static int magicSpHonoo = 0;
     public static int magicSpFubuki = 0;
+
+    public static int magicEpHyado = 1;
+    public static int magicEpIo = 1;
+    public static int magicEpMera = 1;
+    public static int magicEpBagi = 1;
+
     //VillagerID
     public static int AddVillagerID = 10;
     public static int LightSpawnStop = 1;
@@ -93,6 +109,41 @@ public class DQMconfigs {
     public static int cfg_gen_Ido = 1;
     public static int cfg_gen_Ido2 = 1;
     public static int cfg_build_sleep = 250;
+
+    public static int cfg_generateOreDimType = 0;
+    public static int[] cfg_generateOreDimId = new int[]{0, -5, -6};
+    public static String[] cfg_generateOreDimFolder = new String[]{".", "DIM-5", "DIM-6"};
+    public static String[] cfg_generateOreBlockName = new String[]{"stone","stone","stone"};
+    public static Map<Integer, String> cfg_generateOre = new HashMap<>();
+    public static Map<String, String> cfg_generateOreS = new HashMap<>();
+
+
+    public static int cfg_generateOreDimType2 = 0;
+    public static int[] cfg_generateOreDimId2 = new int[]{-1, -6};
+    public static String[] cfg_generateOreDimFolder2 = new String[]{"DIM-1", "DIM-6"};
+    public static String[] cfg_generateOreBlockName2 = new String[]{"netherrack","stone"};;
+    public static Map<Integer, String> cfg_generateOre2 = new HashMap<>();
+    public static Map<String, String> cfg_generateOre2S = new HashMap<>();
+
+
+    public static int cfg_generateOverSpawnDimType = 0;
+    public static String[] cfg_generateOverSpawnDimFolder = new String[]{".", "DIM-5"};
+    public static int[] cfg_generateOverSpawnDimId = new int[]{0, -5};
+    public static Map<Integer, String> cfg_generateOverSpawn = new HashMap<>();
+    public static Map<String, String> cfg_generateOverSpawnS = new HashMap<>();
+
+
+    public static int cfg_generateEndSpawnDimType = 0;
+    public static String[] cfg_generateEndSpawnDimFolder = new String[]{"DIM1", "DIM-5", "DIM-6"};
+    public static int[] cfg_generateEndSpawnDimId = new int[]{1, -5, -6};
+    public static Map<Integer, String> cfg_generateEndSpawn = new HashMap<>();
+    public static Map<String, String> cfg_generateEndSpawnS = new HashMap<>();
+
+    public static int cfg_generateNetherSpawnDimType = 0;
+    public static String[] cfg_generateNetherSpawnDimFolder = new String[]{"DIM-1", "DIM-5", "DIM-6"};
+    public static int[] cfg_generateNetherSpawnDimId = new int[]{-1, -5, -6};
+    public static Map<Integer, String> cfg_generateNetherSpawn = new HashMap<>();
+    public static Map<String, String> cfg_generateNetherSpawnS = new HashMap<>();
 
     public DQMconfigs()
 	{
@@ -135,6 +186,12 @@ public class DQMconfigs {
 		magicSpHonoo = config.get("Monster magicSpecialEffect Settings","Frame with set fire", magicSpHonoo , "0:disable 1:enable").getInt();
 		magicSpFubuki = config.get("Monster magicSpecialEffect Settings","Blizzard with frozing water", magicSpFubuki , "0:disable 1:enable").getInt();
 
+		config.setCategoryComment("Player magicSpecialEffect Settings", "this setting is player magic with effect enables");
+		magicEpHyado = config.get("Player magicSpecialEffect Settings","Hyado with frozing water", magicEpHyado , "0:disable 1:enable").getInt();
+		magicEpIo = config.get("Player magicSpecialEffect Settings","Io with world break", magicEpIo , "0:disable 1:enable").getInt();
+		magicEpMera = config.get("Player magicSpecialEffect Settings","Mera with set fire", magicEpMera , "0:disable 1:enable").getInt();
+		magicEpBagi = config.get("Player magicSpecialEffect Settings","Bagi with leaves break", magicEpBagi , "0:disable 1:enable").getInt();
+
 		config.setCategoryComment("Status recaluc", "this setting is status recaluculations cause bug");
 		recalcLvStatus1 = config.get("Status recaluc","cause over Lv99", recalcLvStatus1 , "0:disable 1:enable").getInt();
 		recalcMP1 = config.get("Status recaluc","cause MP reset bug v0.8.0", recalcMP1 , "0:disable 1:enable").getInt();
@@ -150,6 +207,183 @@ public class DQMconfigs {
 		cfg_gen_Hako = config.get("World gen objects","generate HAKO object", cfg_gen_Hako , "0:disable 1:enable").getInt();
 		cfg_gen_Ido = config.get("World gen objects","generate IDO object", cfg_gen_Ido , "0:disable 1:enable").getInt();
 		cfg_gen_Ido2 = config.get("World gen objects","generate HOME of MEDAL KING and entrance", cfg_gen_Ido2 , "0:disable 1:enable").getInt();
+
+		config.setCategoryComment("World gen Ores1", "this setting is generate normal ores. (DimensionID or WorldFolderName) and Blockname have to PAIR");
+		cfg_generateOreDimType = config.get("World gen Ores1","DimensionGetType", cfg_generateOreDimType, "Dimension get type (0:DimensionID 1:WorldFolderName)").getInt();
+		cfg_generateOreDimFolder = config.get("World gen Ores1","WorldFolderName", cfg_generateOreDimFolder, "This setting use DimensionGetType=1").getStringList();
+		cfg_generateOreDimId = config.get("World gen Ores1","DimensionID", cfg_generateOreDimId, "This setting use DimensionGetType=0").getIntList();
+		cfg_generateOreBlockName = config.get("World gen Ores1","BlockName", cfg_generateOreBlockName ).getStringList();
+
+		if(cfg_generateOreDimType == 0)
+		{
+			for(int cnt = 0; cnt < cfg_generateOreDimId.length; cnt++)
+			{
+				if(cfg_generateOreBlockName != null &&
+				   cfg_generateOreBlockName.length >= cnt &&
+				   cfg_generateOreBlockName[cnt] != null &&
+				   !cfg_generateOreBlockName[cnt].equalsIgnoreCase(""))
+				{
+					cfg_generateOre.put(cfg_generateOreDimId[cnt], cfg_generateOreBlockName[cnt]);
+				}else
+				{
+					cfg_generateOre.put(cfg_generateOreDimId[cnt], "stone");
+				}
+			}
+		}else if(cfg_generateOreDimType == 1)
+		{
+			for(int cnt = 0; cnt < cfg_generateOreDimFolder.length; cnt++)
+			{
+				String folderName = cfg_generateOreDimFolder[cnt].equalsIgnoreCase(".") ? null : cfg_generateOreDimFolder[cnt];
+
+				if(cfg_generateOreBlockName != null &&
+				   cfg_generateOreBlockName.length >= cnt &&
+				   cfg_generateOreBlockName[cnt] != null &&
+				   !cfg_generateOreBlockName[cnt].equalsIgnoreCase(""))
+				{
+					cfg_generateOreS.put(folderName, cfg_generateOreBlockName[cnt]);
+				}else
+				{
+					cfg_generateOreS.put(folderName, "stone");
+				}
+			}
+		}
+
+		config.setCategoryComment("World gen Ores2", "this setting is generate HighClass ores. (DimensionID or WorldFolderName) and Blockname have to PAIR");
+		cfg_generateOreDimType2 = config.get("World gen Ores2","DimensionGetType", cfg_generateOreDimType2, "Dimension get type (0:DimensionID 1:WorldFolderName)").getInt();
+		cfg_generateOreDimFolder2 = config.get("World gen Ores2","WorldFolderName", cfg_generateOreDimFolder2, "This setting use DimensionGetType=1").getStringList();
+		cfg_generateOreDimId2 = config.get("World gen Ores2","DimensionID", cfg_generateOreDimId2, "This setting use DimensionGetType=0").getIntList();
+		cfg_generateOreBlockName2 = config.get("World gen Ores2","BlockName", cfg_generateOreBlockName2 ).getStringList();
+
+		if(cfg_generateOreDimType2 == 0)
+		{
+			for(int cnt = 0; cnt < cfg_generateOreDimId2.length; cnt++)
+			{
+				if(cfg_generateOreBlockName2 != null &&
+				   cfg_generateOreBlockName2.length >= cnt &&
+				   cfg_generateOreBlockName2[cnt] != null &&
+				   !cfg_generateOreBlockName2[cnt].equalsIgnoreCase(""))
+				{
+					cfg_generateOre2.put(cfg_generateOreDimId2[cnt], cfg_generateOreBlockName2[cnt]);
+				}else
+				{
+					cfg_generateOre2.put(cfg_generateOreDimId2[cnt], "stone");
+				}
+			}
+		}else if(cfg_generateOreDimType2 == 1)
+		{
+			for(int cnt = 0; cnt < cfg_generateOreDimFolder2.length; cnt++)
+			{
+				String folderName = cfg_generateOreDimFolder2[cnt].equalsIgnoreCase(".") ? null : cfg_generateOreDimFolder2[cnt];
+
+				if(cfg_generateOreBlockName2 != null &&
+				   cfg_generateOreBlockName2.length >= cnt &&
+				   cfg_generateOreBlockName2[cnt] != null &&
+				   !cfg_generateOreBlockName2[cnt].equalsIgnoreCase(""))
+				{
+
+					cfg_generateOre2S.put(folderName, cfg_generateOreBlockName2[cnt]);
+				}else
+				{
+					cfg_generateOre2S.put(folderName, "stone");
+				}
+			}
+		}
+
+		config.setCategoryComment("World gen SpawnerRoom Overworld", "this setting is generate Overworld monster Spawner room. DimensionID and Blockname have to PAIR");
+		cfg_generateOverSpawnDimType = config.get("World gen SpawnerRoom Overworld","DimensionGetType", cfg_generateOverSpawnDimType, "Dimension get type (0:DimensionID 1:WorldFolderName)").getInt();
+		cfg_generateOverSpawnDimFolder = config.get("World gen SpawnerRoom Overworld", "WorldFolderName", cfg_generateOverSpawnDimFolder, "This setting use DimensionGetType=1").getStringList();
+		cfg_generateOverSpawnDimId = config.get("World gen SpawnerRoom Overworld","DimensionID", cfg_generateOverSpawnDimId, "This setting use DimensionGetType=0").getIntList();
+		//cfg_generateOverSpawnBlockName = config.get("World gen SpawnerRoom Overworld","BlockName", cfg_generateOreBlockName2).getStringList();
+		if(cfg_generateOverSpawnDimType == 0)
+		{
+			for(int cnt = 0; cnt < cfg_generateOverSpawnDimId.length; cnt++)
+			{
+				/*
+				if(cfg_generateOverSpawnBlockName != null &&
+				   cfg_generateOverSpawnBlockName.length >= cnt &&
+				   cfg_generateOverSpawnBlockName[cnt] != null &&
+				   cfg_generateOverSpawnBlockName[cnt].equalsIgnoreCase(""))
+				{
+					cfg_generateOverSpawn.put(cfg_generateOverSpawnDimId[cnt], cfg_generateOverSpawnBlockName[cnt]);
+				}else
+				{
+					cfg_generateOverSpawn.put(cfg_generateOverSpawnDimId[cnt], "stone");
+				}
+				*/
+				cfg_generateOverSpawn.put(cfg_generateOverSpawnDimId[cnt], "stone");
+			}
+		}else if(cfg_generateOverSpawnDimType == 1)
+		{
+			for(int cnt = 0; cnt < cfg_generateOverSpawnDimFolder.length; cnt++)
+			{
+				String folderName = cfg_generateOverSpawnDimFolder[cnt].equalsIgnoreCase(".") ? null : cfg_generateOverSpawnDimFolder[cnt];
+				cfg_generateOverSpawnS.put(folderName, "stone");
+			}
+		}
+
+		config.setCategoryComment("World gen SpawnerRoom Netherworld", "this setting is generate Netherworld monster Spawner room. DimensionID and Blockname have to PAIR");
+		cfg_generateNetherSpawnDimType = config.get("World gen SpawnerRoom Netherworld","DimensionGetType", cfg_generateNetherSpawnDimType, "Dimension get type (0:DimensionID 1:WorldFolderName)").getInt();
+		cfg_generateNetherSpawnDimFolder = config.get("World gen SpawnerRoom Netherworld", "WorldFolderName", cfg_generateNetherSpawnDimFolder, "This setting use DimensionGetType=1").getStringList();
+		cfg_generateNetherSpawnDimId = config.get("World gen SpawnerRoom Netherworld","DimensionID", cfg_generateNetherSpawnDimId, "This setting use DimensionGetType=0").getIntList();
+		//cfg_generateNetherSpawnBlockName = config.get("World gen SpawnerRoom Netherworld","BlockName", cfg_generateOreBlockName2).getStringList();
+		if(cfg_generateNetherSpawnDimType == 0)
+		{
+			for(int cnt = 0; cnt < cfg_generateNetherSpawnDimId.length; cnt++)
+			{
+				/*
+				if(cfg_generateNetherSpawnBlockName != null &&
+				   cfg_generateNetherSpawnBlockName.length >= cnt &&
+				   cfg_generateNetherSpawnBlockName[cnt] != null &&
+				   cfg_generateNetherSpawnBlockName[cnt].equalsIgnoreCase(""))
+				{
+					cfg_generateNetherSpawn.put(cfg_generateNetherSpawnDimId[cnt], cfg_generateNetherSpawnBlockName[cnt]);
+				}else
+				{
+					cfg_generateNetherSpawn.put(cfg_generateNetherSpawnDimId[cnt], "stone");
+				}
+				*/
+				cfg_generateNetherSpawn.put(cfg_generateNetherSpawnDimId[cnt], "stone");
+			}
+		}else if(cfg_generateNetherSpawnDimType == 1)
+		{
+			for(int cnt = 0; cnt < cfg_generateNetherSpawnDimFolder.length; cnt++)
+			{
+				String folderName = cfg_generateNetherSpawnDimFolder[cnt].equalsIgnoreCase(".") ? null : cfg_generateNetherSpawnDimFolder[cnt];
+				cfg_generateNetherSpawnS.put(folderName, "netherrack");
+			}
+		}
+
+		config.setCategoryComment("World gen SpawnerRoom Endworld", "this setting is generate Endworld monster Spawner room. DimensionID and Blockname have to PAIR");
+		cfg_generateEndSpawnDimType = config.get("World gen SpawnerRoom Endworld","DimensionGetType", cfg_generateEndSpawnDimType, "Dimension get type (0:DimensionID 1:WorldFolderName)").getInt();
+		cfg_generateEndSpawnDimFolder = config.get("World gen SpawnerRoom Endworld", "WorldFolderName", cfg_generateEndSpawnDimFolder, "This setting use DimensionGetType=1").getStringList();
+		cfg_generateEndSpawnDimId = config.get("World gen SpawnerRoom Endworld","DimensionID", cfg_generateEndSpawnDimId, "This setting use DimensionGetType=0").getIntList();
+		//cfg_generateEndSpawnBlockName = config.get("World gen SpawnerRoom Endworld","BlockName", cfg_generateOreBlockName2).getStringList();
+		if(cfg_generateEndSpawnDimType == 0)
+		{
+			for(int cnt = 0; cnt < cfg_generateEndSpawnDimId.length; cnt++)
+			{
+				/*
+				if(cfg_generateEndSpawnBlockName != null &&
+				   cfg_generateEndSpawnBlockName.length >= cnt &&
+				   cfg_generateEndSpawnBlockName[cnt] != null &&
+				   cfg_generateEndSpawnBlockName[cnt].equalsIgnoreCase(""))
+				{
+					cfg_generateEndSpawn.put(cfg_generateEndSpawnDimId[cnt], cfg_generateEndSpawnBlockName[cnt]);
+				}else
+				{
+					cfg_generateEndSpawn.put(cfg_generateEndSpawnDimId[cnt], "stone");
+				}
+				*/
+				cfg_generateEndSpawn.put(cfg_generateEndSpawnDimId[cnt], "stone");
+			}
+		}else if(cfg_generateEndSpawnDimType == 1)
+		{
+			for(int cnt = 0; cnt < cfg_generateEndSpawnDimFolder.length; cnt++)
+			{
+				String folderName = cfg_generateEndSpawnDimFolder[cnt].equalsIgnoreCase(".") ? null : cfg_generateEndSpawnDimFolder[cnt];
+				cfg_generateEndSpawnS.put(folderName, "end_stone");
+			}
+		}
 
 		config.save();
 	}
@@ -181,12 +415,15 @@ public class DQMconfigs {
 		CLGuiLogPos = config.get("GamePlayLogGUI","GUI BasePosition", CLGuiLogPos ,"1=LeftTop, 2, 3=LeftMiddle, 4, 5=LeftBottom, 6=RightTop, 7, 8=RightMiddle, 9, 10=RightBottom, 11,CenterTop, 12, 13=CenterMiddle, 14, 15=CenterBottom").getInt();
 		CLGuiLogPosX = config.get("GamePlayLogGUI","GUI Position fix X", CLGuiLogPosX, "GUI position fix pixels from GUI BasePosition").getInt();
 		CLGuiLogPosY = config.get("GamePlayLogGUI","GUI Position fix Y", CLGuiLogPosY, "GUI position fix pixels from GUI BasePosition").getInt();
+		CLGuiLogWindowOff = config.get("GamePlayLogGUI","Output function for Non display", CLGuiLogWindowOff, "0:to this gUI 1:to Vanilla chat gui 2:no output").getInt();
 
 		config.setCategoryComment("GamePlaySubpointsGUI", "PlaySubpointsGUI settings");
 		CLGuiSubpointsVis = config.get("GamePlaySubpointsGUI","GUI Visible", CLGuiSubpointsVis ,"0=false 1=true").getInt();
 		CLGuiSubpointsPos = config.get("GamePlaySubpointsGUI","GUI BasePosition", CLGuiSubpointsPos ,"1=LeftTop, 2, 3=LeftMiddle, 4, 5=LeftBottom, 6=RightTop, 7, 8=RightMiddle, 9, 10=RightBottom, 11,CenterTop, 12, 13=CenterMiddle, 14, 15=CenterBottom").getInt();
 		CLGuiSubpointsPosX = config.get("GamePlaySubpointsGUI","GUI Position fix X", CLGuiSubpointsPosX, "GUI position fix pixels from GUI BasePosition").getInt();
 		CLGuiSubpointsPosY = config.get("GamePlaySubpointsGUI","GUI Position fix Y", CLGuiSubpointsPosY, "GUI position fix pixels from GUI BasePosition").getInt();
+
+
 
 		config.save();
 	}
@@ -205,6 +442,9 @@ public class DQMconfigs {
 		config.setCategoryComment("GUI ID", "GUI ID settings");
 		GuiID_FarmBook =  config.get("GUI ID","FarmBookGUI", GuiID_FarmBook).getInt();
 		GuiID_JobChange =  config.get("GUI ID","JobChangeGUI", GuiID_JobChange).getInt();
+		GuiID_MKWeapon =  config.get("GUI ID","MedalKingGUI(Weapon)", GuiID_MKWeapon).getInt();
+		GuiID_MKArmor =  config.get("GUI ID","MedalKingGUI(Armor)", GuiID_MKArmor).getInt();
+		GuiID_MKMagic =  config.get("GUI ID","MedalKingGUI(Magic)", GuiID_MKMagic).getInt();
 		config.save();
 
 	}
@@ -411,4 +651,5 @@ public class DQMconfigs {
 
 	}
 }
+
 

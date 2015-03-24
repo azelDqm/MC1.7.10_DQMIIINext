@@ -16,6 +16,8 @@ import net.minecraftforge.common.util.ForgeDirection;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQOres;
+import dqmIII.api.Blocks.DQPlants;
 
 public class DqmHoujyouDirt extends Block
 {
@@ -258,7 +260,7 @@ public class DqmHoujyouDirt extends Block
 						  0, par1World.getBlockMetadata(par2 - 1, par3+1, par4), 0};
 
     	Block[] keyBlock = new Block[]{par1World.getBlock(par2 + 1, par3, par4 - 1), Blocks.farmland, par1World.getBlock(par2 + 1, par3, par4 + 1),
-    						 Blocks.farmland, DQM.seedBlocks.BlockHoujyouDirt, Blocks.farmland,
+    						 Blocks.farmland, DQPlants.BlockHoujyouDirt, Blocks.farmland,
     						 par1World.getBlock(par2 - 1, par3, par4 - 1), Blocks.farmland, par1World.getBlock(par2 + 1, par3, par4 + 1)};
 
     	int[] BlockMeta = new int[]{par1World.getBlockMetadata(par2 + 1, par3, par4 - 1), 0, par1World.getBlockMetadata(par2 + 1, par3, par4 + 1),
@@ -416,481 +418,481 @@ public class DqmHoujyouDirt extends Block
         if (canGerm)
         {
         	//毒消し薬Lv1ベース
-        	if(blockIdSet[3] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[5] == DQM.seedBlocks.BlockDokukesisouSeed1)
+        	if(blockIdSet[3] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[5] == DQPlants.BlockDokukesisouSeed1)
         	{
         		//System.out.println("TESTC");
         		//薬草
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockYakusouSeed1 && blockIdSet[1] == DQM.seedBlocks.BlockYakusouSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockYakusouSeed1 &&
-        		   blockIdSet[6] == DQM.seedBlocks.BlockYakusouSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockYakusouSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockYakusouSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockYakusouSeed1 && blockIdSet[1] == DQPlants.BlockYakusouSeed1 && blockIdSet[2] == DQPlants.BlockYakusouSeed1 &&
+        		   blockIdSet[6] == DQPlants.BlockYakusouSeed1 && blockIdSet[7] == DQPlants.BlockYakusouSeed1 && blockIdSet[8] == DQPlants.BlockYakusouSeed1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockYakusouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockYakusouSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockYakusouSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockYakusouSeed1, 2, 2);
         			}
         			return;
         		}
         		//毒消し薬
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[1] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockDokukesisouSeed1 &&
-             	   blockIdSet[6] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockDokukesisouSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[1] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[2] == DQPlants.BlockDokukesisouSeed1 &&
+             	   blockIdSet[6] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[7] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[8] == DQPlants.BlockDokukesisouSeed1)
              	{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed1, 2, 2);
         			}
              		return;
              	}
         		//守りの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockMamoriSeed1 && blockIdSet[1] == DQM.seedBlocks.BlockMamoriSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockMamoriSeed1 &&
-                   blockIdSet[6] == DQM.seedBlocks.BlockMamoriSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockMamoriSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockMamoriSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockMamoriSeed1 && blockIdSet[1] == DQPlants.BlockMamoriSeed1 && blockIdSet[2] == DQPlants.BlockMamoriSeed1 &&
+                   blockIdSet[6] == DQPlants.BlockMamoriSeed1 && blockIdSet[7] == DQPlants.BlockMamoriSeed1 && blockIdSet[8] == DQPlants.BlockMamoriSeed1)
           		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMamoriSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMamoriSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMamoriSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMamoriSeed1, 2, 2);
         			}
           			return;
           		}
         		//素早さの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockSubayasaSeed1 && blockIdSet[1] == DQM.seedBlocks.BlockSubayasaSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockSubayasaSeed1 &&
-                   blockIdSet[6] == DQM.seedBlocks.BlockSubayasaSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockSubayasaSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockSubayasaSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockSubayasaSeed1 && blockIdSet[1] == DQPlants.BlockSubayasaSeed1 && blockIdSet[2] == DQPlants.BlockSubayasaSeed1 &&
+                   blockIdSet[6] == DQPlants.BlockSubayasaSeed1 && blockIdSet[7] == DQPlants.BlockSubayasaSeed1 && blockIdSet[8] == DQPlants.BlockSubayasaSeed1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockSubayasaSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockSubayasaSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockSubayasaSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockSubayasaSeed1, 2, 2);
         			}
         			return;
         		}
         		//力の種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockTikaraSeed1 && blockIdSet[1] == DQM.seedBlocks.BlockTikaraSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockTikaraSeed1 &&
-                   blockIdSet[6] == DQM.seedBlocks.BlockTikaraSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockTikaraSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockTikaraSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockTikaraSeed1 && blockIdSet[1] == DQPlants.BlockTikaraSeed1 && blockIdSet[2] == DQPlants.BlockTikaraSeed1 &&
+                   blockIdSet[6] == DQPlants.BlockTikaraSeed1 && blockIdSet[7] == DQPlants.BlockTikaraSeed1 && blockIdSet[8] == DQPlants.BlockTikaraSeed1)
          		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockTikaraSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockTikaraSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockTikaraSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockTikaraSeed1, 2, 2);
         			}
          			return;
          		}
         	}
-        	if(blockIdSet[1] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockDokukesisouSeed1)
+        	if(blockIdSet[1] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[7] == DQPlants.BlockDokukesisouSeed1)
         	{
         		//薬草
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockYakusouSeed1 && blockIdSet[3] == DQM.seedBlocks.BlockYakusouSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockYakusouSeed1 &&
-        		   blockIdSet[2] == DQM.seedBlocks.BlockYakusouSeed1 && blockIdSet[5] == DQM.seedBlocks.BlockYakusouSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockYakusouSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockYakusouSeed1 && blockIdSet[3] == DQPlants.BlockYakusouSeed1 && blockIdSet[6] == DQPlants.BlockYakusouSeed1 &&
+        		   blockIdSet[2] == DQPlants.BlockYakusouSeed1 && blockIdSet[5] == DQPlants.BlockYakusouSeed1 && blockIdSet[8] == DQPlants.BlockYakusouSeed1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockYakusouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockYakusouSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockYakusouSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockYakusouSeed1, 2, 2);
         			}
         			return;
         		}
         		//毒消し薬
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[3] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockDokukesisouSeed1 &&
-             	   blockIdSet[2] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[5] == DQM.seedBlocks.BlockDokukesisouSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockDokukesisouSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[3] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[6] == DQPlants.BlockDokukesisouSeed1 &&
+             	   blockIdSet[2] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[5] == DQPlants.BlockDokukesisouSeed1 && blockIdSet[8] == DQPlants.BlockDokukesisouSeed1)
              	{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed1, 2, 2);
         			}
              		return;
              	}
         		//守りの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockMamoriSeed1 && blockIdSet[3] == DQM.seedBlocks.BlockMamoriSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockMamoriSeed1 &&
-                   blockIdSet[2] == DQM.seedBlocks.BlockMamoriSeed1 && blockIdSet[5] == DQM.seedBlocks.BlockMamoriSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockMamoriSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockMamoriSeed1 && blockIdSet[3] == DQPlants.BlockMamoriSeed1 && blockIdSet[6] == DQPlants.BlockMamoriSeed1 &&
+                   blockIdSet[2] == DQPlants.BlockMamoriSeed1 && blockIdSet[5] == DQPlants.BlockMamoriSeed1 && blockIdSet[8] == DQPlants.BlockMamoriSeed1)
           		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMamoriSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMamoriSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMamoriSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMamoriSeed1, 2, 2);
         			}
           			return;
           		}
         		//素早さの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockSubayasaSeed1 && blockIdSet[3] == DQM.seedBlocks.BlockSubayasaSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockSubayasaSeed1 &&
-                   blockIdSet[2] == DQM.seedBlocks.BlockSubayasaSeed1 && blockIdSet[5] == DQM.seedBlocks.BlockSubayasaSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockSubayasaSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockSubayasaSeed1 && blockIdSet[3] == DQPlants.BlockSubayasaSeed1 && blockIdSet[6] == DQPlants.BlockSubayasaSeed1 &&
+                   blockIdSet[2] == DQPlants.BlockSubayasaSeed1 && blockIdSet[5] == DQPlants.BlockSubayasaSeed1 && blockIdSet[8] == DQPlants.BlockSubayasaSeed1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockSubayasaSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockSubayasaSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockSubayasaSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockSubayasaSeed1, 2, 2);
         			}
         			return;
         		}
         		//力の種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockTikaraSeed1 && blockIdSet[3] == DQM.seedBlocks.BlockTikaraSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockTikaraSeed1 &&
-                   blockIdSet[2] == DQM.seedBlocks.BlockTikaraSeed1 && blockIdSet[5] == DQM.seedBlocks.BlockTikaraSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockTikaraSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockTikaraSeed1 && blockIdSet[3] == DQPlants.BlockTikaraSeed1 && blockIdSet[6] == DQPlants.BlockTikaraSeed1 &&
+                   blockIdSet[2] == DQPlants.BlockTikaraSeed1 && blockIdSet[5] == DQPlants.BlockTikaraSeed1 && blockIdSet[8] == DQPlants.BlockTikaraSeed1)
          		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockTikaraSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockTikaraSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockTikaraSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockTikaraSeed1, 2, 2);
         			}
          			return;
          		}
         	}
 
         	//毒消し薬Lv2ベース
-        	if(blockIdSet[3] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockDokukesisouSeed2)
+        	if(blockIdSet[3] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[5] == DQPlants.BlockDokukesisouSeed2)
         	{
         		//薬草
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockYakusouSeed2 &&
-        		   blockIdSet[6] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockYakusouSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockYakusouSeed2 && blockIdSet[1] == DQPlants.BlockYakusouSeed2 && blockIdSet[2] == DQPlants.BlockYakusouSeed2 &&
+        		   blockIdSet[6] == DQPlants.BlockYakusouSeed2 && blockIdSet[7] == DQPlants.BlockYakusouSeed2 && blockIdSet[8] == DQPlants.BlockYakusouSeed2)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockYakusouSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockYakusouSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockYakusouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockYakusouSeed2, 2, 2);
         			}
         			return;
         		}
         		//毒消し薬
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockDokukesisouSeed2 &&
-             	   blockIdSet[6] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockDokukesisouSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[1] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[2] == DQPlants.BlockDokukesisouSeed2 &&
+             	   blockIdSet[6] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[7] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[8] == DQPlants.BlockDokukesisouSeed2)
              	{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
         			}
              		return;
              	}
         		//守りの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockMamoriSeed2 &&
-                   blockIdSet[6] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockMamoriSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockMamoriSeed2 && blockIdSet[1] == DQPlants.BlockMamoriSeed2 && blockIdSet[2] == DQPlants.BlockMamoriSeed2 &&
+                   blockIdSet[6] == DQPlants.BlockMamoriSeed2 && blockIdSet[7] == DQPlants.BlockMamoriSeed2 && blockIdSet[8] == DQPlants.BlockMamoriSeed2)
           		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMamoriSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMamoriSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMamoriSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMamoriSeed2, 2, 2);
         			}
           			return;
           		}
         		//素早さの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockSubayasaSeed2 &&
-                   blockIdSet[6] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockSubayasaSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockSubayasaSeed2 && blockIdSet[1] == DQPlants.BlockSubayasaSeed2 && blockIdSet[2] == DQPlants.BlockSubayasaSeed2 &&
+                   blockIdSet[6] == DQPlants.BlockSubayasaSeed2 && blockIdSet[7] == DQPlants.BlockSubayasaSeed2 && blockIdSet[8] == DQPlants.BlockSubayasaSeed2)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockSubayasaSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockSubayasaSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockSubayasaSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockSubayasaSeed2, 2, 2);
         			}
         			return;
         		}
         		//力の種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockTikaraSeed2 &&
-                   blockIdSet[6] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockTikaraSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockTikaraSeed2 && blockIdSet[1] == DQPlants.BlockTikaraSeed2 && blockIdSet[2] == DQPlants.BlockTikaraSeed2 &&
+                   blockIdSet[6] == DQPlants.BlockTikaraSeed2 && blockIdSet[7] == DQPlants.BlockTikaraSeed2 && blockIdSet[8] == DQPlants.BlockTikaraSeed2)
          		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockTikaraSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockTikaraSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockTikaraSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockTikaraSeed2, 2, 2);
         			}
          			return;
          		}
 
         		//癒しの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockTikaraSeed2 &&
-                   blockIdSet[6] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockYakusouSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockTikaraSeed2 && blockIdSet[1] == DQPlants.BlockTikaraSeed2 && blockIdSet[2] == DQPlants.BlockTikaraSeed2 &&
+                   blockIdSet[6] == DQPlants.BlockYakusouSeed2 && blockIdSet[7] == DQPlants.BlockYakusouSeed2 && blockIdSet[8] == DQPlants.BlockYakusouSeed2)
          		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed1, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
         			}
          			return;
          		}
-        		if(blockIdSet[6] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockTikaraSeed2 &&
-                   blockIdSet[0] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockYakusouSeed2)
+        		if(blockIdSet[6] == DQPlants.BlockTikaraSeed2 && blockIdSet[7] == DQPlants.BlockTikaraSeed2 && blockIdSet[8] == DQPlants.BlockTikaraSeed2 &&
+                   blockIdSet[0] == DQPlants.BlockYakusouSeed2 && blockIdSet[1] == DQPlants.BlockYakusouSeed2 && blockIdSet[2] == DQPlants.BlockYakusouSeed2)
               	{
              		if (par5Random.nextInt(4) == 0)
              		{
-             			par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed1, 2, 2);
+             			par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed1, 2, 2);
              		}else
              		{
-             			par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+             			par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
              		}
               		return;
               	}
 
         		//炎の種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockMamoriSeed2 &&
-                   blockIdSet[6] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockSubayasaSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockMamoriSeed2 && blockIdSet[1] == DQPlants.BlockMamoriSeed2 && blockIdSet[2] == DQPlants.BlockMamoriSeed2 &&
+                   blockIdSet[6] == DQPlants.BlockSubayasaSeed2 && blockIdSet[7] == DQPlants.BlockSubayasaSeed2 && blockIdSet[8] == DQPlants.BlockSubayasaSeed2)
           		{
          			if (par5Random.nextInt(4) == 0)
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed1, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed1, 2, 2);
          			}else
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
          			}
           			return;
           		}
-        		if(blockIdSet[6] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockMamoriSeed2 &&
-                   blockIdSet[0] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockSubayasaSeed2)
+        		if(blockIdSet[6] == DQPlants.BlockMamoriSeed2 && blockIdSet[7] == DQPlants.BlockMamoriSeed2 && blockIdSet[8] == DQPlants.BlockMamoriSeed2 &&
+                   blockIdSet[0] == DQPlants.BlockSubayasaSeed2 && blockIdSet[1] == DQPlants.BlockSubayasaSeed2 && blockIdSet[2] == DQPlants.BlockSubayasaSeed2)
            		{
           			if (par5Random.nextInt(4) == 0)
           			{
-          				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed1, 2, 2);
+          				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed1, 2, 2);
           			}else
           			{
-          				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+          				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
           			}
            			return;
            		}
 
         		//癒しの種2
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockIyasiSeed1 && blockIdSet[1] == DQM.seedBlocks.BlockIyasiSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockIyasiSeed1 &&
-        		   blockIdSet[6] == DQM.seedBlocks.BlockIyasiSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockIyasiSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockIyasiSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockIyasiSeed1 && blockIdSet[1] == DQPlants.BlockIyasiSeed1 && blockIdSet[2] == DQPlants.BlockIyasiSeed1 &&
+        		   blockIdSet[6] == DQPlants.BlockIyasiSeed1 && blockIdSet[7] == DQPlants.BlockIyasiSeed1 && blockIdSet[8] == DQPlants.BlockIyasiSeed1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed1, 2, 2);
         			}
         			return;
         		}
 
         		//炎の種2
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockHonooSeed1 && blockIdSet[1] == DQM.seedBlocks.BlockHonooSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockHonooSeed1 &&
-         		   blockIdSet[6] == DQM.seedBlocks.BlockHonooSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockHonooSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockHonooSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockHonooSeed1 && blockIdSet[1] == DQPlants.BlockHonooSeed1 && blockIdSet[2] == DQPlants.BlockHonooSeed1 &&
+         		   blockIdSet[6] == DQPlants.BlockHonooSeed1 && blockIdSet[7] == DQPlants.BlockHonooSeed1 && blockIdSet[8] == DQPlants.BlockHonooSeed1)
          		{
          			if (par5Random.nextInt(4) == 0)
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed2, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed2, 2, 2);
          			}else
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed1, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed1, 2, 2);
          			}
          			return;
          		}
         	}
-        	if(blockIdSet[1] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockDokukesisouSeed2)
+        	if(blockIdSet[1] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[7] == DQPlants.BlockDokukesisouSeed2)
         	{
         		//薬草
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockYakusouSeed2 &&
-        		   blockIdSet[2] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockYakusouSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockYakusouSeed2 && blockIdSet[3] == DQPlants.BlockYakusouSeed2 && blockIdSet[6] == DQPlants.BlockYakusouSeed2 &&
+        		   blockIdSet[2] == DQPlants.BlockYakusouSeed2 && blockIdSet[5] == DQPlants.BlockYakusouSeed2 && blockIdSet[8] == DQPlants.BlockYakusouSeed2)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockYakusouSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockYakusouSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockYakusouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockYakusouSeed2, 2, 2);
         			}
         			return;
         		}
         		//毒消し薬
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockDokukesisouSeed2 &&
-             	   blockIdSet[2] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockDokukesisouSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockDokukesisouSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[3] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[6] == DQPlants.BlockDokukesisouSeed2 &&
+             	   blockIdSet[2] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[5] == DQPlants.BlockDokukesisouSeed2 && blockIdSet[8] == DQPlants.BlockDokukesisouSeed2)
              	{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
         			}
              		return;
              	}
         		//守りの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockMamoriSeed2 &&
-                   blockIdSet[2] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockMamoriSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockMamoriSeed2 && blockIdSet[3] == DQPlants.BlockMamoriSeed2 && blockIdSet[6] == DQPlants.BlockMamoriSeed2 &&
+                   blockIdSet[2] == DQPlants.BlockMamoriSeed2 && blockIdSet[5] == DQPlants.BlockMamoriSeed2 && blockIdSet[8] == DQPlants.BlockMamoriSeed2)
           		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMamoriSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMamoriSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMamoriSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMamoriSeed2, 2, 2);
         			}
           			return;
           		}
         		//素早さの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockSubayasaSeed2 &&
-                   blockIdSet[2] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockSubayasaSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockSubayasaSeed2 && blockIdSet[3] == DQPlants.BlockSubayasaSeed2 && blockIdSet[6] == DQPlants.BlockSubayasaSeed2 &&
+                   blockIdSet[2] == DQPlants.BlockSubayasaSeed2 && blockIdSet[5] == DQPlants.BlockSubayasaSeed2 && blockIdSet[8] == DQPlants.BlockSubayasaSeed2)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockSubayasaSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockSubayasaSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockSubayasaSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockSubayasaSeed2, 2, 2);
         			}
         			return;
         		}
         		//力の種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockTikaraSeed2 &&
-                   blockIdSet[2] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockTikaraSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockTikaraSeed2 && blockIdSet[3] == DQPlants.BlockTikaraSeed2 && blockIdSet[6] == DQPlants.BlockTikaraSeed2 &&
+                   blockIdSet[2] == DQPlants.BlockTikaraSeed2 && blockIdSet[5] == DQPlants.BlockTikaraSeed2 && blockIdSet[8] == DQPlants.BlockTikaraSeed2)
          		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockTikaraSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockTikaraSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockTikaraSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockTikaraSeed2, 2, 2);
         			}
          			return;
          		}
 
         		//癒しの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockTikaraSeed2 &&
-                   blockIdSet[2] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockYakusouSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockTikaraSeed2 && blockIdSet[3] == DQPlants.BlockTikaraSeed2 && blockIdSet[6] == DQPlants.BlockTikaraSeed2 &&
+                   blockIdSet[2] == DQPlants.BlockYakusouSeed2 && blockIdSet[5] == DQPlants.BlockYakusouSeed2 && blockIdSet[8] == DQPlants.BlockYakusouSeed2)
          		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed1, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
         			}
          			return;
          		}
-        		if(blockIdSet[2] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockTikaraSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockTikaraSeed2 &&
-                   blockIdSet[0] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockYakusouSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockYakusouSeed2)
+        		if(blockIdSet[2] == DQPlants.BlockTikaraSeed2 && blockIdSet[5] == DQPlants.BlockTikaraSeed2 && blockIdSet[8] == DQPlants.BlockTikaraSeed2 &&
+                   blockIdSet[0] == DQPlants.BlockYakusouSeed2 && blockIdSet[3] == DQPlants.BlockYakusouSeed2 && blockIdSet[6] == DQPlants.BlockYakusouSeed2)
               	{
              		if (par5Random.nextInt(4) == 0)
              		{
-             			par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed1, 2, 2);
+             			par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed1, 2, 2);
              		}else
              		{
-             			par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+             			par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
              		}
               		return;
               	}
 
         		//炎の種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockMamoriSeed2 &&
-                   blockIdSet[2] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockSubayasaSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockMamoriSeed2 && blockIdSet[3] == DQPlants.BlockMamoriSeed2 && blockIdSet[6] == DQPlants.BlockMamoriSeed2 &&
+                   blockIdSet[2] == DQPlants.BlockSubayasaSeed2 && blockIdSet[5] == DQPlants.BlockSubayasaSeed2 && blockIdSet[8] == DQPlants.BlockSubayasaSeed2)
           		{
          			if (par5Random.nextInt(4) == 0)
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed1, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed1, 2, 2);
          			}else
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
          			}
           			return;
           		}
-        		if(blockIdSet[2] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockMamoriSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockMamoriSeed2 &&
-                   blockIdSet[0] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockSubayasaSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockSubayasaSeed2)
+        		if(blockIdSet[2] == DQPlants.BlockMamoriSeed2 && blockIdSet[5] == DQPlants.BlockMamoriSeed2 && blockIdSet[8] == DQPlants.BlockMamoriSeed2 &&
+                   blockIdSet[0] == DQPlants.BlockSubayasaSeed2 && blockIdSet[3] == DQPlants.BlockSubayasaSeed2 && blockIdSet[6] == DQPlants.BlockSubayasaSeed2)
            		{
           			if (par5Random.nextInt(4) == 0)
           			{
-          				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed1, 2, 2);
+          				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed1, 2, 2);
           			}else
           			{
-          				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockDokukesisouSeed2, 2, 2);
+          				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockDokukesisouSeed2, 2, 2);
           			}
            			return;
            		}
 
         		//癒しの種2
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockIyasiSeed1 && blockIdSet[3] == DQM.seedBlocks.BlockIyasiSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockIyasiSeed1 &&
-        		   blockIdSet[2] == DQM.seedBlocks.BlockIyasiSeed1 && blockIdSet[5] == DQM.seedBlocks.BlockIyasiSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockIyasiSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockIyasiSeed1 && blockIdSet[3] == DQPlants.BlockIyasiSeed1 && blockIdSet[6] == DQPlants.BlockIyasiSeed1 &&
+        		   blockIdSet[2] == DQPlants.BlockIyasiSeed1 && blockIdSet[5] == DQPlants.BlockIyasiSeed1 && blockIdSet[8] == DQPlants.BlockIyasiSeed1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed2, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed1, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed1, 2, 2);
         			}
         			return;
         		}
 
         		//炎の種2
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockHonooSeed1 && blockIdSet[3] == DQM.seedBlocks.BlockHonooSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockHonooSeed1 &&
-         		   blockIdSet[2] == DQM.seedBlocks.BlockHonooSeed1 && blockIdSet[5] == DQM.seedBlocks.BlockHonooSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockHonooSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockHonooSeed1 && blockIdSet[3] == DQPlants.BlockHonooSeed1 && blockIdSet[6] == DQPlants.BlockHonooSeed1 &&
+         		   blockIdSet[2] == DQPlants.BlockHonooSeed1 && blockIdSet[5] == DQPlants.BlockHonooSeed1 && blockIdSet[8] == DQPlants.BlockHonooSeed1)
          		{
          			if (par5Random.nextInt(4) == 0)
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed2, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed2, 2, 2);
          			}else
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed1, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed1, 2, 2);
          			}
          			return;
          		}
         	}
 
         	//毒消し薬Lv3ベース
-        	if(blockIdSet[3] == DQM.seedBlocks.BlockDokukesisouSeed3 && blockIdSet[5] == DQM.seedBlocks.BlockDokukesisouSeed3)
+        	if(blockIdSet[3] == DQPlants.BlockDokukesisouSeed3 && blockIdSet[5] == DQPlants.BlockDokukesisouSeed3)
         	{
         		//癒しの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockIyasiSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockIyasiSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockIyasiSeed2 &&
-        		   blockIdSet[6] == DQM.seedBlocks.BlockIyasiSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockIyasiSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockIyasiSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockIyasiSeed2 && blockIdSet[1] == DQPlants.BlockIyasiSeed2 && blockIdSet[2] == DQPlants.BlockIyasiSeed2 &&
+        		   blockIdSet[6] == DQPlants.BlockIyasiSeed2 && blockIdSet[7] == DQPlants.BlockIyasiSeed2 && blockIdSet[8] == DQPlants.BlockIyasiSeed2)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed2, 2, 2);
         			}
         			return;
         		}
 
         		//炎の種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockHonooSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockHonooSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockHonooSeed2 &&
-         		   blockIdSet[6] == DQM.seedBlocks.BlockHonooSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockHonooSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockHonooSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockHonooSeed2 && blockIdSet[1] == DQPlants.BlockHonooSeed2 && blockIdSet[2] == DQPlants.BlockHonooSeed2 &&
+         		   blockIdSet[6] == DQPlants.BlockHonooSeed2 && blockIdSet[7] == DQPlants.BlockHonooSeed2 && blockIdSet[8] == DQPlants.BlockHonooSeed2)
          		{
          			if (par5Random.nextInt(4) == 0)
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed3, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed3, 2, 2);
          			}else
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed2, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed2, 2, 2);
          			}
          			return;
          		}
 
         		//黄金の実
         		/*
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[1] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed1 &&
-        		   blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[7] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed1)
+        		if(blockIdSet[0] == DQPlants.BlockOugonSeed1 && blockIdSet[1] == DQPlants.BlockOugonSeed1 && blockIdSet[2] == DQPlants.BlockOugonSeed1 &&
+        		   blockIdSet[6] == DQPlants.BlockOugonSeed1 && blockIdSet[7] == DQPlants.BlockOugonSeed1 && blockIdSet[8] == DQPlants.BlockOugonSeed1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed2, 2, 2);
         			}else
         			{
         				par1World.setBlock(par2, par3+1, par4, Block.tallGrass, 0, 2);
@@ -901,12 +903,12 @@ public class DqmHoujyouDirt extends Block
 
         		//黄金の実2
         		/*
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[1] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed2 &&
-        		   blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[7] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockOugonSeed2 && blockIdSet[1] == DQPlants.BlockOugonSeed2 && blockIdSet[2] == DQPlants.BlockOugonSeed2 &&
+        		   blockIdSet[6] == DQPlants.BlockOugonSeed2 && blockIdSet[7] == DQPlants.BlockOugonSeed2 && blockIdSet[8] == DQPlants.BlockOugonSeed2)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed3, 2, 2);
         			}else
         			{
         				par1World.setBlock(par2, par3+1, par4, Block.tallGrass, 0, 2);
@@ -915,45 +917,45 @@ public class DqmHoujyouDirt extends Block
         		}
         		*/
         	}
-        	if(blockIdSet[1] == DQM.seedBlocks.BlockDokukesisouSeed3 && blockIdSet[7] == DQM.seedBlocks.BlockDokukesisouSeed3)
+        	if(blockIdSet[1] == DQPlants.BlockDokukesisouSeed3 && blockIdSet[7] == DQPlants.BlockDokukesisouSeed3)
         	{
         		//癒しの種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockIyasiSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockIyasiSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockIyasiSeed2 &&
-        		   blockIdSet[2] == DQM.seedBlocks.BlockIyasiSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockIyasiSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockIyasiSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockIyasiSeed2 && blockIdSet[3] == DQPlants.BlockIyasiSeed2 && blockIdSet[6] == DQPlants.BlockIyasiSeed2 &&
+        		   blockIdSet[2] == DQPlants.BlockIyasiSeed2 && blockIdSet[5] == DQPlants.BlockIyasiSeed2 && blockIdSet[8] == DQPlants.BlockIyasiSeed2)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed3, 2, 2);
         			}else
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed2, 2, 2);
         			}
         			return;
         		}
 
         		//炎の種
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockHonooSeed2 && blockIdSet[3] == DQM.seedBlocks.BlockHonooSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockHonooSeed2 &&
-         		   blockIdSet[2] == DQM.seedBlocks.BlockHonooSeed2 && blockIdSet[5] == DQM.seedBlocks.BlockHonooSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockHonooSeed2)
+        		if(blockIdSet[0] == DQPlants.BlockHonooSeed2 && blockIdSet[3] == DQPlants.BlockHonooSeed2 && blockIdSet[6] == DQPlants.BlockHonooSeed2 &&
+         		   blockIdSet[2] == DQPlants.BlockHonooSeed2 && blockIdSet[5] == DQPlants.BlockHonooSeed2 && blockIdSet[8] == DQPlants.BlockHonooSeed2)
          		{
          			if (par5Random.nextInt(4) == 0)
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed3, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed3, 2, 2);
          			}else
          			{
-         				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed2, 2, 2);
+         				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed2, 2, 2);
          			}
          			return;
          		}
 
         		//黄金の実
         		/*
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed1 &&
+        		if(blockIdSet[0] == DQPlants.BlockOugonSeed1 && blockIdSet[8] == DQPlants.BlockOugonSeed1 && blockIdSet[2] == DQPlants.BlockOugonSeed1 && blockIdSet[6] == DQPlants.BlockOugonSeed1 &&
         	       baseIdSet[1] == DqmItemList2.DqmOreBlocks && baseIdSet[3] == DqmItemList2.DqmOreBlocks && baseIdSet[5] == DqmItemList2.DqmOreBlocks && baseIdSet[7] == DqmItemList2.DqmOreBlocks &&
         	       baseMetaSet[1] == 1 && baseMetaSet[3] == 9 && baseMetaSet[5] == 9 && baseMetaSet[7] == 1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed2, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed2, 2, 2);
         			}else
         			{
         				par1World.setBlock(par2, par3+1, par4, Block.tallGrass, 0, 2);
@@ -964,13 +966,13 @@ public class DqmHoujyouDirt extends Block
 
         		//黄金の実2
         		/*
-        		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed2 &&  blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed2 &&
+        		if(blockIdSet[0] == DQPlants.BlockOugonSeed2 && blockIdSet[2] == DQPlants.BlockOugonSeed2 && blockIdSet[6] == DQPlants.BlockOugonSeed2 &&  blockIdSet[8] == DQPlants.BlockOugonSeed2 &&
      	           baseIdSet[1] == DqmItemList2.DqmOreBlocks && baseIdSet[3] == DqmItemList2.DqmOreBlocks && baseIdSet[5] == DqmItemList2.DqmOreBlocks && baseIdSet[7] == DqmItemList2.DqmOreBlocks &&
         	       baseMetaSet[1] == 1 && baseMetaSet[3] == 9 && baseMetaSet[5] == 9 && baseMetaSet[7] == 1)
         		{
         			if (par5Random.nextInt(4) == 0)
         			{
-        				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed3, 2, 2);
+        				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed3, 2, 2);
         			}else
         			{
         				par1World.setBlock(par2, par3+1, par4, Block.tallGrass, 0, 2);
@@ -982,13 +984,13 @@ public class DqmHoujyouDirt extends Block
 
 
     		//黄金の実3
-    		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed3 && blockIdSet[1] == DQM.seedBlocks.BlockOugonSeed3 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed3 &&
-    		   blockIdSet[3] == DQM.seedBlocks.BlockOugonSeed3 && blockIdSet[5] == DQM.seedBlocks.BlockOugonSeed3 &&
-    		   blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed3 && blockIdSet[7] == DQM.seedBlocks.BlockOugonSeed3 && blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed3)
+    		if(blockIdSet[0] == DQPlants.BlockOugonSeed3 && blockIdSet[1] == DQPlants.BlockOugonSeed3 && blockIdSet[2] == DQPlants.BlockOugonSeed3 &&
+    		   blockIdSet[3] == DQPlants.BlockOugonSeed3 && blockIdSet[5] == DQPlants.BlockOugonSeed3 &&
+    		   blockIdSet[6] == DQPlants.BlockOugonSeed3 && blockIdSet[7] == DQPlants.BlockOugonSeed3 && blockIdSet[8] == DQPlants.BlockOugonSeed3)
     		{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed4, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed4, 2, 2);
     			}else
     			{
     				par1World.setBlock(par2, par3+1, par4, Blocks.tallgrass, 0, 2);
@@ -1015,91 +1017,91 @@ public class DqmHoujyouDirt extends Block
         if(canGerm)
         {
          	//魔法の実
-        	if(blockIdSet[0] == DQM.seedBlocks.BlockIyasiSeed3 && blockIdSet[2] == DQM.seedBlocks.BlockIyasiSeed3 && blockIdSet[6] == DQM.seedBlocks.BlockIyasiSeed3 && blockIdSet[8] == DQM.seedBlocks.BlockIyasiSeed3 &&
-        	   baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+        	if(blockIdSet[0] == DQPlants.BlockIyasiSeed3 && blockIdSet[2] == DQPlants.BlockIyasiSeed3 && blockIdSet[6] == DQPlants.BlockIyasiSeed3 && blockIdSet[8] == DQPlants.BlockIyasiSeed3 &&
+        	   baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
         	   baseMetaSet[1] == 2 && baseMetaSet[3] == 2 && baseMetaSet[5] == 2 && baseMetaSet[7] == 2)
         	{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMahounomiSeed1, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMahounomiSeed1, 2, 2);
     			}else
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockIyasiSeed3, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockIyasiSeed3, 2, 2);
     			}
     			return;
         	}
 
         	//魔法の実2
-        	if(blockIdSet[0] == DQM.seedBlocks.BlockMahounomiSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockMahounomiSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockMahounomiSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockMahounomiSeed1 &&
-        	   baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+        	if(blockIdSet[0] == DQPlants.BlockMahounomiSeed1 && blockIdSet[2] == DQPlants.BlockMahounomiSeed1 && blockIdSet[6] == DQPlants.BlockMahounomiSeed1 && blockIdSet[8] == DQPlants.BlockMahounomiSeed1 &&
+        	   baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
         	   baseMetaSet[1] == 8 && baseMetaSet[3] == 8 && baseMetaSet[5] == 8 && baseMetaSet[7] == 8)
         	{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMahounomiSeed2, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMahounomiSeed2, 2, 2);
     			}else
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMahounomiSeed1, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMahounomiSeed1, 2, 2);
     			}
     			return;
         	}
 
         	//魔法の実3
-        	if(blockIdSet[0] == DQM.seedBlocks.BlockMahounomiSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockMahounomiSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockMahounomiSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockMahounomiSeed2 &&
-        	   baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+        	if(blockIdSet[0] == DQPlants.BlockMahounomiSeed2 && blockIdSet[2] == DQPlants.BlockMahounomiSeed2 && blockIdSet[6] == DQPlants.BlockMahounomiSeed2 && blockIdSet[8] == DQPlants.BlockMahounomiSeed2 &&
+        	   baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
         	   baseMetaSet[1] == 12 && baseMetaSet[3] == 12 && baseMetaSet[5] == 12 && baseMetaSet[7] == 12)
         	{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMahounomiSeed3, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMahounomiSeed3, 2, 2);
     			}else
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMahounomiSeed2, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMahounomiSeed2, 2, 2);
     			}
     			return;
         	}
 
         	//魔力の実
-        	if(blockIdSet[0] == DQM.seedBlocks.BlockHonooSeed3 && blockIdSet[2] == DQM.seedBlocks.BlockHonooSeed3 && blockIdSet[6] == DQM.seedBlocks.BlockHonooSeed3 && blockIdSet[8] == DQM.seedBlocks.BlockHonooSeed3 &&
-        	   baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+        	if(blockIdSet[0] == DQPlants.BlockHonooSeed3 && blockIdSet[2] == DQPlants.BlockHonooSeed3 && blockIdSet[6] == DQPlants.BlockHonooSeed3 && blockIdSet[8] == DQPlants.BlockHonooSeed3 &&
+        	   baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
                baseMetaSet[1] == 5 && baseMetaSet[3] == 5 && baseMetaSet[5] == 5 && baseMetaSet[7] == 5)
         	{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMaryokunotaneSeed1, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMaryokunotaneSeed1, 2, 2);
     			}else
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockHonooSeed3, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockHonooSeed3, 2, 2);
     			}
     			return;
         	}
 
         	//魔力の実2
-        	if(blockIdSet[0] == DQM.seedBlocks.BlockMaryokunotaneSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockMaryokunotaneSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockMaryokunotaneSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockMaryokunotaneSeed1 &&
-        	   baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+        	if(blockIdSet[0] == DQPlants.BlockMaryokunotaneSeed1 && blockIdSet[2] == DQPlants.BlockMaryokunotaneSeed1 && blockIdSet[6] == DQPlants.BlockMaryokunotaneSeed1 && blockIdSet[8] == DQPlants.BlockMaryokunotaneSeed1 &&
+        	   baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
                baseMetaSet[1] == 4 && baseMetaSet[3] == 4 && baseMetaSet[5] == 4 && baseMetaSet[7] == 4)
         	{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMaryokunotaneSeed2, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMaryokunotaneSeed2, 2, 2);
     			}else
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMaryokunotaneSeed1, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMaryokunotaneSeed1, 2, 2);
     			}
     			return;
         	}
 
         	//魔力の実3
-        	if(blockIdSet[0] == DQM.seedBlocks.BlockMaryokunotaneSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockMaryokunotaneSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockMaryokunotaneSeed2 && blockIdSet[8] == DQM.seedBlocks.BlockMaryokunotaneSeed2 &&
-        	   baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+        	if(blockIdSet[0] == DQPlants.BlockMaryokunotaneSeed2 && blockIdSet[2] == DQPlants.BlockMaryokunotaneSeed2 && blockIdSet[6] == DQPlants.BlockMaryokunotaneSeed2 && blockIdSet[8] == DQPlants.BlockMaryokunotaneSeed2 &&
+        	   baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
                baseMetaSet[1] == 7 && baseMetaSet[3] == 7 && baseMetaSet[5] == 7 && baseMetaSet[7] == 7)
         	{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMaryokunotaneSeed3, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMaryokunotaneSeed3, 2, 2);
     			}else
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockMaryokunotaneSeed2, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockMaryokunotaneSeed2, 2, 2);
     			}
     			return;
         	}
@@ -1110,14 +1112,14 @@ public class DqmHoujyouDirt extends Block
             //System.out.println("TEST7" + baseMetaSet[1] + "/" + baseMetaSet[3] + "/" + baseMetaSet[5] + "/" + baseMetaSet[7]);
 
         	//黄金の実
-        	if(blockIdSet[0] == DQM.seedBlocks.BlockMaryokunotaneSeed3 && blockIdSet[8] == DQM.seedBlocks.BlockMaryokunotaneSeed3 &&
-        	   blockIdSet[2] == DQM.seedBlocks.BlockMahounomiSeed3 && blockIdSet[6] == DQM.seedBlocks.BlockMahounomiSeed3 &&
-         	   baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+        	if(blockIdSet[0] == DQPlants.BlockMaryokunotaneSeed3 && blockIdSet[8] == DQPlants.BlockMaryokunotaneSeed3 &&
+        	   blockIdSet[2] == DQPlants.BlockMahounomiSeed3 && blockIdSet[6] == DQPlants.BlockMahounomiSeed3 &&
+         	   baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
                baseMetaSet[1] == 9 && baseMetaSet[3] == 1 && baseMetaSet[5] == 1 && baseMetaSet[7] == 9)
          	{
      			if (par5Random.nextInt(8) == 0)
      			{
-     				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed1, 2, 2);
+     				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed1, 2, 2);
      			}else
      			{
      				par1World.setBlock(par2, par3+1, par4, Blocks.tallgrass , 0, 2);
@@ -1125,14 +1127,14 @@ public class DqmHoujyouDirt extends Block
      			return;
          	}
 
-        	if(blockIdSet[2] == DQM.seedBlocks.BlockMaryokunotaneSeed3 && blockIdSet[6] == DQM.seedBlocks.BlockMaryokunotaneSeed3 &&
-         	   blockIdSet[0] == DQM.seedBlocks.BlockMahounomiSeed3 && blockIdSet[8] == DQM.seedBlocks.BlockMahounomiSeed3 &&
-          	   baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+        	if(blockIdSet[2] == DQPlants.BlockMaryokunotaneSeed3 && blockIdSet[6] == DQPlants.BlockMaryokunotaneSeed3 &&
+         	   blockIdSet[0] == DQPlants.BlockMahounomiSeed3 && blockIdSet[8] == DQPlants.BlockMahounomiSeed3 &&
+          	   baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
                baseMetaSet[1] == 1 && baseMetaSet[3] == 9 && baseMetaSet[5] == 9 && baseMetaSet[7] == 1)
           	{
       			if (par5Random.nextInt(8) == 0)
       			{
-      				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed1, 2, 2);
+      				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed1, 2, 2);
       			}else
       			{
       				par1World.setBlock(par2, par3+1, par4, Blocks.tallgrass, 0, 2);
@@ -1141,26 +1143,26 @@ public class DqmHoujyouDirt extends Block
           	}
 
     		//黄金の実2
-    		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed1 &&
-    	       baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+    		if(blockIdSet[0] == DQPlants.BlockOugonSeed1 && blockIdSet[8] == DQPlants.BlockOugonSeed1 && blockIdSet[2] == DQPlants.BlockOugonSeed1 && blockIdSet[6] == DQPlants.BlockOugonSeed1 &&
+    	       baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
     	       baseMetaSet[1] == 1 && baseMetaSet[3] == 9 && baseMetaSet[5] == 9 && baseMetaSet[7] == 1)
     		{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed2, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed2, 2, 2);
     			}else
     			{
     				par1World.setBlock(par2, par3+1, par4, Blocks.tallgrass, 0, 2);
     			}
     			return;
     		}
-    		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed1 && blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed1 &&
-    	       baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+    		if(blockIdSet[0] == DQPlants.BlockOugonSeed1 && blockIdSet[8] == DQPlants.BlockOugonSeed1 && blockIdSet[2] == DQPlants.BlockOugonSeed1 && blockIdSet[6] == DQPlants.BlockOugonSeed1 &&
+    	       baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
     	       baseMetaSet[1] == 9 && baseMetaSet[3] == 1 && baseMetaSet[5] == 1 && baseMetaSet[7] == 9)
     		{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed2, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed2, 2, 2);
     			}else
     			{
     				par1World.setBlock(par2, par3+1, par4, Blocks.tallgrass, 0, 2);
@@ -1169,13 +1171,13 @@ public class DqmHoujyouDirt extends Block
     		}
 
     		//黄金の実3
-    		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed2 &&  blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed2 &&
- 	           baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+    		if(blockIdSet[0] == DQPlants.BlockOugonSeed2 && blockIdSet[2] == DQPlants.BlockOugonSeed2 && blockIdSet[6] == DQPlants.BlockOugonSeed2 &&  blockIdSet[8] == DQPlants.BlockOugonSeed2 &&
+ 	           baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
     	       baseMetaSet[1] == 1 && baseMetaSet[3] == 9 && baseMetaSet[5] == 9 && baseMetaSet[7] == 1)
     		{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed3, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed3, 2, 2);
     			}else
     			{
     				par1World.setBlock(par2, par3+1, par4, Blocks.tallgrass, 0, 2);
@@ -1183,13 +1185,13 @@ public class DqmHoujyouDirt extends Block
     			return;
     		}
 
-    		if(blockIdSet[0] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[2] == DQM.seedBlocks.BlockOugonSeed2 && blockIdSet[6] == DQM.seedBlocks.BlockOugonSeed2 &&  blockIdSet[8] == DQM.seedBlocks.BlockOugonSeed2 &&
- 	           baseIdSet[1] == DQM.ores.DqmOreBlocks && baseIdSet[3] == DQM.ores.DqmOreBlocks && baseIdSet[5] == DQM.ores.DqmOreBlocks && baseIdSet[7] == DQM.ores.DqmOreBlocks &&
+    		if(blockIdSet[0] == DQPlants.BlockOugonSeed2 && blockIdSet[2] == DQPlants.BlockOugonSeed2 && blockIdSet[6] == DQPlants.BlockOugonSeed2 &&  blockIdSet[8] == DQPlants.BlockOugonSeed2 &&
+ 	           baseIdSet[1] == DQOres.DqmOreBlocks && baseIdSet[3] == DQOres.DqmOreBlocks && baseIdSet[5] == DQOres.DqmOreBlocks && baseIdSet[7] == DQOres.DqmOreBlocks &&
     	       baseMetaSet[1] == 9 && baseMetaSet[3] == 1 && baseMetaSet[5] == 1 && baseMetaSet[7] == 9)
     		{
     			if (par5Random.nextInt(4) == 0)
     			{
-    				par1World.setBlock(par2, par3+1, par4, DQM.seedBlocks.BlockOugonSeed3, 2, 2);
+    				par1World.setBlock(par2, par3+1, par4, DQPlants.BlockOugonSeed3, 2, 2);
     			}else
     			{
     				par1World.setBlock(par2, par3+1, par4, Blocks.tallgrass, 0, 2);

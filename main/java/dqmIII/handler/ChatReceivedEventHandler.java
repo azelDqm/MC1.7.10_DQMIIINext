@@ -59,49 +59,58 @@ public class ChatReceivedEventHandler {
         	}
 
 
-        	if (chatMessage.indexOf("<") == -1 && chatMessage.indexOf(">") == -1 && !(chatMessage.substring(0, 8).equalsIgnoreCase("!player.")))
+        	if(DQM.conf.CLGuiLogVis == 1 || DQM.conf.CLGuiLogWindowOff == 0)
         	{
-        		//DQM.proxy.SetChatLogMessage(event.message);
-        		//event.setCanceled(true);
+	        	if (chatMessage.indexOf("<") == -1 && chatMessage.indexOf(">") == -1 && !(chatMessage.substring(0, 8).equalsIgnoreCase("!player.")))
+	        	{
+	        		//DQM.proxy.SetChatLogMessage(event.message);
+	        		//event.setCanceled(true);
 
-        		//System.out.println("通過B");
-    	    	if (DQM.dqmLog[0] == "")
-    	    	{
-    	    		DQM.dqmLog[0] = chatMessage;
-    	    	}else if (DQM.dqmLog[1] == "")
-    	    	{
-    	    		DQM.dqmLog[1] = chatMessage;
-    	    	}else if (DQM.dqmLog[2] == "")
-    	    	{
-    	    		DQM.dqmLog[2] = chatMessage;
-    	    	}else if (DQM.dqmLog[3] == "")
-    	    	{
-    	    		DQM.dqmLog[3] = chatMessage;
-    	    	}else if (DQM.dqmLog[4] == "")
-    	    	{
-    	    		DQM.dqmLog[4] = chatMessage;
-    	    	}else if (DQM.dqmLog[5] == "")
-    	    	{
-    	    		DQM.dqmLog[5] = chatMessage;
-    	    	}else if (DQM.dqmLog[6] == "")
-    	    	{
-    	    		DQM.dqmLog[6] = chatMessage;
-    	    	}else if (DQM.dqmLog[7] == "")
-    	    	{
-    	    		DQM.dqmLog[7] = chatMessage;
-    	    	}else
-    	    	{
-	    			DQM.dqmLog[0] = DQM.dqmLog[1];
-	    			DQM.dqmLog[1] = DQM.dqmLog[2];
-	    			DQM.dqmLog[2] = DQM.dqmLog[3];
-	    			DQM.dqmLog[3] = DQM.dqmLog[4];
-	    			DQM.dqmLog[4] = DQM.dqmLog[5];
-	    			DQM.dqmLog[5] = DQM.dqmLog[6];
-	    			DQM.dqmLog[6] = DQM.dqmLog[7];
-	    			DQM.dqmLog[7] = chatMessage;
-    	    	}
+	        		//System.out.println("通過B");
+	    	    	if (DQM.dqmLog[0] == "")
+	    	    	{
+	    	    		DQM.dqmLog[0] = chatMessage;
+	    	    	}else if (DQM.dqmLog[1] == "")
+	    	    	{
+	    	    		DQM.dqmLog[1] = chatMessage;
+	    	    	}else if (DQM.dqmLog[2] == "")
+	    	    	{
+	    	    		DQM.dqmLog[2] = chatMessage;
+	    	    	}else if (DQM.dqmLog[3] == "")
+	    	    	{
+	    	    		DQM.dqmLog[3] = chatMessage;
+	    	    	}else if (DQM.dqmLog[4] == "")
+	    	    	{
+	    	    		DQM.dqmLog[4] = chatMessage;
+	    	    	}else if (DQM.dqmLog[5] == "")
+	    	    	{
+	    	    		DQM.dqmLog[5] = chatMessage;
+	    	    	}else if (DQM.dqmLog[6] == "")
+	    	    	{
+	    	    		DQM.dqmLog[6] = chatMessage;
+	    	    	}else if (DQM.dqmLog[7] == "")
+	    	    	{
+	    	    		DQM.dqmLog[7] = chatMessage;
+	    	    	}else
+	    	    	{
+		    			DQM.dqmLog[0] = DQM.dqmLog[1];
+		    			DQM.dqmLog[1] = DQM.dqmLog[2];
+		    			DQM.dqmLog[2] = DQM.dqmLog[3];
+		    			DQM.dqmLog[3] = DQM.dqmLog[4];
+		    			DQM.dqmLog[4] = DQM.dqmLog[5];
+		    			DQM.dqmLog[5] = DQM.dqmLog[6];
+		    			DQM.dqmLog[6] = DQM.dqmLog[7];
+		    			DQM.dqmLog[7] = chatMessage;
+	    	    	}
 
-    	    	event.setCanceled(true);
+	    	    	event.setCanceled(true);
+	        	}
+        	}else if(DQM.conf.CLGuiLogWindowOff == 1)
+        	{
+        		event.message = new ChatComponentTranslation(chatMessage,new Object[] {});
+        	}else if(DQM.conf.CLGuiLogWindowOff == 2)
+        	{
+        		event.setCanceled(true);
         	}
 
         	if(chatMessage.substring(0, 8).equalsIgnoreCase("!player."))

@@ -3,6 +3,7 @@ package dqmIII.dataTable;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQArmors;
 
 public class FuncArmorSetTable {
 
@@ -104,7 +105,7 @@ public class FuncArmorSetTable {
 			setEffect[COUNT] = setEffect[COUNT] + 1;
 			setEffect[DEF] = 12;
 			setEffect[MAG] = 0;
-			if(itemArmor != null && itemArmor.getItem() == DQM.armors.itemTenkuunoyoroi)
+			if(itemArmor != null && itemArmor.getItem() == DQArmors.itemTenkuunoyoroi)
 			{
 				setEffect[ATK] = 12;
 				setEffect[HP] = 100;

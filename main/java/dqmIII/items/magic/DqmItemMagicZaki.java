@@ -8,6 +8,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntityZaki;
 import dqmIII.enums.EnumDqmMagic;
 import dqmIII.items.base.DqmItemMagicBase;
@@ -75,6 +76,7 @@ public class DqmItemMagicZaki extends DqmItemMagicBase{
 			{
 				par3EntityPlayer.addChatMessage(new ChatComponentTranslation("msg.magic.nomp.txt",new Object[] {}));
 				par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.pi", 1.0F, 1.0F);
+				return par1ItemStack;
 			}else
 			{
 				ExtendedPlayerProperties.get(par3EntityPlayer).setMP(epMP - this.getEnumMagic().getMP());
@@ -85,18 +87,18 @@ public class DqmItemMagicZaki extends DqmItemMagicBase{
 
     		MagicEntityZaki[] magic = null;
 
-			if(this == DQM.magics.itemZaki)
+			if(this == DQMagics.itemZaki)
 			{
 				magic = new MagicEntityZaki[1];
 				magic[0] = new MagicEntityZaki(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F);
-			}else if(this == DQM.magics.itemZaraki)
+			}else if(this == DQMagics.itemZaraki)
 			{
 				magic = new MagicEntityZaki[3];
     			for(int cnt = 0;cnt < 3; cnt++)
     			{
     				magic[cnt] = new MagicEntityZaki(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F, (float)(-45.0F + (45.0F * cnt)), 0.0F);
     			}
-			}else if(this == DQM.magics.itemZarakima)
+			}else if(this == DQMagics.itemZarakima)
 			{
 				magic = new MagicEntityZaki[3];
     			for(int cnt = 0;cnt < 3; cnt++)

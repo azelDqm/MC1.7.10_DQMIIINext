@@ -12,6 +12,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeHooks;
 
@@ -372,6 +373,20 @@ public class DqmItemMagicBase extends Item{
 
     	p_77624_3_.add("");
     	p_77624_3_.add(I18n.format("dqm.iteminfo.attackdamage", new Object[]{dam}));
+
+		NBTTagCompound nbt = p_77624_1_.getTagCompound();
+		if(nbt != null)
+		{
+			int medalVal = nbt.getInteger("medalking");
+			//System.out.println("TEST:" + medalVal);
+			if(medalVal > 0)
+			{
+
+	    		String medalValue = I18n.format("msg.medalking.item.txt", new Object[]{medalVal});
+
+				p_77624_3_.add(medalValue);
+			}
+		}
     }
 
     @Override

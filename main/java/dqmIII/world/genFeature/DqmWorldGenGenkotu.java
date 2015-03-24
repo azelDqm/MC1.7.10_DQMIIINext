@@ -7,7 +7,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
-import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
 
 public class DqmWorldGenGenkotu implements IWorldGenerator
 {
@@ -32,7 +32,7 @@ public class DqmWorldGenGenkotu implements IWorldGenerator
 
         if (ran >= 80  && par3World.getBlock(x, y - 1, z) == Blocks.grass)
         {
-            par3World.setBlock(x, y, z, DQM.blocks.DqmBlockGenkotu, rand.nextInt(4), 2);
+            par3World.setBlock(x, y, z, DQBlocks.DqmBlockGenkotu, rand.nextInt(4), 2);
         }
     }
 }

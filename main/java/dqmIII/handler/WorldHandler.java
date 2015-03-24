@@ -3,6 +3,7 @@ package dqmIII.handler;
 import net.minecraftforge.event.terraingen.InitNoiseGensEvent;
 import net.minecraftforge.event.terraingen.PopulateChunkEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import dqmIII.DQM;
 import dqmIII.world.genSpawnerRoom.MapGenSpawnerRoomEnd;
 import dqmIII.world.genSpawnerRoom.MapGenSpawnerRoomNether;
 import dqmIII.world.genSpawnerRoom.MapGenSpawnerRoomOver;
@@ -29,8 +30,12 @@ public class WorldHandler {
 	public void onPopulateChunkEvent(PopulateChunkEvent.Pre event) {
 		// 通常世界(Overworld)にサンプルダンジョンを生成したいのでディメンションIDで通常世界かどうか判断する
 
+		int dim = event.world.provider.dimensionId;
+		String folder = event.world.provider.getSaveFolder();
 
-		if(event.world.provider.dimensionId == 0) {
+		if((DQM.conf.cfg_generateOverSpawnDimType == 0 && DQM.conf.cfg_generateOverSpawn.containsKey(dim)) ||
+		   (DQM.conf.cfg_generateOverSpawnDimType == 1 && DQM.conf.cfg_generateOverSpawnS.containsKey(folder)))
+		{
 			// ８チャンク以内に追加構造物生成に適したチャンクがあるかを調べ、ある場合は生成する追加構造物の構成パーツを決定する
 			mapGenDungeon.func_151539_a(event.chunkProvider, event.world, event.chunkX, event.chunkZ, null);
 			//追加構造物の一部が このチャンク範囲に重複するかどうかを調べ、重複する場合は追加構造物のブロックをチャンク内に設置する
@@ -40,14 +45,18 @@ public class WorldHandler {
 			mapGenDungeon2.generateStructuresInChunk(event.world, event.rand, event.chunkX, event.chunkZ);
 		}
 
-		if(event.world.provider.dimensionId == -1)
+		//if(event.world.provider.dimensionId == -1)
+		if((DQM.conf.cfg_generateNetherSpawnDimType == 0 && DQM.conf.cfg_generateNetherSpawn.containsKey(dim)) ||
+		   (DQM.conf.cfg_generateNetherSpawnDimType == 1 && DQM.conf.cfg_generateNetherSpawnS.containsKey(folder)))
 		{
 			mapGenDungeon3.func_151539_a(event.chunkProvider, event.world, event.chunkX, event.chunkZ, null);
 			mapGenDungeon3.generateStructuresInChunk(event.world, event.rand, event.chunkX, event.chunkZ);
 
 		}
 
-		if(event.world.provider.dimensionId == 1)
+		//if(event.world.provider.dimensionId == 1)
+		if((DQM.conf.cfg_generateEndSpawnDimType == 0 && DQM.conf.cfg_generateEndSpawn.containsKey(dim)) ||
+		   (DQM.conf.cfg_generateEndSpawnDimType == 1 && DQM.conf.cfg_generateEndSpawnS.containsKey(folder)))
 		{
 			mapGenDungeon4.func_151539_a(event.chunkProvider, event.world, event.chunkX, event.chunkZ, null);
 			mapGenDungeon4.generateStructuresInChunk(event.world, event.rand, event.chunkX, event.chunkZ);

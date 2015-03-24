@@ -11,7 +11,8 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQMiscs;
+import dqmIII.api.Items.DQSeeds;
 import dqmIII.enums.EnumDqmNpcTalk;
 import dqmIII.enums.EnumStatFarmingBook;
 import dqmIII.items.base.DqmItemSeedBase;
@@ -121,7 +122,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
 
     		if(var2 == null)
     		{
-    			ItemStack book = new ItemStack(DQM.miscs.itemFarmBook, 1, 0);
+    			ItemStack book = new ItemStack(DQMiscs.itemFarmBook, 1, 0);
 
     			player.inventory.mainInventory[player.inventory.currentItem] = book;
     		}
@@ -133,71 +134,71 @@ public class DqmFarmBookshelf extends BlockBookshelf
     				//System.out.println("DEBUG");
     				int openFlg = 0;
     				int enumId = -1;
-    				if(var2.getItem() == DQM.seeds.itemYakusouSeed)
+    				if(var2.getItem() == DQMSeeds.itemYakusouSeed)
     				{
     					enumId = EnumStatFarmingBook.YAKUSOU2.getId();
     				}
-    				else if(var2.getItem() == DQM.seeds.itemYakusouSeed2)
+    				else if(var2.getItem() == DQMSeeds.itemYakusouSeed2)
     				{
     					enumId = EnumStatFarmingBook.YAKUSOU3.getId();
     				}
-    				else if(var2.getItem() == DQM.seeds.itemDokukesisouSeed)
+    				else if(var2.getItem() == DQMSeeds.itemDokukesisouSeed)
     				{
     					enumId = EnumStatFarmingBook.DOKUKESHI2.getId();
 
-    				}else if(var2.getItem() == DQM.seeds.itemDokukesisouSeed2)
+    				}else if(var2.getItem() == DQMSeeds.itemDokukesisouSeed2)
     				{
     					enumId = EnumStatFarmingBook.DOKUKESHI3.getId();
 
-    				}else if(var2.getItem() == DQM.seeds.itemTikaraSeed)
+    				}else if(var2.getItem() == DQMSeeds.itemTikaraSeed)
     				{
     					enumId = EnumStatFarmingBook.TIKARA2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemTikaraSeed2)
+    				}else if(var2.getItem() == DQMSeeds.itemTikaraSeed2)
     				{
     					enumId = EnumStatFarmingBook.TIKARA3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMamoriSeed)
+    				}else if(var2.getItem() == DQMSeeds.itemMamoriSeed)
     				{
     					enumId = EnumStatFarmingBook.MAMORI2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMamoriSeed2)
+    				}else if(var2.getItem() == DQMSeeds.itemMamoriSeed2)
     				{
     					enumId = EnumStatFarmingBook.MAMORI3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemSubayasaSeed)
+    				}else if(var2.getItem() == DQMSeeds.itemSubayasaSeed)
     				{
     					enumId = EnumStatFarmingBook.SUBAYASA2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemSubayasaSeed2)
+    				}else if(var2.getItem() == DQMSeeds.itemSubayasaSeed2)
     				{
     					enumId = EnumStatFarmingBook.SUBAYASA3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemIyasiSeed)
+    				}else if(var2.getItem() == DQMSeeds.itemIyasiSeed)
     				{
     					enumId = EnumStatFarmingBook.IYASHI2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemIyasiSeed2)
+    				}else if(var2.getItem() == DQMSeeds.itemIyasiSeed2)
     				{
     					enumId = EnumStatFarmingBook.IYASHI3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemHonooSeed)
+    				}else if(var2.getItem() == DQMSeeds.itemHonooSeed)
     				{
     					enumId = EnumStatFarmingBook.HONOO2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemHonooSeed2)
+    				}else if(var2.getItem() == DQMSeeds.itemHonooSeed2)
     				{
     					enumId = EnumStatFarmingBook.HONOO3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMahounomiseed)
+    				}else if(var2.getItem() == DQMSeeds.itemMahounomiseed)
     				{
     					enumId = EnumStatFarmingBook.MAHOUNOMI2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMahounomiseed2)
+    				}else if(var2.getItem() == DQMSeeds.itemMahounomiseed2)
     				{
     					enumId = EnumStatFarmingBook.MAHOUNOMI3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMaryokunotaneseed)
+    				}else if(var2.getItem() == DQMSeeds.itemMaryokunotaneseed)
     				{
     					enumId = EnumStatFarmingBook.MARYOKUNOMI2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMaryokunotaneseed2)
+    				}else if(var2.getItem() == DQMSeeds.itemMaryokunotaneseed2)
     				{
     					enumId = EnumStatFarmingBook.MARYOKUNOMI3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemOugonSeed)
+    				}else if(var2.getItem() == DQMSeeds.itemOugonSeed)
     				{
     					enumId = EnumStatFarmingBook.OUGON2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemOugonSeed2)
+    				}else if(var2.getItem() == DQMSeeds.itemOugonSeed2)
     				{
     					enumId = EnumStatFarmingBook.OUGON3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemOugonSeed3)
+    				}else if(var2.getItem() == DQMSeeds.itemOugonSeed3)
     				{
     					enumId = EnumStatFarmingBook.OUGON4.getId();
     				}
@@ -221,7 +222,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
     				{
     					//変則種系
     					int param = -1;
-    					if(var2.getItem() == DQM.seeds.itemYakusouSeed3)
+    					if(var2.getItem() == DQMSeeds.itemYakusouSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.IYASHI1.getId());
 
@@ -243,7 +244,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemDokukesisouSeed3)
+        				}else if(var2.getItem() == DQMSeeds.itemDokukesisouSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.MARYOKUNOMI1.getId());
 
@@ -289,7 +290,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         					}
 
 
-        				}else if(var2.getItem() == DQM.seeds.itemTikaraSeed3)
+        				}else if(var2.getItem() == DQMSeeds.itemTikaraSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.HONOO1.getId());
 
@@ -311,7 +312,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemMamoriSeed3)
+        				}else if(var2.getItem() == DQMSeeds.itemMamoriSeed3)
         				{
            					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.IYASHI1.getId());
 
@@ -333,7 +334,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemSubayasaSeed3)
+        				}else if(var2.getItem() == DQMSeeds.itemSubayasaSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.HONOO1.getId());
 
@@ -355,7 +356,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemIyasiSeed3)
+        				}else if(var2.getItem() == DQMSeeds.itemIyasiSeed3)
         				{
 
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.MAHOUNOMI1.getId());
@@ -378,7 +379,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemHonooSeed3)
+        				}else if(var2.getItem() == DQMSeeds.itemHonooSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.MARYOKUNOMI1.getId());
 
@@ -400,7 +401,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemMahounomiseed3)
+        				}else if(var2.getItem() == DQMSeeds.itemMahounomiseed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.OUGON1.getId());
 
@@ -422,7 +423,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemMaryokunotaneseed3)
+        				}else if(var2.getItem() == DQMSeeds.itemMaryokunotaneseed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.OUGON1.getId());
 
@@ -463,75 +464,75 @@ public class DqmFarmBookshelf extends BlockBookshelf
     			{
     				System.out.println(var2.getDisplayName());
     			}
-    			if(var2 != null && var2.getItem() instanceof DqmItemSeedBase && var2.getItem() != DQM.seeds.itemOugonSeed4)
+    			if(var2 != null && var2.getItem() instanceof DqmItemSeedBase && var2.getItem() != DQSeeds.itemOugonSeed4)
     			{
     				int openFlg = 0;
     				int enumId = -1;
-    				if(var2.getItem() == DQM.seeds.itemYakusouSeed)
+    				if(var2.getItem() == DQSeeds.itemYakusouSeed)
     				{
     					enumId = EnumStatFarmingBook.YAKUSOU2.getId();
     				}
-    				else if(var2.getItem() == DQM.seeds.itemYakusouSeed2)
+    				else if(var2.getItem() == DQSeeds.itemYakusouSeed2)
     				{
     					enumId = EnumStatFarmingBook.YAKUSOU3.getId();
     				}
-    				else if(var2.getItem() == DQM.seeds.itemDokukesisouSeed)
+    				else if(var2.getItem() == DQSeeds.itemDokukesisouSeed)
     				{
     					enumId = EnumStatFarmingBook.DOKUKESHI2.getId();
 
-    				}else if(var2.getItem() == DQM.seeds.itemDokukesisouSeed2)
+    				}else if(var2.getItem() == DQSeeds.itemDokukesisouSeed2)
     				{
     					enumId = EnumStatFarmingBook.DOKUKESHI3.getId();
 
-    				}else if(var2.getItem() == DQM.seeds.itemTikaraSeed)
+    				}else if(var2.getItem() == DQSeeds.itemTikaraSeed)
     				{
     					enumId = EnumStatFarmingBook.TIKARA2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemTikaraSeed2)
+    				}else if(var2.getItem() == DQSeeds.itemTikaraSeed2)
     				{
     					enumId = EnumStatFarmingBook.TIKARA3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMamoriSeed)
+    				}else if(var2.getItem() == DQSeeds.itemMamoriSeed)
     				{
     					enumId = EnumStatFarmingBook.MAMORI2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMamoriSeed2)
+    				}else if(var2.getItem() == DQSeeds.itemMamoriSeed2)
     				{
     					enumId = EnumStatFarmingBook.MAMORI3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemSubayasaSeed)
+    				}else if(var2.getItem() == DQSeeds.itemSubayasaSeed)
     				{
     					enumId = EnumStatFarmingBook.SUBAYASA2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemSubayasaSeed2)
+    				}else if(var2.getItem() == DQSeeds.itemSubayasaSeed2)
     				{
     					enumId = EnumStatFarmingBook.SUBAYASA3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemIyasiSeed)
+    				}else if(var2.getItem() == DQSeeds.itemIyasiSeed)
     				{
     					enumId = EnumStatFarmingBook.IYASHI2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemIyasiSeed2)
+    				}else if(var2.getItem() == DQSeeds.itemIyasiSeed2)
     				{
     					enumId = EnumStatFarmingBook.IYASHI3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemHonooSeed)
+    				}else if(var2.getItem() == DQSeeds.itemHonooSeed)
     				{
     					enumId = EnumStatFarmingBook.HONOO2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemHonooSeed2)
+    				}else if(var2.getItem() == DQSeeds.itemHonooSeed2)
     				{
     					enumId = EnumStatFarmingBook.HONOO3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMahounomiseed)
+    				}else if(var2.getItem() == DQSeeds.itemMahounomiseed)
     				{
     					enumId = EnumStatFarmingBook.MAHOUNOMI2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMahounomiseed2)
+    				}else if(var2.getItem() == DQSeeds.itemMahounomiseed2)
     				{
     					enumId = EnumStatFarmingBook.MAHOUNOMI3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMaryokunotaneseed)
+    				}else if(var2.getItem() == DQSeeds.itemMaryokunotaneseed)
     				{
     					enumId = EnumStatFarmingBook.MARYOKUNOMI2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemMaryokunotaneseed2)
+    				}else if(var2.getItem() == DQSeeds.itemMaryokunotaneseed2)
     				{
     					enumId = EnumStatFarmingBook.MARYOKUNOMI3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemOugonSeed)
+    				}else if(var2.getItem() == DQSeeds.itemOugonSeed)
     				{
     					enumId = EnumStatFarmingBook.OUGON2.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemOugonSeed2)
+    				}else if(var2.getItem() == DQSeeds.itemOugonSeed2)
     				{
     					enumId = EnumStatFarmingBook.OUGON3.getId();
-    				}else if(var2.getItem() == DQM.seeds.itemOugonSeed3)
+    				}else if(var2.getItem() == DQSeeds.itemOugonSeed3)
     				{
     					enumId = EnumStatFarmingBook.OUGON4.getId();
     				}
@@ -555,7 +556,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
     				{
     					//変則種系
     					int param = -1;
-    					if(var2.getItem() == DQM.seeds.itemYakusouSeed3)
+    					if(var2.getItem() == DQSeeds.itemYakusouSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.IYASHI1.getId());
 
@@ -578,7 +579,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemDokukesisouSeed3)
+        				}else if(var2.getItem() == DQSeeds.itemDokukesisouSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.MARYOKUNOMI1.getId());
 
@@ -625,7 +626,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         					}
 
 
-        				}else if(var2.getItem() == DQM.seeds.itemTikaraSeed3)
+        				}else if(var2.getItem() == DQSeeds.itemTikaraSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.HONOO1.getId());
 
@@ -648,7 +649,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemMamoriSeed3)
+        				}else if(var2.getItem() == DQSeeds.itemMamoriSeed3)
         				{
            					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.IYASHI1.getId());
 
@@ -671,7 +672,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemSubayasaSeed3)
+        				}else if(var2.getItem() == DQSeeds.itemSubayasaSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.HONOO1.getId());
 
@@ -694,7 +695,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemIyasiSeed3)
+        				}else if(var2.getItem() == DQSeeds.itemIyasiSeed3)
         				{
 
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.MAHOUNOMI1.getId());
@@ -718,7 +719,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemHonooSeed3)
+        				}else if(var2.getItem() == DQSeeds.itemHonooSeed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.MARYOKUNOMI1.getId());
 
@@ -741,7 +742,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemMahounomiseed3)
+        				}else if(var2.getItem() == DQSeeds.itemMahounomiseed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.OUGON1.getId());
 
@@ -764,7 +765,7 @@ public class DqmFarmBookshelf extends BlockBookshelf
         						player.addChatMessage(new ChatComponentTranslation("msg.FarmBookshelf.messages.completeYet.txt",new Object[] {}));
         						player.worldObj.playSoundAtEntity(player, "dqm:player.pi", 1.0F, 1.0F);
         					}
-        				}else if(var2.getItem() == DQM.seeds.itemMaryokunotaneseed3)
+        				}else if(var2.getItem() == DQSeeds.itemMaryokunotaneseed3)
         				{
         					param = ExtendedPlayerProperties2.get(player).getFarmRecipe(EnumStatFarmingBook.OUGON1.getId());
 

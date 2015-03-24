@@ -78,6 +78,7 @@ public class DqmItemMagicBehomara extends DqmItemMagicBase{
 			{
 				par3EntityPlayer.addChatMessage(new ChatComponentTranslation("msg.magic.nomp.txt",new Object[] {}));
 				par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.pi", 1.0F, 1.0F);
+				return par1ItemStack;
 			}else
 			{
 				ExtendedPlayerProperties.get(par3EntityPlayer).setMP(epMP - this.getEnumMagic().getMP());

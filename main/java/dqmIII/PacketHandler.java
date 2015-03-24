@@ -5,6 +5,8 @@ import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import cpw.mods.fml.relauncher.Side;
 import dqmIII.packetMessage.MessageClientSound;
 import dqmIII.packetMessage.MessageClientSoundHandler;
+import dqmIII.packetMessage.MessageServerGuiId;
+import dqmIII.packetMessage.MessageServerGuiIdHandler;
 import dqmIII.packetMessage.MessageServerJobChange;
 import dqmIII.packetMessage.MessageServerJobChangeHandler;
 import dqmIII.playerData.MessagePlayerProperties;
@@ -30,6 +32,8 @@ public class PacketHandler {
         INSTANCE.registerMessage(MessagePlayerPropertiesHandler2.class, MessagePlayerProperties2.class, 2, Side.CLIENT);
         INSTANCE.registerMessage(MessagePlayerPropertiesHandler3.class, MessagePlayerProperties3.class, 3, Side.CLIENT);
         INSTANCE.registerMessage(MessageServerJobChangeHandler.class, MessageServerJobChange.class, 4, Side.SERVER);
+
+        INSTANCE.registerMessage(MessageServerGuiIdHandler.class, MessageServerGuiId.class, 5, Side.SERVER);
 
     }
 }

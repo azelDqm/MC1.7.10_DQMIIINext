@@ -4,6 +4,11 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.init.Items;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQAccessories;
+import dqmIII.api.Items.DQArmors;
+import dqmIII.api.Items.DQIngots;
+import dqmIII.api.Items.DQMiscs;
+import dqmIII.api.Items.DQSeeds;
 import dqmIII.enums.EnumDqmMonster;
 
 public class DqmEntityZoma extends DqmMobBaseBoss
@@ -86,211 +91,211 @@ public class DqmEntityZoma extends DqmMobBaseBoss
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.accs.itemSeijukunokubikazari, 1);
+            this.dropItem(DQAccessories.itemSeijukunokubikazari, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.armors.itemMahounokutu, 1);
+            this.dropItem(DQArmors.itemMahounokutu, 1);
         }
         if (DQM.funcMob.getCalcDROP(5, 1))
         {
-            this.dropItem(DQM.miscs.itemGurinoubu, 1);
+            this.dropItem(DQMiscs.itemGurinoubu, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemSeijanohai, 1);
+            this.dropItem(DQMiscs.itemSeijanohai, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemKenjanoisi, 1);
+            this.dropItem(DQMiscs.itemKenjanoisi, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemSeireiseki, 1);
+            this.dropItem(DQMiscs.itemSeireiseki, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.ingots.itemHikarinoisi, 1);
+            this.dropItem(DQIngots.itemHikarinoisi, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemSeireiseki, 1);
+            this.dropItem(DQMiscs.itemSeireiseki, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemAmatuyunoito, 1);
+            this.dropItem(DQMiscs.itemAmatuyunoito, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemSekaijunoha, 1);
+            this.dropItem(DQMiscs.itemSekaijunoha, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.seeds.itemTokuyakusou, 1);
+            this.dropItem(DQSeeds.itemTokuyakusou, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(1, 1))
         {
-            this.dropItem(DQM.miscs.itemZoma, 1);
+            this.dropItem(DQMiscs.itemZoma, 1);
         }
         if (DQM.funcMob.getCalcDROP(2, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(2, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(2, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(2, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal5, 1);
+            this.dropItem(DQMiscs.itemLittlemedal5, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal5, 1);
+            this.dropItem(DQMiscs.itemLittlemedal5, 1);
         }
         if (DQM.funcMob.getCalcDROP(5, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal10, 1);
+            this.dropItem(DQMiscs.itemLittlemedal10, 1);
         }
         if (DQM.funcMob.getCalcDROP(10, 1))
         {
-            this.dropItem(DQM.miscs.itemSaigonokagi, 1);
+            this.dropItem(DQMiscs.itemSaigonokagi, 1);
         }
         if (DQM.funcMob.getCalcDROP(10, 1))
         {
-            this.dropItem(DQM.miscs.itemMysteryEgg, 1);
+            this.dropItem(DQMiscs.itemMysteryEgg, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemSeinarusizuku, 1);
+            this.dropItem(DQMiscs.itemSeinarusizuku, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemSinkanohiseki, 1);
+            this.dropItem(DQMiscs.itemSinkanohiseki, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemRyuunohizake, 1);
+            this.dropItem(DQMiscs.itemRyuunohizake, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemTensinosoma, 1);
+            this.dropItem(DQMiscs.itemTensinosoma, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemKenjanoseisui, 1);
+            this.dropItem(DQMiscs.itemKenjanoseisui, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemUraminohouju, 1);
+            this.dropItem(DQMiscs.itemUraminohouju, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.ingots.itemMisriru2, 1);
+            this.dropItem(DQIngots.itemMisriru2, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.ingots.itemTaiyounoisi2, 1);
+            this.dropItem(DQIngots.itemTaiyounoisi2, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.ingots.itemOriharukon2, 1);
+            this.dropItem(DQIngots.itemOriharukon2, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemGenmaseki, 1);
+            this.dropItem(DQMiscs.itemGenmaseki, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori0, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori0, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori1, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori1, 1);
         }
         if (DQM.funcMob.getCalcDROP(3, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori2, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori2, 1);
         }
         if (DQM.funcMob.getCalcDROP(5, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori3, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori3, 1);
         }
         if (DQM.funcMob.getCalcDROP(10, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori4, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori4, 1);
         }
         if (DQM.funcMob.getCalcDROP(20, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori5, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori5, 1);
         }
         if (DQM.funcMob.getCalcDROP(40, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori6, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori6, 1);
         }
         if (DQM.funcMob.getCalcDROP(80, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori7, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori7, 1);
         }
         if (DQM.funcMob.getCalcDROP(160, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori8, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori8, 1);
         }
         if (DQM.funcMob.getCalcDROP(320, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori9, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori9, 1);
         }
         if (DQM.funcMob.getCalcDROP(640, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori10, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori10, 1);
         }
         if (DQM.funcMob.getCalcDROP(50, 1))
         {
-            this.dropItem(DQM.armors.itemSabitakabuto, 1);
+            this.dropItem(DQArmors.itemSabitakabuto, 1);
         }
         if (DQM.funcMob.getCalcDROP(50, 1))
         {
-            this.dropItem(DQM.armors.itemSabitakabuto, 1);
+            this.dropItem(DQArmors.itemSabitakabuto, 1);
         }
         if (DQM.funcMob.getCalcDROP(50, 1))
         {
-            this.dropItem(DQM.armors.itemSabitakote, 1);
+            this.dropItem(DQArmors.itemSabitakote, 1);
         }
         if (DQM.funcMob.getCalcDROP(50, 1))
         {
-            this.dropItem(DQM.armors.itemSabitakutu, 1);
+            this.dropItem(DQArmors.itemSabitakutu, 1);
         }
     }
 }

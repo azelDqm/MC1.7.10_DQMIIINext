@@ -10,11 +10,10 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import dqmIII.api.DQOreDictionary;
 import dqmIII.blocks.BlockTileEntityRegister;
-import dqmIII.blocks.DqmBlockDecorate;
-import dqmIII.blocks.DqmBlockOre;
-import dqmIII.blocks.DqmBlockSeed;
-import dqmIII.blocks.DqmBlockStandard;
+import dqmIII.blocks.DqBlock;
+import dqmIII.blocks.DqItemBlock;
 import dqmIII.creativeTabs.DqmCreativeTabs;
 import dqmIII.dataTable.FuncArmorSetTable;
 import dqmIII.dataTable.FuncBukiyaPriceTable;
@@ -23,6 +22,7 @@ import dqmIII.dataTable.FuncItemRandom;
 import dqmIII.dataTable.FuncJobChangeLvTable;
 import dqmIII.dataTable.FuncKaitoriPriceTable;
 import dqmIII.dataTable.FuncMagicLvTable;
+import dqmIII.dataTable.FuncMedalkingItems;
 import dqmIII.dataTable.FuncMobRandom;
 import dqmIII.dataTable.FuncSyuuriPriceTable;
 import dqmIII.entity.npcEntity.NPCRegister;
@@ -51,25 +51,17 @@ import dqmIII.handler.MagicEventHandler;
 import dqmIII.handler.PlayerEventHandler;
 import dqmIII.handler.RarihoEventHandler;
 import dqmIII.handler.WorldHandler;
-import dqmIII.items.DqmItemAccessories;
-import dqmIII.items.DqmItemArmors;
-import dqmIII.items.DqmItemBuilder;
-import dqmIII.items.DqmItemEmblem;
-import dqmIII.items.DqmItemIngots;
-import dqmIII.items.DqmItemMagics;
-import dqmIII.items.DqmItemMiscs;
+import dqmIII.items.DqItem;
 import dqmIII.items.DqmItemRecipe;
 import dqmIII.items.DqmItemRecipeBuilder;
 import dqmIII.items.DqmItemRecipeMagic;
-import dqmIII.items.DqmItemSeeds;
-import dqmIII.items.DqmItemWeapons;
 import dqmIII.keyHandler.ClientKeyBindCore;
 import dqmIII.playerData.PlayerDataHandler;
 import dqmIII.potion.DqmPotion;
 import dqmIII.world.DqmStructureRegister;
 import dqmIII.world.DqmVillageRegister;
 
-@Mod(modid = "DQMIIINext", name = "DQMIIINext", version = "0.8.0.8",  useMetadata = true, dependencies = "after:PotionExtension;after:SextiarySector")
+@Mod(modid = "DQMIIINext", name = "DQMIIINext", version = "0.8.1.2",  useMetadata = true, dependencies = "after:PotionExtension;after:SextiarySector")
 
 public class DQM {
 
@@ -114,11 +106,13 @@ public class DQM {
     public static ClientKeyBindCore CLKeyBind;
     public static DqmCreativeTabs tabs;
 
+    /*
     public static DqmBlockDecorate decorateBlocks;
     public static DqmBlockOre ores;
     public static DqmBlockSeed seedBlocks;
     public static DqmBlockStandard blocks;
-
+	*/
+    /*
     public static DqmItemWeapons weapons;
     public static DqmItemArmors armors;
     public static DqmItemMiscs miscs;
@@ -128,9 +122,11 @@ public class DQM {
     public static DqmItemMagics magics;
     public static DqmItemEmblem emblem;
     public static DqmItemBuilder builder;
+	*/
 
     public static FuncMobRandom randomMob;
     public static FuncItemRandom randomItem;
+    public static FuncMedalkingItems medalItem;
 
     public static String[] dqmLog;
 
@@ -152,11 +148,24 @@ public class DQM {
 
     	//ブロック追加
     	new BlockTileEntityRegister();
+    	new DqBlock();
+    	//アイテム追加
+    	new DqItem();
+
+    	new DqItemBlock();
+
+    	//アイテム・ブロック登録
+    	new DqmItemRegister();
+
+    	//鉱石辞書追加
+    	new DQOreDictionary();
+    	/*
     	blocks = new DqmBlockStandard();
     	decorateBlocks = new DqmBlockDecorate();
     	ores = new DqmBlockOre();
     	seedBlocks = new DqmBlockSeed();
-    	//アイテム追加
+    	*/
+    	/*
     	miscs = new DqmItemMiscs();
     	weapons = new DqmItemWeapons();
     	armors = new DqmItemArmors();
@@ -166,14 +175,14 @@ public class DQM {
     	magics = new DqmItemMagics();
     	emblem = new DqmItemEmblem();
     	builder = new DqmItemBuilder();
+    	*/
 
-    	new DqmItemRegister();
+
 
     	for(int cnt = 0;cnt < 8; cnt++)
     	{
     		dqmLog[cnt] = "";
     	}
-
 
     	new DqmVillageRegister();
     	new NPCRegister();
@@ -209,6 +218,7 @@ public class DQM {
 
     	randomMob = new FuncMobRandom();
     	randomItem = new FuncItemRandom();
+    	medalItem = new FuncMedalkingItems();
 
 		/*
 		EntityRegistry.registerModEntity(EntityMeleeSkeleton.class, "MeleeSkeleton", 0, this, 250, 1, false);

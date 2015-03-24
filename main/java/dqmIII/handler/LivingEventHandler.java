@@ -24,6 +24,7 @@ import net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import dqmIII.DQM;
 import dqmIII.PacketHandler;
+import dqmIII.api.Items.DQMiscs;
 import dqmIII.entity.magicEntity.magic.MagicEntity;
 import dqmIII.entity.magicEntity.magic.MagicEntityHyado;
 import dqmIII.entity.magicEntity.magic.MagicEntityMera;
@@ -302,12 +303,12 @@ public class LivingEventHandler {
 		if(event.entityLiving instanceof EntityCow) {
 			if (event.entityLiving.worldObj.rand.nextInt(3) == 0)
 			{
-				event.entityLiving.dropItem(DQM.miscs.itemUsinofun, 1);
+				event.entityLiving.dropItem(DQMiscs.itemUsinofun, 1);
 			}
 		}else if(event.entityLiving instanceof EntityHorse) {
 			if (event.entityLiving.worldObj.rand.nextInt(3) == 0)
 			{
-				event.entityLiving.dropItem(DQM.miscs.itemUmanofun, 1);
+				event.entityLiving.dropItem(DQMiscs.itemUmanofun, 1);
 			}
 		}
 	}
@@ -457,11 +458,6 @@ public class LivingEventHandler {
 
     		EntityPlayer ep = (EntityPlayer)event.entityLiving;
 
-    		if(ep.getHealth() > ep.getMaxHealth())
-    		{
-    			ep.setHealth(ep.getMaxHealth());
-    		}
-
     		int Mp = ExtendedPlayerProperties.get(ep).getMP();
     		int maxMp = ExtendedPlayerProperties.get(ep).getMaxMP();
 
@@ -498,19 +494,23 @@ public class LivingEventHandler {
     			ep.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(ExtendedPlayerProperties.get(ep).getMaxHP());
     			if(ep.getCurrentEquippedItem()!= null)
     			{
-	    			if(ep.getCurrentEquippedItem().getItem() instanceof ItemSword ||
-	    			   ep.getCurrentEquippedItem().getItem() instanceof ItemBow)
-	    			{
-	    				ExtendedPlayerProperties.get(ep).setWeapon(1);
-	    			}else if(ep.getCurrentEquippedItem().getItem() instanceof DqmItemWeaponBase ||
-	    					 ep.getCurrentEquippedItem().getItem() instanceof DqmItemBowBase)
+    				if(ep.getCurrentEquippedItem().getItem() instanceof DqmItemWeaponBase)
 					{
 	    				DqmItemWeaponBase itm = (DqmItemWeaponBase)ep.getCurrentEquippedItem().getItem();
 
 	    				EnumDqmWeapon enumWeapon = EnumDqmWeapon.valueOf(itm.getMaterial().name());
 
 	    				ExtendedPlayerProperties.get(ep).setWeapon(enumWeapon.getId());
-					}else if(ep.getCurrentEquippedItem().getItem() instanceof DqmItemMagicBase)
+					}else if(ep.getCurrentEquippedItem().getItem() instanceof DqmItemBowBase)
+					{
+						DqmItemBowBase itm = (DqmItemBowBase)ep.getCurrentEquippedItem().getItem();
+
+	    				ExtendedPlayerProperties.get(ep).setWeapon(EnumDqmWeapon.DqmBow.getId());
+					}else if(ep.getCurrentEquippedItem().getItem() instanceof ItemSword ||
+	    			   ep.getCurrentEquippedItem().getItem() instanceof ItemBow)
+	    			{
+	    				ExtendedPlayerProperties.get(ep).setWeapon(1);
+	    			}else if(ep.getCurrentEquippedItem().getItem() instanceof DqmItemMagicBase)
 					{
 	    				DqmItemMagicBase itm = (DqmItemMagicBase)ep.getCurrentEquippedItem().getItem();
 
@@ -530,6 +530,11 @@ public class LivingEventHandler {
     			//System.out.println("LOG:" + ExtendedPlayerProperties.get(ep).getMaxHP());
     			//System.out.println("LOG2:" + ExtendedPlayerProperties.get(ep).getHP());
     			PacketHandler.INSTANCE.sendTo(new MessagePlayerProperties(ep), (EntityPlayerMP)ep);
+    		}
+
+    		if(ep.getMaxHealth() > 0 && ep.getHealth() > ep.getMaxHealth())
+    		{
+    			ep.setHealth(ep.getMaxHealth());
     		}
     	}
     }

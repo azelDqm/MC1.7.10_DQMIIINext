@@ -10,6 +10,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntityIo;
 import dqmIII.enums.EnumColor;
 import dqmIII.enums.EnumDqmMagic;
@@ -61,7 +62,7 @@ public class DqmItemMagicIo extends DqmItemMagicBase{
         	int hitCnt = 0;
         	*/
 
-    		if(par1ItemStack.getItem() == DQM.magics.itemIo)
+    		if(par1ItemStack.getItem() == DQMagics.itemIo)
     		{
     			magic = new MagicEntityIo[8];
     			for(int cnt = 0;cnt < 8; cnt++)
@@ -77,7 +78,7 @@ public class DqmItemMagicIo extends DqmItemMagicBase{
     	   		needLvK = 15;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemIora)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemIora)
     		{
     			magic = new MagicEntityIo[8];
     			for(int cnt = 0;cnt < 8; cnt++)
@@ -93,7 +94,7 @@ public class DqmItemMagicIo extends DqmItemMagicBase{
     	   		needLvK = 27;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemIonazun)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemIonazun)
     		{
     			magic = new MagicEntityIo[16];
     			for(int cnt = 0;cnt < 16; cnt++)
@@ -108,7 +109,7 @@ public class DqmItemMagicIo extends DqmItemMagicBase{
     	   		needLvK = 38;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemIogurande)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemIogurande)
     		{
     			magic = new MagicEntityIo[16];
     			for(int cnt = 0;cnt < 16; cnt++)

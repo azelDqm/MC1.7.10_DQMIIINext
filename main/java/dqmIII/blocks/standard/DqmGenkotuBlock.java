@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import dqmIII.blocks.DqmBlockStandard;
+import dqmIII.api.Blocks.DQBlocks;
 import dqmIII.blocks.base.DqmBlockSeedBase;
 
 public class DqmGenkotuBlock extends DqmBlockSeedBase
@@ -54,7 +54,7 @@ public class DqmGenkotuBlock extends DqmBlockSeedBase
     @Override
     public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
     {
-    	return new ItemStack(DqmBlockStandard.DqmBlockGenkotu, 1).getItem();
+    	return new ItemStack(DQBlocks.DqmBlockGenkotu, 1).getItem();
     }
     @Override
     public int quantityDropped(Random random)

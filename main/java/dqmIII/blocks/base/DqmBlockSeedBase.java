@@ -23,6 +23,8 @@ import net.minecraftforge.common.util.ForgeDirection;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQPlants;
+import dqmIII.api.Items.DQSeeds;
 
 public class DqmBlockSeedBase extends Block implements IPlantable
 {
@@ -267,73 +269,73 @@ public class DqmBlockSeedBase extends Block implements IPlantable
 
     protected Item getSeedItem()
     {
-    	if(this == DQM.seedBlocks.BlockYakusouSeed1){return DQM.seeds.itemYakusouSeed;}
-    	else if(this == DQM.seedBlocks.BlockYakusouSeed2){return DQM.seeds.itemYakusouSeed2;}
-    	else if(this == DQM.seedBlocks.BlockYakusouSeed3){return DQM.seeds.itemYakusouSeed3;}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed1){return DQM.seeds.itemDokukesisouSeed;}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed2){return DQM.seeds.itemDokukesisouSeed2;}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed3){return DQM.seeds.itemDokukesisouSeed3;}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed1){return DQM.seeds.itemTikaraSeed;}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed2){return DQM.seeds.itemTikaraSeed2;}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed3){return DQM.seeds.itemTikaraSeed3;}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed1){return DQM.seeds.itemMamoriSeed;}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed2){return DQM.seeds.itemMamoriSeed2;}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed3){return DQM.seeds.itemMamoriSeed3;}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed1){return DQM.seeds.itemSubayasaSeed;}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed2){return DQM.seeds.itemSubayasaSeed2;}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed3){return DQM.seeds.itemSubayasaSeed3;}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed1){return DQM.seeds.itemHonooSeed;}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed2){return DQM.seeds.itemHonooSeed2;}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed3){return DQM.seeds.itemHonooSeed3;}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed1){return DQM.seeds.itemIyasiSeed;}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed2){return DQM.seeds.itemIyasiSeed2;}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed3){return DQM.seeds.itemIyasiSeed3;}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed1){return DQM.seeds.itemMahounomiseed;}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed2){return DQM.seeds.itemMahounomiseed2;}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed3){return DQM.seeds.itemMahounomiseed3;}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed1){return DQM.seeds.itemMaryokunotaneseed;}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed2){return DQM.seeds.itemMaryokunotaneseed2;}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed3){return DQM.seeds.itemMaryokunotaneseed3;}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed1){return DQM.seeds.itemOugonSeed;}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed2){return DQM.seeds.itemOugonSeed2;}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed3){return DQM.seeds.itemOugonSeed3;}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed4){return DQM.seeds.itemOugonSeed4;}
+    	if(this == DQPlants.BlockYakusouSeed1){return DQSeeds.itemYakusouSeed;}
+    	else if(this == DQPlants.BlockYakusouSeed2){return DQSeeds.itemYakusouSeed2;}
+    	else if(this == DQPlants.BlockYakusouSeed3){return DQSeeds.itemYakusouSeed3;}
+    	else if(this == DQPlants.BlockDokukesisouSeed1){return DQSeeds.itemDokukesisouSeed;}
+    	else if(this == DQPlants.BlockDokukesisouSeed2){return DQSeeds.itemDokukesisouSeed2;}
+    	else if(this == DQPlants.BlockDokukesisouSeed3){return DQSeeds.itemDokukesisouSeed3;}
+    	else if(this == DQPlants.BlockTikaraSeed1){return DQSeeds.itemTikaraSeed;}
+    	else if(this == DQPlants.BlockTikaraSeed2){return DQSeeds.itemTikaraSeed2;}
+    	else if(this == DQPlants.BlockTikaraSeed3){return DQSeeds.itemTikaraSeed3;}
+    	else if(this == DQPlants.BlockMamoriSeed1){return DQSeeds.itemMamoriSeed;}
+    	else if(this == DQPlants.BlockMamoriSeed2){return DQSeeds.itemMamoriSeed2;}
+    	else if(this == DQPlants.BlockMamoriSeed3){return DQSeeds.itemMamoriSeed3;}
+    	else if(this == DQPlants.BlockSubayasaSeed1){return DQSeeds.itemSubayasaSeed;}
+    	else if(this == DQPlants.BlockSubayasaSeed2){return DQSeeds.itemSubayasaSeed2;}
+    	else if(this == DQPlants.BlockSubayasaSeed3){return DQSeeds.itemSubayasaSeed3;}
+    	else if(this == DQPlants.BlockHonooSeed1){return DQSeeds.itemHonooSeed;}
+    	else if(this == DQPlants.BlockHonooSeed2){return DQSeeds.itemHonooSeed2;}
+    	else if(this == DQPlants.BlockHonooSeed3){return DQSeeds.itemHonooSeed3;}
+    	else if(this == DQPlants.BlockIyasiSeed1){return DQSeeds.itemIyasiSeed;}
+    	else if(this == DQPlants.BlockIyasiSeed2){return DQSeeds.itemIyasiSeed2;}
+    	else if(this == DQPlants.BlockIyasiSeed3){return DQSeeds.itemIyasiSeed3;}
+    	else if(this == DQPlants.BlockMahounomiSeed1){return DQSeeds.itemMahounomiseed;}
+    	else if(this == DQPlants.BlockMahounomiSeed2){return DQSeeds.itemMahounomiseed2;}
+    	else if(this == DQPlants.BlockMahounomiSeed3){return DQSeeds.itemMahounomiseed3;}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed1){return DQSeeds.itemMaryokunotaneseed;}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed2){return DQSeeds.itemMaryokunotaneseed2;}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed3){return DQSeeds.itemMaryokunotaneseed3;}
+    	else if(this == DQPlants.BlockOugonSeed1){return DQSeeds.itemOugonSeed;}
+    	else if(this == DQPlants.BlockOugonSeed2){return DQSeeds.itemOugonSeed2;}
+    	else if(this == DQPlants.BlockOugonSeed3){return DQSeeds.itemOugonSeed3;}
+    	else if(this == DQPlants.BlockOugonSeed4){return DQSeeds.itemOugonSeed4;}
 
     	return null;
     }
     protected Item getCropItem()
     {
-    	if(this == DQM.seedBlocks.BlockYakusouSeed1){return DQM.seeds.itemYakusou;}
-    	else if(this == DQM.seedBlocks.BlockYakusouSeed2){return DQM.seeds.itemYakusou2;}
-    	else if(this == DQM.seedBlocks.BlockYakusouSeed3){return DQM.seeds.itemYakusou3;}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed1){return DQM.seeds.itemDokukesisou;}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed2){return DQM.seeds.itemDokukesisou2;}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed3){return DQM.seeds.itemDokukesisou3;}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed1){return DQM.seeds.itemTikaranotane;}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed2){return DQM.seeds.itemTikaranotane2;}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed3){return DQM.seeds.itemTikaranotane3;}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed1){return DQM.seeds.itemMamorinotane;}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed2){return DQM.seeds.itemMamorinotane2;}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed3){return DQM.seeds.itemMamorinotane3;}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed1){return DQM.seeds.itemSubayasanotane;}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed2){return DQM.seeds.itemSubayasanotane2;}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed3){return DQM.seeds.itemSubayasanotane3;}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed1){return DQM.seeds.itemHonoonomi;}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed2){return DQM.seeds.itemHonoonomi2;}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed3){return DQM.seeds.itemHonoonomi3;}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed1){return DQM.seeds.itemIyasinomi;}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed2){return DQM.seeds.itemIyasinomi2;}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed3){return DQM.seeds.itemIyasinomi3;}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed1){return DQM.seeds.itemMahounomiI;}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed2){return DQM.seeds.itemMahounomiI2;}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed3){return DQM.seeds.itemMahounomiI3;}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed1){return DQM.seeds.itemMaryokunotaneI;}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed2){return DQM.seeds.itemMaryokunotaneI2;}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed3){return DQM.seeds.itemMaryokunotaneI3;}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed1){return DQM.seeds.itemOugon;}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed2){return DQM.seeds.itemOugon2;}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed3){return DQM.seeds.itemOugon3;}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed4){return DQM.seeds.itemOugon4;}
+    	if(this == DQPlants.BlockYakusouSeed1){return DQSeeds.itemYakusou;}
+    	else if(this == DQPlants.BlockYakusouSeed2){return DQSeeds.itemYakusou2;}
+    	else if(this == DQPlants.BlockYakusouSeed3){return DQSeeds.itemYakusou3;}
+    	else if(this == DQPlants.BlockDokukesisouSeed1){return DQSeeds.itemDokukesisou;}
+    	else if(this == DQPlants.BlockDokukesisouSeed2){return DQSeeds.itemDokukesisou2;}
+    	else if(this == DQPlants.BlockDokukesisouSeed3){return DQSeeds.itemDokukesisou3;}
+    	else if(this == DQPlants.BlockTikaraSeed1){return DQSeeds.itemTikaranotane;}
+    	else if(this == DQPlants.BlockTikaraSeed2){return DQSeeds.itemTikaranotane2;}
+    	else if(this == DQPlants.BlockTikaraSeed3){return DQSeeds.itemTikaranotane3;}
+    	else if(this == DQPlants.BlockMamoriSeed1){return DQSeeds.itemMamorinotane;}
+    	else if(this == DQPlants.BlockMamoriSeed2){return DQSeeds.itemMamorinotane2;}
+    	else if(this == DQPlants.BlockMamoriSeed3){return DQSeeds.itemMamorinotane3;}
+    	else if(this == DQPlants.BlockSubayasaSeed1){return DQSeeds.itemSubayasanotane;}
+    	else if(this == DQPlants.BlockSubayasaSeed2){return DQSeeds.itemSubayasanotane2;}
+    	else if(this == DQPlants.BlockSubayasaSeed3){return DQSeeds.itemSubayasanotane3;}
+    	else if(this == DQPlants.BlockHonooSeed1){return DQSeeds.itemHonoonomi;}
+    	else if(this == DQPlants.BlockHonooSeed2){return DQSeeds.itemHonoonomi2;}
+    	else if(this == DQPlants.BlockHonooSeed3){return DQSeeds.itemHonoonomi3;}
+    	else if(this == DQPlants.BlockIyasiSeed1){return DQSeeds.itemIyasinomi;}
+    	else if(this == DQPlants.BlockIyasiSeed2){return DQSeeds.itemIyasinomi2;}
+    	else if(this == DQPlants.BlockIyasiSeed3){return DQSeeds.itemIyasinomi3;}
+    	else if(this == DQPlants.BlockMahounomiSeed1){return DQSeeds.itemMahounomiI;}
+    	else if(this == DQPlants.BlockMahounomiSeed2){return DQSeeds.itemMahounomiI2;}
+    	else if(this == DQPlants.BlockMahounomiSeed3){return DQSeeds.itemMahounomiI3;}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed1){return DQSeeds.itemMaryokunotaneI;}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed2){return DQSeeds.itemMaryokunotaneI2;}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed3){return DQSeeds.itemMaryokunotaneI3;}
+    	else if(this == DQPlants.BlockOugonSeed1){return DQSeeds.itemOugon;}
+    	else if(this == DQPlants.BlockOugonSeed2){return DQSeeds.itemOugon2;}
+    	else if(this == DQPlants.BlockOugonSeed3){return DQSeeds.itemOugon3;}
+    	else if(this == DQPlants.BlockOugonSeed4){return DQSeeds.itemOugon4;}
 
     	return null;
     }
@@ -389,37 +391,37 @@ public class DqmBlockSeedBase extends Block implements IPlantable
     public void registerBlockIcons(IIconRegister p_149651_1_)
     {
     	String textureName = "";
-    	if(this == DQM.seedBlocks.BlockYakusouSeed1){textureName = "dqm:Yakusou_";}
-    	else if(this == DQM.seedBlocks.BlockYakusouSeed2){textureName = "dqm:Yakusou2_";}
-    	else if(this == DQM.seedBlocks.BlockYakusouSeed3){textureName = "dqm:Yakusou3_";}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed1){textureName = "dqm:Dokukesisou_";}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed2){textureName = "dqm:Dokukesisou2_";}
-    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed3){textureName = "dqm:Dokukesisou3_";}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed1){textureName = "dqm:Tikara_";}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed2){textureName = "dqm:Tikara2_";}
-    	else if(this == DQM.seedBlocks.BlockTikaraSeed3){textureName = "dqm:Tikara3_";}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed1){textureName = "dqm:Mamori_";}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed2){textureName = "dqm:Mamori2_";}
-    	else if(this == DQM.seedBlocks.BlockMamoriSeed3){textureName = "dqm:Mamori3_";}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed1){textureName = "dqm:Subayasa_";}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed2){textureName = "dqm:Subayasa2_";}
-    	else if(this == DQM.seedBlocks.BlockSubayasaSeed3){textureName = "dqm:Subayasa3_";}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed1){textureName = "dqm:Honoo_";}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed2){textureName = "dqm:Honoo2_";}
-    	else if(this == DQM.seedBlocks.BlockHonooSeed3){textureName = "dqm:Honoo3_";}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed1){textureName = "dqm:Iyasi_";}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed2){textureName = "dqm:Iyasi2_";}
-    	else if(this == DQM.seedBlocks.BlockIyasiSeed3){textureName = "dqm:Iyasi3_";}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed1){textureName = "dqm:Mahounomi_";}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed2){textureName = "dqm:Mahounomi2_";}
-    	else if(this == DQM.seedBlocks.BlockMahounomiSeed3){textureName = "dqm:Mahounomi3_";}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed1){textureName = "dqm:Maryokunotane_";}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed2){textureName = "dqm:Maryokunotane2_";}
-    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed3){textureName = "dqm:Maryokunotane3_";}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed1){textureName = "dqm:Ougon_";}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed2){textureName = "dqm:Ougon2_";}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed3){textureName = "dqm:Ougon3_";}
-    	else if(this == DQM.seedBlocks.BlockOugonSeed4){textureName = "dqm:Ougon4_";}
+    	if(this == DQPlants.BlockYakusouSeed1){textureName = "dqm:Yakusou_";}
+    	else if(this == DQPlants.BlockYakusouSeed2){textureName = "dqm:Yakusou2_";}
+    	else if(this == DQPlants.BlockYakusouSeed3){textureName = "dqm:Yakusou3_";}
+    	else if(this == DQPlants.BlockDokukesisouSeed1){textureName = "dqm:Dokukesisou_";}
+    	else if(this == DQPlants.BlockDokukesisouSeed2){textureName = "dqm:Dokukesisou2_";}
+    	else if(this == DQPlants.BlockDokukesisouSeed3){textureName = "dqm:Dokukesisou3_";}
+    	else if(this == DQPlants.BlockTikaraSeed1){textureName = "dqm:Tikara_";}
+    	else if(this == DQPlants.BlockTikaraSeed2){textureName = "dqm:Tikara2_";}
+    	else if(this == DQPlants.BlockTikaraSeed3){textureName = "dqm:Tikara3_";}
+    	else if(this == DQPlants.BlockMamoriSeed1){textureName = "dqm:Mamori_";}
+    	else if(this == DQPlants.BlockMamoriSeed2){textureName = "dqm:Mamori2_";}
+    	else if(this == DQPlants.BlockMamoriSeed3){textureName = "dqm:Mamori3_";}
+    	else if(this == DQPlants.BlockSubayasaSeed1){textureName = "dqm:Subayasa_";}
+    	else if(this == DQPlants.BlockSubayasaSeed2){textureName = "dqm:Subayasa2_";}
+    	else if(this == DQPlants.BlockSubayasaSeed3){textureName = "dqm:Subayasa3_";}
+    	else if(this == DQPlants.BlockHonooSeed1){textureName = "dqm:Honoo_";}
+    	else if(this == DQPlants.BlockHonooSeed2){textureName = "dqm:Honoo2_";}
+    	else if(this == DQPlants.BlockHonooSeed3){textureName = "dqm:Honoo3_";}
+    	else if(this == DQPlants.BlockIyasiSeed1){textureName = "dqm:Iyasi_";}
+    	else if(this == DQPlants.BlockIyasiSeed2){textureName = "dqm:Iyasi2_";}
+    	else if(this == DQPlants.BlockIyasiSeed3){textureName = "dqm:Iyasi3_";}
+    	else if(this == DQPlants.BlockMahounomiSeed1){textureName = "dqm:Mahounomi_";}
+    	else if(this == DQPlants.BlockMahounomiSeed2){textureName = "dqm:Mahounomi2_";}
+    	else if(this == DQPlants.BlockMahounomiSeed3){textureName = "dqm:Mahounomi3_";}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed1){textureName = "dqm:Maryokunotane_";}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed2){textureName = "dqm:Maryokunotane2_";}
+    	else if(this == DQPlants.BlockMaryokunotaneSeed3){textureName = "dqm:Maryokunotane3_";}
+    	else if(this == DQPlants.BlockOugonSeed1){textureName = "dqm:Ougon_";}
+    	else if(this == DQPlants.BlockOugonSeed2){textureName = "dqm:Ougon2_";}
+    	else if(this == DQPlants.BlockOugonSeed3){textureName = "dqm:Ougon3_";}
+    	else if(this == DQPlants.BlockOugonSeed4){textureName = "dqm:Ougon4_";}
 
         this.iconArray = new IIcon[8];
 
@@ -437,188 +439,188 @@ public class DqmBlockSeedBase extends Block implements IPlantable
     	int BaseParam3 = 3000;
     	int BaseParam4 = 4000;
     	int BaseParam5 = 5000;
-    	int boost = par1World.getBlock(par2, par3 - 1, par4) == DQM.seedBlocks.BlockHoujyouDirt? 2 : 1;
+    	int boost = par1World.getBlock(par2, par3 - 1, par4) == DQPlants.BlockHoujyouDirt? 2 : 1;
 
     	if(meta == 7)
     	{
-	    	if(this == DQM.seedBlocks.BlockYakusouSeed1){
+	    	if(this == DQPlants.BlockYakusouSeed1){
 	    		if(rand.nextInt(BaseParam1 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockYakusouSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockYakusouSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockYakusouSeed2){
+	    	else if(this == DQPlants.BlockYakusouSeed2){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockYakusouSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockYakusouSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockYakusouSeed3){
+	    	else if(this == DQPlants.BlockYakusouSeed3){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockIyasiSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockIyasiSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed1){
+	    	else if(this == DQPlants.BlockDokukesisouSeed1){
 	    		if(rand.nextInt(BaseParam1 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockDokukesisouSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockDokukesisouSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed2){
+	    	else if(this == DQPlants.BlockDokukesisouSeed2){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockDokukesisouSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockDokukesisouSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockDokukesisouSeed3){
+	    	else if(this == DQPlants.BlockDokukesisouSeed3){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockIyasiSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockIyasiSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockTikaraSeed1){
+	    	else if(this == DQPlants.BlockTikaraSeed1){
 	    		if(rand.nextInt(BaseParam1 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockTikaraSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockTikaraSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockTikaraSeed2){
+	    	else if(this == DQPlants.BlockTikaraSeed2){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockTikaraSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockTikaraSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockTikaraSeed3){
+	    	else if(this == DQPlants.BlockTikaraSeed3){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockHonooSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockHonooSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMamoriSeed1){
+	    	else if(this == DQPlants.BlockMamoriSeed1){
 	    		if(rand.nextInt(BaseParam1 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockMamoriSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockMamoriSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMamoriSeed2){
+	    	else if(this == DQPlants.BlockMamoriSeed2){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockMamoriSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockMamoriSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMamoriSeed3){
+	    	else if(this == DQPlants.BlockMamoriSeed3){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockHonooSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockHonooSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockSubayasaSeed1){
+	    	else if(this == DQPlants.BlockSubayasaSeed1){
 	    		if(rand.nextInt(BaseParam1 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockSubayasaSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockSubayasaSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockSubayasaSeed2){
+	    	else if(this == DQPlants.BlockSubayasaSeed2){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockSubayasaSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockSubayasaSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockSubayasaSeed3){
+	    	else if(this == DQPlants.BlockSubayasaSeed3){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockHonooSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockHonooSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockHonooSeed1){
+	    	else if(this == DQPlants.BlockHonooSeed1){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockHonooSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockHonooSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockHonooSeed2){
+	    	else if(this == DQPlants.BlockHonooSeed2){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockHonooSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockHonooSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockHonooSeed3){
+	    	else if(this == DQPlants.BlockHonooSeed3){
 	    		if(rand.nextInt(BaseParam4 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockMaryokunotaneSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockMaryokunotaneSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockIyasiSeed1){
+	    	else if(this == DQPlants.BlockIyasiSeed1){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockHonooSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockHonooSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockIyasiSeed2){
+	    	else if(this == DQPlants.BlockIyasiSeed2){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockHonooSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockHonooSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockIyasiSeed3){
+	    	else if(this == DQPlants.BlockIyasiSeed3){
 	    		if(rand.nextInt(BaseParam4 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockMahounomiSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockMahounomiSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMahounomiSeed1){
+	    	else if(this == DQPlants.BlockMahounomiSeed1){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockMahounomiSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockMahounomiSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMahounomiSeed2){
+	    	else if(this == DQPlants.BlockMahounomiSeed2){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockMahounomiSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockMahounomiSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMahounomiSeed3){
+	    	else if(this == DQPlants.BlockMahounomiSeed3){
 	    		if(rand.nextInt(BaseParam4 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockOugonSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockOugonSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed1){
+	    	else if(this == DQPlants.BlockMaryokunotaneSeed1){
 	    		if(rand.nextInt(BaseParam2 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockMaryokunotaneSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockMaryokunotaneSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed2){
+	    	else if(this == DQPlants.BlockMaryokunotaneSeed2){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockMaryokunotaneSeed3, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockMaryokunotaneSeed3, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockMaryokunotaneSeed3){
+	    	else if(this == DQPlants.BlockMaryokunotaneSeed3){
 	    		if(rand.nextInt(BaseParam4 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockOugonSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockOugonSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockOugonSeed1){
+	    	else if(this == DQPlants.BlockOugonSeed1){
 	    		if(rand.nextInt(BaseParam3 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockOugonSeed1, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockOugonSeed1, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockOugonSeed2){
+	    	else if(this == DQPlants.BlockOugonSeed2){
 	    		if(rand.nextInt(BaseParam4 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockOugonSeed2, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockOugonSeed2, meta, 2);
 	    		}
 	    	}
-	    	else if(this == DQM.seedBlocks.BlockOugonSeed3){
+	    	else if(this == DQPlants.BlockOugonSeed3){
 	    		if(rand.nextInt(BaseParam5 / boost) == 0)
 	    		{
-	    			par1World.setBlock(par2, par3, par4, DQM.seedBlocks.BlockOugonSeed4, meta, 2);
+	    			par1World.setBlock(par2, par3, par4, DQPlants.BlockOugonSeed4, meta, 2);
 	    		}
 	    	}
     	}

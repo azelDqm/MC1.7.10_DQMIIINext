@@ -2,7 +2,7 @@ package dqmIII.dataTable;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQEmblems;
 import dqmIII.enums.EnumDqmJob;
 import dqmIII.playerData.ExtendedPlayerProperties;
 
@@ -136,7 +136,7 @@ public class FuncJobChangeLvTable {
 		this.Paladin[EnumDqmJob.Souryo.getId()] = 30;
 
 		this.Mahousensi[EnumDqmJob.Senshi.getId()] = 30;
-		this.Mahousensi[EnumDqmJob.MahouSenshi.getId()] = 30;
+		this.Mahousensi[EnumDqmJob.Mahoutukai.getId()] = 30;
 
 		this.Ranger[EnumDqmJob.Touzoku.getId()] = 30;
 		this.Ranger[EnumDqmJob.Syounin.getId()] = 30;
@@ -165,49 +165,49 @@ public class FuncJobChangeLvTable {
 
     	int[] lvTable = null;
 
-	    if(itm == DQM.emblem.itemEmbCivilian){
+	    if(itm == DQEmblems.itemEmbCivilian){
 	    	lvTable = this.Asobinin;
-	    }else if(itm == DQM.emblem.itemEmbWarrior){
+	    }else if(itm == DQEmblems.itemEmbWarrior){
 	    	lvTable = this.Sensi;
-	    }else if(itm == DQM.emblem.itemEmbFighter){
+	    }else if(itm == DQEmblems.itemEmbFighter){
 	    	lvTable = this.Budouka;
-	    }else if(itm == DQM.emblem.itemEmbBattleMaster){
+	    }else if(itm == DQEmblems.itemEmbBattleMaster){
 	    	lvTable = this.BattleMaster;
-	    }else if(itm == DQM.emblem.itemEmbMagician){
+	    }else if(itm == DQEmblems.itemEmbMagician){
 	    	lvTable = this.Mahoutukai;
-	    }else if(itm == DQM.emblem.itemEmbPriest){
+	    }else if(itm == DQEmblems.itemEmbPriest){
 	    	lvTable = this.Souryo;
-	    }else if(itm == DQM.emblem.itemEmbSage){
+	    }else if(itm == DQEmblems.itemEmbSage){
 	    	lvTable = this.Kenja;
-	    }else if(itm == DQM.emblem.itemEmbHero){
+	    }else if(itm == DQEmblems.itemEmbHero){
 	    	lvTable = this.Yusha;
-	    }else if(itm == DQM.emblem.itemEmbPaladin){
+	    }else if(itm == DQEmblems.itemEmbPaladin){
 	    	lvTable = this.Paladin;
-	    }else if(itm == DQM.emblem.itemEmbMagickKnight){
+	    }else if(itm == DQEmblems.itemEmbMagickKnight){
 	    	lvTable = this.Mahousensi;
-	    }else if(itm == DQM.emblem.itemEmbRanger){
+	    }else if(itm == DQEmblems.itemEmbRanger){
 	    	lvTable = this.Ranger;
-	    }else if(itm == DQM.emblem.itemEmbMonsterTamer){
+	    }else if(itm == DQEmblems.itemEmbMonsterTamer){
 	    	lvTable = this.Mamonotukai;
-	    }else if(itm == DQM.emblem.itemEmbSuperStar){
+	    }else if(itm == DQEmblems.itemEmbSuperStar){
 	    	lvTable = this.SuperStar;
-	    }else if(itm == DQM.emblem.itemEmbHaguremetal){
+	    }else if(itm == DQEmblems.itemEmbHaguremetal){
 	    	lvTable = this.Haguremetal;
-	    }else if(itm == DQM.emblem.itemEmbMerchant){
+	    }else if(itm == DQEmblems.itemEmbMerchant){
 	    	lvTable = this.Shounin;
-	    }else if(itm == DQM.emblem.itemEmbThief){
+	    }else if(itm == DQEmblems.itemEmbThief){
 	    	lvTable = this.Touzoku;
-	    }else if(itm == DQM.emblem.itemEmbGodHnad){
+	    }else if(itm == DQEmblems.itemEmbGodHnad){
 	    	lvTable = this.Godhand;
-	    }else if(itm == DQM.emblem.itemEmbDragon){
+	    }else if(itm == DQEmblems.itemEmbDragon){
 	    	lvTable = this.Dragon;
-	    }else if(itm == DQM.emblem.itemEmbLegend){
+	    }else if(itm == DQEmblems.itemEmbLegend){
 	    	lvTable = this.Densetu;
-	    }else if(itm == DQM.emblem.itemEmbDancer){
+	    }else if(itm == DQEmblems.itemEmbDancer){
 	    	lvTable = this.Odoriko;
-	    }else if(itm == DQM.emblem.itemEmbPirate){
+	    }else if(itm == DQEmblems.itemEmbPirate){
 	    	lvTable = this.Kaizoku;
-	    }else if(itm == DQM.emblem.itemEmbMasterDragon)
+	    }else if(itm == DQEmblems.itemEmbMasterDragon)
 	    {
 	    	lvTable = this.MasterDragon;
 	    }

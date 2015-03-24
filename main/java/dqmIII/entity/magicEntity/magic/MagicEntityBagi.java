@@ -223,7 +223,7 @@ public class MagicEntityBagi extends MagicEntity implements IProjectile{
             /* 前のTickに確認した埋まりブロックのIDとメタを照合している。違ったら埋まり状態を解除、一致したら埋まり状態を継続。
             /* 埋まり状態2tick継続でこのエンティティを消す
              */
-            if(worldFlg && i.getMaterial() == Material.leaves)
+            if(worldFlg && i.getMaterial() == Material.leaves && DQM.conf.magicEpBagi == 1)
             {
             	int x = (int)this.posX;
             	int y = (int)this.posY;

@@ -14,6 +14,7 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQDecorates;
 import dqmIII.blocks.decorate.tileEntity.DqmTileEntityTaruMob;
 import dqmIII.entity.mobEntity.DqmMobBase;
 
@@ -94,7 +95,10 @@ public class DqmBlockTaruMob extends BlockContainer
         {
         	if(rand.nextInt(4) == 0)
         	{
-        		par1World.createExplosion(null, par2, par3, par4, 5.0F, true);
+        		if(!par1World.isRemote)
+        		{
+        			par1World.createExplosion(null, par2, par3, par4, 5.0F, true);
+        		}
         	}else
         	{
         		if(rand.nextInt(5) == 0)
@@ -144,7 +148,7 @@ public class DqmBlockTaruMob extends BlockContainer
 
             if(spawnMob == null && rand.nextInt(2) == 0)
             {
-            	doropiItems = new ItemStack(DQM.decorateBlocks.DqmBlockTaruK, 1);
+            	doropiItems = new ItemStack(DQDecorates.DqmBlockTaruK, 1);
             }
         }
 

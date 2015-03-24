@@ -5,6 +5,7 @@ import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMiscs;
 import dqmIII.enums.EnumDqmBugFix;
 import dqmIII.playerData.ExtendedPlayerProperties;
 import dqmIII.playerData.ExtendedPlayerProperties2;
@@ -31,11 +32,11 @@ public class EntityEventHandler {
 	public void onEntityItemPickupEvent(EntityItemPickupEvent event)
 	{
 		//System.out.println("TESSSSST");
-		if(event.item.getEntityItem() != null && (event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal ||
-												  event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal5 ||
-												  event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal10 ||
-												  event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal50 ||
-												  event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal100
+		if(event.item.getEntityItem() != null && (event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal ||
+												  event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal5 ||
+												  event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal10 ||
+												  event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal50 ||
+												  event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal100
 												 ))
 		{
 
@@ -43,19 +44,19 @@ public class EntityEventHandler {
 			EntityPlayer ep = event.entityPlayer;
 
 			int stackVal = event.item.getEntityItem().stackSize;
-			if(event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal)
+			if(event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal)
 			{
 				plusMedal = 1 * stackVal;
-			}else if(event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal5)
+			}else if(event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal5)
 			{
 				plusMedal = 5 * stackVal;
-			}else if(event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal10)
+			}else if(event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal10)
 			{
 				plusMedal = 10 * stackVal;
-			}else if(event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal50)
+			}else if(event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal50)
 			{
 				plusMedal = 50 * stackVal;
-			}else if(event.item.getEntityItem().getItem() == DQM.miscs.itemLittlemedal100)
+			}else if(event.item.getEntityItem().getItem() == DQMiscs.itemLittlemedal100)
 			{
 				plusMedal = 100 * stackVal;
 			}

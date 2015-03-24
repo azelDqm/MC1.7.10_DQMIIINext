@@ -4,8 +4,8 @@ import java.util.Random;
 
 import net.minecraft.block.BlockOre;
 import net.minecraft.item.Item;
-import dqmIII.DQM;
-import dqmIII.blocks.DqmBlockOre;
+import dqmIII.api.Blocks.DQOres;
+import dqmIII.api.Items.DQIngots;
 
 public class DqmBlockOreBase extends BlockOre {
 
@@ -13,19 +13,18 @@ public class DqmBlockOreBase extends BlockOre {
 		super();
 	}
 
-
 	@Override
     public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
     {
-		if(this == DqmBlockOre.BlockOreBakudanisi)
+		if(this == DQOres.BlockOreBakudanisi)
 		{
-			return DQM.ingots.itemBakudanisi;
-		}else if(this == DqmBlockOre.BlockOreHosinokakera)
+			return DQIngots.itemBakudanisi;
+		}else if(this == DQOres.BlockOreHosinokakera)
 		{
-			return DQM.ingots.itemHosinokakera;
-		}else if(this == DqmBlockOre.BlockOreMigakizuna)
+			return DQIngots.itemHosinokakera;
+		}else if(this == DQOres.BlockOreMigakizuna)
 		{
-			return DQM.ingots.itemMigakizuna;
+			return DQIngots.itemMigakizuna;
 		}else
 		{
 			return Item.getItemFromBlock(this);
@@ -37,13 +36,13 @@ public class DqmBlockOreBase extends BlockOre {
     {
 		Random rand = new Random();
 
-		if(this == DqmBlockOre.BlockOreBakudanisi)
+		if(this == DQOres.BlockOreBakudanisi)
 		{
 			return rand.nextInt(2) + 1;
-		}else if(this == DqmBlockOre.BlockOreHosinokakera)
+		}else if(this == DQOres.BlockOreHosinokakera)
 		{
 			return rand.nextInt(3) + 1;
-		}else if(this == DqmBlockOre.BlockOreMigakizuna)
+		}else if(this == DQOres.BlockOreMigakizuna)
 		{
 			return rand.nextInt(4) + 1;
 		}else
@@ -51,4 +50,5 @@ public class DqmBlockOreBase extends BlockOre {
 			return 1;
 		}
     }
+
 }

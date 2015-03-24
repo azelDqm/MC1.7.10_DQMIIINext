@@ -9,6 +9,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
+import dqmIII.api.Blocks.DQDecorates;
 import dqmIII.blocks.mobSpawner.tileEntity.DqmTileEntityMobSpawner;
 
 public class DqmWorldGenIdo implements IWorldGenerator
@@ -66,12 +68,12 @@ public class DqmWorldGenIdo implements IWorldGenerator
 
             if (ran2 == 0)
             {
-                par3World.setBlock(xxx - 1, yyy, zzz, DQM.decorateBlocks.DqmBlockIdo, 0, 2);
+                par3World.setBlock(xxx - 1, yyy, zzz, DQDecorates.DqmBlockIdo, 0, 2);
             }
 
             if (ran2 == 1)
             {
-                par3World.setBlock(xxx - 1, yyy, zzz, DQM.decorateBlocks.DqmBlockIdooke, 0, 2);
+                par3World.setBlock(xxx - 1, yyy, zzz, DQDecorates.DqmBlockIdooke, 0, 2);
             }
 
             for (int y = -32; y <= -1; ++y)
@@ -127,17 +129,17 @@ public class DqmWorldGenIdo implements IWorldGenerator
             {
                 if (ran11 == 0)
                 {
-                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQM.decorateBlocks.DqmBlockSword, 0, 2);
+                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQDecorates.DqmBlockSword, 0, 2);
                 }
 
                 if (ran11 == 1)
                 {
-                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQM.decorateBlocks.DqmBlockSwordMob, 0, 2);
+                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQDecorates.DqmBlockSwordMob, 0, 2);
                 }
 
                 if (ran11 == 2)
                 {
-                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQM.decorateBlocks.DqmBlockTue, 0, 2);
+                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQDecorates.DqmBlockTue, 0, 2);
                 }
             }
 
@@ -145,12 +147,12 @@ public class DqmWorldGenIdo implements IWorldGenerator
             {
                 if (ran11 == 0)
                 {
-                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQM.decorateBlocks.DqmBlockSword2, 0, 2);
+                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQDecorates.DqmBlockSword2, 0, 2);
                 }
 
                 if (ran11 == 1)
                 {
-                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQM.decorateBlocks.DqmBlockSword2Mob, 0, 2);
+                    par3World.setBlock(xxx, yyy - 35, zzz + 3, DQDecorates.DqmBlockSword2Mob, 0, 2);
                 }
             }
 
@@ -158,11 +160,11 @@ public class DqmWorldGenIdo implements IWorldGenerator
             par3World.setBlock(xxx - 1, yyy - 36, zzz, Blocks.flowing_water, 0, 2);
             par3World.setBlock(xxx, yyy - 36, zzz + 1, Blocks.flowing_water, 0, 2);
             par3World.setBlock(xxx, yyy - 36, zzz - 1, Blocks.flowing_water, 0, 2);
-            par3World.setBlock(xxx, yyy - 35, zzz - 3, DQM.blocks.DqmBlockJampBlock, 0, 2);
+            par3World.setBlock(xxx, yyy - 35, zzz - 3, DQBlocks.DqmBlockJampBlock, 0, 2);
 
             if (ran3 == 0)
             {
-                par3World.setBlock(xxx + 4, yyy - 35, zzz + 4, DQM.blocks.DqmBlockMobSpawner, 0, 2);
+                par3World.setBlock(xxx + 4, yyy - 35, zzz + 4, DQBlocks.DqmBlockMobSpawner, 0, 2);
                 //DqmTileEntityMobSpawner tileentitymobspawner1 = (DqmTileEntityMobSpawner)par3World.getBlockTileEntity(xxx + 4, yyy - 35, zzz + 4);
                 DqmTileEntityMobSpawner tileentitymobspawner1 = (DqmTileEntityMobSpawner)par3World.getTileEntity(xxx + 4, yyy - 35, zzz + 4);
 
@@ -185,7 +187,7 @@ public class DqmWorldGenIdo implements IWorldGenerator
 
             if (ran4 == 0)
             {
-                par3World.setBlock(xxx + 4, yyy - 35, zzz - 4, DQM.blocks.DqmBlockMobSpawner, 0, 2);
+                par3World.setBlock(xxx + 4, yyy - 35, zzz - 4, DQBlocks.DqmBlockMobSpawner, 0, 2);
                 //TileEntityMobSpawner tileentitymobspawner2 = (TileEntityMobSpawner)par3World.getBlockTileEntity(xxx + 4, yyy - 35, zzz - 4);
                 DqmTileEntityMobSpawner tileentitymobspawner2 = (DqmTileEntityMobSpawner)par3World.getTileEntity(xxx + 4, yyy - 35, zzz - 4);
 
@@ -208,7 +210,7 @@ public class DqmWorldGenIdo implements IWorldGenerator
 
             if (ran5 == 0)
             {
-                par3World.setBlock(xxx - 4, yyy - 35, zzz + 4, DQM.blocks.DqmBlockMobSpawner, 0, 2);
+                par3World.setBlock(xxx - 4, yyy - 35, zzz + 4, DQBlocks.DqmBlockMobSpawner, 0, 2);
                 //TileEntityMobSpawner tileentitymobspawner3 = (TileEntityMobSpawner)par3World.getBlockTileEntity(xxx - 4, yyy - 35, zzz + 4);
                 DqmTileEntityMobSpawner tileentitymobspawner3 = (DqmTileEntityMobSpawner)par3World.getTileEntity(xxx - 4, yyy - 35, zzz + 4);
 
@@ -231,7 +233,7 @@ public class DqmWorldGenIdo implements IWorldGenerator
 
             if (ran6 == 0)
             {
-                par3World.setBlock(xxx - 4, yyy - 35, zzz - 4, DQM.blocks.DqmBlockMobSpawner, 0, 2);
+                par3World.setBlock(xxx - 4, yyy - 35, zzz - 4, DQBlocks.DqmBlockMobSpawner, 0, 2);
                 //TileEntityMobSpawner tileentitymobspawner4 = (TileEntityMobSpawner)par3World.getBlockTileEntity(xxx - 4, yyy - 35, zzz - 4);
                 DqmTileEntityMobSpawner tileentitymobspawner4 = (DqmTileEntityMobSpawner)par3World.getTileEntity(xxx - 4, yyy - 35, zzz - 4);
 

@@ -8,6 +8,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
 
 public class DqmWorldGenHako implements IWorldGenerator
 {
@@ -59,13 +60,13 @@ public class DqmWorldGenHako implements IWorldGenerator
 
         	if(rate > 5)
         	{
-        		par3World.setBlock(x, y, z, DQM.blocks.DqmBlockHako11, rand.nextInt(4), 2);
+        		par3World.setBlock(x, y, z, DQBlocks.DqmBlockHako11, rand.nextInt(4), 2);
         	}else if(rate > 0)
         	{
-        		par3World.setBlock(x, y, z, DQM.blocks.DqmBlockHako12, rand.nextInt(4), 2);
+        		par3World.setBlock(x, y, z, DQBlocks.DqmBlockHako12, rand.nextInt(4), 2);
         	}else
         	{
-        		par3World.setBlock(x, y, z, DQM.blocks.DqmBlockHako13, rand.nextInt(4), 2);
+        		par3World.setBlock(x, y, z, DQBlocks.DqmBlockHako13, rand.nextInt(4), 2);
         	}
         }
 

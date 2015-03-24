@@ -14,12 +14,14 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.potion.PotionEffect;
+import net.minecraftforge.common.MinecraftForge;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Multimap;
 
 import dqmIII.DQM;
+import dqmIII.api.event.DqmArmorSetEvent;
 import dqmIII.enums.EnumDqmJob;
 import dqmIII.enums.EnumStatATK;
 import dqmIII.enums.EnumStatDEF;
@@ -618,6 +620,10 @@ public class FuncCalcPlayerStatus {
 			setEffect = DQM.armorSetEffect.getArmorSetEffect(DQM.dqmMaterial.armorAbunai, ep.inventory.armorInventory[1]);
 		}
 		*/
+		//外部からの干渉用
+		DqmArmorSetEvent event = new DqmArmorSetEvent(ep, setEffect, armors, enableSet, enableSetCnt);
+		MinecraftForge.EVENT_BUS.post(event);
+
 
 		ExtendedPlayerProperties.get(ep).setArrayHP(EnumStatHP.armorSet.getId(), setEffect[4]);
 		ExtendedPlayerProperties.get(ep).setArrayMP(EnumStatMP.armorSet.getId(), setEffect[5]);

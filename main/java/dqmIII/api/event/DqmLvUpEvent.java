@@ -12,7 +12,7 @@ import cpw.mods.fml.common.eventhandler.Event;
 @Cancelable
 public class DqmLvUpEvent extends Event{
 
-	public final EntityPlayer player;
+	public EntityPlayer player;
 	public final int PlayerJob;
 	public final int JobLv;
 

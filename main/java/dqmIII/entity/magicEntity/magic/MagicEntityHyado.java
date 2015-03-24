@@ -606,8 +606,9 @@ public class MagicEntityHyado extends MagicEntity implements IProjectile{
             //落下速度は別メソッドで設定している。デフォルトでは0.0F。
             f1 = this.fallSpeed();
 
+            //System.out.println("TEST " + worldFlg);
 
-        	if(worldFlg > -1)
+        	if(worldFlg > -1 && DQM.conf.magicEpHyado == 1)
         	{
 
         		int myX = (int)this.xTile;
@@ -634,7 +635,7 @@ public class MagicEntityHyado extends MagicEntity implements IProjectile{
             if (this.isInWater())
             {
             	//System.out.println("test" + worldFlg);
-            	if(worldFlg > -1)
+            	if(worldFlg > -1 && DQM.conf.magicEpHyado == 1)
             	{
 
             		int myX = (int)this.xTile;
@@ -646,7 +647,7 @@ public class MagicEntityHyado extends MagicEntity implements IProjectile{
             			for(int cntZ = worldFlg * -1; cntZ <= worldFlg; cntZ++)
             			{
             				Block j = this.worldObj.getBlock(myX + cntX, myY, myZ + cntZ);
-            				//System.out.println("test2" + j.getMaterial());
+            				//System.out.println("test2" + j.getMaterial().);
             				if(j.getMaterial() == Material.water)
             				{
             					this.worldObj.setBlock(myX + cntX, myY, myZ + cntZ , Blocks.ice);

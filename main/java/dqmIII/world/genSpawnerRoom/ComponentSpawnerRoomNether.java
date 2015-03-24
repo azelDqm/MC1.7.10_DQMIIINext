@@ -14,6 +14,7 @@ import net.minecraft.world.gen.structure.StructureBoundingBox;
 import net.minecraft.world.gen.structure.StructureComponent;
 import net.minecraftforge.common.DungeonHooks;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
 import dqmIII.blocks.mobSpawner.tileEntity.DqmTileEntityMobSpawner;
 
 public class ComponentSpawnerRoomNether extends StructureComponent {
@@ -166,9 +167,9 @@ public class ComponentSpawnerRoomNether extends StructureComponent {
 				{
 					switch(random.nextInt(3))
 					{
-						case 0: blc = DQM.blocks.DqmBlockHako11; break;
-						case 1: blc = DQM.blocks.DqmBlockHako12; break;
-						case 2: blc = DQM.blocks.DqmBlockHako13; break;
+						case 0: blc = DQBlocks.DqmBlockHako11; break;
+						case 1: blc = DQBlocks.DqmBlockHako12; break;
+						case 2: blc = DQBlocks.DqmBlockHako13; break;
 					}
 				}
 				this.placeBlockAtCurrentPosition(world, blc, metaSet, cntX, cntY, 0, structureboundingbox);
@@ -197,9 +198,9 @@ public class ComponentSpawnerRoomNether extends StructureComponent {
 				{
 					switch(random.nextInt(3))
 					{
-						case 0: blc = DQM.blocks.DqmBlockHako11; break;
-						case 1: blc = DQM.blocks.DqmBlockHako12; break;
-						case 2: blc = DQM.blocks.DqmBlockHako13; break;
+						case 0: blc = DQBlocks.DqmBlockHako11; break;
+						case 1: blc = DQBlocks.DqmBlockHako12; break;
+						case 2: blc = DQBlocks.DqmBlockHako13; break;
 					}
 				}
 				this.placeBlockAtCurrentPosition(world, blc, metaSet, 0, cntY, cntZ, structureboundingbox);
@@ -230,9 +231,9 @@ public class ComponentSpawnerRoomNether extends StructureComponent {
 				{
 					switch(random.nextInt(3))
 					{
-						case 0: blc = DQM.blocks.DqmBlockHako11; break;
-						case 1: blc = DQM.blocks.DqmBlockHako12; break;
-						case 2: blc = DQM.blocks.DqmBlockHako13; break;
+						case 0: blc = DQBlocks.DqmBlockHako11; break;
+						case 1: blc = DQBlocks.DqmBlockHako12; break;
+						case 2: blc = DQBlocks.DqmBlockHako13; break;
 					}
 				}
 				this.placeBlockAtCurrentPosition(world, blc, metaSet, cntX, 0, cntZ, structureboundingbox);
@@ -243,9 +244,9 @@ public class ComponentSpawnerRoomNether extends StructureComponent {
 		int offX = (this.xWidth / 2) + this.xPos;
 		int offY = 1 + this.yPos;
 		int offZ = (this.zWidth / 2) + this.zPos;
-		//this.placeBlockAtCurrentPosition(world, DQM.blocks.DqmBlockMobSpawner, 0, this.xWidth / 2, 1, this.zWidth / 2, structureboundingbox);
+		//this.placeBlockAtCurrentPosition(world, DQBlocks.DqmBlockMobSpawner, 0, this.xWidth / 2, 1, this.zWidth / 2, structureboundingbox);
 		//System.out.println("DEBUG = " + offX + "/" + offY + "/" + offZ);
-		world.setBlock(offX, offY, offZ, DQM.blocks.DqmBlockMobSpawner);
+		world.setBlock(offX, offY, offZ, DQBlocks.DqmBlockMobSpawner);
 		//world.setBlock(offX, 65, offZ, Blocks.mob_spawner);
 		//TileEntityMobSpawner tileentitymobspawner = (TileEntityMobSpawner)world.getTileEntity(offX, 65, offZ);
 		DqmTileEntityMobSpawner tileentitymobspawner = (DqmTileEntityMobSpawner)world.getTileEntity(offX, offY, offZ);

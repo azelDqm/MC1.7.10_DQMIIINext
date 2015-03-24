@@ -12,7 +12,7 @@ import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.EnumSkyBlock;
 import net.minecraft.world.World;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQMiscs;
 import dqmIII.entity.npcEntity.DqmNPCBase;
 import dqmIII.enums.EnumDqmNpcTalk;
 import dqmIII.playerData.ExtendedPlayerProperties;
@@ -290,31 +290,31 @@ public class DqmEntityNPCBank extends DqmNPCBase
     			{
     				epIts = ep.inventory.getCurrentItem();
 
-    				if(epIts.getItem() == DQM.miscs.itemOkane)
+    				if(epIts.getItem() == DQMiscs.itemOkane)
     				{
     					ep.addChatMessage(new ChatComponentTranslation("msg.Bank.messages.30.txt",new Object[] {}));
     					cashGold = 1000;
-    				}else if(epIts.getItem() == DQM.miscs.itemOkane10000)
+    				}else if(epIts.getItem() == DQMiscs.itemOkane10000)
     				{
     					ep.addChatMessage(new ChatComponentTranslation("msg.Bank.messages.31.txt",new Object[] {}));
     					cashGold = 10000;
-    				}else if(epIts.getItem() == DQM.miscs.itemOkane100000)
+    				}else if(epIts.getItem() == DQMiscs.itemOkane100000)
     				{
     					ep.addChatMessage(new ChatComponentTranslation("msg.Bank.messages.32.txt",new Object[] {}));
     					cashGold = 100000;
-    				}else if(epIts.getItem() == DQM.miscs.itemOkane1000000)
+    				}else if(epIts.getItem() == DQMiscs.itemOkane1000000)
     				{
     					ep.addChatMessage(new ChatComponentTranslation("msg.Bank.messages.33.txt",new Object[] {}));
     					cashGold = 1000000;
-    				}else if(epIts.getItem() == DQM.miscs.itemDouka)
+    				}else if(epIts.getItem() == DQMiscs.itemDouka)
     				{
     					ep.addChatMessage(new ChatComponentTranslation("msg.Bank.messages.34.txt",new Object[] {}));
     					cashGold = 500;
-    				}else if(epIts.getItem() == DQM.miscs.itemGinka)
+    				}else if(epIts.getItem() == DQMiscs.itemGinka)
     				{
     					ep.addChatMessage(new ChatComponentTranslation("msg.Bank.messages.35.txt",new Object[] {}));
     					cashGold = 3000;
-    				}else if(epIts.getItem() == DQM.miscs.itemKinka)
+    				}else if(epIts.getItem() == DQMiscs.itemKinka)
     				{
     					ep.addChatMessage(new ChatComponentTranslation("msg.Bank.messages.36.txt",new Object[] {}));
     					cashGold = 10000;
@@ -348,10 +348,10 @@ public class DqmEntityNPCBank extends DqmNPCBase
     			ItemStack itsOkane = null;
     			switch(flg)
     			{
-    				case 10:rate = 1000; itsOkane = new ItemStack(DQM.miscs.itemOkane, 1, 1); break;
-    				case 11:rate = 10000; itsOkane = new ItemStack(DQM.miscs.itemOkane10000, 1, 1); break;
-    				case 12:rate = 100000; itsOkane = new ItemStack(DQM.miscs.itemOkane100000, 1, 1); break;
-    				case 13:rate = 1000000; itsOkane = new ItemStack(DQM.miscs.itemOkane1000000, 1, 1); break;
+    				case 10:rate = 1000; itsOkane = new ItemStack(DQMiscs.itemOkane, 1, 1); break;
+    				case 11:rate = 10000; itsOkane = new ItemStack(DQMiscs.itemOkane10000, 1, 1); break;
+    				case 12:rate = 100000; itsOkane = new ItemStack(DQMiscs.itemOkane100000, 1, 1); break;
+    				case 13:rate = 1000000; itsOkane = new ItemStack(DQMiscs.itemOkane1000000, 1, 1); break;
     			}
 
     			if(epMoney >= rate)

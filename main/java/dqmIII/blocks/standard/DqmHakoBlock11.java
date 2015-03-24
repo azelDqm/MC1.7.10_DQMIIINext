@@ -8,6 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
 import dqmIII.entity.mobEntity.DqmMobBase;
 import dqmIII.entity.mobEntity.monsterEnd.DqmEntityPandorabox;
 import dqmIII.entity.mobEntity.monsterEtc.DqmEntityHitokuibako;
@@ -217,7 +218,7 @@ public class DqmHakoBlock11 extends Block
 
         if(spawnMob == null && rand.nextInt(4) == 0)
         {
-        	doropiItems = new ItemStack(DQM.blocks.DqmBlockHakoK, 1);
+        	doropiItems = new ItemStack(DQBlocks.DqmBlockHakoK, 1);
         }
 
         if (!par1World.isRemote)

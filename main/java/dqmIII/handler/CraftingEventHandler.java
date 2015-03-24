@@ -7,7 +7,7 @@ import net.minecraft.item.ItemShears;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
-import dqmIII.DQM;
+import dqmIII.api.Blocks.DQPlants;
 
 public class CraftingEventHandler  {
 
@@ -28,7 +28,7 @@ public class CraftingEventHandler  {
 		}
 		*/
 
-		if(event.crafting.getItem() == new ItemStack(DQM.seedBlocks.BlockHoujyouDirt, 1).getItem())
+		if(event.crafting.getItem() == new ItemStack(DQPlants.BlockHoujyouDirt, 1).getItem())
 		{
 			for(int cnt = 0; cnt < 9; cnt++)
 			{

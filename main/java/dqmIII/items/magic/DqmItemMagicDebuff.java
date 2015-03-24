@@ -15,9 +15,9 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntityDebuff;
 import dqmIII.enums.EnumDqmMagic;
-import dqmIII.items.DqmItemMagics;
 import dqmIII.items.base.DqmItemMagicBase;
 import dqmIII.playerData.ExtendedPlayerProperties;
 
@@ -84,6 +84,7 @@ public class DqmItemMagicDebuff extends DqmItemMagicBase{
 			{
 				par3EntityPlayer.addChatMessage(new ChatComponentTranslation("msg.magic.nomp.txt",new Object[] {}));
 				par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.pi", 1.0F, 1.0F);
+				return par1ItemStack;
 			}else
 			{
 				ExtendedPlayerProperties.get(par3EntityPlayer).setMP(epMP - this.getEnumMagic().getMP());
@@ -92,9 +93,9 @@ public class DqmItemMagicDebuff extends DqmItemMagicBase{
     		par1ItemStack.damageItem(this.getEnumMagic().getDamage(), par3EntityPlayer);
 
 
-			if(this == DqmItemMagics.itemRukanan || this == DqmItemMagics.itemRarihoma ||this == DqmItemMagics.itemBomiosu ||
-			   this == DqmItemMagics.itemRariho || this == DqmItemMagics.itemManusa || this == DqmItemMagics.itemMahoton ||
-			   this == DqmItemMagics.itemMedapani || this == DqmItemMagics.itemDivainsuperu)
+			if(this == DQMagics.itemRukanan || this == DQMagics.itemRarihoma ||this == DQMagics.itemBomiosu ||
+			   this == DQMagics.itemRariho || this == DQMagics.itemManusa || this == DQMagics.itemMahoton ||
+			   this == DQMagics.itemMedapani || this == DQMagics.itemDivainsuperu)
 			{
 	    		//par3EntityPlayer.addPotionEffect(new PotionEffect(this.pot.id, this.getEnumMagic().getAttack(), 0));
 				par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.jumon", 1.0F, 1.0F);

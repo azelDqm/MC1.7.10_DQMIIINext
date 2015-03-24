@@ -1,7 +1,9 @@
 package dqmIII.dataTable;
 
 import net.minecraft.item.Item;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQArmors;
+import dqmIII.api.Items.DQMiscs;
+import dqmIII.api.Items.DQWeapons;
 
 public class FuncBukiyaPriceTable {
 
@@ -372,332 +374,332 @@ public class FuncBukiyaPriceTable {
 
         if (randomNum == 0)
         {
-            return DQM.armors.itemKinobousi;
+            return DQArmors.itemKinobousi;
         }
 
         if (randomNum == 1)
         {
-            return DQM.weapons.itemDounoturugi;
+            return DQWeapons.itemDounoturugi;
         }
 
         if (randomNum == 2)
         {
-            return DQM.weapons.itemTenbinbou;
+            return DQWeapons.itemTenbinbou;
         }
 
         if (randomNum == 3)
         {
-            return DQM.weapons.itemKonbou;
+            return DQWeapons.itemKonbou;
         }
 
         if (randomNum == 4)
         {
-            return DQM.armors.itemSuraimuhead;
+            return DQArmors.itemSuraimuhead;
         }
 
         if (randomNum == 5)
         {
-            return DQM.armors.itemSuraimunofuku;
+            return DQArmors.itemSuraimunofuku;
         }
 
         if (randomNum == 6)
         {
-            return DQM.weapons.itemKawanomuti;
+            return DQWeapons.itemKawanomuti;
         }
 
         if (randomNum == 7)
         {
-            return DQM.weapons.itemMonosasizao;
+            return DQWeapons.itemMonosasizao;
         }
 
         if (randomNum == 8)
         {
-            return DQM.weapons.itemIsinotume;
+            return DQWeapons.itemIsinotume;
         }
 
         if (randomNum == 9)
         {
-            return DQM.weapons.itemJaiantokurabu;
+            return DQWeapons.itemJaiantokurabu;
         }
 
         if (randomNum == 10)
         {
-            return DQM.weapons.itemKudamononaifu;
+            return DQWeapons.itemKudamononaifu;
         }
 
         if (randomNum == 11)
         {
-            return DQM.armors.itemKawanobousi;
+            return DQArmors.itemKawanobousi;
         }
 
         if (randomNum == 12)
         {
-            return DQM.armors.itemKawanoyoroi;
+            return DQArmors.itemKawanoyoroi;
         }
 
         if (randomNum == 13)
         {
-            return DQM.armors.itemKawanokote;
+            return DQArmors.itemKawanokote;
         }
 
         if (randomNum == 14)
         {
-            return DQM.armors.itemKawanokutu;
+            return DQArmors.itemKawanokutu;
         }
 
         if (randomNum == 15)
         {
-            return DQM.weapons.itemHeisinoken;
+            return DQWeapons.itemHeisinoken;
         }
 
         if (randomNum == 16)
         {
-            return DQM.weapons.itemHaganenoono;
+            return DQWeapons.itemHaganenoono;
         }
 
         if (randomNum == 17)
         {
-            return DQM.armors.itemKeikoginobandana;
+            return DQArmors.itemKeikoginobandana;
         }
 
         if (randomNum == 18)
         {
-            return DQM.weapons.itemSyotobou;
+            return DQWeapons.itemSyotobou;
         }
 
         if (randomNum == 19)
         {
-            return DQM.weapons.itemBumeran;
+            return DQWeapons.itemBumeran;
         }
 
         if (randomNum == 20)
         {
-            return DQM.weapons.itemHaganenokon;
+            return DQWeapons.itemHaganenokon;
         }
 
         if (randomNum == 21)
         {
-            return DQM.armors.itemTabibitonofuku;
+            return DQArmors.itemTabibitonofuku;
         }
 
         if (randomNum == 22)
         {
-            return DQM.armors.itemTabibitonotebukuro;
+            return DQArmors.itemTabibitonotebukuro;
         }
 
         if (randomNum == 23)
         {
-            return DQM.armors.itemKeikogisita;
+            return DQArmors.itemKeikogisita;
         }
 
         if (randomNum == 24)
         {
-            return DQM.armors.itemKeikogi;
+            return DQArmors.itemKeikogi;
         }
 
         if (randomNum == 25)
         {
-            return DQM.weapons.itemIbaranomuti;
+            return DQWeapons.itemIbaranomuti;
         }
 
         if (randomNum == 26)
         {
-            return DQM.weapons.itemTakenoyari;
+            return DQWeapons.itemTakenoyari;
         }
 
         if (randomNum == 27)
         {
-            return DQM.armors.itemRezamanto;
+            return DQArmors.itemRezamanto;
         }
 
         if (randomNum == 28)
         {
-            return DQM.weapons.itemReipia;
+            return DQWeapons.itemReipia;
         }
 
         if (randomNum == 29)
         {
-            return DQM.weapons.itemMajuunotume;
+            return DQWeapons.itemMajuunotume;
         }
 
         if (randomNum == 30)
         {
-            return DQM.armors.itemSakuretto;
+            return DQArmors.itemSakuretto;
         }
 
         if (randomNum == 31)
         {
-            return DQM.armors.itemKinunoroubu;
+            return DQArmors.itemKinunoroubu;
         }
 
         if (randomNum == 32)
         {
-            return DQM.armors.itemKinunotebukuro;
+            return DQArmors.itemKinunotebukuro;
         }
 
         if (randomNum == 33)
         {
-            return DQM.armors.itemSandaru;
+            return DQArmors.itemSandaru;
         }
 
         if (randomNum == 34)
         {
-            return DQM.weapons.itemKinoono;
+            return DQWeapons.itemKinoono;
         }
 
         if (randomNum == 35)
         {
-            return DQM.armors.itemUrokonoyoroi;
+            return DQArmors.itemUrokonoyoroi;
         }
 
         if (randomNum == 36)
         {
-            return DQM.weapons.itemSeinarunaifu;
+            return DQWeapons.itemSeinarunaifu;
         }
 
         if (randomNum == 37)
         {
-            return DQM.weapons.itemWohanma;
+            return DQWeapons.itemWohanma;
         }
 
         if (randomNum == 38)
         {
-            return DQM.weapons.itemKaryuudonoyumi;
+            return DQWeapons.itemKaryuudonoyumi;
         }
 
         if (randomNum == 39)
         {
-            return DQM.weapons.itemHaganenoturugi;
+            return DQWeapons.itemHaganenoturugi;
         }
 
         if (randomNum == 40)
         {
-            return DQM.weapons.itemYaibanobumeran;
+            return DQWeapons.itemYaibanobumeran;
         }
 
         if (randomNum == 41)
         {
-            return DQM.weapons.itemReiniroddo;
+            return DQWeapons.itemReiniroddo;
         }
 
         if (randomNum == 42)
         {
-            return DQM.armors.itemBudougi;
+            return DQArmors.itemBudougi;
         }
 
         if (randomNum == 43)
         {
-            return DQM.armors.itemBudounokutu;
+            return DQArmors.itemBudounokutu;
         }
 
         if (randomNum == 44)
         {
-            return DQM.armors.itemBuounoudeate;
+            return DQArmors.itemBuounoudeate;
         }
 
         if (randomNum == 45)
         {
-            return DQM.armors.itemKenpougiue;
+            return DQArmors.itemKenpougiue;
         }
 
         if (randomNum == 46)
         {
-            return DQM.armors.itemKenpougirisuto;
+            return DQArmors.itemKenpougirisuto;
         }
 
         if (randomNum == 47)
         {
-            return DQM.armors.itemHaganenokabuto;
+            return DQArmors.itemHaganenokabuto;
         }
 
         if (randomNum == 48)
         {
-            return DQM.armors.itemHaganenoyoroi;
+            return DQArmors.itemHaganenoyoroi;
         }
 
         if (randomNum == 49)
         {
-            return DQM.armors.itemHaganenokote;
+            return DQArmors.itemHaganenokote;
         }
 
         if (randomNum == 50)
         {
-            return DQM.armors.itemHaganenokutu;
+            return DQArmors.itemHaganenokutu;
         }
 
         if (randomNum == 51)
         {
-            return DQM.weapons.itemTekkoukagi;
+            return DQWeapons.itemTekkoukagi;
         }
 
         if (randomNum == 52)
         {
-            return DQM.weapons.itemBatoruribon;
+            return DQWeapons.itemBatoruribon;
         }
 
         if (randomNum == 53)
         {
-            return DQM.weapons.itemTetunoyari;
+            return DQWeapons.itemTetunoyari;
         }
 
         if (randomNum == 54)
         {
-            return DQM.weapons.itemKoorinoyaiba;
+            return DQWeapons.itemKoorinoyaiba;
         }
 
         if (randomNum == 55)
         {
-            return DQM.weapons.itemMinagorosinoken;
+            return DQWeapons.itemMinagorosinoken;
         }
 
         if (randomNum == 56)
         {
-            return DQM.weapons.itemOokanaduti;
+            return DQWeapons.itemOokanaduti;
         }
 
         if (randomNum == 57)
         {
-            return DQM.weapons.itemTatujinnoono;
+            return DQWeapons.itemTatujinnoono;
         }
 
         if (randomNum == 58)
         {
-            return DQM.weapons.itemDokubari;
+            return DQWeapons.itemDokubari;
         }
 
         if (randomNum == 59)
         {
-            return DQM.armors.itemMadousinosandaru;
+            return DQArmors.itemMadousinosandaru;
         }
 
         if (randomNum == 60)
         {
-            return DQM.armors.itemBudoubandana;
+            return DQArmors.itemBudoubandana;
         }
 
         if (randomNum == 61)
         {
-            return DQM.armors.itemRaiannokabuto;
+            return DQArmors.itemRaiannokabuto;
         }
 
         if (randomNum == 62)
         {
-            return DQM.armors.itemRaiannoyoroi;
+            return DQArmors.itemRaiannoyoroi;
         }
 
         if (randomNum == 63)
         {
-            return DQM.armors.itemRaiannogurobu;
+            return DQArmors.itemRaiannogurobu;
         }
 
         if (randomNum == 64)
         {
-            return DQM.armors.itemRaiannobutu;
+            return DQArmors.itemRaiannobutu;
         }
 
         if (randomNum >= 65 && randomNum <= 70)
         {
-            return DQM.miscs.itemTouzokunokagi;
+            return DQMiscs.itemTouzokunokagi;
         }
 
         return null;
@@ -991,248 +993,248 @@ public class FuncBukiyaPriceTable {
 
         if (randomNum == 0)
         {
-            return DQM.weapons.itemMorohanoturugi;
+            return DQWeapons.itemMorohanoturugi;
         }
 
         if (randomNum == 1)
         {
-            return DQM.weapons.itemToraidento;
+            return DQWeapons.itemToraidento;
         }
 
         if (randomNum == 2)
         {
-            return DQM.weapons.itemDokuganonaifu;
+            return DQWeapons.itemDokuganonaifu;
         }
 
         if (randomNum == 3)
         {
-            return DQM.weapons.itemAkumanotume;
+            return DQWeapons.itemAkumanotume;
         }
 
         if (randomNum == 4)
         {
-            return DQM.weapons.itemKurosubumeran;
+            return DQWeapons.itemKurosubumeran;
         }
 
         if (randomNum == 5)
         {
-            return DQM.weapons.itemHajanoturugi;
+            return DQWeapons.itemHajanoturugi;
         }
 
         if (randomNum == 6)
         {
-            return DQM.weapons.itemBusinnokon;
+            return DQWeapons.itemBusinnokon;
         }
 
         if (randomNum == 7)
         {
-            return DQM.weapons.itemDoragonteiru;
+            return DQWeapons.itemDoragonteiru;
         }
 
         if (randomNum == 8)
         {
-            return DQM.weapons.itemHaganenoyari;
+            return DQWeapons.itemHaganenoyari;
         }
 
         if (randomNum == 9)
         {
-            return DQM.weapons.itemKazekirinoyumi;
+            return DQWeapons.itemKazekirinoyumi;
         }
 
         if (randomNum == 10)
         {
-            return DQM.armors.itemOberonnokutu;
+            return DQArmors.itemOberonnokutu;
         }
 
         if (randomNum == 11)
         {
-            return DQM.weapons.itemDoragonkira;
+            return DQWeapons.itemDoragonkira;
         }
 
         if (randomNum == 12)
         {
-            return DQM.weapons.itemDaitinokanaduti;
+            return DQWeapons.itemDaitinokanaduti;
         }
 
         if (randomNum == 13)
         {
-            return DQM.weapons.itemMoonakkusu;
+            return DQWeapons.itemMoonakkusu;
         }
 
         if (randomNum == 14)
         {
-            return DQM.weapons.itemIgurufeza;
+            return DQWeapons.itemIgurufeza;
         }
 
         if (randomNum == 15)
         {
-            return DQM.armors.itemMahounobousi;
+            return DQArmors.itemMahounobousi;
         }
 
         if (randomNum == 16)
         {
-            return DQM.armors.itemMahounohoui;
+            return DQArmors.itemMahounohoui;
         }
 
         if (randomNum == 17)
         {
-            return DQM.armors.itemMahounotebukuro;
+            return DQArmors.itemMahounotebukuro;
         }
 
         if (randomNum == 18)
         {
-            return DQM.armors.itemMahounokutu;
+            return DQArmors.itemMahounokutu;
         }
 
         if (randomNum == 19)
         {
-            return DQM.weapons.itemDorirunakkuru;
+            return DQWeapons.itemDorirunakkuru;
         }
 
         if (randomNum == 20)
         {
-            return DQM.weapons.itemBasutawipu;
+            return DQWeapons.itemBasutawipu;
         }
 
         if (randomNum == 21)
         {
-            return DQM.weapons.itemAsasindaga;
+            return DQWeapons.itemAsasindaga;
         }
 
         if (randomNum == 22)
         {
-            return DQM.weapons.itemYuuwakunoyumi;
+            return DQWeapons.itemYuuwakunoyumi;
         }
 
 
         if (randomNum == 29)
         {
-            return DQM.weapons.itemSanzokusaberu;
+            return DQWeapons.itemSanzokusaberu;
         }
 
         if (randomNum == 30)
         {
-            return DQM.armors.itemMikawasinofuku;
+            return DQArmors.itemMikawasinofuku;
         }
 
         if (randomNum == 31)
         {
-            return DQM.weapons.itemWohanmakai;
+            return DQWeapons.itemWohanmakai;
         }
 
         if (randomNum == 32)
         {
-            return DQM.weapons.itemHaruberuto;
+            return DQWeapons.itemHaruberuto;
         }
 
         if (randomNum == 33)
         {
-            return DQM.weapons.itemDaikokubasira;
+            return DQWeapons.itemDaikokubasira;
         }
 
         if (randomNum == 34)
         {
-            return DQM.weapons.itemMayokenotume;
+            return DQWeapons.itemMayokenotume;
         }
 
         if (randomNum == 35)
         {
-            return DQM.weapons.itemKingakkusu;
+            return DQWeapons.itemKingakkusu;
         }
 
         if (randomNum == 36)
         {
-            return DQM.armors.itemSinkannobousi;
+            return DQArmors.itemSinkannobousi;
         }
 
         if (randomNum == 37)
         {
-            return DQM.armors.itemSinkannoepuron;
+            return DQArmors.itemSinkannoepuron;
         }
 
         if (randomNum == 38)
         {
-            return DQM.armors.itemSinkannogurobu;
+            return DQArmors.itemSinkannogurobu;
         }
 
         if (randomNum == 39)
         {
-            return DQM.armors.itemSutekinasabo;
+            return DQArmors.itemSutekinasabo;
         }
 
         if (randomNum == 40)
         {
-            return DQM.armors.itemHonoonoyoroi;
+            return DQArmors.itemHonoonoyoroi;
         }
 
         if (randomNum == 41)
         {
-            return DQM.armors.itemDoragonmeiru;
+            return DQArmors.itemDoragonmeiru;
         }
 
         if (randomNum == 42)
         {
-            return DQM.weapons.itemMegaminomuti;
+            return DQWeapons.itemMegaminomuti;
         }
 
         if (randomNum == 43)
         {
-            return DQM.weapons.itemKeironnoyumi;
+            return DQWeapons.itemKeironnoyumi;
         }
 
         if (randomNum == 44)
         {
-            return DQM.weapons.itemKazenobumeran;
+            return DQWeapons.itemKazenobumeran;
         }
 
         if (randomNum == 45)
         {
-            return DQM.weapons.itemInferunosword;
+            return DQWeapons.itemInferunosword;
         }
 
         if (randomNum == 46)
         {
-            return DQM.weapons.itemOriharukonbou;
+            return DQWeapons.itemOriharukonbou;
         }
 
         if (randomNum == 47)
         {
-            return DQM.weapons.itemHonoonotume;
+            return DQWeapons.itemHonoonotume;
         }
 
         if (randomNum == 48)
         {
-            return DQM.weapons.itemMajinnokanaduti;
+            return DQWeapons.itemMajinnokanaduti;
         }
 
         if (randomNum == 49)
         {
-            return DQM.weapons.itemInazumanoyari;
+            return DQWeapons.itemInazumanoyari;
         }
 
         if (randomNum == 50)
         {
-            return DQM.armors.itemPuratinaheddo;
+            return DQArmors.itemPuratinaheddo;
         }
 
         if (randomNum == 51)
         {
-            return DQM.armors.itemPuratinameiru;
+            return DQArmors.itemPuratinameiru;
         }
 
         if (randomNum == 52)
         {
-            return DQM.armors.itemPuratinagantoretto;
+            return DQArmors.itemPuratinagantoretto;
         }
 
         if (randomNum == 53)
         {
-            return DQM.armors.itemPuratinaguribu;
+            return DQArmors.itemPuratinaguribu;
         }
 
         if (randomNum >= 54 && randomNum <= 59)
         {
-            return DQM.miscs.itemTouzokunokagi;
+            return DQMiscs.itemTouzokunokagi;
         }
 
     	return null;

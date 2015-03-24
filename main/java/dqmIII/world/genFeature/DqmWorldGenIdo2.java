@@ -7,7 +7,8 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
-import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
+import dqmIII.api.Blocks.DQDecorates;
 import dqmIII.entity.npcEntity.npc.DqmEntityNPCMedalking;
 
 public class DqmWorldGenIdo2 implements IWorldGenerator
@@ -47,11 +48,11 @@ public class DqmWorldGenIdo2 implements IWorldGenerator
         }
 
         //if (ran1 >= 9950 && (par3World.getBlock(xxx, yyy - 1, zzz) == Blocks.grass || par3World.getBlock(xxx, yyy - 1, zzz) == Blocks.sand))
-        if (ran1 >= 9980 && (par3World.getBlock(xxx, yyy - 1, zzz) == Blocks.grass ||
+        if (ran1 >= 9990 && (par3World.getBlock(xxx, yyy - 1, zzz) == Blocks.grass ||
         					 par3World.getBlock(xxx, yyy - 1, zzz) == Blocks.sand  ||
         					 (topBlock != Blocks.air && par3World.getBlock(xxx, yyy - 1, zzz) == topBlock)))
         {
-        	System.out.println("X" + xxx +  "/Y" + yyy +  "/Z" + zzz);
+        	//System.out.println("X" + xxx +  "/Y" + yyy +  "/Z" + zzz);
 
             for (int x = -1; x <= 1; ++x)
             {
@@ -66,12 +67,12 @@ public class DqmWorldGenIdo2 implements IWorldGenerator
 
             if (ran2 == 0)
             {
-                par3World.setBlock(xxx - 1, yyy, zzz, DQM.decorateBlocks.DqmBlockIdo, 0, 2);
+                par3World.setBlock(xxx - 1, yyy, zzz, DQDecorates.DqmBlockIdo, 0, 2);
             }
 
             if (ran2 == 1)
             {
-                par3World.setBlock(xxx - 1, yyy, zzz, DQM.decorateBlocks.DqmBlockIdooke, 0, 2);
+                par3World.setBlock(xxx - 1, yyy, zzz, DQDecorates.DqmBlockIdooke, 0, 2);
             }
 
             for (int y = -32; y <= -1; ++y)
@@ -85,7 +86,7 @@ public class DqmWorldGenIdo2 implements IWorldGenerator
                 {
                 	if(x != 0 && z != 0)
                 	{
-                		par3World.setBlock(xxx + x, yyy - 30, zzz + z, DQM.blocks.DqmBlockKowareru6, 0, 2);
+                		par3World.setBlock(xxx + x, yyy - 30, zzz + z, DQBlocks.DqmBlockKowareru6, 0, 2);
                 	}
                 }
             }
@@ -98,10 +99,10 @@ public class DqmWorldGenIdo2 implements IWorldGenerator
                     {
                     	if(y % 2 == 0)
                     	{
-                    		par3World.setBlock(xxx + x, yyy + y, zzz + z, DQM.blocks.DqmBlockKowareru6, 0, 2);
+                    		par3World.setBlock(xxx + x, yyy + y, zzz + z, DQBlocks.DqmBlockKowareru6, 0, 2);
                     	}else
                     	{
-                    		par3World.setBlock(xxx + x, yyy + y, zzz + z, DQM.blocks.DqmBlockKowareru7, 0, 2);
+                    		par3World.setBlock(xxx + x, yyy + y, zzz + z, DQBlocks.DqmBlockKowareru7, 0, 2);
                     	}
                     }
                 }
@@ -112,7 +113,7 @@ public class DqmWorldGenIdo2 implements IWorldGenerator
             {
                 for (int z = -5; z <= 5; ++z)
                 {
-                	par3World.setBlock(xxx + x, yyy - 36, zzz + z, DQM.blocks.DqmBlockKowareru9, 0, 2);
+                	par3World.setBlock(xxx + x, yyy - 36, zzz + z, DQBlocks.DqmBlockKowareru9, 0, 2);
                 }
             }
 
@@ -127,17 +128,17 @@ public class DqmWorldGenIdo2 implements IWorldGenerator
                 			par3World.setBlock(xxx + x, yyy + y, zzz + 5, Blocks.glowstone, 0, 2);
                 		}else
                 		{
-                			par3World.setBlock(xxx + x, yyy + y, zzz + 5, DQM.blocks.DqmBlockKowareru9, 0, 2);
+                			par3World.setBlock(xxx + x, yyy + y, zzz + 5, DQBlocks.DqmBlockKowareru9, 0, 2);
                 		}
                 	}else
                 	{
                 		par3World.setBlock(xxx + x, yyy + y, zzz + 5, Blocks.air, 0, 2);
                     	if(y % 2 == 0)
                     	{
-                    		par3World.setBlock(xxx + x, yyy + y, zzz + 6, DQM.blocks.DqmBlockKowareru6, 0, 2);
+                    		par3World.setBlock(xxx + x, yyy + y, zzz + 6, DQBlocks.DqmBlockKowareru6, 0, 2);
                     	}else
                     	{
-                    		par3World.setBlock(xxx + x, yyy + y, zzz + 6, DQM.blocks.DqmBlockKowareru7, 0, 2);
+                    		par3World.setBlock(xxx + x, yyy + y, zzz + 6, DQBlocks.DqmBlockKowareru7, 0, 2);
                     	}
                 	}
                 }
@@ -159,7 +160,7 @@ public class DqmWorldGenIdo2 implements IWorldGenerator
                 {
                     for (int y = -37; y <= -37; ++y)
                     {
-                        par3World.setBlock(xxx + x, yyy + y, zzz + z, DQM.blocks.DqmBlockKowareru5, 0, 2);
+                        par3World.setBlock(xxx + x, yyy + y, zzz + z, DQBlocks.DqmBlockKowareru5, 0, 2);
                     }
                 }
             }
@@ -178,19 +179,19 @@ public class DqmWorldGenIdo2 implements IWorldGenerator
 
             //par3World.setBlock(xxx + 5, yyy + y, zzz + 5, Blocks.air, 0, 2);
 
-            par3World.setBlock(xxx + 4, yyy - 35, zzz + 4, DQM.decorateBlocks.DqmBlockTaimatu2, 0, 2);
-            par3World.setBlock(xxx - 4, yyy - 35, zzz + 4, DQM.decorateBlocks.DqmBlockTaimatu2, 0, 2);
-            par3World.setBlock(xxx + 4, yyy - 35, zzz - 4, DQM.decorateBlocks.DqmBlockTaimatu2, 0, 2);
-            par3World.setBlock(xxx - 4, yyy - 35, zzz - 4, DQM.decorateBlocks.DqmBlockTaimatu2, 0, 2);
+            par3World.setBlock(xxx + 4, yyy - 35, zzz + 4, DQDecorates.DqmBlockTaimatu2, 0, 2);
+            par3World.setBlock(xxx - 4, yyy - 35, zzz + 4, DQDecorates.DqmBlockTaimatu2, 0, 2);
+            par3World.setBlock(xxx + 4, yyy - 35, zzz - 4, DQDecorates.DqmBlockTaimatu2, 0, 2);
+            par3World.setBlock(xxx - 4, yyy - 35, zzz - 4, DQDecorates.DqmBlockTaimatu2, 0, 2);
 
-            par3World.setBlock(xxx - 1, yyy - 35, zzz + 5, DQM.decorateBlocks.DqmBlockTaimatu2, 0, 2);
-            par3World.setBlock(xxx + 1, yyy - 35, zzz + 5, DQM.decorateBlocks.DqmBlockTaimatu2, 0, 2);
+            par3World.setBlock(xxx - 1, yyy - 35, zzz + 5, DQDecorates.DqmBlockTaimatu2, 0, 2);
+            par3World.setBlock(xxx + 1, yyy - 35, zzz + 5, DQDecorates.DqmBlockTaimatu2, 0, 2);
 
             par3World.setBlock(xxx + 1, yyy - 36, zzz, Blocks.flowing_water, 0, 2);
             par3World.setBlock(xxx - 1, yyy - 36, zzz, Blocks.flowing_water, 0, 2);
             par3World.setBlock(xxx, yyy - 36, zzz + 1, Blocks.flowing_water, 0, 2);
             par3World.setBlock(xxx, yyy - 36, zzz - 1, Blocks.flowing_water, 0, 2);
-            par3World.setBlock(xxx, yyy - 35, zzz - 3, DQM.blocks.DqmBlockJampBlock, 0, 2);
+            par3World.setBlock(xxx, yyy - 35, zzz - 3, DQBlocks.DqmBlockJampBlock, 0, 2);
 
 	        DqmEntityNPCMedalking entitysilverfish = new DqmEntityNPCMedalking(par3World);
 	        entitysilverfish.setLocationAndAngles(xxx , yyy -34, zzz + 5, 0.0F, 0.0F);

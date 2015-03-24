@@ -2,7 +2,7 @@ package dqmIII.dataTable;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.enums.EnumDqmJob;
 import dqmIII.items.magic.DqmItemMagicHoimi;
 import dqmIII.items.magic.DqmItemMagicMahoimi;
@@ -648,205 +648,205 @@ public class FuncMagicLvTable {
     	int[] lvTable = null;
     	int[] epJobTable = ExtendedPlayerProperties.get(ep).getJobLvA();
 
-	    if(itm == DQM.magics.itemZaoraru){
+	    if(itm == DQMagics.itemZaoraru){
 	    	lvTable = ZaoraruJobLv;
-	    }else if(itm == DQM.magics.itemZaoriku){
+	    }else if(itm == DQMagics.itemZaoriku){
 	    	lvTable = ZaorikuJobLv;
-	    }else if(itm == DQM.magics.itemUminarinotue){
+	    }else if(itm == DQMagics.itemUminarinotue){
 	    	lvTable = UminarinotueJobLv;
-	    }else if(itm == DQM.magics.itemHikarinotue){
+	    }else if(itm == DQMagics.itemHikarinotue){
 	    	lvTable = HikarinotueJobLv;
-	    }else if(itm == DQM.magics.itemRemira){
+	    }else if(itm == DQMagics.itemRemira){
 	    	lvTable = RemiramaJobLv;
-	    }else if(itm == DQM.magics.itemHaigou){
+	    }else if(itm == DQMagics.itemHaigou){
 	    	lvTable = HaigouJobLv;
-	    }else if(itm == DQM.magics.itemHaigou2){
+	    }else if(itm == DQMagics.itemHaigou2){
 	    	lvTable = Haigou2JobLv;
-	    }else if(itm == DQM.magics.itemParupunte){
+	    }else if(itm == DQMagics.itemParupunte){
 	    	lvTable = ParupunteJobLv;
-	    }else if(itm == DQM.magics.itemGira){
+	    }else if(itm == DQMagics.itemGira){
 	    	lvTable = GiraJobLv;
-	    }else if(itm == DQM.magics.itemBegirama){
+	    }else if(itm == DQMagics.itemBegirama){
 	    	lvTable = BegiramaJobLv;
-	    }else if(itm == DQM.magics.itemBegiragon){
+	    }else if(itm == DQMagics.itemBegiragon){
 	    	lvTable = BegiragonJobLv;
-	    }else if(itm == DQM.magics.itemGiragureido){
+	    }else if(itm == DQMagics.itemGiragureido){
 	    	lvTable = GiragureidoJobLv;
-	    }else if(itm == DQM.magics.itemMera){
+	    }else if(itm == DQMagics.itemMera){
 	    	lvTable = MeraJobLv;
-	    }else if(itm == DQM.magics.itemMerami){
+	    }else if(itm == DQMagics.itemMerami){
 	    	lvTable = MeramiJobLv;
-	    }else if(itm == DQM.magics.itemMerazoma){
+	    }else if(itm == DQMagics.itemMerazoma){
 	    	lvTable = MerazomaJobLv;
-	    }else if(itm == DQM.magics.itemMeragaia){
+	    }else if(itm == DQMagics.itemMeragaia){
 	    	lvTable = MeragaiaJobLv;
-	    }else if(itm == DQM.magics.itemIo){
+	    }else if(itm == DQMagics.itemIo){
 	    	lvTable = IoJobLv;
-	    }else if(itm == DQM.magics.itemIora){
+	    }else if(itm == DQMagics.itemIora){
 	    	lvTable = IoraJobLv;
-	    }else if(itm == DQM.magics.itemIonazun){
+	    }else if(itm == DQMagics.itemIonazun){
 	    	lvTable = IonazunJobLv;
-	    }else if(itm == DQM.magics.itemIogurande){
+	    }else if(itm == DQMagics.itemIogurande){
 	    	lvTable = IogurandeJobLv;
-	    }else if(itm == DQM.magics.itemRaidein){
+	    }else if(itm == DQMagics.itemRaidein){
 	    	lvTable = RaideinJobLv;
-	    }else if(itm == DQM.magics.itemGigadein){
+	    }else if(itm == DQMagics.itemGigadein){
 	    	lvTable = GigadeinJobLv;
-	    }else if(itm == DQM.magics.itemMinadein){
+	    }else if(itm == DQMagics.itemMinadein){
 	    	lvTable = MinadeinJobLv;
-	    }else if(itm == DQM.magics.itemBagi){
+	    }else if(itm == DQMagics.itemBagi){
 	    	lvTable = BagiJobLv;
-	    }else if(itm == DQM.magics.itemBagima){
+	    }else if(itm == DQMagics.itemBagima){
 	    	lvTable = BagimaJobLv;
-	    }else if(itm == DQM.magics.itemBagikurosu){
+	    }else if(itm == DQMagics.itemBagikurosu){
 	    	lvTable = BagikurosuJobLv;
-	    }else if(itm == DQM.magics.itemBagimutyo){
+	    }else if(itm == DQMagics.itemBagimutyo){
 	    	lvTable = BagimutyoJobLv;
-	    }else if(itm == DQM.magics.itemDoruma){
+	    }else if(itm == DQMagics.itemDoruma){
 	    	lvTable = DorumaJobLv;
-	    }else if(itm == DQM.magics.itemDorukuma){
+	    }else if(itm == DQMagics.itemDorukuma){
 	    	lvTable = DorukumaJobLv;
-	    }else if(itm == DQM.magics.itemDorumoa){
+	    }else if(itm == DQMagics.itemDorumoa){
 	    	lvTable = DorumoaJobLv;
-	    }else if(itm == DQM.magics.itemDorumadon){
+	    }else if(itm == DQMagics.itemDorumadon){
 	    	lvTable = DorumadonJobLv;
-	    }else if(itm == DQM.magics.itemHyado){
+	    }else if(itm == DQMagics.itemHyado){
 	    	lvTable = HyadoJobLv;
-	    }else if(itm == DQM.magics.itemHyadaruko){
+	    }else if(itm == DQMagics.itemHyadaruko){
 	    	lvTable = HyadarukoJobLv;
-	    }else if(itm == DQM.magics.itemMahyado){
+	    }else if(itm == DQMagics.itemMahyado){
 	    	lvTable = MahyadoJobLv;
-	    }else if(itm == DQM.magics.itemMahyadodesu){
+	    }else if(itm == DQMagics.itemMahyadodesu){
 	    	lvTable = MahyadodesuJobLv;
-	    }else if(itm == DQM.magics.itemMagicTool){
+	    }else if(itm == DQMagics.itemMagicTool){
 	    	lvTable = MagicToolJobLv;
-	    }else if(itm == DQM.magics.itemMagicTool2){
+	    }else if(itm == DQMagics.itemMagicTool2){
 	    	lvTable = MagicTool2JobLv;
-	    }else if(itm == DQM.magics.itemMagicTool3){
+	    }else if(itm == DQMagics.itemMagicTool3){
 	    	lvTable = MagicTool3JobLv;
-	    }else if(itm == DQM.magics.itemMagicTool4){
+	    }else if(itm == DQMagics.itemMagicTool4){
 	    	lvTable = MagicTool4JobLv;
-	    }else if(itm == DQM.magics.itemMagicTool5){
+	    }else if(itm == DQMagics.itemMagicTool5){
 	    	lvTable = MagicTool5JobLv;
-	    }else if(itm == DQM.magics.itemRurasin){
+	    }else if(itm == DQMagics.itemRurasin){
 	    	lvTable = RurasinJobLv;
-	    }else if(itm == DQM.magics.itemRurasin2){
+	    }else if(itm == DQMagics.itemRurasin2){
 	    	lvTable = Rurasin2JobLv;
-	    }else if(itm == DQM.magics.itemRura){
+	    }else if(itm == DQMagics.itemRura){
 	    	lvTable = RuraJobLv;
-	    }else if(itm == DQM.magics.itemRuraR){
+	    }else if(itm == DQMagics.itemRuraR){
 	    	lvTable = RuraRJobLv;
-	    }else if(itm == DQM.magics.itemRuraG){
+	    }else if(itm == DQMagics.itemRuraG){
 	    	lvTable = RuraGJobLv;
-	    }else if(itm == DQM.magics.itemRuraB){
+	    }else if(itm == DQMagics.itemRuraB){
 	    	lvTable = RuraBJobLv;
-	    }else if(itm == DQM.magics.itemRuraY){
+	    }else if(itm == DQMagics.itemRuraY){
 	    	lvTable = RuraYJobLv;
-	    }else if(itm == DQM.magics.itemRuraC){
+	    }else if(itm == DQMagics.itemRuraC){
 	    	lvTable = RuraCJobLv;
-	    }else if(itm == DQM.magics.itemRuraRC){
+	    }else if(itm == DQMagics.itemRuraRC){
 	    	lvTable = RuraRCJobLv;
-	    }else if(itm == DQM.magics.itemRuraGC){
+	    }else if(itm == DQMagics.itemRuraGC){
 	    	lvTable = RuraGCJobLv;
-	    }else if(itm == DQM.magics.itemRuraBC){
+	    }else if(itm == DQMagics.itemRuraBC){
 	    	lvTable = RuraBCJobLv;
-	    }else if(itm == DQM.magics.itemRuraYC){
+	    }else if(itm == DQMagics.itemRuraYC){
 	    	lvTable = RuraYCJobLv;
-	    }else if(itm == DQM.magics.itemBasirura){
+	    }else if(itm == DQMagics.itemBasirura){
 	    	lvTable = BasiruraJobLv;
-	    }else if(itm == DQM.magics.itemBasiruraC){
+	    }else if(itm == DQMagics.itemBasiruraC){
 	    	lvTable = BasiruraCJobLv;
-	    }else if(itm == DQM.magics.itemBasiruraC2){
+	    }else if(itm == DQMagics.itemBasiruraC2){
 	    	lvTable = BasiruraC2JobLv;
-	    }else if(itm == DQM.magics.itemHoimi){
+	    }else if(itm == DQMagics.itemHoimi){
 	    	lvTable = HoimiJobLv;
-	    }else if(itm == DQM.magics.itemBehoimi){
+	    }else if(itm == DQMagics.itemBehoimi){
 	    	lvTable = BehoimiJobLv;
-	    }else if(itm == DQM.magics.itemBehoma){
+	    }else if(itm == DQMagics.itemBehoma){
 	    	lvTable = BehomaJobLv;
-	    }else if(itm == DQM.magics.itemBigban){
+	    }else if(itm == DQMagics.itemBigban){
 	    	lvTable = BigbanJobLv;
-	    }else if(itm == DQM.magics.itemMadante){
+	    }else if(itm == DQMagics.itemMadante){
 	    	lvTable = MadanteJobLv;
-	    }else if(itm == DQM.magics.itemZaki){
+	    }else if(itm == DQMagics.itemZaki){
 	    	lvTable = ZakiJobLv;
-	    }else if(itm == DQM.magics.itemZaraki){
+	    }else if(itm == DQMagics.itemZaraki){
 	    	lvTable = ZarakiJobLv;
-	    }else if(itm == DQM.magics.itemBaikiruto){
+	    }else if(itm == DQMagics.itemBaikiruto){
 	    	lvTable = BaikirutoJobLv;
-	    }else if(itm == DQM.magics.itemSukara){
+	    }else if(itm == DQMagics.itemSukara){
 	    	lvTable = SukaraJobLv;
-	    }else if(itm == DQM.magics.itemBaha){
+	    }else if(itm == DQMagics.itemBaha){
 	    	lvTable = BahaJobLv;
-	    }else if(itm == DQM.magics.itemPiora){
+	    }else if(itm == DQMagics.itemPiora){
 	    	lvTable = PioraJobLv;
-	    }else if(itm == DQM.magics.itemBomie){
+	    }else if(itm == DQMagics.itemBomie){
 	    	lvTable = BomieJobLv;
-	    }else if(itm == DQM.magics.itemRariho){
+	    }else if(itm == DQMagics.itemRariho){
 	    	lvTable = RarihoJobLv;
-	    }else if(itm == DQM.magics.itemManusa){
+	    }else if(itm == DQMagics.itemManusa){
 	    	lvTable = ManusaJobLv;
-	    }else if(itm == DQM.magics.itemKiari){
+	    }else if(itm == DQMagics.itemKiari){
 	    	lvTable = KiariJobLv;
-	    }else if(itm == DQM.magics.itemMahoton){
+	    }else if(itm == DQMagics.itemMahoton){
 	    	lvTable = MahotonJobLv;
-	    }else if(itm == DQM.magics.itemRukani){
+	    }else if(itm == DQMagics.itemRukani){
 	    	lvTable = RukaniJobLv;
-	    }else if(itm == DQM.magics.itemMedapani){
+	    }else if(itm == DQMagics.itemMedapani){
 	    	lvTable = MedapaniJobLv;
-	    }else if(itm == DQM.magics.itemHenatosu){
+	    }else if(itm == DQMagics.itemHenatosu){
 	    	lvTable = HenatosuJobLv;
-	    }else if(itm == DQM.magics.itemMagicbaria){
+	    }else if(itm == DQMagics.itemMagicbaria){
 	    	lvTable = MagicbariaJobLv;
-	    }else if(itm == DQM.magics.itemMahokanta){
+	    }else if(itm == DQMagics.itemMahokanta){
 	    	lvTable = MahokantaJobLv;
-	    }else if(itm == DQM.magics.itemDivainsuperu){
+	    }else if(itm == DQMagics.itemDivainsuperu){
 	    	lvTable = DivainsuperuJobLv;
-	    }else if(itm == DQM.magics.itemMahouken1){
+	    }else if(itm == DQMagics.itemMahouken1){
 	    	lvTable = Mahouken1JobLv;
-	    }else if(itm == DQM.magics.itemMahouken2){
+	    }else if(itm == DQMagics.itemMahouken2){
 	    	lvTable = Mahouken2JobLv;
-	    }else if(itm == DQM.magics.itemMahouken3){
+	    }else if(itm == DQMagics.itemMahouken3){
 	    	lvTable = Mahouken3JobLv;
-	    }else if(itm == DQM.magics.itemMahouken4){
+	    }else if(itm == DQMagics.itemMahouken4){
 	    	lvTable = Mahouken4JobLv;
-	    }else if(itm == DQM.magics.itemMahouken5){
+	    }else if(itm == DQMagics.itemMahouken5){
 	    	lvTable = Mahouken5JobLv;
-	    }else if(itm == DQM.magics.itemMahouken6){
+	    }else if(itm == DQMagics.itemMahouken6){
 	    	lvTable = Mahouken6JobLv;
-	    }else if(itm == DQM.magics.itemMahouken7){
+	    }else if(itm == DQMagics.itemMahouken7){
 	    	lvTable = Mahouken7JobLv;
-	    }else if(itm == DQM.magics.itemRura2){
+	    }else if(itm == DQMagics.itemRura2){
 	    	lvTable = Rura2JobLv;
-	    }else if(itm == DQM.magics.itemRuraR2){
+	    }else if(itm == DQMagics.itemRuraR2){
 	    	lvTable = RuraR2JobLv;
-	    }else if(itm == DQM.magics.itemRuraG2){
+	    }else if(itm == DQMagics.itemRuraG2){
 	    	lvTable = RuraG2JobLv;
-	    }else if(itm == DQM.magics.itemRuraB2){
+	    }else if(itm == DQMagics.itemRuraB2){
 	    	lvTable = RuraB2JobLv;
-	    }else if(itm == DQM.magics.itemRuraY2){
+	    }else if(itm == DQMagics.itemRuraY2){
 	    	lvTable = RuraY2JobLv;
-	    }else if(itm == DQM.magics.itemCallCloud){
+	    }else if(itm == DQMagics.itemCallCloud){
 	    	lvTable = CallCloudJobLv;
-	    }else if(itm == DQM.magics.itemCallMagma){
+	    }else if(itm == DQMagics.itemCallMagma){
 	    	lvTable = CallMagmaJobLv;
-	    }else if(itm == DQM.magics.itemSukuruto){
+	    }else if(itm == DQMagics.itemSukuruto){
 	    	lvTable = SukurutoJobLv;
-	    }else if(itm == DQM.magics.itemPiorimu){
+	    }else if(itm == DQMagics.itemPiorimu){
 	    	lvTable = PiorimuJobLv;
-	    }else if(itm == DQM.magics.itemFubaha){
+	    }else if(itm == DQMagics.itemFubaha){
 	    	lvTable = FubahaJobLv;
-	    }else if(itm == DQM.magics.itemBehomara){
+	    }else if(itm == DQMagics.itemBehomara){
 	    	lvTable = BehomaraJobLv;
-	    }else if(itm == DQM.magics.itemBehomazun){
+	    }else if(itm == DQMagics.itemBehomazun){
 	    	lvTable = BehomazunJobLv;
-	    }else if(itm == DQM.magics.itemMahoimi){
+	    }else if(itm == DQMagics.itemMahoimi){
 	    	lvTable = MahoimiJobLv;
-	    }else if(itm == DQM.magics.itemMahoriku){
+	    }else if(itm == DQMagics.itemMahoriku){
 	    	lvTable = MahorikuJobLv;
-	    }else if(itm == DQM.magics.itemMahoizun){
+	    }else if(itm == DQMagics.itemMahoizun){
 	    	lvTable = MahoizunJobLv;
-	    }else if(itm == DQM.magics.itemZarakima){
+	    }else if(itm == DQMagics.itemZarakima){
 	    	lvTable = ZarakimaJobLv;
 	    }
 
@@ -856,10 +856,10 @@ public class FuncMagicLvTable {
 	    {
 		    for(int cnt = 0; cnt < lvTable.length; cnt++)
 		    {
-		    	System.out.println("test2:" + epJobTable[cnt] + "/" + cnt);
+		    	//System.out.println("test2:" + epJobTable[cnt] + "/" + cnt);
 		    	if(lvTable[cnt] != -1 && lvTable[cnt] <= epJobTable[cnt])
 		    	{
-		    		System.out.println("test3:" + lvTable[cnt] + "<=" + epJobTable[cnt]);
+		    		//System.out.println("test3:" + lvTable[cnt] + "<=" + epJobTable[cnt]);
 		    		return true;
 		    	}
 		    }
@@ -872,187 +872,187 @@ public class FuncMagicLvTable {
     public int[] getMagicParam(Item itm)
     {
 
-    	if(itm == DQM.magics.itemZaoraru){
+    	if(itm == DQMMagics.itemZaoraru){
     		return Zaoraru;
-    	}else if(itm == DQM.magics.itemZaoriku){
+    	}else if(itm == DQMMagics.itemZaoriku){
     		return Zaoriku;
-    	}else if(itm == DQM.magics.itemUminarinotue){
+    	}else if(itm == DQMMagics.itemUminarinotue){
     		return Uminarinotue;
-    	}else if(itm == DQM.magics.itemHikarinotue){
+    	}else if(itm == DQMMagics.itemHikarinotue){
     		return Hikarinotue;
-    	}else if(itm == DQM.magics.itemRemirama){
+    	}else if(itm == DQMMagics.itemRemirama){
     		return Remirama;
-    	}else if(itm == DQM.magics.itemHaigou){
+    	}else if(itm == DQMMagics.itemHaigou){
     		return Haigou;
-    	}else if(itm == DQM.magics.itemHaigou2){
+    	}else if(itm == DQMMagics.itemHaigou2){
     		return Haigou2;
-    	}else if(itm == DQM.magics.itemParupunte){
+    	}else if(itm == DQMMagics.itemParupunte){
     		return Parupunte;
-    	}else if(itm == DQM.magics.itemGira){
+    	}else if(itm == DQMMagics.itemGira){
     		return Gira;
-    	}else if(itm == DQM.magics.itemBegirama){
+    	}else if(itm == DQMMagics.itemBegirama){
     		return Begirama;
-    	}else if(itm == DQM.magics.itemBegiragon){
+    	}else if(itm == DQMMagics.itemBegiragon){
     		return Begiragon;
-    	}else if(itm == DQM.magics.itemGiragureido){
+    	}else if(itm == DQMMagics.itemGiragureido){
     		return Giragureido;
-    	}else if(itm == DQM.magics.itemMera){
+    	}else if(itm == DQMMagics.itemMera){
     		return Mera;
-    	}else if(itm == DQM.magics.itemMerami){
+    	}else if(itm == DQMMagics.itemMerami){
     		return Merami;
-    	}else if(itm == DQM.magics.itemMerazoma){
+    	}else if(itm == DQMMagics.itemMerazoma){
     		return Merazoma;
-    	}else if(itm == DQM.magics.itemMeragaia){
+    	}else if(itm == DQMMagics.itemMeragaia){
     		return Meragaia;
-    	}else if(itm == DQM.magics.itemIo){
+    	}else if(itm == DQMMagics.itemIo){
     		return Io;
-    	}else if(itm == DQM.magics.itemIora){
+    	}else if(itm == DQMMagics.itemIora){
     		return Iora;
-    	}else if(itm == DQM.magics.itemIonazun){
+    	}else if(itm == DQMMagics.itemIonazun){
     		return Ionazun;
-    	}else if(itm == DQM.magics.itemIogurande){
+    	}else if(itm == DQMMagics.itemIogurande){
     		return Iogurande;
-    	}else if(itm == DQM.magics.itemRaidein){
+    	}else if(itm == DQMMagics.itemRaidein){
     		return Raidein;
-    	}else if(itm == DQM.magics.itemGigadein){
+    	}else if(itm == DQMMagics.itemGigadein){
     		return Gigadein;
-    	}else if(itm == DQM.magics.itemMinadein){
+    	}else if(itm == DQMMagics.itemMinadein){
     		return Minadein;
-    	}else if(itm == DQM.magics.itemBagi){
+    	}else if(itm == DQMMagics.itemBagi){
     		return Bagi;
-    	}else if(itm == DQM.magics.itemBagima){
+    	}else if(itm == DQMMagics.itemBagima){
     		return Bagima;
-    	}else if(itm == DQM.magics.itemBagikurosu){
+    	}else if(itm == DQMMagics.itemBagikurosu){
     		return Bagikurosu;
-    	}else if(itm == DQM.magics.itemBagimutyo){
+    	}else if(itm == DQMMagics.itemBagimutyo){
     		return Bagimutyo;
-    	}else if(itm == DQM.magics.itemDoruma){
+    	}else if(itm == DQMMagics.itemDoruma){
     		return Doruma;
-    	}else if(itm == DQM.magics.itemDorukuma){
+    	}else if(itm == DQMMagics.itemDorukuma){
     		return Dorukuma;
-    	}else if(itm == DQM.magics.itemDorumoa){
+    	}else if(itm == DQMMagics.itemDorumoa){
     		return Dorumoa;
-    	}else if(itm == DQM.magics.itemDorumadon){
+    	}else if(itm == DQMMagics.itemDorumadon){
     		return Dorumadon;
-    	}else if(itm == DQM.magics.itemHyado){
+    	}else if(itm == DQMMagics.itemHyado){
     		return Hyado;
-    	}else if(itm == DQM.magics.itemHyadaruko){
+    	}else if(itm == DQMMagics.itemHyadaruko){
     		return Hyadaruko;
-    	}else if(itm == DQM.magics.itemMahyado){
+    	}else if(itm == DQMMagics.itemMahyado){
     		return Mahyado;
-    	}else if(itm == DQM.magics.itemMahyadodesu){
+    	}else if(itm == DQMMagics.itemMahyadodesu){
     		return Mahyadodesu;
-    	}else if(itm == DQM.magics.itemMagicTool){
+    	}else if(itm == DQMMagics.itemMagicTool){
     		return MagicTool;
-    	}else if(itm == DQM.magics.itemMagicTool2){
+    	}else if(itm == DQMMagics.itemMagicTool2){
     		return MagicTool2;
-    	}else if(itm == DQM.magics.itemMagicTool3){
+    	}else if(itm == DQMMagics.itemMagicTool3){
     		return MagicTool3;
-    	}else if(itm == DQM.magics.itemMagicTool4){
+    	}else if(itm == DQMMagics.itemMagicTool4){
     		return MagicTool4;
-    	}else if(itm == DQM.magics.itemMagicTool5){
+    	}else if(itm == DQMMagics.itemMagicTool5){
     		return MagicTool5;
-    	}else if(itm == DQM.magics.itemRurasin){
+    	}else if(itm == DQMMagics.itemRurasin){
     		return Rurasin;
-    	}else if(itm == DQM.magics.itemRurasin2){
+    	}else if(itm == DQMMagics.itemRurasin2){
     		return Rurasin2;
-    	}else if(itm == DQM.magics.itemRura){
+    	}else if(itm == DQMMagics.itemRura){
     		return Rura;
-    	}else if(itm == DQM.magics.itemRuraR){
+    	}else if(itm == DQMMagics.itemRuraR){
     		return RuraR;
-    	}else if(itm == DQM.magics.itemRuraG){
+    	}else if(itm == DQMMagics.itemRuraG){
     		return RuraG;
-    	}else if(itm == DQM.magics.itemRuraB){
+    	}else if(itm == DQMMagics.itemRuraB){
     		return RuraB;
-    	}else if(itm == DQM.magics.itemRuraY){
+    	}else if(itm == DQMMagics.itemRuraY){
     		return RuraY;
-    	}else if(itm == DQM.magics.itemRuraC){
+    	}else if(itm == DQMMagics.itemRuraC){
     		return RuraC;
-    	}else if(itm == DQM.magics.itemRuraRC){
+    	}else if(itm == DQMMagics.itemRuraRC){
     		return RuraRC;
-    	}else if(itm == DQM.magics.itemRuraGC){
+    	}else if(itm == DQMMagics.itemRuraGC){
     		return RuraGC;
-    	}else if(itm == DQM.magics.itemRuraBC){
+    	}else if(itm == DQMMagics.itemRuraBC){
     		return RuraBC;
-    	}else if(itm == DQM.magics.itemRuraYC){
+    	}else if(itm == DQMMagics.itemRuraYC){
     		return RuraYC;
-    	}else if(itm == DQM.magics.itemBasirura){
+    	}else if(itm == DQMMagics.itemBasirura){
     		return Basirura;
-    	}else if(itm == DQM.magics.itemBasiruraC){
+    	}else if(itm == DQMMagics.itemBasiruraC){
     		return BasiruraC;
-    	}else if(itm == DQM.magics.itemBasiruraC2){
+    	}else if(itm == DQMMagics.itemBasiruraC2){
     		return BasiruraC2;
-    	}else if(itm == DQM.magics.itemHoimi){
+    	}else if(itm == DQMMagics.itemHoimi){
     		return Hoimi;
-    	}else if(itm == DQM.magics.itemBehoimi){
+    	}else if(itm == DQMMagics.itemBehoimi){
     		return Behoimi;
-    	}else if(itm == DQM.magics.itemBehoma){
+    	}else if(itm == DQMMagics.itemBehoma){
     		return Behoma;
-    	}else if(itm == DQM.magics.itemBigban){
+    	}else if(itm == DQMMagics.itemBigban){
     		return Bigban;
-    	}else if(itm == DQM.magics.itemMadante){
+    	}else if(itm == DQMMagics.itemMadante){
     		return Madante;
-    	}else if(itm == DQM.magics.itemZaki){
+    	}else if(itm == DQMMagics.itemZaki){
     		return Zaki;
-    	}else if(itm == DQM.magics.itemZaraki){
+    	}else if(itm == DQMMagics.itemZaraki){
     		return Zaraki;
-    	}else if(itm == DQM.magics.itemBaikiruto){
+    	}else if(itm == DQMMagics.itemBaikiruto){
     		return Baikiruto;
-    	}else if(itm == DQM.magics.itemSukara){
+    	}else if(itm == DQMMagics.itemSukara){
     		return Sukara;
-    	}else if(itm == DQM.magics.itemBaha){
+    	}else if(itm == DQMMagics.itemBaha){
     		return Baha;
-    	}else if(itm == DQM.magics.itemPiora){
+    	}else if(itm == DQMMagics.itemPiora){
     		return Piora;
-    	}else if(itm == DQM.magics.itemBomie){
+    	}else if(itm == DQMMagics.itemBomie){
     		return Bomie;
-    	}else if(itm == DQM.magics.itemRariho){
+    	}else if(itm == DQMMagics.itemRariho){
     		return Rariho;
-    	}else if(itm == DQM.magics.itemManusa){
+    	}else if(itm == DQMMagics.itemManusa){
     		return Manusa;
-    	}else if(itm == DQM.magics.itemKiari){
+    	}else if(itm == DQMMagics.itemKiari){
     		return Kiari;
-    	}else if(itm == DQM.magics.itemMahoton){
+    	}else if(itm == DQMMagics.itemMahoton){
     		return Mahoton;
-    	}else if(itm == DQM.magics.itemRukani){
+    	}else if(itm == DQMMagics.itemRukani){
     		return Rukani;
-    	}else if(itm == DQM.magics.itemMedapani){
+    	}else if(itm == DQMMagics.itemMedapani){
     		return Medapani;
-    	}else if(itm == DQM.magics.itemHenatosu){
+    	}else if(itm == DQMMagics.itemHenatosu){
     		return Henatosu;
-    	}else if(itm == DQM.magics.itemMagicbaria){
+    	}else if(itm == DQMMagics.itemMagicbaria){
     		return Magicbaria;
-    	}else if(itm == DQM.magics.itemMahokanta){
+    	}else if(itm == DQMMagics.itemMahokanta){
     		return Mahokanta;
-    	}else if(itm == DQM.magics.itemDivainsuperu){
+    	}else if(itm == DQMMagics.itemDivainsuperu){
     		return Divainsuperu;
-    	}else if(itm == DQM.magics.itemMahouken1){
+    	}else if(itm == DQMMagics.itemMahouken1){
     		return Mahouken1;
-    	}else if(itm == DQM.magics.itemMahouken2){
+    	}else if(itm == DQMMagics.itemMahouken2){
     		return Mahouken2;
-    	}else if(itm == DQM.magics.itemMahouken3){
+    	}else if(itm == DQMMagics.itemMahouken3){
     		return Mahouken3;
-    	}else if(itm == DQM.magics.itemMahouken4){
+    	}else if(itm == DQMMagics.itemMahouken4){
     		return Mahouken4;
-    	}else if(itm == DQM.magics.itemMahouken5){
+    	}else if(itm == DQMMagics.itemMahouken5){
     		return Mahouken5;
-    	}else if(itm == DQM.magics.itemMahouken6){
+    	}else if(itm == DQMMagics.itemMahouken6){
     		return Mahouken6;
-    	}else if(itm == DQM.magics.itemMahouken7){
+    	}else if(itm == DQMMagics.itemMahouken7){
     		return Mahouken7;
-    	}else if(itm == DQM.magics.itemRura2){
+    	}else if(itm == DQMMagics.itemRura2){
     		return Rura2;
-    	}else if(itm == DQM.magics.itemRuraR2){
+    	}else if(itm == DQMMagics.itemRuraR2){
     		return RuraR2;
-    	}else if(itm == DQM.magics.itemRuraG2){
+    	}else if(itm == DQMMagics.itemRuraG2){
     		return RuraG2;
-    	}else if(itm == DQM.magics.itemRuraB2){
+    	}else if(itm == DQMMagics.itemRuraB2){
     		return RuraB2;
-    	}else if(itm == DQM.magics.itemRuraY2){
+    	}else if(itm == DQMMagics.itemRuraY2){
     		return RuraY2;
-    	}else if(itm == DQM.magics.itemCallCloud){
+    	}else if(itm == DQMMagics.itemCallCloud){
     		return CallCloud;
-    	}else if(itm == DQM.magics.itemCallMagma){
+    	}else if(itm == DQMMagics.itemCallMagma){
     		return CallMagma;
     	}
 
@@ -1065,205 +1065,205 @@ public class FuncMagicLvTable {
 
     	int[] lvTable = null;
 
-	    if(itm == DQM.magics.itemZaoraru){
+	    if(itm == DQMagics.itemZaoraru){
 	    	lvTable = ZaoraruJobLv;
-	    }else if(itm == DQM.magics.itemZaoriku){
+	    }else if(itm == DQMagics.itemZaoriku){
 	    	lvTable = ZaorikuJobLv;
-	    }else if(itm == DQM.magics.itemUminarinotue){
+	    }else if(itm == DQMagics.itemUminarinotue){
 	    	lvTable = UminarinotueJobLv;
-	    }else if(itm == DQM.magics.itemHikarinotue){
+	    }else if(itm == DQMagics.itemHikarinotue){
 	    	lvTable = HikarinotueJobLv;
-	    }else if(itm == DQM.magics.itemRemira){
+	    }else if(itm == DQMagics.itemRemira){
 	    	lvTable = RemiramaJobLv;
-	    }else if(itm == DQM.magics.itemHaigou){
+	    }else if(itm == DQMagics.itemHaigou){
 	    	lvTable = HaigouJobLv;
-	    }else if(itm == DQM.magics.itemHaigou2){
+	    }else if(itm == DQMagics.itemHaigou2){
 	    	lvTable = Haigou2JobLv;
-	    }else if(itm == DQM.magics.itemParupunte){
+	    }else if(itm == DQMagics.itemParupunte){
 	    	lvTable = ParupunteJobLv;
-	    }else if(itm == DQM.magics.itemGira){
+	    }else if(itm == DQMagics.itemGira){
 	    	lvTable = GiraJobLv;
-	    }else if(itm == DQM.magics.itemBegirama){
+	    }else if(itm == DQMagics.itemBegirama){
 	    	lvTable = BegiramaJobLv;
-	    }else if(itm == DQM.magics.itemBegiragon){
+	    }else if(itm == DQMagics.itemBegiragon){
 	    	lvTable = BegiragonJobLv;
-	    }else if(itm == DQM.magics.itemGiragureido){
+	    }else if(itm == DQMagics.itemGiragureido){
 	    	lvTable = GiragureidoJobLv;
-	    }else if(itm == DQM.magics.itemMera){
+	    }else if(itm == DQMagics.itemMera){
 	    	lvTable = MeraJobLv;
-	    }else if(itm == DQM.magics.itemMerami){
+	    }else if(itm == DQMagics.itemMerami){
 	    	lvTable = MeramiJobLv;
-	    }else if(itm == DQM.magics.itemMerazoma){
+	    }else if(itm == DQMagics.itemMerazoma){
 	    	lvTable = MerazomaJobLv;
-	    }else if(itm == DQM.magics.itemMeragaia){
+	    }else if(itm == DQMagics.itemMeragaia){
 	    	lvTable = MeragaiaJobLv;
-	    }else if(itm == DQM.magics.itemIo){
+	    }else if(itm == DQMagics.itemIo){
 	    	lvTable = IoJobLv;
-	    }else if(itm == DQM.magics.itemIora){
+	    }else if(itm == DQMagics.itemIora){
 	    	lvTable = IoraJobLv;
-	    }else if(itm == DQM.magics.itemIonazun){
+	    }else if(itm == DQMagics.itemIonazun){
 	    	lvTable = IonazunJobLv;
-	    }else if(itm == DQM.magics.itemIogurande){
+	    }else if(itm == DQMagics.itemIogurande){
 	    	lvTable = IogurandeJobLv;
-	    }else if(itm == DQM.magics.itemRaidein){
+	    }else if(itm == DQMagics.itemRaidein){
 	    	lvTable = RaideinJobLv;
-	    }else if(itm == DQM.magics.itemGigadein){
+	    }else if(itm == DQMagics.itemGigadein){
 	    	lvTable = GigadeinJobLv;
-	    }else if(itm == DQM.magics.itemMinadein){
+	    }else if(itm == DQMagics.itemMinadein){
 	    	lvTable = MinadeinJobLv;
-	    }else if(itm == DQM.magics.itemBagi){
+	    }else if(itm == DQMagics.itemBagi){
 	    	lvTable = BagiJobLv;
-	    }else if(itm == DQM.magics.itemBagima){
+	    }else if(itm == DQMagics.itemBagima){
 	    	lvTable = BagimaJobLv;
-	    }else if(itm == DQM.magics.itemBagikurosu){
+	    }else if(itm == DQMagics.itemBagikurosu){
 	    	lvTable = BagikurosuJobLv;
-	    }else if(itm == DQM.magics.itemBagimutyo){
+	    }else if(itm == DQMagics.itemBagimutyo){
 	    	lvTable = BagimutyoJobLv;
-	    }else if(itm == DQM.magics.itemDoruma){
+	    }else if(itm == DQMagics.itemDoruma){
 	    	lvTable = DorumaJobLv;
-	    }else if(itm == DQM.magics.itemDorukuma){
+	    }else if(itm == DQMagics.itemDorukuma){
 	    	lvTable = DorukumaJobLv;
-	    }else if(itm == DQM.magics.itemDorumoa){
+	    }else if(itm == DQMagics.itemDorumoa){
 	    	lvTable = DorumoaJobLv;
-	    }else if(itm == DQM.magics.itemDorumadon){
+	    }else if(itm == DQMagics.itemDorumadon){
 	    	lvTable = DorumadonJobLv;
-	    }else if(itm == DQM.magics.itemHyado){
+	    }else if(itm == DQMagics.itemHyado){
 	    	lvTable = HyadoJobLv;
-	    }else if(itm == DQM.magics.itemHyadaruko){
+	    }else if(itm == DQMagics.itemHyadaruko){
 	    	lvTable = HyadarukoJobLv;
-	    }else if(itm == DQM.magics.itemMahyado){
+	    }else if(itm == DQMagics.itemMahyado){
 	    	lvTable = MahyadoJobLv;
-	    }else if(itm == DQM.magics.itemMahyadodesu){
+	    }else if(itm == DQMagics.itemMahyadodesu){
 	    	lvTable = MahyadodesuJobLv;
-	    }else if(itm == DQM.magics.itemMagicTool){
+	    }else if(itm == DQMagics.itemMagicTool){
 	    	lvTable = MagicToolJobLv;
-	    }else if(itm == DQM.magics.itemMagicTool2){
+	    }else if(itm == DQMagics.itemMagicTool2){
 	    	lvTable = MagicTool2JobLv;
-	    }else if(itm == DQM.magics.itemMagicTool3){
+	    }else if(itm == DQMagics.itemMagicTool3){
 	    	lvTable = MagicTool3JobLv;
-	    }else if(itm == DQM.magics.itemMagicTool4){
+	    }else if(itm == DQMagics.itemMagicTool4){
 	    	lvTable = MagicTool4JobLv;
-	    }else if(itm == DQM.magics.itemMagicTool5){
+	    }else if(itm == DQMagics.itemMagicTool5){
 	    	lvTable = MagicTool5JobLv;
-	    }else if(itm == DQM.magics.itemRurasin){
+	    }else if(itm == DQMagics.itemRurasin){
 	    	lvTable = RurasinJobLv;
-	    }else if(itm == DQM.magics.itemRurasin2){
+	    }else if(itm == DQMagics.itemRurasin2){
 	    	lvTable = Rurasin2JobLv;
-	    }else if(itm == DQM.magics.itemRura){
+	    }else if(itm == DQMagics.itemRura){
 	    	lvTable = RuraJobLv;
-	    }else if(itm == DQM.magics.itemRuraR){
+	    }else if(itm == DQMagics.itemRuraR){
 	    	lvTable = RuraRJobLv;
-	    }else if(itm == DQM.magics.itemRuraG){
+	    }else if(itm == DQMagics.itemRuraG){
 	    	lvTable = RuraGJobLv;
-	    }else if(itm == DQM.magics.itemRuraB){
+	    }else if(itm == DQMagics.itemRuraB){
 	    	lvTable = RuraBJobLv;
-	    }else if(itm == DQM.magics.itemRuraY){
+	    }else if(itm == DQMagics.itemRuraY){
 	    	lvTable = RuraYJobLv;
-	    }else if(itm == DQM.magics.itemRuraC){
+	    }else if(itm == DQMagics.itemRuraC){
 	    	lvTable = RuraCJobLv;
-	    }else if(itm == DQM.magics.itemRuraRC){
+	    }else if(itm == DQMagics.itemRuraRC){
 	    	lvTable = RuraRCJobLv;
-	    }else if(itm == DQM.magics.itemRuraGC){
+	    }else if(itm == DQMagics.itemRuraGC){
 	    	lvTable = RuraGCJobLv;
-	    }else if(itm == DQM.magics.itemRuraBC){
+	    }else if(itm == DQMagics.itemRuraBC){
 	    	lvTable = RuraBCJobLv;
-	    }else if(itm == DQM.magics.itemRuraYC){
+	    }else if(itm == DQMagics.itemRuraYC){
 	    	lvTable = RuraYCJobLv;
-	    }else if(itm == DQM.magics.itemBasirura){
+	    }else if(itm == DQMagics.itemBasirura){
 	    	lvTable = BasiruraJobLv;
-	    }else if(itm == DQM.magics.itemBasiruraC){
+	    }else if(itm == DQMagics.itemBasiruraC){
 	    	lvTable = BasiruraCJobLv;
-	    }else if(itm == DQM.magics.itemBasiruraC2){
+	    }else if(itm == DQMagics.itemBasiruraC2){
 	    	lvTable = BasiruraC2JobLv;
-	    }else if(itm == DQM.magics.itemHoimi){
+	    }else if(itm == DQMagics.itemHoimi){
 	    	lvTable = HoimiJobLv;
-	    }else if(itm == DQM.magics.itemBehoimi){
+	    }else if(itm == DQMagics.itemBehoimi){
 	    	lvTable = BehoimiJobLv;
-	    }else if(itm == DQM.magics.itemBehoma){
+	    }else if(itm == DQMagics.itemBehoma){
 	    	lvTable = BehomaJobLv;
-	    }else if(itm == DQM.magics.itemBigban){
+	    }else if(itm == DQMagics.itemBigban){
 	    	lvTable = BigbanJobLv;
-	    }else if(itm == DQM.magics.itemMadante){
+	    }else if(itm == DQMagics.itemMadante){
 	    	lvTable = MadanteJobLv;
-	    }else if(itm == DQM.magics.itemZaki){
+	    }else if(itm == DQMagics.itemZaki){
 	    	lvTable = ZakiJobLv;
-	    }else if(itm == DQM.magics.itemZaraki){
+	    }else if(itm == DQMagics.itemZaraki){
 	    	lvTable = ZarakiJobLv;
-	    }else if(itm == DQM.magics.itemBaikiruto){
+	    }else if(itm == DQMagics.itemBaikiruto){
 	    	lvTable = BaikirutoJobLv;
-	    }else if(itm == DQM.magics.itemSukara){
+	    }else if(itm == DQMagics.itemSukara){
 	    	lvTable = SukaraJobLv;
-	    }else if(itm == DQM.magics.itemBaha){
+	    }else if(itm == DQMagics.itemBaha){
 	    	lvTable = BahaJobLv;
-	    }else if(itm == DQM.magics.itemPiora){
+	    }else if(itm == DQMagics.itemPiora){
 	    	lvTable = PioraJobLv;
-	    }else if(itm == DQM.magics.itemBomie){
+	    }else if(itm == DQMagics.itemBomie){
 	    	lvTable = BomieJobLv;
-	    }else if(itm == DQM.magics.itemRariho){
+	    }else if(itm == DQMagics.itemRariho){
 	    	lvTable = RarihoJobLv;
-	    }else if(itm == DQM.magics.itemManusa){
+	    }else if(itm == DQMagics.itemManusa){
 	    	lvTable = ManusaJobLv;
-	    }else if(itm == DQM.magics.itemKiari){
+	    }else if(itm == DQMagics.itemKiari){
 	    	lvTable = KiariJobLv;
-	    }else if(itm == DQM.magics.itemMahoton){
+	    }else if(itm == DQMagics.itemMahoton){
 	    	lvTable = MahotonJobLv;
-	    }else if(itm == DQM.magics.itemRukani){
+	    }else if(itm == DQMagics.itemRukani){
 	    	lvTable = RukaniJobLv;
-	    }else if(itm == DQM.magics.itemMedapani){
+	    }else if(itm == DQMagics.itemMedapani){
 	    	lvTable = MedapaniJobLv;
-	    }else if(itm == DQM.magics.itemHenatosu){
+	    }else if(itm == DQMagics.itemHenatosu){
 	    	lvTable = HenatosuJobLv;
-	    }else if(itm == DQM.magics.itemMagicbaria){
+	    }else if(itm == DQMagics.itemMagicbaria){
 	    	lvTable = MagicbariaJobLv;
-	    }else if(itm == DQM.magics.itemMahokanta){
+	    }else if(itm == DQMagics.itemMahokanta){
 	    	lvTable = MahokantaJobLv;
-	    }else if(itm == DQM.magics.itemDivainsuperu){
+	    }else if(itm == DQMagics.itemDivainsuperu){
 	    	lvTable = DivainsuperuJobLv;
-	    }else if(itm == DQM.magics.itemMahouken1){
+	    }else if(itm == DQMagics.itemMahouken1){
 	    	lvTable = Mahouken1JobLv;
-	    }else if(itm == DQM.magics.itemMahouken2){
+	    }else if(itm == DQMagics.itemMahouken2){
 	    	lvTable = Mahouken2JobLv;
-	    }else if(itm == DQM.magics.itemMahouken3){
+	    }else if(itm == DQMagics.itemMahouken3){
 	    	lvTable = Mahouken3JobLv;
-	    }else if(itm == DQM.magics.itemMahouken4){
+	    }else if(itm == DQMagics.itemMahouken4){
 	    	lvTable = Mahouken4JobLv;
-	    }else if(itm == DQM.magics.itemMahouken5){
+	    }else if(itm == DQMagics.itemMahouken5){
 	    	lvTable = Mahouken5JobLv;
-	    }else if(itm == DQM.magics.itemMahouken6){
+	    }else if(itm == DQMagics.itemMahouken6){
 	    	lvTable = Mahouken6JobLv;
-	    }else if(itm == DQM.magics.itemMahouken7){
+	    }else if(itm == DQMagics.itemMahouken7){
 	    	lvTable = Mahouken7JobLv;
-	    }else if(itm == DQM.magics.itemRura2){
+	    }else if(itm == DQMagics.itemRura2){
 	    	lvTable = Rura2JobLv;
-	    }else if(itm == DQM.magics.itemRuraR2){
+	    }else if(itm == DQMagics.itemRuraR2){
 	    	lvTable = RuraR2JobLv;
-	    }else if(itm == DQM.magics.itemRuraG2){
+	    }else if(itm == DQMagics.itemRuraG2){
 	    	lvTable = RuraG2JobLv;
-	    }else if(itm == DQM.magics.itemRuraB2){
+	    }else if(itm == DQMagics.itemRuraB2){
 	    	lvTable = RuraB2JobLv;
-	    }else if(itm == DQM.magics.itemRuraY2){
+	    }else if(itm == DQMagics.itemRuraY2){
 	    	lvTable = RuraY2JobLv;
-	    }else if(itm == DQM.magics.itemCallCloud){
+	    }else if(itm == DQMagics.itemCallCloud){
 	    	lvTable = CallCloudJobLv;
-	    }else if(itm == DQM.magics.itemCallMagma){
+	    }else if(itm == DQMagics.itemCallMagma){
 	    	lvTable = CallMagmaJobLv;
-	    }else if(itm == DQM.magics.itemSukuruto){
+	    }else if(itm == DQMagics.itemSukuruto){
 	    	lvTable = SukurutoJobLv;
-	    }else if(itm == DQM.magics.itemPiorimu){
+	    }else if(itm == DQMagics.itemPiorimu){
 	    	lvTable = PiorimuJobLv;
-	    }else if(itm == DQM.magics.itemFubaha){
+	    }else if(itm == DQMagics.itemFubaha){
 	    	lvTable = FubahaJobLv;
-	    }else if(itm == DQM.magics.itemBehomara){
+	    }else if(itm == DQMagics.itemBehomara){
 	    	lvTable = BehomaraJobLv;
-	    }else if(itm == DQM.magics.itemBehomazun){
+	    }else if(itm == DQMagics.itemBehomazun){
 	    	lvTable = BehomazunJobLv;
-	    }else if(itm == DQM.magics.itemMahoimi){
+	    }else if(itm == DQMagics.itemMahoimi){
 	    	lvTable = MahoimiJobLv;
-	    }else if(itm == DQM.magics.itemMahoriku){
+	    }else if(itm == DQMagics.itemMahoriku){
 	    	lvTable = MahorikuJobLv;
-	    }else if(itm == DQM.magics.itemMahoizun){
+	    }else if(itm == DQMagics.itemMahoizun){
 	    	lvTable = MahoizunJobLv;
-	    }else if(itm == DQM.magics.itemZarakima){
+	    }else if(itm == DQMagics.itemZarakima){
 	    	lvTable = ZarakimaJobLv;
 	    }
 
@@ -1280,13 +1280,13 @@ public class FuncMagicLvTable {
     	{
     		magPW = 0;
 
-    		if(itm == DQM.magics.itemBehoma)
+    		if(itm == DQMagics.itemBehoma)
     		{
     			dam = 2000;
     		}
     	}
     	/*
-    	if(itm == DQM.magics.itemHoimi || itm == DQM.magics.itemMahoimi)
+    	if(itm == DQMMagics.itemHoimi || itm == DQMMagics.itemMahoimi)
     	{
     		magPW = 0;
     	}

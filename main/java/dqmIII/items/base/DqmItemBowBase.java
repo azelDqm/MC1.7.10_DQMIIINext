@@ -12,13 +12,14 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQWeapons;
 import dqmIII.playerData.ExtendedPlayerProperties;
 
 public class DqmItemBowBase extends ItemBow{
@@ -212,11 +213,11 @@ public class DqmItemBowBase extends ItemBow{
         for (int i = 0; i < this.iconArray.length; ++i)
         {
 
-        	if(this == DQM.weapons.itemKaryuudonoyumi ||
-        	   this == DQM.weapons.itemKazekirinoyumi ||
-        	   this == DQM.weapons.itemKeironnoyumi ||
-        	   this == DQM.weapons.itemJigokunoyumi ||
-        	   this == DQM.weapons.itemBigbougan)
+        	if(this == DQWeapons.itemKaryuudonoyumi ||
+        	   this == DQWeapons.itemKazekirinoyumi ||
+        	   this == DQWeapons.itemKeironnoyumi ||
+        	   this == DQWeapons.itemJigokunoyumi ||
+        	   this == DQWeapons.itemBigbougan)
         	{
         		this.iconArray[i] = p_94581_1_.registerIcon(this.getIconString() + "_" + bowPullIconNameArray[i]);
         	}else
@@ -262,6 +263,20 @@ public class DqmItemBowBase extends ItemBow{
 			 p_77624_3_.add(I18n.format("dqm.iteminfo.mpheal", new Object[]{dispMinMP, dispMaxMP, dispAveMP}));
 		 }
 		 */
+
+    	NBTTagCompound nbt = p_77624_1_.getTagCompound();
+    	if(nbt != null)
+    	{
+    		int medalVal = nbt.getInteger("medalking");
+    		//System.out.println("TEST:" + medalVal);
+    		if(medalVal > 0)
+    		{
+
+        		String medalValue = I18n.format("msg.medalking.item.txt", new Object[]{medalVal});
+
+    			p_77624_3_.add(medalValue);
+    		}
+    	}
 	 }
 
     @SideOnly(Side.CLIENT)

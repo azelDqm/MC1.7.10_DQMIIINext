@@ -3,7 +3,7 @@ package dqmIII.creativeTabs;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
 
 public class DqmTabBlock extends CreativeTabs
 {
@@ -15,6 +15,6 @@ public class DqmTabBlock extends CreativeTabs
 	@Override
 	public Item getTabIconItem()
 	{
-		return new ItemStack(DQM.blocks.DqmBlockHako, 1, 0).getItem();
+		return new ItemStack(DQBlocks.DqmBlockHako, 1, 0).getItem();
 	}
 }

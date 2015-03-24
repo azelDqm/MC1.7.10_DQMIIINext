@@ -15,10 +15,10 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
 import net.minecraft.world.storage.WorldInfo;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.enums.EnumColor;
 import dqmIII.enums.EnumDqmMagic;
 import dqmIII.enums.EnumDqmMagicMode;
-import dqmIII.items.DqmItemMagics;
 import dqmIII.items.base.DqmItemMagicBase;
 import dqmIII.playerData.ExtendedPlayerProperties;
 
@@ -84,7 +84,7 @@ public class DqmItemMagicWorld extends DqmItemMagicBase{
 
 		if(par3EntityPlayer.isSneaking())
 		{
-			if(this == DqmItemMagics.itemCallCloud)
+			if(this == DQMagics.itemCallCloud)
 			{
 				if(!par3EntityPlayer.worldObj.isRemote)
 				{
@@ -108,7 +108,7 @@ public class DqmItemMagicWorld extends DqmItemMagicBase{
 					}
 				}
 
-			}else if(this == DqmItemMagics.itemHikarinotue)
+			}else if(this == DQMagics.itemHikarinotue)
 			{
 
 				if(!par3EntityPlayer.worldObj.isRemote)
@@ -137,6 +137,7 @@ public class DqmItemMagicWorld extends DqmItemMagicBase{
 			{
 				par3EntityPlayer.addChatMessage(new ChatComponentTranslation("msg.magic.nomp.txt",new Object[] {}));
 				par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.pi", 1.0F, 1.0F);
+				return par1ItemStack;
 			}else
 			{
 				ExtendedPlayerProperties.get(par3EntityPlayer).setMP(epMP - this.getEnumMagic().getMP());
@@ -146,7 +147,7 @@ public class DqmItemMagicWorld extends DqmItemMagicBase{
 
 			par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.jumon", 1.0F, 1.0F);
 
-			if(this == DqmItemMagics.itemCallCloud)
+			if(this == DQMagics.itemCallCloud && (!par3EntityPlayer.worldObj.isRemote))
 			{
 				int mode = ExtendedPlayerProperties.get(par3EntityPlayer).getMagicMode(EnumDqmMagicMode.CallCloud.getMode());
 				int var3 = (300 + (new Random()).nextInt(600)) * 20;
@@ -171,7 +172,7 @@ public class DqmItemMagicWorld extends DqmItemMagicBase{
 	                var5.setRaining(true);
 	                var5.setThundering(true);
 				}
-			}else if(this == DqmItemMagics.itemHikarinotue)
+			}else if(this == DQMagics.itemHikarinotue)
 			{
 
 				int mode = DQM.conf.RanalutaStep[ExtendedPlayerProperties.get(par3EntityPlayer).getMagicMode(EnumDqmMagicMode.Hikarinotue.getMode())];
@@ -205,7 +206,7 @@ public class DqmItemMagicWorld extends DqmItemMagicBase{
   	 public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_) {
     	super.addInformation(p_77624_1_, p_77624_2_, p_77624_3_, p_77624_4_);
 
-    	if(this == DqmItemMagics.itemHikarinotue)
+    	if(this == DQMagics.itemHikarinotue)
     	{
 	    	p_77624_3_.add("");
 	    	String message = I18n.format("dqm.magicinfo.hikarinotue.txt", new Object[]{});
@@ -214,7 +215,7 @@ public class DqmItemMagicWorld extends DqmItemMagicBase{
 	    	{
 	    		p_77624_3_.add(EnumColor.Aqua.getChatColor() + addLine[cnt]);
 	    	}
-    	}else if(this == DqmItemMagics.itemCallCloud)
+    	}else if(this == DQMagics.itemCallCloud)
 		{
 	    	p_77624_3_.add("");
 	    	String message = I18n.format("dqm.magicinfo.callcloud.txt", new Object[]{});

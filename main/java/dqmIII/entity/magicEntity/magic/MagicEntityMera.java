@@ -265,7 +265,7 @@ public class MagicEntityMera extends MagicEntity implements IProjectile{
 
                 if (this.ticksInGround > limit)
                 {
-                	if(worldFlg && this.worldObj.isAirBlock(this.xTile, this.yTile + 1, this.zTile))
+                	if(worldFlg && this.worldObj.isAirBlock(this.xTile, this.yTile + 1, this.zTile) && DQM.conf.magicEpMera == 1)
                 	{
                 		this.worldObj.setBlock(this.xTile, this.yTile + 1, this.zTile, Blocks.fire);
                 	}

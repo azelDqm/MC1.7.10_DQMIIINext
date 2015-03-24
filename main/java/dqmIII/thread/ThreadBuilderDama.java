@@ -6,6 +6,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQBlocks;
+import dqmIII.api.Blocks.DQDecorates;
 import dqmIII.entity.npcEntity.npc.DqmEntityNPCSinkan;
 
 public class ThreadBuilderDama extends Thread{
@@ -60,16 +62,16 @@ public class ThreadBuilderDama extends Thread{
 		{
 	        for (int x = (this.size * -1); x <= this.size; ++x)
 	        {
-	        	if(par3World.getBlock(xxx + x, yyy + this.height, zzz + this.size) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + x, yyy + this.height, zzz + this.size) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + x, yyy + this.height, zzz + this.size, Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + x, yyy + this.height, zzz + (this.size * -1)) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + x, yyy + this.height, zzz + (this.size * -1)) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + x, yyy + this.height, zzz + (this.size * -1), Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + x, yyy + under, zzz + this.size) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + x, yyy + under, zzz + this.size) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + x, yyy + under, zzz + this.size, Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + x, yyy + under, zzz + (this.size * -1)) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + x, yyy + under, zzz + (this.size * -1)) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + x, yyy + under, zzz + (this.size * -1), Blocks.air, 0, 2);
 	        }
 
@@ -82,16 +84,16 @@ public class ThreadBuilderDama extends Thread{
 
 	        for (int z = (this.size * -1); z <= this.size; ++z)
 	        {
-	        	if(par3World.getBlock(xxx + this.size, yyy + this.height, zzz + z) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + this.size, yyy + this.height, zzz + z) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + this.size, yyy + this.height, zzz + z, Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + (this.size * -1), yyy + this.height, zzz + z) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + (this.size * -1), yyy + this.height, zzz + z) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + (this.size * -1), yyy + this.height, zzz + z, Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + this.size, yyy + under, zzz + z) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + this.size, yyy + under, zzz + z) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + this.size, yyy + under, zzz + z, Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + (this.size * -1), yyy + under, zzz + z) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + (this.size * -1), yyy + under, zzz + z) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + (this.size * -1), yyy + under, zzz + z, Blocks.air, 0, 2);
 	        }
 
@@ -104,16 +106,16 @@ public class ThreadBuilderDama extends Thread{
 
 	        for (int y = this.under; y <= this.height; ++y)
 	        {
-	        	if(par3World.getBlock(xxx + this.size, yyy + y, zzz + this.size) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + this.size, yyy + y, zzz + this.size) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + this.size, yyy + y, zzz + this.size,Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + this.size, yyy + y, zzz + (this.size * -1)) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + this.size, yyy + y, zzz + (this.size * -1)) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + this.size, yyy + y, zzz + (this.size * -1), Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + (this.size * -1), yyy + y, zzz + this.size) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + (this.size * -1), yyy + y, zzz + this.size) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + (this.size * -1), yyy + y, zzz + this.size, Blocks.air, 0, 2);
 
-	        	if(par3World.getBlock(xxx + (this.size * -1), yyy + y, zzz + (this.size * -1)) == DQM.blocks.DqmBlockBuilderFrame)
+	        	if(par3World.getBlock(xxx + (this.size * -1), yyy + y, zzz + (this.size * -1)) == DQBlocks.DqmBlockBuilderFrame)
 	        		par3World.setBlock(xxx + (this.size * -1), yyy + y, zzz + (this.size * -1), Blocks.air, 0, 2);
 	        }
 		}
@@ -612,23 +614,23 @@ public class ThreadBuilderDama extends Thread{
 				e.printStackTrace();
 			}
 
-	        par3World.setBlock(xxx, yyy + 17 + takasa, zzz - (20 * byVal), DQM.blocks.DqmBlockKowareru7, 0, 2);
+	        par3World.setBlock(xxx, yyy + 17 + takasa, zzz - (20 * byVal), DQBlocks.DqmBlockKowareru7, 0, 2);
 	        //炎と聖杯
-	        par3World.setBlock(xxx + 5, yyy + 0 + takasa, zzz - (21 * byVal), DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx + 5, yyy + 0 + takasa, zzz - (21 * byVal), DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx + 5, yyy + 1 + takasa, zzz - (21 * byVal), Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - 5, yyy + 0 + takasa, zzz - (21 * byVal), DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - 5, yyy + 0 + takasa, zzz - (21 * byVal), DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - 5, yyy + 1 + takasa, zzz - (21 * byVal), Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx + 5, yyy + 0 + takasa, zzz - (17 * byVal), DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx + 5, yyy + 0 + takasa, zzz - (17 * byVal), DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx + 5, yyy + 1 + takasa, zzz - (17 * byVal), Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - 5, yyy + 0 + takasa, zzz - (17 * byVal), DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - 5, yyy + 0 + takasa, zzz - (17 * byVal), DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - 5, yyy + 1 + takasa, zzz - (17 * byVal), Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx + 3, yyy + 4 + takasa, zzz - (8 * byVal), DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx + 3, yyy + 4 + takasa, zzz - (8 * byVal), DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx + 3, yyy + 5 + takasa, zzz - (8 * byVal), Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - 3, yyy + 4 + takasa, zzz - (8 * byVal), DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - 3, yyy + 4 + takasa, zzz - (8 * byVal), DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - 3, yyy + 5 + takasa, zzz - (8 * byVal), Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx + 3, yyy + 4 + takasa, zzz - (3 * byVal), DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx + 3, yyy + 4 + takasa, zzz - (3 * byVal), DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx + 3, yyy + 5 + takasa, zzz - (3 * byVal), Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - 3, yyy + 4 + takasa, zzz - (3 * byVal), DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - 3, yyy + 4 + takasa, zzz - (3 * byVal), DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - 3, yyy + 5 + takasa, zzz - (3 * byVal), Blocks.fire, 0, 2);
 
 			try {
@@ -641,158 +643,158 @@ public class ThreadBuilderDama extends Thread{
 	        //前柱
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 9, yyy + 11 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 9, yyy + 2 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 11 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 2 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 9, yyy + 11 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 9, yyy + 2 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 11 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 2 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        //横柱
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        //
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz - (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz - (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        //後柱
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx, yyy + y + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx, yyy + y + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx, yyy + 11 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx, yyy + 2 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 11 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 2 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 9, yyy + 11 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 9, yyy + 2 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 11 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 2 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 9, yyy + 11 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 9, yyy + 2 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 11 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 2 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 19, yyy + y + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 11 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 19, yyy + 2 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 19, yyy + y + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz + (19 * byVal), DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 11 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 19, yyy + 2 + takasa, zzz + (19 * byVal), DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 			try {
 				this.sleep(DQM.conf.cfg_build_sleep);
@@ -958,25 +960,25 @@ public class ThreadBuilderDama extends Thread{
 
 	        for (int x = -2; x <= 2; ++x)
 	        {
-	            par3World.setBlock(xxx + x, yyy - 1 + takasa, zzz - (15 * byVal), DQM.blocks.DqmBlockKowareru6, 2, 2);
+	            par3World.setBlock(xxx + x, yyy - 1 + takasa, zzz - (15 * byVal), DQBlocks.DqmBlockKowareru6, 2, 2);
 	        }
 
 	        for (int x = -2; x <= 2; ++x)
 	        {
-	            par3World.setBlock(xxx + x, yyy - 1 + takasa, zzz - (21 * byVal), DQM.blocks.DqmBlockKowareru6, 2, 2);
+	            par3World.setBlock(xxx + x, yyy - 1 + takasa, zzz - (21 * byVal), DQBlocks.DqmBlockKowareru6, 2, 2);
 	        }
 
 	        for (int z = -20; z <= -15; ++z)
 	        {
-	            par3World.setBlock(xxx + 2, yyy - 1 + takasa, zzz + (z * byVal), DQM.blocks.DqmBlockKowareru6, 2, 2);
-	            par3World.setBlock(xxx - 2, yyy - 1 + takasa, zzz + (z * byVal), DQM.blocks.DqmBlockKowareru6, 2, 2);
+	            par3World.setBlock(xxx + 2, yyy - 1 + takasa, zzz + (z * byVal), DQBlocks.DqmBlockKowareru6, 2, 2);
+	            par3World.setBlock(xxx - 2, yyy - 1 + takasa, zzz + (z * byVal), DQBlocks.DqmBlockKowareru6, 2, 2);
 	        }
 
 	        for (int x = -1; x <= 1; ++x)
 	        {
 	            for (int z = -20; z <= -15; ++z)
 	            {
-	                par3World.setBlock(xxx + x, yyy - 1 + takasa, zzz + (z * byVal), DQM.blocks.DqmBlockKowareru5, 11, 2);
+	                par3World.setBlock(xxx + x, yyy - 1 + takasa, zzz + (z * byVal), DQBlocks.DqmBlockKowareru5, 11, 2);
 	            }
 	        }
 
@@ -998,19 +1000,19 @@ public class ThreadBuilderDama extends Thread{
 	        {
 	            for (int z = -10; z <= -2; ++z)
 	            {
-	                par3World.setBlock(xxx + x, yyy + 3 + takasa, zzz + (z * byVal), DQM.blocks.DqmBlockKowareru5, 11, 2);
+	                par3World.setBlock(xxx + x, yyy + 3 + takasa, zzz + (z * byVal), DQBlocks.DqmBlockKowareru5, 11, 2);
 	            }
 	        }
 
 	        for (int z = -10; z <= -2; ++z)
 	        {
-	            par3World.setBlock(xxx + 2, yyy + 3 + takasa, zzz + (z * byVal), DQM.blocks.DqmBlockKowareru6, 11, 2);
-	            par3World.setBlock(xxx - 2, yyy + 3 + takasa, zzz + (z * byVal), DQM.blocks.DqmBlockKowareru6, 11, 2);
+	            par3World.setBlock(xxx + 2, yyy + 3 + takasa, zzz + (z * byVal), DQBlocks.DqmBlockKowareru6, 11, 2);
+	            par3World.setBlock(xxx - 2, yyy + 3 + takasa, zzz + (z * byVal), DQBlocks.DqmBlockKowareru6, 11, 2);
 	        }
 
 	        for (int x = -1; x <= 1; ++x)
 	        {
-	            par3World.setBlock(xxx + x, yyy + 3 + takasa, zzz - (1 * byVal), DQM.blocks.DqmBlockKowareru6, 11, 2);
+	            par3World.setBlock(xxx + x, yyy + 3 + takasa, zzz - (1 * byVal), DQBlocks.DqmBlockKowareru6, 11, 2);
 	        }
 
 	        //高台
@@ -1253,99 +1255,99 @@ public class ThreadBuilderDama extends Thread{
 	        //内柱
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + 5, yyy + y + takasa, zzz - (8 * byVal), DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 5, yyy + y + takasa, zzz - (8 * byVal), DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 5, yyy + 9 + takasa, zzz - (8 * byVal), DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 5, yyy + 4 + takasa, zzz - (8 * byVal), DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + 5, yyy + 9 + takasa, zzz - (8 * byVal), DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 5, yyy + 4 + takasa, zzz - (8 * byVal), DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - 5, yyy + y + takasa, zzz - (8 * byVal), DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 5, yyy + y + takasa, zzz - (8 * byVal), DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 5, yyy + 9 + takasa, zzz - (8 * byVal), DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 5, yyy + 4 + takasa, zzz - (8 * byVal), DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - 5, yyy + 9 + takasa, zzz - (8 * byVal), DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 5, yyy + 4 + takasa, zzz - (8 * byVal), DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + 5, yyy + y + takasa, zzz - (4 * byVal), DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 5, yyy + y + takasa, zzz - (4 * byVal), DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 5, yyy + 9 + takasa, zzz - (4 * byVal), DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 5, yyy + 4 + takasa, zzz - (4 * byVal), DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + 5, yyy + 9 + takasa, zzz - (4 * byVal), DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 5, yyy + 4 + takasa, zzz - (4 * byVal), DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - 5, yyy + y + takasa, zzz - (4 * byVal), DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 5, yyy + y + takasa, zzz - (4 * byVal), DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 5, yyy + 9 + takasa, zzz - (4 * byVal), DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 5, yyy + 4 + takasa, zzz - (4 * byVal), DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - 5, yyy + 9 + takasa, zzz - (4 * byVal), DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 5, yyy + 4 + takasa, zzz - (4 * byVal), DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 6; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + 5, yyy + y + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 5, yyy + y + takasa, zzz, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 5, yyy + 9 + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 5, yyy + 5 + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + 5, yyy + 9 + takasa, zzz, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 5, yyy + 5 + takasa, zzz, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 6; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - 5, yyy + y + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 5, yyy + y + takasa, zzz, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 5, yyy + 9 + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 5, yyy + 5 + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - 5, yyy + 9 + takasa, zzz, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 5, yyy + 5 + takasa, zzz, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 9, yyy + 9 + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 9, yyy + 4 + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 9 + takasa, zzz, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 4 + takasa, zzz, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 9, yyy + 9 + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 9, yyy + 4 + takasa, zzz, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 9 + takasa, zzz, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 4 + takasa, zzz, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz + (5 * byVal), DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz + (5 * byVal), DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 9, yyy + 9 + takasa, zzz + (5 * byVal), DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 9, yyy + 4 + takasa, zzz + (5 * byVal), DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 9 + takasa, zzz + (5 * byVal), DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 4 + takasa, zzz + (5 * byVal), DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz + (5 * byVal), DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz + (5 * byVal), DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 9, yyy + 9 + takasa, zzz + (5 * byVal), DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 9, yyy + 4 + takasa, zzz + (5 * byVal), DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 9 + takasa, zzz + (5 * byVal), DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 4 + takasa, zzz + (5 * byVal), DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + 9, yyy + y + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + 9, yyy + 9 + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + 9, yyy + 4 + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 9 + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + 9, yyy + 4 + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - 9, yyy + y + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - 9, yyy + 9 + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - 9, yyy + 4 + takasa, zzz + (9 * byVal), DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 9 + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - 9, yyy + 4 + takasa, zzz + (9 * byVal), DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 			try {
 				this.sleep(DQM.conf.cfg_build_sleep);
@@ -1652,7 +1654,7 @@ public class ThreadBuilderDama extends Thread{
 	        par3World.setBlock(xxx + 5, yyy + 11 + takasa, zzz - (8 * byVal), Blocks.quartz_stairs, 1, 2);
 	        par3World.setBlock(xxx - 5, yyy + 11 + takasa, zzz - (8 * byVal), Blocks.quartz_stairs, 0, 2);
 	        par3World.setBlock(xxx, yyy + 14 + takasa, zzz - (7 * byVal), Blocks.quartz_stairs, metaV1, 2);
-	        par3World.setBlock(xxx, yyy + 12 + takasa, zzz - (8 * byVal), DQM.blocks.DqmBlockKowareru7, 0, 2);
+	        par3World.setBlock(xxx, yyy + 12 + takasa, zzz - (8 * byVal), DQBlocks.DqmBlockKowareru7, 0, 2);
 	        par3World.setBlock(xxx + 1, yyy + 10 + takasa, zzz - (8 * byVal), Blocks.air, 0, 2);
 	        par3World.setBlock(xxx - 1, yyy + 10 + takasa, zzz - (8 * byVal), Blocks.air, 0, 2);
 	        par3World.setBlock(xxx + 3, yyy + 10 + takasa, zzz - (8 * byVal), Blocks.air, 0, 2);
@@ -1815,7 +1817,7 @@ public class ThreadBuilderDama extends Thread{
 	        par3World.setBlock(xxx + 1, yyy + 2 + takasa, zzz + (13 * byVal), Blocks.quartz_stairs, 1, 2);
 	        par3World.setBlock(xxx - 1, yyy + 2 + takasa, zzz + (13 * byVal), Blocks.quartz_stairs, 0, 2);
 	        //Block block;
-	        //block = DQM.blocks.DqmBlockKowareruDoor3;
+	        //block = DQBlocks.DqmBlockKowareruDoor3;
 	        //int i0 = MathHelper.floor_double((double)((180.0F) * 4.0F / 360.0F) - 0.5D) & 3;
 	        //placeDoorBlock(par3World, xxx, yyy + 1 + takasa, zzz + 13, i0, block);
 
@@ -1855,14 +1857,14 @@ public class ThreadBuilderDama extends Thread{
 	        //par3World.setBlock(xxx, yyy + 1, zzz + 4, Block.chest, 0, 2);
 	        //DqmWorldChest.Chest4(rand, xxx, yyy + 1, zzz + 4, par3World);
 	        //像
-	        par3World.setBlock(xxx + 8, yyy + 4 + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
-	        par3World.setBlock(xxx + 8, yyy + 5 + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockSKirapan, 3, 2);
-	        par3World.setBlock(xxx - 8, yyy + 4 + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
-	        par3World.setBlock(xxx - 8, yyy + 5 + takasa, zzz - (9 * byVal), DQM.decorateBlocks.DqmBlockSKirapan, 1, 2);
-	        par3World.setBlock(xxx + 7, yyy + 4 + takasa, zzz - (3 * byVal), DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
-	        par3World.setBlock(xxx + 7, yyy + 5 + takasa, zzz - (3 * byVal), DQM.decorateBlocks.DqmBlockSKirapan, 3, 2);
-	        par3World.setBlock(xxx - 7, yyy + 4 + takasa, zzz - (3 * byVal), DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
-	        par3World.setBlock(xxx - 7, yyy + 5 + takasa, zzz - (3 * byVal), DQM.decorateBlocks.DqmBlockSKirapan, 1, 2);
+	        par3World.setBlock(xxx + 8, yyy + 4 + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockDaizaQ, 0, 2);
+	        par3World.setBlock(xxx + 8, yyy + 5 + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockSKirapan, 3, 2);
+	        par3World.setBlock(xxx - 8, yyy + 4 + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockDaizaQ, 0, 2);
+	        par3World.setBlock(xxx - 8, yyy + 5 + takasa, zzz - (9 * byVal), DQDecorates.DqmBlockSKirapan, 1, 2);
+	        par3World.setBlock(xxx + 7, yyy + 4 + takasa, zzz - (3 * byVal), DQDecorates.DqmBlockDaizaQ, 0, 2);
+	        par3World.setBlock(xxx + 7, yyy + 5 + takasa, zzz - (3 * byVal), DQDecorates.DqmBlockSKirapan, 3, 2);
+	        par3World.setBlock(xxx - 7, yyy + 4 + takasa, zzz - (3 * byVal), DQDecorates.DqmBlockDaizaQ, 0, 2);
+	        par3World.setBlock(xxx - 7, yyy + 5 + takasa, zzz - (3 * byVal), DQDecorates.DqmBlockSKirapan, 1, 2);
 
 
         }else
@@ -2206,23 +2208,23 @@ public class ThreadBuilderDama extends Thread{
 			}
 
 
-	        par3World.setBlock(xxx - (20 * byVal), yyy + 17 + takasa, zzz, DQM.blocks.DqmBlockKowareru7, 0, 2);
+	        par3World.setBlock(xxx - (20 * byVal), yyy + 17 + takasa, zzz, DQBlocks.DqmBlockKowareru7, 0, 2);
 	        //炎と聖杯
-	        par3World.setBlock(xxx - (21 * byVal), yyy + 0 + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - (21 * byVal), yyy + 0 + takasa, zzz + 5, DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - (21 * byVal), yyy + 1 + takasa, zzz + 5, Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - (21 * byVal), yyy + 0 + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - (21 * byVal), yyy + 0 + takasa, zzz - 5, DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - (21 * byVal), yyy + 1 + takasa, zzz - 5, Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - (17 * byVal), yyy + 0 + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - (17 * byVal), yyy + 0 + takasa, zzz + 5, DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - (17 * byVal), yyy + 1 + takasa, zzz + 5, Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - (17 * byVal), yyy + 0 + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - (17 * byVal), yyy + 0 + takasa, zzz - 5, DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - (17 * byVal), yyy + 1 + takasa, zzz - 5, Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - (8 * byVal), yyy + 4 + takasa, zzz + 3, DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - (8 * byVal), yyy + 4 + takasa, zzz + 3, DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - (8 * byVal), yyy + 5 + takasa, zzz + 3, Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - (8 * byVal), yyy + 4 + takasa, zzz - 3, DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - (8 * byVal), yyy + 4 + takasa, zzz - 3, DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - (8 * byVal), yyy + 5 + takasa, zzz - 3, Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - (3 * byVal), yyy + 4 + takasa, zzz + 3, DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - (3 * byVal), yyy + 4 + takasa, zzz + 3, DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - (3 * byVal), yyy + 5 + takasa, zzz + 3, Blocks.fire, 0, 2);
-	        par3World.setBlock(xxx - (3 * byVal), yyy + 4 + takasa, zzz - 3, DQM.decorateBlocks.DqmBlockKagaribidai, 0, 2);
+	        par3World.setBlock(xxx - (3 * byVal), yyy + 4 + takasa, zzz - 3, DQDecorates.DqmBlockKagaribidai, 0, 2);
 	        par3World.setBlock(xxx - (3 * byVal), yyy + 5 + takasa, zzz - 3, Blocks.fire, 0, 2);
 
 			try {
@@ -2236,158 +2238,158 @@ public class ThreadBuilderDama extends Thread{
 	        //前柱
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz - 9,DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz - 9,DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz - 9, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz - 9, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz + 9, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz + 9, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz + 9, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        //横柱
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx, yyy + y + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx, yyy + y + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx, yyy + 11 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx, yyy + 2 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 11 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 2 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - (9 * byVal), yyy + y + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (9 * byVal), yyy + y + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (9 * byVal), yyy + 11 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (9 * byVal), yyy + 2 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - (9 * byVal), yyy + 11 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (9 * byVal), yyy + 2 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (9 * byVal), yyy + y + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (9 * byVal), yyy + y + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (9 * byVal), yyy + 11 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (9 * byVal), yyy + 2 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (9 * byVal), yyy + 11 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (9 * byVal), yyy + 2 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz - 19 , DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz - 19 , DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        //
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx, yyy + y + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx, yyy + y + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx, yyy + 11 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx, yyy + 2 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 11 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 2 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - (9 * byVal), yyy + y + takasa, zzz + 19 , DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (9 * byVal), yyy + y + takasa, zzz + 19 , DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (9 * byVal), yyy + 11 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (9 * byVal), yyy + 2 + takasa, zzz +19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - (9 * byVal), yyy + 11 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (9 * byVal), yyy + 2 + takasa, zzz +19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (9 * byVal), yyy + y + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (9 * byVal), yyy + y + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (9 * byVal), yyy + 11 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (9 * byVal), yyy + 2 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (9 * byVal), yyy + 11 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (9 * byVal), yyy + 2 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (19 * byVal), yyy + y + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 11 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (19 * byVal), yyy + 2 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        //後柱
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz,  DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz,  DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz,  DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz,  DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz - 9, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz - 9, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz - 9, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz + 9, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz + 9, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz + 9, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz - 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz - 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 	        for (int y = 3; y <= 10; ++y)
 	        {
-	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (19 * byVal), yyy + y + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz + 19, DQM.decorateBlocks.DqmBlockOokiihasirasitaQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 11 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (19 * byVal), yyy + 2 + takasa, zzz + 19, DQDecorates.DqmBlockOokiihasirasitaQ, 0, 2);
 
 			try {
 				this.sleep(DQM.conf.cfg_build_sleep);
@@ -2561,25 +2563,25 @@ public class ThreadBuilderDama extends Thread{
 
 	        for (int z = -2; z <= 2; ++z)
 	        {
-	            par3World.setBlock(xxx - (15 * byVal), yyy - 1 + takasa, zzz + z, DQM.blocks.DqmBlockKowareru6, 2, 2);
+	            par3World.setBlock(xxx - (15 * byVal), yyy - 1 + takasa, zzz + z, DQBlocks.DqmBlockKowareru6, 2, 2);
 	        }
 
 	        for (int z = -2; z <= 2; ++z)
 	        {
-	            par3World.setBlock(xxx - (21 * byVal), yyy - 1 + takasa, zzz + z, DQM.blocks.DqmBlockKowareru6, 2, 2);
+	            par3World.setBlock(xxx - (21 * byVal), yyy - 1 + takasa, zzz + z, DQBlocks.DqmBlockKowareru6, 2, 2);
 	        }
 
 	        for (int x = -20; x <= -15; ++x)
 	        {
-	            par3World.setBlock(xxx + (x * byVal), yyy - 1 + takasa, zzz + 2, DQM.blocks.DqmBlockKowareru6, 2, 2);
-	            par3World.setBlock(xxx + (x * byVal), yyy - 1 + takasa, zzz - 2, DQM.blocks.DqmBlockKowareru6, 2, 2);
+	            par3World.setBlock(xxx + (x * byVal), yyy - 1 + takasa, zzz + 2, DQBlocks.DqmBlockKowareru6, 2, 2);
+	            par3World.setBlock(xxx + (x * byVal), yyy - 1 + takasa, zzz - 2, DQBlocks.DqmBlockKowareru6, 2, 2);
 	        }
 
 	        for (int z = -1; z <= 1; ++z)
 	        {
 	            for (int x = -20; x <= -15; ++x)
 	            {
-	                par3World.setBlock(xxx + (x * byVal), yyy - 1 + takasa, zzz + z, DQM.blocks.DqmBlockKowareru5, 11, 2);
+	                par3World.setBlock(xxx + (x * byVal), yyy - 1 + takasa, zzz + z, DQBlocks.DqmBlockKowareru5, 11, 2);
 	            }
 	        }
 
@@ -2609,19 +2611,19 @@ public class ThreadBuilderDama extends Thread{
 
 	            for (int x = -10; x <= -2; ++x)
 	            {
-	                par3World.setBlock(xxx + (x * byVal), yyy + 3 + takasa, zzz + (z * byVal), DQM.blocks.DqmBlockKowareru5, 11, 2);
+	                par3World.setBlock(xxx + (x * byVal), yyy + 3 + takasa, zzz + (z * byVal), DQBlocks.DqmBlockKowareru5, 11, 2);
 	            }
 	        }
 
 	        for (int x = -10; x <= -2; ++x)
 	        {
-	            par3World.setBlock(xxx + (x * byVal), yyy + 3 + takasa, zzz + 2, DQM.blocks.DqmBlockKowareru6, 11, 2);
-	            par3World.setBlock(xxx + (x * byVal), yyy + 3 + takasa, zzz - 2, DQM.blocks.DqmBlockKowareru6, 11, 2);
+	            par3World.setBlock(xxx + (x * byVal), yyy + 3 + takasa, zzz + 2, DQBlocks.DqmBlockKowareru6, 11, 2);
+	            par3World.setBlock(xxx + (x * byVal), yyy + 3 + takasa, zzz - 2, DQBlocks.DqmBlockKowareru6, 11, 2);
 	        }
 
 	        for (int z = -1; z <= 1; ++z)
 	        {
-	            par3World.setBlock(xxx - (1 * byVal), yyy + 3 + takasa, zzz + z, DQM.blocks.DqmBlockKowareru6, 11, 2);
+	            par3World.setBlock(xxx - (1 * byVal), yyy + 3 + takasa, zzz + z, DQBlocks.DqmBlockKowareru6, 11, 2);
 	        }
 
 	        //高台
@@ -2879,99 +2881,99 @@ public class ThreadBuilderDama extends Thread{
 	        //内柱
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - (8 * byVal), yyy + y + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (8 * byVal), yyy + y + takasa, zzz + 5, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (8 * byVal), yyy + 9 + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (8 * byVal), yyy + 4 + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - (8 * byVal), yyy + 9 + takasa, zzz + 5, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (8 * byVal), yyy + 4 + takasa, zzz + 5, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - (8 * byVal), yyy + y + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (8 * byVal), yyy + y + takasa, zzz - 5, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (8 * byVal), yyy + 9 + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (8 * byVal), yyy + 4 + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - (8 * byVal), yyy + 9 + takasa, zzz - 5, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (8 * byVal), yyy + 4 + takasa, zzz - 5, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - (4 * byVal), yyy + y + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (4 * byVal), yyy + y + takasa, zzz + 5, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (4 * byVal), yyy + 9 + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (4 * byVal), yyy + 4 + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - (4 * byVal), yyy + 9 + takasa, zzz + 5, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (4 * byVal), yyy + 4 + takasa, zzz + 5, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx - (4 * byVal), yyy + y + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx - (4 * byVal), yyy + y + takasa, zzz - 5, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx - (4 * byVal), yyy + 9 + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx - (4 * byVal), yyy + 4 + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx - (4 * byVal), yyy + 9 + takasa, zzz - 5, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx - (4 * byVal), yyy + 4 + takasa, zzz - 5, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 6; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx, yyy + y + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx, yyy + y + takasa, zzz + 5, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx, yyy + 9 + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx, yyy + 5 + takasa, zzz + 5, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 9 + takasa, zzz + 5, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 5 + takasa, zzz + 5, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 6; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx, yyy + y + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx, yyy + y + takasa, zzz - 5, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx, yyy + 9 + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx, yyy + 5 + takasa, zzz - 5, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 9 + takasa, zzz - 5, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 5 + takasa, zzz - 5, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx, yyy + y + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx, yyy + y + takasa, zzz + 9, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx, yyy + 9 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx, yyy + 4 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 9 + takasa, zzz + 9, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 4 + takasa, zzz + 9, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx, yyy + y + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx, yyy + y + takasa, zzz - 9, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx, yyy + 9 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx, yyy + 4 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 9 + takasa, zzz - 9, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx, yyy + 4 + takasa, zzz - 9, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + (5 * byVal), yyy + y + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (5 * byVal), yyy + y + takasa, zzz + 9, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (5 * byVal), yyy + 9 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (5 * byVal), yyy + 4 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + (5 * byVal), yyy + 9 + takasa, zzz + 9, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (5 * byVal), yyy + 4 + takasa, zzz + 9, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + (5 * byVal), yyy + y + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (5 * byVal), yyy + y + takasa, zzz - 9, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (5 * byVal), yyy + 9 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (5 * byVal), yyy + 4 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + (5 * byVal), yyy + 9 + takasa, zzz - 9, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (5 * byVal), yyy + 4 + takasa, zzz - 9, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + (9 * byVal), yyy + y + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (9 * byVal), yyy + y + takasa, zzz + 9, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (9 * byVal), yyy + 9 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (9 * byVal), yyy + 4 + takasa, zzz + 9, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + (9 * byVal), yyy + 9 + takasa, zzz + 9, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (9 * byVal), yyy + 4 + takasa, zzz + 9, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 	        for (int y = 5; y <= 8; ++y)
 	        {
-	            par3World.setBlock(xxx + (9 * byVal), yyy + y + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiranakaQ, 0, 2);
+	            par3World.setBlock(xxx + (9 * byVal), yyy + y + takasa, zzz - 9, DQDecorates.DqmBlockHasiranakaQ, 0, 2);
 	        }
 
-	        par3World.setBlock(xxx + (9 * byVal), yyy + 9 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiraueQ, 0, 2);
-	        par3World.setBlock(xxx + (9 * byVal), yyy + 4 + takasa, zzz - 9, DQM.decorateBlocks.DqmBlockHasiraQ, 0, 2);
+	        par3World.setBlock(xxx + (9 * byVal), yyy + 9 + takasa, zzz - 9, DQDecorates.DqmBlockHasiraueQ, 0, 2);
+	        par3World.setBlock(xxx + (9 * byVal), yyy + 4 + takasa, zzz - 9, DQDecorates.DqmBlockHasiraQ, 0, 2);
 
 			try {
 				this.sleep(DQM.conf.cfg_build_sleep);
@@ -3293,7 +3295,7 @@ public class ThreadBuilderDama extends Thread{
 	        par3World.setBlock(xxx - (8 * byVal), yyy + 11 + takasa, zzz + 5, Blocks.quartz_stairs, 3, 2);
 	        par3World.setBlock(xxx - (8 * byVal), yyy + 11 + takasa, zzz - 5, Blocks.quartz_stairs, 2, 2);
 	        par3World.setBlock(xxx - (7 * byVal), yyy + 14 + takasa, zzz, Blocks.quartz_stairs, metaV1, 2);
-	        par3World.setBlock(xxx - (8 * byVal), yyy + 12 + takasa, zzz, DQM.blocks.DqmBlockKowareru7, 0, 2);
+	        par3World.setBlock(xxx - (8 * byVal), yyy + 12 + takasa, zzz, DQBlocks.DqmBlockKowareru7, 0, 2);
 	        par3World.setBlock(xxx - (8 * byVal), yyy + 10 + takasa, zzz + 1, Blocks.air, 0, 2);
 	        par3World.setBlock(xxx - (8 * byVal), yyy + 10 + takasa, zzz - 1, Blocks.air, 0, 2);
 	        par3World.setBlock(xxx - (8 * byVal), yyy + 10 + takasa, zzz + 3, Blocks.air, 0, 2);
@@ -3457,7 +3459,7 @@ public class ThreadBuilderDama extends Thread{
 	        par3World.setBlock(xxx + (13 * byVal), yyy + 2 + takasa, zzz + 1, Blocks.quartz_stairs, 3, 2);
 	        par3World.setBlock(xxx + (13 * byVal), yyy + 2 + takasa, zzz - 1, Blocks.quartz_stairs, 2, 2);
 	        Block block;
-	        //block = DQM.blocks.DqmBlockKowareruDoor3;
+	        //block = DQBlocks.DqmBlockKowareruDoor3;
 	        //int i0 = MathHelper.floor_double((double)((180.0F) * 4.0F / 360.0F) - 0.5D) & 3;
 	        //placeDoorBlock(par3World, xxx, yyy + 1 + takasa, zzz + 13, i0, block);
 
@@ -3497,14 +3499,14 @@ public class ThreadBuilderDama extends Thread{
 	        //par3World.setBlock(xxx, yyy + 1, zzz + 4, Block.chest, 0, 2);
 	        //DqmWorldChest.Chest4(rand, xxx, yyy + 1, zzz + 4, par3World);
 	        //像
-	        par3World.setBlock(xxx - (9 * byVal), yyy + 4 + takasa, zzz + 8, DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
-	        par3World.setBlock(xxx - (9 * byVal), yyy + 5 + takasa, zzz + 8, DQM.decorateBlocks.DqmBlockSKirapan, 0, 2);
-	        par3World.setBlock(xxx - (9 * byVal), yyy + 4 + takasa, zzz - 8, DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
-	        par3World.setBlock(xxx - (9 * byVal), yyy + 5 + takasa, zzz - 8, DQM.decorateBlocks.DqmBlockSKirapan, 2, 2);
-	        par3World.setBlock(xxx - (3 * byVal), yyy + 4 + takasa, zzz + 7, DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
-	        par3World.setBlock(xxx - (3 * byVal), yyy + 5 + takasa, zzz + 7, DQM.decorateBlocks.DqmBlockSKirapan, 0, 2);
-	        par3World.setBlock(xxx - (3 * byVal), yyy + 4 + takasa, zzz - 7, DQM.decorateBlocks.DqmBlockDaizaQ, 0, 2);
-	        par3World.setBlock(xxx - (3 * byVal), yyy + 5 + takasa, zzz - 7, DQM.decorateBlocks.DqmBlockSKirapan, 2, 2);
+	        par3World.setBlock(xxx - (9 * byVal), yyy + 4 + takasa, zzz + 8, DQDecorates.DqmBlockDaizaQ, 0, 2);
+	        par3World.setBlock(xxx - (9 * byVal), yyy + 5 + takasa, zzz + 8, DQDecorates.DqmBlockSKirapan, 0, 2);
+	        par3World.setBlock(xxx - (9 * byVal), yyy + 4 + takasa, zzz - 8, DQDecorates.DqmBlockDaizaQ, 0, 2);
+	        par3World.setBlock(xxx - (9 * byVal), yyy + 5 + takasa, zzz - 8, DQDecorates.DqmBlockSKirapan, 2, 2);
+	        par3World.setBlock(xxx - (3 * byVal), yyy + 4 + takasa, zzz + 7, DQDecorates.DqmBlockDaizaQ, 0, 2);
+	        par3World.setBlock(xxx - (3 * byVal), yyy + 5 + takasa, zzz + 7, DQDecorates.DqmBlockSKirapan, 0, 2);
+	        par3World.setBlock(xxx - (3 * byVal), yyy + 4 + takasa, zzz - 7, DQDecorates.DqmBlockDaizaQ, 0, 2);
+	        par3World.setBlock(xxx - (3 * byVal), yyy + 5 + takasa, zzz - 7, DQDecorates.DqmBlockSKirapan, 2, 2);
         }
 
 	}

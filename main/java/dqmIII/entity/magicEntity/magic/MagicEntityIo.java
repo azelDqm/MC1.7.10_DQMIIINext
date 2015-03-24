@@ -229,7 +229,7 @@ public class MagicEntityIo extends MagicEntity implements IProjectile{
 
                 if (this.ticksInGround > limit)
                 {
-                	if(worldFlg)
+                	if(worldFlg && DQM.conf.magicEpIo == 1)
                 	{
                 		this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, 3.0F, true);
                 	}

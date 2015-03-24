@@ -12,7 +12,7 @@ import cpw.mods.fml.common.eventhandler.Event;
 @Cancelable
 public class DqmJukurenUpEvent extends Event{
 
-	public final EntityPlayer player;
+	public EntityPlayer player;
 	public final int WeaponType;
 	public final int JobLv;
 

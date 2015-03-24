@@ -6,6 +6,7 @@ import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
 import cpw.mods.fml.common.network.simpleimpl.MessageContext;
 import dqmIII.DQM;
+import dqmIII.enums.EnumDqmJob;
 import dqmIII.enums.EnumDqmMessageConv;
 import dqmIII.enums.EnumDqmNpcTalk;
 import dqmIII.playerData.ExtendedPlayerProperties;
@@ -25,7 +26,8 @@ public class MessageServerJobChangeHandler implements IMessageHandler<MessageSer
         ExtendedPlayerProperties.get(ep).setNpcTalk(EnumDqmNpcTalk.SINKAN.getId(), 20);
 
         if(ExtendedPlayerProperties.get(ep).getTabidachiFlg() != 100 ||
-           ExtendedPlayerProperties.get(ep).getJobLv(0) < 50)
+           ExtendedPlayerProperties.get(ep).getJobLv(0) < 50 ||
+           pat != EnumDqmJob.Kenja.getId())
         {
 	        if(ExtendedPlayerProperties3.get(ep).getJobPermission(pat) == 0)
 	        {
@@ -43,6 +45,8 @@ public class MessageServerJobChangeHandler implements IMessageHandler<MessageSer
         }
 		ep.worldObj.playSoundAtEntity(ep, "dqm:player.tensyoku", 1.0F, 1.0F);
         ExtendedPlayerProperties.get(ep).setJob(pat);
+        ((ExtendedPlayerProperties)(ep.getExtendedProperties(ExtendedPlayerProperties.EXT_PROP_NAME))).loadProxyData((EntityPlayer)ep);
+
         ep.addChatMessage(new ChatComponentTranslation("msg.Dama1.messages.22.txt" ,new Object[] {EnumDqmMessageConv.JobName.getStartS() + pat + EnumDqmMessageConv.JobName.getEndS()}));
         ep.addChatMessage(new ChatComponentTranslation("msg.Dama1.messages.23.txt" ,new Object[] {}));
 

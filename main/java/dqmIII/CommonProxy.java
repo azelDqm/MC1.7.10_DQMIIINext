@@ -8,7 +8,7 @@ import cpw.mods.fml.common.network.IGuiHandler;
 import dqmIII.entity.magicEntity.MagicRegister;
 import dqmIII.entity.mobEntity.MobRegister;
 import dqmIII.entity.mobEntity.MobSpawnRegister;
-import dqmIII.gui.GuiFarmBookContainer;
+import dqmIII.gui.farmBook.GuiFarmBookContainer;
 
 public class CommonProxy implements IGuiHandler
 {

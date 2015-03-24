@@ -2,7 +2,7 @@ package dqmIII.creativeTabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQArmors;
 
 public class DqmTabArmor extends CreativeTabs
 {
@@ -14,6 +14,6 @@ public class DqmTabArmor extends CreativeTabs
 	@Override
 	public Item getTabIconItem()
 	{
-		return DQM.armors.itemRotonoyoroi;
+		return DQArmors.itemRotonoyoroi;
 	}
 }

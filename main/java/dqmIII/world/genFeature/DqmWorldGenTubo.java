@@ -7,6 +7,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQDecorates;
 
 public class DqmWorldGenTubo implements IWorldGenerator
 {
@@ -57,13 +58,13 @@ public class DqmWorldGenTubo implements IWorldGenerator
         	int rate = rand.nextInt(12);
         	if(rate > 5)
         	{
-        		tuboBlock = DQM.decorateBlocks.DqmBlockTubo2;
+        		tuboBlock = DQDecorates.DqmBlockTubo2;
         	}else if(rate > 1)
         	{
-        		tuboBlock = DQM.decorateBlocks.DqmBlockAkumanotubo2;
+        		tuboBlock = DQDecorates.DqmBlockAkumanotubo2;
         	}else
         	{
-        		tuboBlock = DQM.decorateBlocks.DqmBlockTubokku2;
+        		tuboBlock = DQDecorates.DqmBlockTubokku2;
     		}
 
             par3World.setBlock(x, y, z, tuboBlock, rand.nextInt(4), 2);

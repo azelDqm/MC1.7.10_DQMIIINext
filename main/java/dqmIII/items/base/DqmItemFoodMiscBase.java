@@ -6,11 +6,13 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 import scala.util.Random;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQIngots;
+import dqmIII.api.Items.DQMiscs;
 import dqmIII.playerData.ExtendedPlayerProperties;
 
 public class DqmItemFoodMiscBase extends ItemFood{
@@ -52,74 +54,74 @@ public class DqmItemFoodMiscBase extends ItemFood{
 				healMP = this.minMP + rand.nextInt(this.maxMP + 1);
 			}
 
-			if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemMidorinokoke.getUnlocalizedName()))
+			if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemMidorinokoke.getUnlocalizedName()))
 			{
 				//healHP = 1.0F + (float)rand.nextInt(3);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemNebanebazeri.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemNebanebazeri.getUnlocalizedName()))
 			{
 				//healHP = 3.0F + (float)rand.nextInt(5);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemSuraimuzeri.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemSuraimuzeri.getUnlocalizedName()))
 			{
 				//healHP = 1.0F + (float)rand.nextInt(3);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemKenjanoseisui.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemKenjanoseisui.getUnlocalizedName()))
 			{
 				//healMP = 40 + rand.nextInt(20);
 				ep.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 200, 2));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemAyasiikobin.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemAyasiikobin.getUnlocalizedName()))
 			{
 				//healMP = 70 + rand.nextInt(20);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemTensinosoma.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemTensinosoma.getUnlocalizedName()))
 			{
 				//healMP = 130 + rand.nextInt(40);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemMaryokunotuti.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemMaryokunotuti.getUnlocalizedName()))
 			{
 				//healMP = 10 + rand.nextInt(10);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemHananomitu.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemHananomitu.getUnlocalizedName()))
 			{
 				//healMP = 5 + rand.nextInt(10);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemHebinonukegara.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemHebinonukegara.getUnlocalizedName()))
 			{
 				//healMP = 15 + rand.nextInt(10);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemKyodaihigetokage.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemKyodaihigetokage.getUnlocalizedName()))
 			{
 				//healMP = 18 + rand.nextInt(10);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemNekozuna.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemNekozuna.getUnlocalizedName()))
 			{
 				//healMP = 1 + rand.nextInt(5);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemAmatuyunoito.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemAmatuyunoito.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 100, 5));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemHonehone.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemHonehone.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.hunger.id, 60, 5));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemKazekirinohane.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemKazekirinohane.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.jump.id, 100, 2));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemTyounohane.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemTyounohane.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.jump.id, 200, 0));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemUruwasikinoko.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemUruwasikinoko.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.confusion.id, 60, 5));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemRyuunohizake.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemRyuunohizake.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 300, 3));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemYogoretahoutai.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemYogoretahoutai.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.hunger.id, 100, 5));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemMadarakumonoito.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemMadarakumonoito.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.moveSlowdown.id, 60, 2));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemSeijanohai.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemSeijanohai.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.blindness.id, 60, 0));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.miscs.itemTogetogenokiba.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQMiscs.itemTogetogenokiba.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.harm.id, 60, 0));
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.ingots.itemHosinokakera.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQIngots.itemHosinokakera.getUnlocalizedName()))
 			{
 				//healMP = 20 + rand.nextInt(10);
-			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQM.ingots.itemMigakizuna.getUnlocalizedName()))
+			}else if(this.getUnlocalizedName().equalsIgnoreCase(DQIngots.itemMigakizuna.getUnlocalizedName()))
 			{
 				ep.addPotionEffect(new PotionEffect(Potion.digSpeed.id, 100, 2));
 			}
@@ -166,5 +168,19 @@ public class DqmItemFoodMiscBase extends ItemFood{
 		 {
 			 p_77624_3_.add(I18n.format("dqm.iteminfo.mpheal", new Object[]{dispMinMP, dispMaxMP, dispAveMP}));
 		 }
+
+	    	NBTTagCompound nbt = p_77624_1_.getTagCompound();
+	    	if(nbt != null)
+	    	{
+	    		int medalVal = nbt.getInteger("medalking");
+	    		//System.out.println("TEST:" + medalVal);
+	    		if(medalVal > 0)
+	    		{
+
+	        		String medalValue = I18n.format("msg.medalking.item.txt", new Object[]{medalVal});
+
+	    			p_77624_3_.add(medalValue);
+	    		}
+	    	}
 	 }
 }

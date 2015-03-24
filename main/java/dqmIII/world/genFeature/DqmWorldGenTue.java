@@ -8,6 +8,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQDecorates;
 
 public class DqmWorldGenTue implements IWorldGenerator
 {
@@ -57,7 +58,7 @@ public class DqmWorldGenTue implements IWorldGenerator
         					par3World.getBlock(x, y - 1, z) == Blocks.end_stone ||
         					(topBlock != Blocks.air && par3World.getBlock(x, y - 1, z) == topBlock)))
         {
-            par3World.setBlock(x, y, z, DQM.decorateBlocks.DqmBlockTue, rand.nextInt(4), 2);
+            par3World.setBlock(x, y, z, DQDecorates.DqmBlockTue, rand.nextInt(4), 2);
         }
     }
 }

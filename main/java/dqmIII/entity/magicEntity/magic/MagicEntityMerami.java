@@ -260,7 +260,7 @@ public class MagicEntityMerami extends MagicEntity implements IProjectile{
 
                 if (this.ticksInGround > limit)
                 {
-                	if(worldFlg)
+                	if(worldFlg && DQM.conf.magicEpMera == 1)
                 	{
 	                	int setX = this.xTile;
 	                	int setY = this.yTile + 1;

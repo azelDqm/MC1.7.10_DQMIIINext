@@ -9,6 +9,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntity;
 import dqmIII.entity.magicEntity.magic.MagicEntityDoruma;
 import dqmIII.enums.EnumDqmMagic;
@@ -63,7 +64,7 @@ public class DqmItemMagicDoruma extends DqmItemMagicBase{
         	*/
 
 
-    		if(par1ItemStack.getItem() == DQM.magics.itemDoruma)
+    		if(par1ItemStack.getItem() == DQMagics.itemDoruma)
     		{
     			magic = new MagicEntity[5];
     			for(int cnt = 1;cnt < 5; cnt++)
@@ -79,7 +80,7 @@ public class DqmItemMagicDoruma extends DqmItemMagicBase{
     	   		needLvK = 15;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemDorukuma)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemDorukuma)
     		{
     			magic = new MagicEntity[8];
     			for(int cnt = 1;cnt < 8; cnt++)
@@ -96,7 +97,7 @@ public class DqmItemMagicDoruma extends DqmItemMagicBase{
     	   		needLvK = 27;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemDorumoa)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemDorumoa)
     		{
     			magic = new MagicEntity[16];
     			for(int cnt = 1;cnt < 16; cnt++)
@@ -112,7 +113,7 @@ public class DqmItemMagicDoruma extends DqmItemMagicBase{
     	   		needLvK = 38;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemDorumadon)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemDorumadon)
     		{
     			magic = new MagicEntity[32];
     			for(int cnt = 1;cnt < 32; cnt++)

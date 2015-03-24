@@ -3,7 +3,7 @@ package dqmIII.creativeTabs;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import dqmIII.DQM;
+import dqmIII.api.Blocks.DQOres;
 
 public class DqmTabOre extends CreativeTabs
 {
@@ -15,7 +15,7 @@ public class DqmTabOre extends CreativeTabs
 	@Override
 	public Item getTabIconItem()
 	{
-		return new ItemStack(DQM.ores.BlockOreTekkouseki, 1, 0).getItem();
+		return new ItemStack(DQOres.BlockOreTekkouseki, 1, 0).getItem();
 		//return Items.arrow;
 	}
 }

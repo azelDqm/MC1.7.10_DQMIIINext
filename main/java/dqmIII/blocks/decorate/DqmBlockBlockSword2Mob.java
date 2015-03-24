@@ -14,6 +14,7 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQDecorates;
 import dqmIII.blocks.decorate.tileEntity.DqmTileEntitySword2Mob;
 import dqmIII.entity.mobEntity.DqmMobBase;
 
@@ -119,7 +120,7 @@ public class DqmBlockBlockSword2Mob extends BlockContainer
 
         if(spawnMob == null && rand.nextInt(2) == 0)
         {
-        	doropiItems = new ItemStack(DQM.decorateBlocks.DqmBlockSword2, 1);
+        	doropiItems = new ItemStack(DQDecorates.DqmBlockSword2, 1);
         }
 
         if (!par1World.isRemote)

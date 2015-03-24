@@ -4,7 +4,7 @@ import java.util.Hashtable;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
-import dqmIII.DQM;
+import dqmIII.api.Blocks.DQPlants;
 
 public class FuncAddGrowthBlock {
     public Hashtable plantGrowthBlockIDTb;
@@ -16,7 +16,7 @@ public class FuncAddGrowthBlock {
     	plantGrowthBlockIDTb.put(Blocks.farmland, true);
     	plantGrowthBlockIDTb.put(Blocks.grass, true);
     	plantGrowthBlockIDTb.put(Blocks.dirt, true);
-    	plantGrowthBlockIDTb.put(DQM.seedBlocks.BlockHoujyouDirt, true);
+    	plantGrowthBlockIDTb.put(DQPlants.BlockHoujyouDirt, true);
     	//plantGrowthBlockIDTb.put(DqmItemList2.DqmHoujyouDirt.blockID, true);
     }
 

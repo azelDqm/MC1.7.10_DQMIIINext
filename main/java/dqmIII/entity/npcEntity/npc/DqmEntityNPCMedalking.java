@@ -10,7 +10,10 @@ import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.EnumSkyBlock;
 import net.minecraft.world.World;
+import dqmIII.DQM;
 import dqmIII.entity.npcEntity.DqmNPCBase;
+import dqmIII.enums.EnumDqmNpcTalk;
+import dqmIII.playerData.ExtendedPlayerProperties;
 
 public class DqmEntityNPCMedalking extends DqmNPCBase
 {
@@ -226,9 +229,42 @@ public class DqmEntityNPCMedalking extends DqmNPCBase
     {
 		if(!ep.worldObj.isRemote)
 		{
-			ep.addChatMessage(new ChatComponentTranslation("msg.Dama3.messages.-1.txt" ,new Object[] {}));
-			ep.worldObj.playSoundAtEntity(ep, "dqm:player.pi", 1.0F, 1.0F);
+			int flg = ExtendedPlayerProperties.get(ep).getNpcTalk(EnumDqmNpcTalk.MEDALKING.getId());
+
+			if(flg == 0)
+			{
+				ep.addChatMessage(new ChatComponentTranslation("msg.medalking.talk.1.txt" ,new Object[] {}));
+				ep.worldObj.playSoundAtEntity(ep, "dqm:player.pi", 1.0F, 1.0F);
+				ExtendedPlayerProperties.get(ep).setNpcTalk(EnumDqmNpcTalk.MEDALKING.getId(), 1);
+			}else if(flg == 1)
+			{
+				ep.addChatMessage(new ChatComponentTranslation("msg.medalking.talk.2.txt" ,new Object[] {}));
+				ep.worldObj.playSoundAtEntity(ep, "dqm:player.pi", 1.0F, 1.0F);
+				ExtendedPlayerProperties.get(ep).setNpcTalk(EnumDqmNpcTalk.MEDALKING.getId(), 2);
+			}else if(flg == 2 || flg == 4)
+			{
+				ep.addChatMessage(new ChatComponentTranslation("msg.medalking.talk.3.txt" ,new Object[] {}));
+				ep.worldObj.playSoundAtEntity(ep, "dqm:player.pi", 1.0F, 1.0F);
+
+				ExtendedPlayerProperties.get(ep).setNpcTalk(EnumDqmNpcTalk.MEDALKING.getId(), 4);
+				ep.openGui(DQM.instance, DQM.conf.GuiID_MKWeapon, ep.worldObj, (int)ep.posX, (int)ep.posY, (int)ep.posZ);
+				//ep.openGui(DQM.instance, 3, ep.worldObj, (int)ep.posX, (int)ep.posY, (int)ep.posZ);
+			}
+
+			//ep.addChatMessage(new ChatComponentTranslation("msg.Dama3.messages.-1.txt" ,new Object[] {}));
+			//ep.worldObj.playSoundAtEntity(ep, "dqm:player.pi", 1.0F, 1.0F);
 		}
+
+		/*
+		if(ExtendedPlayerProperties.get(ep).getNpcTalk(EnumDqmNpcTalk.MEDALKING.getId()) == 4)
+		{
+			if(ep.worldObj.isRemote)
+			{
+				PacketHandler.INSTANCE.sendToServer(new MessageServerGuiId(DQM.conf.GuiID_MKWeapon));
+			}
+			//ep.openGui(DQM.instance, 3, ep.worldObj, (int)ep.posX, (int)ep.posY, (int)ep.posZ);
+		}
+		*/
     	/*
     	if(!ep.worldObj.isRemote)
     	{

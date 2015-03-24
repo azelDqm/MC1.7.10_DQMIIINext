@@ -4,6 +4,10 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.init.Items;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQArmors;
+import dqmIII.api.Items.DQIngots;
+import dqmIII.api.Items.DQMiscs;
+import dqmIII.api.Items.DQWeapons;
 import dqmIII.enums.EnumDqmMonster;
 
 public class DqmEntityAtorasu extends DqmMobBaseSP
@@ -86,127 +90,127 @@ public class DqmEntityAtorasu extends DqmMobBaseSP
         }
         if (DQM.funcMob.getCalcDROP(20, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal5, 1);
+            this.dropItem(DQMiscs.itemLittlemedal5, 1);
         }
         if (DQM.funcMob.getCalcDROP(200, 1))
         {
-            this.dropItem(DQM.weapons.itemAtorasunokanaduti, 1);
+            this.dropItem(DQWeapons.itemAtorasunokanaduti, 1);
         }
         if (DQM.funcMob.getCalcDROP(10, 1))
         {
-            this.dropItem(DQM.miscs.itemHakai, 1);
+            this.dropItem(DQMiscs.itemHakai, 1);
         }
         if (DQM.funcMob.getCalcDROP(1, 1))
         {
-            this.dropItem(DQM.miscs.itemSeinarusizuku, 1);
+            this.dropItem(DQMiscs.itemSeinarusizuku, 1);
         }
         if (DQM.funcMob.getCalcDROP(10, 1))
         {
-            this.dropItem(DQM.miscs.itemSinkanohiseki, 1);
+            this.dropItem(DQMiscs.itemSinkanohiseki, 1);
         }
         if (DQM.funcMob.getCalcDROP(2, 1))
         {
-            this.dropItem(DQM.miscs.itemRyuunohizake, 1);
+            this.dropItem(DQMiscs.itemRyuunohizake, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemTensinosoma, 1);
+            this.dropItem(DQMiscs.itemTensinosoma, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemKenjanoseisui, 1);
+            this.dropItem(DQMiscs.itemKenjanoseisui, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemUraminohouju, 1);
+            this.dropItem(DQMiscs.itemUraminohouju, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.ingots.itemMisriru2, 1);
+            this.dropItem(DQIngots.itemMisriru2, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.ingots.itemTaiyounoisi2, 1);
+            this.dropItem(DQIngots.itemTaiyounoisi2, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.ingots.itemOriharukon2, 1);
+            this.dropItem(DQIngots.itemOriharukon2, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemGenmaseki, 1);
+            this.dropItem(DQMiscs.itemGenmaseki, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemPisaronotamasii, 1);
+            this.dropItem(DQMiscs.itemPisaronotamasii, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemMahounokagi, 1);
+            this.dropItem(DQMiscs.itemMahounokagi, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemLittlemedal, 1);
+            this.dropItem(DQMiscs.itemLittlemedal, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori0, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori0, 1);
         }
         if (DQM.funcMob.getCalcDROP(7, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori1, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori1, 1);
         }
         if (DQM.funcMob.getCalcDROP(50, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori2, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori2, 1);
         }
         if (DQM.funcMob.getCalcDROP(50, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori3, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori3, 1);
         }
         if (DQM.funcMob.getCalcDROP(100, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori4, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori4, 1);
         }
         if (DQM.funcMob.getCalcDROP(200, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori5, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori5, 1);
         }
         if (DQM.funcMob.getCalcDROP(400, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori6, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori6, 1);
         }
         if (DQM.funcMob.getCalcDROP(800, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori7, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori7, 1);
         }
         if (DQM.funcMob.getCalcDROP(1600, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori8, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori8, 1);
         }
         if (DQM.funcMob.getCalcDROP(3200, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori9, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori9, 1);
         }
         if (DQM.funcMob.getCalcDROP(6400, 1))
         {
-            this.dropItem(DQM.miscs.itemMegaminoinori10, 1);
+            this.dropItem(DQMiscs.itemMegaminoinori10, 1);
         }
         if (DQM.funcMob.getCalcDROP(12800, 1))
         {
-            this.dropItem(DQM.armors.itemSabitakabuto, 1);
+            this.dropItem(DQArmors.itemSabitakabuto, 1);
         }
         if (DQM.funcMob.getCalcDROP(25600, 1))
         {
-            this.dropItem(DQM.armors.itemSabitakabuto, 1);
+            this.dropItem(DQArmors.itemSabitakabuto, 1);
         }
         if (DQM.funcMob.getCalcDROP(51200, 1))
         {
-            this.dropItem(DQM.armors.itemSabitakote, 1);
+            this.dropItem(DQArmors.itemSabitakote, 1);
         }
         if (DQM.funcMob.getCalcDROP(3000, 1))
         {
-            this.dropItem(DQM.armors.itemSabitakutu, 1);
+            this.dropItem(DQArmors.itemSabitakutu, 1);
         }
     }
 }

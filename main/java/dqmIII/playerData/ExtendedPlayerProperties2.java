@@ -56,6 +56,15 @@ public class ExtendedPlayerProperties2 implements IExtendedEntityProperties {
 		// TODO 自動生成されたメソッド・スタブ
 		NBTTagCompound nbt = (NBTTagCompound)compound.getTag(EXT_PROP_NAME);
 
+		if(farmRecipe == null)
+		{
+			farmRecipe = new int[32];
+		}
+		if(bugFixFlg == null)
+		{
+			bugFixFlg = new int[8];
+		}
+
         for(int cnt = 0; cnt < 32; cnt++)
         {
         	farmRecipe[cnt] = nbt.getInteger("farmRecipe_" + cnt);

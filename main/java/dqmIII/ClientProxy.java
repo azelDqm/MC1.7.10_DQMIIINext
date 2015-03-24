@@ -15,14 +15,15 @@ import dqmIII.entity.mobEntity.MobRenderingRegister;
 import dqmIII.entity.mobEntity.MobSpawnRegister;
 import dqmIII.entity.npcEntity.NPCRenderingRegister;
 import dqmIII.entity.villagerEntity.DqmVillagerSkinRegister;
-import dqmIII.gui.GuiBuffBar;
-import dqmIII.gui.GuiFarmBookGuiContainer;
-import dqmIII.gui.GuiLogger;
-import dqmIII.gui.GuiPlayerArmorStatus;
-import dqmIII.gui.GuiPlayerData;
-import dqmIII.gui.GuiPlayerStatus;
-import dqmIII.gui.GuiPlayerSubpoint;
-import dqmIII.gui.GuiPositionMode;
+import dqmIII.gui.farmBook.GuiFarmBookGuiContainer;
+import dqmIII.gui.medalKing.tab.PlayerTabs;
+import dqmIII.gui.playerHUD.GuiBuffBar;
+import dqmIII.gui.playerHUD.GuiLogger;
+import dqmIII.gui.playerHUD.GuiPlayerArmorStatus;
+import dqmIII.gui.playerHUD.GuiPlayerData;
+import dqmIII.gui.playerHUD.GuiPlayerStatus;
+import dqmIII.gui.playerHUD.GuiPlayerSubpoint;
+import dqmIII.gui.playerHUD.GuiPositionMode;
 import dqmIII.handler.ChatReceivedEventHandler;
 import dqmIII.handler.RenderGameOverlayHandler;
 import dqmIII.keyHandler.ClientKeyBindCore;
@@ -68,6 +69,8 @@ public class ClientProxy extends CommonProxy implements IGuiHandler
     public void registerGUI()
     {
     	//FMLCommonHandler.instance().bus().register(new PlayerStatusGui());
+
+    	PlayerTabs.initRecipes();
 
     	MinecraftForge.EVENT_BUS.register(new GuiBuffBar(Minecraft.getMinecraft()));
     	MinecraftForge.EVENT_BUS.register(new GuiLogger(Minecraft.getMinecraft()));

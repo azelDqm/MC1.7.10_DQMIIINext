@@ -8,6 +8,9 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQOres;
+import dqmIII.api.Blocks.DQPlants;
+import dqmIII.api.Items.DQSeeds;
 
 public class FuncCheckMutation {
 
@@ -18,113 +21,113 @@ public class FuncCheckMutation {
 	public Hashtable mutationResults;
 	public Hashtable mutationResultBlocks;
 
-	public Item[] cropArray = {DQM.seeds.itemYakusou2, DQM.seeds.itemYakusou3,
-							   DQM.seeds.itemDokukesisou2, DQM.seeds.itemDokukesisou3,
-							   DQM.seeds.itemTikaranotane2, DQM.seeds.itemTikaranotane3,
-							   DQM.seeds.itemMamorinotane2, DQM.seeds.itemMamorinotane3,
-							   DQM.seeds.itemSubayasanotane2, DQM.seeds.itemSubayasanotane3,
+	public Item[] cropArray = {DQSeeds.itemYakusou2, DQSeeds.itemYakusou3,
+							   DQSeeds.itemDokukesisou2, DQSeeds.itemDokukesisou3,
+							   DQSeeds.itemTikaranotane2, DQSeeds.itemTikaranotane3,
+							   DQSeeds.itemMamorinotane2, DQSeeds.itemMamorinotane3,
+							   DQSeeds.itemSubayasanotane2, DQSeeds.itemSubayasanotane3,
 
-							   DQM.seeds.itemIyasinomi,
-							   DQM.seeds.itemIyasinomi2, DQM.seeds.itemIyasinomi3,
+							   DQSeeds.itemIyasinomi,
+							   DQSeeds.itemIyasinomi2, DQSeeds.itemIyasinomi3,
 
-							   DQM.seeds.itemHonoonomi,
-							   DQM.seeds.itemHonoonomi2, DQM.seeds.itemHonoonomi3,
+							   DQSeeds.itemHonoonomi,
+							   DQSeeds.itemHonoonomi2, DQSeeds.itemHonoonomi3,
 
-							   DQM.seeds.itemMahounomiI,
-							   DQM.seeds.itemMahounomiI2, DQM.seeds.itemMahounomiI3,
+							   DQSeeds.itemMahounomiI,
+							   DQSeeds.itemMahounomiI2, DQSeeds.itemMahounomiI3,
 
-							   DQM.seeds.itemMaryokunotaneI,
-							   DQM.seeds.itemMaryokunotaneI2, DQM.seeds.itemMaryokunotaneI3,
+							   DQSeeds.itemMaryokunotaneI,
+							   DQSeeds.itemMaryokunotaneI2, DQSeeds.itemMaryokunotaneI3,
 
-							   DQM.seeds.itemOugon,
+							   DQSeeds.itemOugon,
 
-							   DQM.seeds.itemOugon2, DQM.seeds.itemOugon3, DQM.seeds.itemOugon4
+							   DQSeeds.itemOugon2, DQSeeds.itemOugon3, DQSeeds.itemOugon4
 							  };
 
-	public Block[] cropBlockArray = {DQM.seedBlocks.BlockYakusouSeed2, DQM.seedBlocks.BlockYakusouSeed3,
-									 DQM.seedBlocks.BlockDokukesisouSeed2, DQM.seedBlocks.BlockDokukesisouSeed3,
-									 DQM.seedBlocks.BlockTikaraSeed2, DQM.seedBlocks.BlockTikaraSeed3,
-									 DQM.seedBlocks.BlockMamoriSeed2, DQM.seedBlocks.BlockMamoriSeed3,
-									 DQM.seedBlocks.BlockSubayasaSeed2, DQM.seedBlocks.BlockSubayasaSeed3,
+	public Block[] cropBlockArray = {DQPlants.BlockYakusouSeed2, DQPlants.BlockYakusouSeed3,
+									 DQPlants.BlockDokukesisouSeed2, DQPlants.BlockDokukesisouSeed3,
+									 DQPlants.BlockTikaraSeed2, DQPlants.BlockTikaraSeed3,
+									 DQPlants.BlockMamoriSeed2, DQPlants.BlockMamoriSeed3,
+									 DQPlants.BlockSubayasaSeed2, DQPlants.BlockSubayasaSeed3,
 
-									 DQM.seedBlocks.BlockIyasiSeed1,
-									 DQM.seedBlocks.BlockIyasiSeed2, DQM.seedBlocks.BlockIyasiSeed3,
-									 DQM.seedBlocks.BlockHonooSeed1,
-									 DQM.seedBlocks.BlockHonooSeed2, DQM.seedBlocks.BlockHonooSeed3,
+									 DQPlants.BlockIyasiSeed1,
+									 DQPlants.BlockIyasiSeed2, DQPlants.BlockIyasiSeed3,
+									 DQPlants.BlockHonooSeed1,
+									 DQPlants.BlockHonooSeed2, DQPlants.BlockHonooSeed3,
 
-									 DQM.seedBlocks.BlockMahounomiSeed1,
-									 DQM.seedBlocks.BlockMahounomiSeed2, DQM.seedBlocks.BlockMahounomiSeed3,
-									 DQM.seedBlocks.BlockMaryokunotaneSeed1,
-									 DQM.seedBlocks.BlockMaryokunotaneSeed2, DQM.seedBlocks.BlockMaryokunotaneSeed3,
+									 DQPlants.BlockMahounomiSeed1,
+									 DQPlants.BlockMahounomiSeed2, DQPlants.BlockMahounomiSeed3,
+									 DQPlants.BlockMaryokunotaneSeed1,
+									 DQPlants.BlockMaryokunotaneSeed2, DQPlants.BlockMaryokunotaneSeed3,
 
-									 DQM.seedBlocks.BlockOugonSeed1,
+									 DQPlants.BlockOugonSeed1,
 
-									 DQM.seedBlocks.BlockOugonSeed2, DQM.seedBlocks.BlockOugonSeed3, DQM.seedBlocks.BlockOugonSeed4
+									 DQPlants.BlockOugonSeed2, DQPlants.BlockOugonSeed3, DQPlants.BlockOugonSeed4
 								  };
 
-	public Item[][] itemArray = {{DQM.seeds.itemYakusouSeed}, {DQM.seeds.itemYakusouSeed2},
-								 {DQM.seeds.itemDokukesisouSeed}, {DQM.seeds.itemDokukesisouSeed2},
-								 {DQM.seeds.itemTikaraSeed}, {DQM.seeds.itemTikaraSeed2},
-								 {DQM.seeds.itemMamoriSeed}, {DQM.seeds.itemMamoriSeed2},
-								 {DQM.seeds.itemSubayasaSeed}, {DQM.seeds.itemSubayasaSeed2},
+	public Item[][] itemArray = {{DQSeeds.itemYakusouSeed}, {DQSeeds.itemYakusouSeed2},
+								 {DQSeeds.itemDokukesisouSeed}, {DQSeeds.itemDokukesisouSeed2},
+								 {DQSeeds.itemTikaraSeed}, {DQSeeds.itemTikaraSeed2},
+								 {DQSeeds.itemMamoriSeed}, {DQSeeds.itemMamoriSeed2},
+								 {DQSeeds.itemSubayasaSeed}, {DQSeeds.itemSubayasaSeed2},
 
-								 {DQM.seeds.itemYakusouSeed3, DQM.seeds.itemMamoriSeed3},
-								 {DQM.seeds.itemIyasiSeed}, {DQM.seeds.itemIyasiSeed2},
-								 {DQM.seeds.itemTikaraSeed3, DQM.seeds.itemSubayasaSeed3},
-								 {DQM.seeds.itemHonooSeed}, {DQM.seeds.itemHonooSeed2},
+								 {DQSeeds.itemYakusouSeed3, DQSeeds.itemMamoriSeed3},
+								 {DQSeeds.itemIyasiSeed}, {DQSeeds.itemIyasiSeed2},
+								 {DQSeeds.itemTikaraSeed3, DQSeeds.itemSubayasaSeed3},
+								 {DQSeeds.itemHonooSeed}, {DQSeeds.itemHonooSeed2},
 
-								 {DQM.seeds.itemIyasiSeed3, DQM.seeds.itemDokukesisouSeed3},
-								 {DQM.seeds.itemMahounomiseed}, {DQM.seeds.itemMahounomiseed2},
-								 {DQM.seeds.itemHonooSeed3, DQM.seeds.itemDokukesisouSeed3},
-								 {DQM.seeds.itemMaryokunotaneseed}, {DQM.seeds.itemMaryokunotaneseed2},
+								 {DQSeeds.itemIyasiSeed3, DQSeeds.itemDokukesisouSeed3},
+								 {DQSeeds.itemMahounomiseed}, {DQSeeds.itemMahounomiseed2},
+								 {DQSeeds.itemHonooSeed3, DQSeeds.itemDokukesisouSeed3},
+								 {DQSeeds.itemMaryokunotaneseed}, {DQSeeds.itemMaryokunotaneseed2},
 
-								 {DQM.seeds.itemMaryokunotaneseed3, DQM.seeds.itemMahounomiseed3},
+								 {DQSeeds.itemMaryokunotaneseed3, DQSeeds.itemMahounomiseed3},
 
-								 {DQM.seeds.itemOugonSeed}, {DQM.seeds.itemOugonSeed2}, {DQM.seeds.itemOugonSeed3}
+								 {DQSeeds.itemOugonSeed}, {DQSeeds.itemOugonSeed2}, {DQSeeds.itemOugonSeed3}
 								};
 
-	public Block[][] seedBlockArray = {{DQM.seedBlocks.BlockYakusouSeed1}, {DQM.seedBlocks.BlockYakusouSeed2},
-									   {DQM.seedBlocks.BlockDokukesisouSeed1}, {DQM.seedBlocks.BlockDokukesisouSeed2},
-									   {DQM.seedBlocks.BlockTikaraSeed1}, {DQM.seedBlocks.BlockTikaraSeed2},
-									   {DQM.seedBlocks.BlockMamoriSeed1}, {DQM.seedBlocks.BlockMamoriSeed2},
-									   {DQM.seedBlocks.BlockSubayasaSeed1}, {DQM.seedBlocks.BlockSubayasaSeed2},
+	public Block[][] seedBlockArray = {{DQPlants.BlockYakusouSeed1}, {DQPlants.BlockYakusouSeed2},
+									   {DQPlants.BlockDokukesisouSeed1}, {DQPlants.BlockDokukesisouSeed2},
+									   {DQPlants.BlockTikaraSeed1}, {DQPlants.BlockTikaraSeed2},
+									   {DQPlants.BlockMamoriSeed1}, {DQPlants.BlockMamoriSeed2},
+									   {DQPlants.BlockSubayasaSeed1}, {DQPlants.BlockSubayasaSeed2},
 
-									   {DQM.seedBlocks.BlockYakusouSeed3, DQM.seedBlocks.BlockMamoriSeed3},
-									   {DQM.seedBlocks.BlockIyasiSeed1}, {DQM.seedBlocks.BlockIyasiSeed2},
-									   {DQM.seedBlocks.BlockTikaraSeed3, DQM.seedBlocks.BlockSubayasaSeed3},
-									   {DQM.seedBlocks.BlockHonooSeed1}, {DQM.seedBlocks.BlockHonooSeed2},
-
-
-									   {DQM.seedBlocks.BlockIyasiSeed3, DQM.seedBlocks.BlockDokukesisouSeed3},
-									   {DQM.seedBlocks.BlockMahounomiSeed1}, {DQM.seedBlocks.BlockMahounomiSeed2},
-									   {DQM.seedBlocks.BlockHonooSeed3, DQM.seedBlocks.BlockDokukesisouSeed3},
-									   {DQM.seedBlocks.BlockMaryokunotaneSeed1}, {DQM.seedBlocks.BlockMaryokunotaneSeed2},
+									   {DQPlants.BlockYakusouSeed3, DQPlants.BlockMamoriSeed3},
+									   {DQPlants.BlockIyasiSeed1}, {DQPlants.BlockIyasiSeed2},
+									   {DQPlants.BlockTikaraSeed3, DQPlants.BlockSubayasaSeed3},
+									   {DQPlants.BlockHonooSeed1}, {DQPlants.BlockHonooSeed2},
 
 
-									   {DQM.seedBlocks.BlockMaryokunotaneSeed3, DQM.seedBlocks.BlockMahounomiSeed3},
+									   {DQPlants.BlockIyasiSeed3, DQPlants.BlockDokukesisouSeed3},
+									   {DQPlants.BlockMahounomiSeed1}, {DQPlants.BlockMahounomiSeed2},
+									   {DQPlants.BlockHonooSeed3, DQPlants.BlockDokukesisouSeed3},
+									   {DQPlants.BlockMaryokunotaneSeed1}, {DQPlants.BlockMaryokunotaneSeed2},
 
-									   {DQM.seedBlocks.BlockOugonSeed1}, {DQM.seedBlocks.BlockOugonSeed2}, {DQM.seedBlocks.BlockOugonSeed3}
+
+									   {DQPlants.BlockMaryokunotaneSeed3, DQPlants.BlockMahounomiSeed3},
+
+									   {DQPlants.BlockOugonSeed1}, {DQPlants.BlockOugonSeed2}, {DQPlants.BlockOugonSeed3}
 									};
 
-	public Block[][] blockArray = {{Blocks.coal_block}, {DQM.ores.DqmOreBlocks},
-								  {Blocks.iron_block}, {DQM.ores.DqmOreBlocks},
-								  {Blocks.gold_block}, {DQM.ores.DqmOreBlocks},
-								  {Blocks.lapis_block}, {DQM.ores.DqmOreBlocks},
-								  {Blocks.redstone_block}, {DQM.ores.DqmOreBlocks},
+	public Block[][] blockArray = {{Blocks.coal_block}, {DQOres.DqmOreBlocks},
+								  {Blocks.iron_block}, {DQOres.DqmOreBlocks},
+								  {Blocks.gold_block}, {DQOres.DqmOreBlocks},
+								  {Blocks.lapis_block}, {DQOres.DqmOreBlocks},
+								  {Blocks.redstone_block}, {DQOres.DqmOreBlocks},
 
-								  {DQM.ores.DqmOreBlocks},
-								  {DQM.ores.DqmOreBlocks}, {DQM.ores.DqmOreBlocks},
-								  {DQM.ores.DqmOreBlocks},
-								  {DQM.ores.DqmOreBlocks}, {DQM.ores.DqmOreBlocks},
+								  {DQOres.DqmOreBlocks},
+								  {DQOres.DqmOreBlocks}, {DQOres.DqmOreBlocks},
+								  {DQOres.DqmOreBlocks},
+								  {DQOres.DqmOreBlocks}, {DQOres.DqmOreBlocks},
 
-								  {DQM.ores.DqmOreBlocks},
+								  {DQOres.DqmOreBlocks},
 								  {Blocks.quartz_block}, {Blocks.diamond_block},
-								  {DQM.ores.DqmOreBlocks},
+								  {DQOres.DqmOreBlocks},
 								  {Blocks.netherrack}, {Blocks.emerald_block},
 
 								  {Blocks.end_stone},
 
-								  {DQM.ores.DqmOreBlocks}, {DQM.ores.DqmOreBlocks}, {DQM.ores.DqmOreBlocks}
+								  {DQOres.DqmOreBlocks}, {DQOres.DqmOreBlocks}, {DQOres.DqmOreBlocks}
 								 };
 	public int[][] metaArray = {{0}, {13},
 								{0}, {6},
@@ -214,12 +217,12 @@ public class FuncCheckMutation {
 			if(blockArray[cnt].length == 1)
 			{
 				setPattern = new Block[]{blockArray[cnt][0] , Blocks.farmland, blockArray[cnt][0],
-							 			 Blocks.farmland, DQM.seedBlocks.BlockHoujyouDirt, Blocks.farmland,
+							 			 Blocks.farmland, DQPlants.BlockHoujyouDirt, Blocks.farmland,
 							 			 blockArray[cnt][0], Blocks.farmland, blockArray[cnt][0]};
 			}else
 			{
 				setPattern = new Block[]{blockArray[cnt][0] , Blocks.farmland, blockArray[cnt][1],
-			 			 				 Blocks.farmland, DQM.seedBlocks.BlockHoujyouDirt, Blocks.farmland,
+			 			 				 Blocks.farmland, DQPlants.BlockHoujyouDirt, Blocks.farmland,
 			 			 				 blockArray[cnt][1], Blocks.farmland, blockArray[cnt][0]};
 			}
 

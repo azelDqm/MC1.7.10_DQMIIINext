@@ -7,6 +7,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntity;
 import dqmIII.entity.magicEntity.magic.MagicEntityMera;
 import dqmIII.enums.EnumDqmMagic;
@@ -64,7 +65,7 @@ public class DqmItemMagicGira extends DqmItemMagicBase{
         	int hitCnt = 0;
         	*/
 
-    		if(par1ItemStack.getItem() == DQM.magics.itemGira)
+    		if(par1ItemStack.getItem() == DQMagics.itemGira)
     		{
     			magic = new MagicEntity[3];
     			for(int cnt = 0;cnt < 3; cnt++)
@@ -78,7 +79,7 @@ public class DqmItemMagicGira extends DqmItemMagicBase{
     	   		needLvK = 12;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemBegirama)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemBegirama)
     		{
     			magic = new MagicEntity[5];
     			for(int cnt = 0;cnt < 5; cnt++)
@@ -92,7 +93,7 @@ public class DqmItemMagicGira extends DqmItemMagicBase{
     	   		needLvK = 23;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemBegiragon)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemBegiragon)
     		{
     			magic = new MagicEntity[7];
     			for(int cnt = 0;cnt < 7; cnt++)
@@ -106,7 +107,7 @@ public class DqmItemMagicGira extends DqmItemMagicBase{
     	   		needLvK = 35;
     	   		*/
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemGiragureido)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemGiragureido)
     		{
     			magic = new MagicEntity[9];
     			for(int cnt = 0;cnt < 9; cnt++)

@@ -91,7 +91,7 @@ public class DamagetHandler {
 			}else if(event.source.getEntity() instanceof EntityPlayer)
 			{
 				EntityPlayer epr = (EntityPlayer)event.source.getEntity();
-				int criticalVal = ExtendedPlayerProperties.get(epr).getKaisinritu();
+				int criticalVal = ExtendedPlayerProperties.get(epr).getKaisinritu() + 1;
 				if(rand.nextInt(200) < criticalVal)
 				{
 					event.source.setDamageBypassesArmor();

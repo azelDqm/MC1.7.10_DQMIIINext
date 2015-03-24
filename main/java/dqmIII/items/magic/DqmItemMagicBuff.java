@@ -15,10 +15,10 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntityBuff;
 import dqmIII.enums.EnumColor;
 import dqmIII.enums.EnumDqmMagic;
-import dqmIII.items.DqmItemMagics;
 import dqmIII.items.base.DqmItemMagicBase;
 import dqmIII.playerData.ExtendedPlayerProperties;
 
@@ -85,6 +85,7 @@ public class DqmItemMagicBuff extends DqmItemMagicBase{
 			{
 				par3EntityPlayer.addChatMessage(new ChatComponentTranslation("msg.magic.nomp.txt",new Object[] {}));
 				par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.pi", 1.0F, 1.0F);
+				return par1ItemStack;
 			}else
 			{
 				ExtendedPlayerProperties.get(par3EntityPlayer).setMP(epMP - this.getEnumMagic().getMP());
@@ -93,7 +94,7 @@ public class DqmItemMagicBuff extends DqmItemMagicBase{
     		par1ItemStack.damageItem(this.getEnumMagic().getDamage(), par3EntityPlayer);
 
 
-			if(this == DqmItemMagics.itemSukuruto || this == DqmItemMagics.itemFubaha ||this == DqmItemMagics.itemPiorimu)
+			if(this == DQMagics.itemSukuruto || this == DQMagics.itemFubaha ||this == DQMagics.itemPiorimu)
 			{
 				par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.jumon", 1.0F, 1.0F);
 				if(par3EntityPlayer.isPotionActive(DQM.potion.buffMahokanta))
@@ -132,7 +133,7 @@ public class DqmItemMagicBuff extends DqmItemMagicBase{
 	            }
 
 	            return par1ItemStack;
-			}else if((this != DqmItemMagics.itemUminarinotue && this != DqmItemMagics.itemCallMagma) && par3EntityPlayer.isSneaking())
+			}else if((this != DQMagics.itemUminarinotue && this != DQMagics.itemCallMagma) && par3EntityPlayer.isSneaking())
 	    	{
 	        	MagicEntityBuff magic = null;
 
@@ -153,11 +154,11 @@ public class DqmItemMagicBuff extends DqmItemMagicBase{
 
     	        	}
     	        }
-	    	}else if(this == DqmItemMagics.itemUminarinotue && par3EntityPlayer.isPotionActive(DQM.potion.buffUminarinotue))
+	    	}else if(this == DQMagics.itemUminarinotue && par3EntityPlayer.isPotionActive(DQM.potion.buffUminarinotue))
 	    	{
 	    		par3EntityPlayer.removePotionEffect(DQM.potion.buffUminarinotue.getId());
 	    		par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.jumon", 1.0F, 1.0F);
-	    	}else if(this == DqmItemMagics.itemCallMagma && par3EntityPlayer.isPotionActive(DQM.potion.buffCallMagma))
+	    	}else if(this == DQMagics.itemCallMagma && par3EntityPlayer.isPotionActive(DQM.potion.buffCallMagma))
 	    	{
 	    		par3EntityPlayer.removePotionEffect(DQM.potion.buffCallMagma.getId());
 	    		par3EntityPlayer.worldObj.playSoundAtEntity(par3EntityPlayer, "dqm:player.jumon", 1.0F, 1.0F);
@@ -186,8 +187,8 @@ public class DqmItemMagicBuff extends DqmItemMagicBase{
   	 public void addInformation(ItemStack p_77624_1_, EntityPlayer p_77624_2_, List p_77624_3_, boolean p_77624_4_) {
     	super.addInformation(p_77624_1_, p_77624_2_, p_77624_3_, p_77624_4_);
 
-    	if(this != DqmItemMagics.itemSukuruto && this != DqmItemMagics.itemFubaha && this != DqmItemMagics.itemPiorimu &&
-    	   this != DqmItemMagics.itemUminarinotue && this != DqmItemMagics.itemCallMagma)
+    	if(this != DQMagics.itemSukuruto && this != DQMagics.itemFubaha && this != DQMagics.itemPiorimu &&
+    	   this != DQMagics.itemUminarinotue && this != DQMagics.itemCallMagma)
     	{
 	    	p_77624_3_.add("");
 	    	String message = I18n.format("dqm.magicinfo.buff.txt", new Object[]{});

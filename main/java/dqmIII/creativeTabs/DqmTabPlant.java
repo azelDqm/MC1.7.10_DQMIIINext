@@ -2,7 +2,7 @@ package dqmIII.creativeTabs;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import dqmIII.DQM;
+import dqmIII.api.Items.DQSeeds;
 
 public class DqmTabPlant extends CreativeTabs
 {
@@ -14,6 +14,6 @@ public class DqmTabPlant extends CreativeTabs
 	@Override
 	public Item getTabIconItem()
 	{
-		return DQM.seeds.itemYakusou;
+		return DQSeeds.itemYakusou;
 	}
 }

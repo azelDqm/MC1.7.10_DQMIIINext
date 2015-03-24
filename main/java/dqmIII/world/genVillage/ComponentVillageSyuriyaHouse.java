@@ -13,6 +13,7 @@ import net.minecraft.world.gen.structure.StructureBoundingBox;
 import net.minecraft.world.gen.structure.StructureComponent;
 import net.minecraft.world.gen.structure.StructureVillagePieces;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQDecorates;
 import dqmIII.entity.npcEntity.npc.DqmEntityNPCSyuuri;
 
 public class ComponentVillageSyuriyaHouse extends StructureVillagePieces.Village {
@@ -90,25 +91,25 @@ public class ComponentVillageSyuriyaHouse extends StructureVillagePieces.Village
 
         this.placeBlockAtCurrentPosition(p_74875_1_, Blocks.glass_pane, 0, 7, 2, 7, p_74875_3_);
 
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockBouguya, this.coordBaseMode, 2, 2, 0, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockBouguya, this.coordBaseMode, 6, 2, 0, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockBouguya, this.coordBaseMode, 2, 2, 0, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockBouguya, this.coordBaseMode, 6, 2, 0, p_74875_3_);
 
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockTaimatu2, 0, 2, 1, 4, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockIsu, 0, 3, 1, 4, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockIsu, 0, 5, 1, 4, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockTaimatu2, 0, 6, 1, 4, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockTaimatu2, 0, 2, 1, 4, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockIsu, 0, 3, 1, 4, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockIsu, 0, 5, 1, 4, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockTaimatu2, 0, 6, 1, 4, p_74875_3_);
 
         for(int x = 2; x < 7; x++)
         {
         	this.placeBlockAtCurrentPosition(p_74875_1_, Blocks.oak_stairs, this.getMetadataWithOffset2(Blocks.oak_stairs, 5), x, 1, 5, p_74875_3_);
         }
 
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockHepaitosu, 0, 3, 2, 5, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockMaki, 0, 6, 1, 6, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockTubo2, 0, 6, 1, 7, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockTubo2, 0, 6, 1, 8, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockTaru, 0, 2, 1, 8, p_74875_3_);
-        this.placeBlockAtCurrentPosition(p_74875_1_, DQM.decorateBlocks.DqmBlockHondana, this.coordBaseMode, 4, 1, 8, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockHepaitosu, 0, 3, 2, 5, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockMaki, 0, 6, 1, 6, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockTubo2, 0, 6, 1, 7, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockTubo2, 0, 6, 1, 8, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockTaru, 0, 2, 1, 8, p_74875_3_);
+        this.placeBlockAtCurrentPosition(p_74875_1_, DQDecorates.DqmBlockHondana, this.coordBaseMode, 4, 1, 8, p_74875_3_);
 
         this.placeBlockAtCurrentPosition(p_74875_1_, Blocks.air, 0, 4, 1, 0, p_74875_3_);
         this.placeBlockAtCurrentPosition(p_74875_1_, Blocks.air, 0, 4, 2, 0, p_74875_3_);

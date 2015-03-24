@@ -10,6 +10,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntityBagi;
 import dqmIII.enums.EnumColor;
 import dqmIII.enums.EnumDqmMagic;
@@ -159,7 +160,7 @@ public class DqmItemMagicBagi extends DqmItemMagicBase{
         	int needLvK = 100;
         	int hitCnt = 0;
 			*/
-    		if(par1ItemStack.getItem() == DQM.magics.itemBagi)
+    		if(par1ItemStack.getItem() == DQMagics.itemBagi)
     		{
     			magic = new MagicEntityBagi[3];
     			//for(int cnt = 0;cnt < 1; cnt++)
@@ -179,7 +180,7 @@ public class DqmItemMagicBagi extends DqmItemMagicBase{
     	   		//needLvK = 8;
     	   		 */
 
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemBagima)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemBagima)
     		{
     			magic = new MagicEntityBagi[3];
     			magic[0] = new MagicEntityBagi(par2World, par3EntityPlayer, 1.5F, 1.0F, -1.0F, 0.0F, 0.0F, 0.0F, 0.0F);
@@ -195,7 +196,7 @@ public class DqmItemMagicBagi extends DqmItemMagicBase{
     	   		needLvS = 22;
     	   		//needLvK = 18;
 				*/
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemBagikurosu)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemBagikurosu)
     		{
     			magic = new MagicEntityBagi[5];
     			magic[0] = new MagicEntityBagi(par2World, par3EntityPlayer, 1.5F, 1.0F, -1.0F, 0.0F, 0.0F, 0.0F, 0.0F);
@@ -214,7 +215,7 @@ public class DqmItemMagicBagi extends DqmItemMagicBase{
     	   		needLvS = 38;
     	   		//needLvK = 31;
 				*/
-    		}else if(par1ItemStack.getItem() == DQM.magics.itemBagimutyo)
+    		}else if(par1ItemStack.getItem() == DQMagics.itemBagimutyo)
     		{
     			magic = new MagicEntityBagi[5];
     			magic[0] = new MagicEntityBagi(par2World, par3EntityPlayer, 1.5F, 1.0F, -1.0F, 0.0F, 0.0F, 0.0F, 0.0F);

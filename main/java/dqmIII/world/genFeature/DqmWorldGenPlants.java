@@ -7,7 +7,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import cpw.mods.fml.common.IWorldGenerator;
-import dqmIII.DQM;
+import dqmIII.api.Blocks.DQPlants;
 
 public class DqmWorldGenPlants implements IWorldGenerator
 {
@@ -29,12 +29,12 @@ public class DqmWorldGenPlants implements IWorldGenerator
         {
         	switch(rand.nextInt(6))
         	{
-        		case 0: setBlock = DQM.seedBlocks.BlockDokukesisouSeed1;break;
-        		case 1: setBlock = DQM.seedBlocks.BlockYakusouSeed1;break;
-        		case 2: setBlock = DQM.seedBlocks.BlockSubayasaSeed1;break;
-        		case 3: setBlock = DQM.seedBlocks.BlockTikaraSeed1;break;
-        		case 4: setBlock = DQM.seedBlocks.BlockMamoriSeed1;break;
-        		default: setBlock = DQM.seedBlocks.BlockYakusouSeed1;break;
+        		case 0: setBlock = DQPlants.BlockDokukesisouSeed1;break;
+        		case 1: setBlock = DQPlants.BlockYakusouSeed1;break;
+        		case 2: setBlock = DQPlants.BlockSubayasaSeed1;break;
+        		case 3: setBlock = DQPlants.BlockTikaraSeed1;break;
+        		case 4: setBlock = DQPlants.BlockMamoriSeed1;break;
+        		default: setBlock = DQPlants.BlockYakusouSeed1;break;
         	}
 
             par3World.setBlock(x, y, z,setBlock, rand.nextInt(5), 2);

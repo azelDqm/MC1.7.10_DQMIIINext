@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import dqmIII.DQM;
+import dqmIII.api.Blocks.DQDecorates;
 import dqmIII.blocks.decorate.tileEntity.DqmTileEntityTubokku;
 import dqmIII.entity.mobEntity.DqmMobBase;
 import dqmIII.entity.mobEntity.monsterHell.DqmEntityTubokku;
@@ -142,7 +143,7 @@ public class DqmBlockTubokku2 extends BlockContainer
 
             if(spawnMob == null && rand.nextInt(2) == 0)
             {
-            	doropiItems = new ItemStack(DQM.decorateBlocks.DqmBlockTubokku, 1);
+            	doropiItems = new ItemStack(DQDecorates.DqmBlockTubokku, 1);
             }
 
         }

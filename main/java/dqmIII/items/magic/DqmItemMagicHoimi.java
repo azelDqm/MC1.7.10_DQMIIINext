@@ -10,6 +10,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.World;
 import dqmIII.DQM;
+import dqmIII.api.Items.DQMagics;
 import dqmIII.entity.magicEntity.magic.MagicEntity;
 import dqmIII.entity.magicEntity.magic.MagicEntityHoimi;
 import dqmIII.enums.EnumColor;
@@ -58,15 +59,15 @@ public class DqmItemMagicHoimi extends DqmItemMagicBase{
 	        	MagicEntity magic = null;
 
 
-	    		if(par1ItemStack.getItem() == DQM.magics.itemHoimi)
+	    		if(par1ItemStack.getItem() == DQMagics.itemHoimi)
 	    		{
 	    	   		magic = new MagicEntityHoimi(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F);
 
-	    		}else if(par1ItemStack.getItem() == DQM.magics.itemBehoimi)
+	    		}else if(par1ItemStack.getItem() == DQMagics.itemBehoimi)
 	    		{
 	    			magic = new MagicEntityHoimi(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F);
 
-	    		}else if(par1ItemStack.getItem() == DQM.magics.itemBehoma)
+	    		}else if(par1ItemStack.getItem() == DQMagics.itemBehoma)
 	    		{
 	    			magic = new MagicEntityHoimi(par2World, par3EntityPlayer, 1.5F, 1.0F, 0.0F, 0.0F, 0.0F);
 
